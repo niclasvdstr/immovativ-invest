@@ -615,47 +615,35 @@ export default function ImmobilienmaklerPage() {
       </section>
 
       {/* Regionen */}
-      <section className="section-padding bg-white">
+      <section className="py-14 px-4 md:px-8 bg-brand-gray-light">
         <div className="container-max">
 
           {/* Header */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end mb-14">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
             <div>
-              <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-5">
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-3.5 py-1.5 text-xs font-semibold mb-3">
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 Unser Servicegebiet
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit leading-tight">
-                Dein Makler in der<br />
-                <span className="text-brand-green">Rhein-Main-Region.</span>
+              <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit leading-tight">
+                Dein Makler in der <span className="text-brand-green">Rhein-Main-Region.</span>
               </h2>
             </div>
-            <div className="lg:text-right">
-              <p className="text-brand-gray-warm text-lg leading-relaxed mb-6">
-                Mit lokalem Marktwissen und persönlicher Betreuung sind wir in über 35 Städten und Gemeinden für dich tätig.
-              </p>
-              <div className="flex gap-8 lg:justify-end">
-                <div>
-                  <div className="text-2xl font-bold text-brand-anthrazit">35+</div>
-                  <div className="text-xs text-brand-gray-warm uppercase tracking-wide font-medium">Städte</div>
+            <div className="flex items-center gap-6 md:gap-10 shrink-0">
+              {[['35+', 'Städte'], ['14', 'Regionen'], ['500+', 'Verkäufe']].map(([val, label]) => (
+                <div key={label} className="text-center">
+                  <div className="text-xl font-bold text-brand-anthrazit">{val}</div>
+                  <div className="text-xs text-brand-gray-warm uppercase tracking-wide font-medium">{label}</div>
                 </div>
-                <div>
-                  <div className="text-2xl font-bold text-brand-anthrazit">14</div>
-                  <div className="text-xs text-brand-gray-warm uppercase tracking-wide font-medium">Regionen</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-brand-anthrazit">500+</div>
-                  <div className="text-xs text-brand-gray-warm uppercase tracking-wide font-medium">Verkäufe</div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
-          {/* Region rows */}
-          <div className="divide-y divide-brand-gray-border border-t border-brand-gray-border">
+          {/* Region grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {[
               'Hochtaunuskreis',
               'Wetteraukreis',
@@ -675,17 +663,17 @@ export default function ImmobilienmaklerPage() {
               const staedte = seoStaedte.filter(s => s.region === region)
               if (staedte.length === 0) return null
               return (
-                <div key={region} className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 py-5 group">
-                  <div className="flex items-start gap-2.5 pt-0.5">
-                    <span className="w-2 h-2 rounded-full bg-brand-green shrink-0 mt-1.5" />
-                    <span className="text-sm font-semibold text-brand-anthrazit leading-snug">{region}</span>
+                <div key={region} className="bg-white rounded-2xl p-4 border border-brand-gray-border shadow-soft">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="w-2 h-2 rounded-full bg-brand-green shrink-0" />
+                    <span className="text-xs font-bold text-brand-anthrazit uppercase tracking-wide">{region}</span>
                   </div>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5">
                     {staedte.map(stadt => (
                       <a
                         key={stadt.slug}
                         href={`/immobilienmakler-${stadt.slug}`}
-                        className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium text-brand-anthrazit bg-brand-gray-light hover:bg-brand-green hover:text-white transition-all duration-150"
+                        className="inline-block rounded-full px-2.5 py-1 text-xs font-medium text-brand-anthrazit bg-brand-gray-light hover:bg-brand-green hover:text-white transition-all duration-150"
                       >
                         {stadt.name}
                       </a>
@@ -697,11 +685,12 @@ export default function ImmobilienmaklerPage() {
           </div>
 
           {/* Bottom CTA */}
-          <div className="mt-10 pt-8 border-t border-brand-gray-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 bg-white rounded-2xl px-6 py-4 border border-brand-gray-border shadow-soft">
             <p className="text-brand-gray-warm text-sm">Deine Stadt nicht dabei? Wir sind auch darüber hinaus für dich tätig.</p>
             <a
               href="#kontakt"
-              className="inline-flex items-center gap-2 btn-gradient text-white font-semibold rounded-xl px-6 py-3 text-sm transition-colors whitespace-nowrap"
+              className="inline-flex items-center gap-2 text-white font-semibold rounded-xl px-5 py-2.5 text-sm transition-all whitespace-nowrap hover:-translate-y-0.5 hover:opacity-90"
+              style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}
             >
               Jetzt Kontakt aufnehmen
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

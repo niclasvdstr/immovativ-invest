@@ -360,7 +360,7 @@ export default function AnkaufPage() {
                   key={card.num}
                   className="bg-white border border-brand-gray-border rounded-2xl p-6 shadow-soft hover:shadow-medium transition-shadow duration-300 flex flex-col"
                 >
-                  <div className="inline-flex items-center justify-center w-9 h-9 rounded-xl mb-4 shrink-0" style={{ backgroundColor: '#2563EB' }}>
+                  <div className="inline-flex items-center justify-center w-9 h-9 rounded-xl mb-4 shrink-0" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
                     <span className="text-white text-xs font-bold">{card.num}</span>
                   </div>
                   <h3 className="font-bold text-brand-anthrazit text-base mb-2 leading-snug">{card.title}</h3>
