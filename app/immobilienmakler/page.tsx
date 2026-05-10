@@ -12,6 +12,7 @@ import FAQ from '@/components/FAQ'
 import { sharedFaqItems } from '@/lib/faq-items'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
+import AnimateIn, { StaggerContainer, StaggerItem } from '@/components/AnimateIn'
 import { seoStaedte } from '@/lib/seo-staedte'
 import TippgeberSection from '@/components/TippgeberSection'
 
@@ -143,7 +144,7 @@ export default function ImmobilienmaklerPage() {
 
         <div className="max-w-6xl mx-auto relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <AnimateIn direction="up" delay={0}>
               {/* Social Proof */}
               <div className="inline-flex items-center gap-3 mb-6">
                 {/* Avatare mit Stockfotos */}
@@ -216,6 +217,7 @@ export default function ImmobilienmaklerPage() {
                   Jetzt anrufen
                 </CTAButton>
               </div>
+            </AnimateIn>
             </div>
 
             {/* Feature panel */}
@@ -506,11 +508,11 @@ export default function ImmobilienmaklerPage() {
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Wieso immovativ<span className="font-black">Invest</span>?
+                Wieso immovativ<span className="font-black">Invest</span>&#8203;?
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-10 leading-tight">
-                Wieso immovativ<span className="font-black">Invest</span>?
+                Wieso immovativ<span className="font-black">Invest</span>&#8203;?
               </h2>
 
               <div className="space-y-8">
@@ -598,17 +600,19 @@ export default function ImmobilienmaklerPage() {
 
       {/* Mid-page CTA */}
       <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #0f2027 0%, #1e3a8a 50%, #0f2027 100%)' }}>
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Deine Immobilie. Unser Einsatz. Dein Erfolg.
-          </h2>
-          <p className="text-blue-200 mb-6">
-            Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.
-          </p>
-          <a href="#kontakt" className="inline-flex items-center justify-center whitespace-nowrap font-semibold rounded-xl px-8 py-4 text-lg bg-white text-brand-anthrazit hover:brightness-105 hover:-translate-y-0.5 transition-all duration-200">
-            Jetzt kostenlos beraten lassen →
-          </a>
-        </div>
+        <AnimateIn direction="up">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              Deine Immobilie. Unser Einsatz. Dein Erfolg.
+            </h2>
+            <p className="text-blue-200 mb-6">
+              Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.
+            </p>
+            <a href="#kontakt" className="inline-flex items-center justify-center whitespace-nowrap font-semibold rounded-xl px-8 py-4 text-lg bg-white text-brand-anthrazit hover:brightness-105 hover:-translate-y-0.5 transition-all duration-200">
+              Jetzt kostenlos beraten lassen →
+            </a>
+          </div>
+        </AnimateIn>
       </section>
 
       {/* Regionen */}

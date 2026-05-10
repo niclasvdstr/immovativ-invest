@@ -25,7 +25,7 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
       ]
 
   return (
-    <footer className="bg-[#0B1F3A] text-white">
+    <footer className="text-white" style={{ background: 'linear-gradient(135deg, #0f2027 0%, #1e3a8a 50%, #0f2027 100%)' }}>
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
