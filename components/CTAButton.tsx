@@ -26,7 +26,7 @@ export default function CTAButton({
   const variants = {
     primary: 'bg-[linear-gradient(135deg,#1e3a8a_0%,#2563EB_100%)] text-white hover:brightness-110 shadow-green hover:shadow-lg hover:-translate-y-0.5 focus:ring-brand-green',
     secondary: 'bg-brand-anthrazit text-white hover:bg-gray-800 hover:-translate-y-0.5 focus:ring-gray-700',
-    outline: 'bg-[#1e3a8a] text-white hover:brightness-110 hover:-translate-y-0.5 focus:ring-[#1e3a8a]',
+    outline: 'border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-white focus:ring-brand-green',
   }
 
   const sizes = {

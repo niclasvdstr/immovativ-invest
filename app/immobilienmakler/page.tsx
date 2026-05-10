@@ -605,7 +605,7 @@ export default function ImmobilienmaklerPage() {
           <p className="text-blue-200 mb-6">
             Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.
           </p>
-          <CTAButton href="#kontakt" variant="primary" size="lg">
+          <CTAButton href="#kontakt" variant="secondary" size="lg" className="bg-white text-brand-anthrazit hover:bg-gray-100">
             Jetzt kostenlos beraten lassen →
           </CTAButton>
         </div>
