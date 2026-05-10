@@ -195,8 +195,7 @@ export default function UeberUnsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
 
             {/* Foto – nimmt 2/5 */}
-            <AnimateIn direction="up">
-            <div className="lg:col-span-2">
+            <AnimateIn direction="up" className="lg:col-span-2">
               <div className="relative">
                 <Image
                   src="/NiclasAlleine 2.png"
@@ -211,12 +210,10 @@ export default function UeberUnsPage() {
                   <div className="text-brand-anthrazit font-bold text-base">Niclas van der Straeten</div>
                 </div>
               </div>
-            </div>
             </AnimateIn>
 
             {/* Text – nimmt 3/5 */}
-            <AnimateIn direction="up" delay={100}>
-            <div className="lg:col-span-3 lg:pl-6">
+            <AnimateIn direction="up" delay={100} className="lg:col-span-3 lg:pl-6">
               <p className="text-brand-gray-warm text-base leading-relaxed mb-8">
                 Niclas ist der Kopf hinter der Vermarktungsstrategie bei immovativ<span className="font-black">Invest</span>. Mit einem tiefen Verständnis für den Rhein-Main-Markt und einem ausgeprägten Gespür für Preisgestaltung begleitet er Eigentümer vom ersten Gespräch bis zum Notartermin — ohne unrealistische Versprechen, dafür mit echter Erfahrung.
               </p>
@@ -246,7 +243,6 @@ export default function UeberUnsPage() {
               <CTAButton href="/verkaufen" variant="primary" size="sm">
                 Immobilienbewertung starten →
               </CTAButton>
-            </div>
             </AnimateIn>
 
           </div>
@@ -259,8 +255,7 @@ export default function UeberUnsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
 
             {/* Text – nimmt 3/5, links */}
-            <AnimateIn direction="up">
-            <div className="lg:col-span-3 lg:pr-6 order-2 lg:order-1">
+            <AnimateIn direction="up" className="lg:col-span-3 lg:pr-6 order-2 lg:order-1">
               <p className="text-brand-gray-warm text-base leading-relaxed mb-8">
                 Mazlum bringt das strukturelle Rückgrat in die Partnerschaft ein. Mit einem scharfen Blick für Prozesse und Kundenerlebnis stellt er sicher, dass jeder Verkauf reibungslos abläuft – von der Unterlagenbeschaffung bis zur Schlüsselübergabe. Sein tiefes Netzwerk im Rhein-Main-Raum ermöglicht es, Käufer oft schon vor dem ersten Portalinserat zu finden.
               </p>
@@ -288,12 +283,10 @@ export default function UeberUnsPage() {
               <CTAButton href="/verkaufen" variant="primary" size="sm">
                 Immobilienbewertung starten →
               </CTAButton>
-            </div>
             </AnimateIn>
 
             {/* Foto – nimmt 2/5, rechts */}
-            <AnimateIn direction="up" delay={100}>
-            <div className="lg:col-span-2 order-1 lg:order-2">
+            <AnimateIn direction="up" delay={100} className="lg:col-span-2 order-1 lg:order-2">
               <div className="relative">
                 <Image
                   src="/mazlum.png"
@@ -308,7 +301,6 @@ export default function UeberUnsPage() {
                   <div className="text-brand-anthrazit font-bold text-base">Mazlum Selcuk</div>
                 </div>
               </div>
-            </div>
             </AnimateIn>
 
           </div>
@@ -320,45 +312,45 @@ export default function UeberUnsPage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimateIn direction="up" delay={0}>
-            <div className="relative">
-              <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
-              <Image
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop"
-                alt="Meeting"
-                className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
-                width={800}
-                height={480}
-              />
-            </div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
+                <Image
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop"
+                  alt="Meeting"
+                  className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
+                  width={800}
+                  height={480}
+                />
+              </div>
             </AnimateIn>
             <AnimateIn direction="up" delay={150}>
-            <div>
-              <div className="inline-flex items-center gap-2 bg-red-50 border border-red-100 text-red-600 rounded-full px-4 py-2 text-sm font-semibold mb-6">
-                Ehrlichkeit zuerst
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
-                Genug davon!
-              </h2>
-              <div className="space-y-4 text-brand-gray-warm leading-relaxed">
-                <p>
-                  Lass uns ehrlich sein… der Maklerberuf hat oft einen schlechten Ruf: „Wenig Arbeit, wenig Wissen, unpersönlich, überbezahlt." Wir verstehen, woher diese Vorurteile kommen.
-                </p>
-                <p>
-                  Oftmals trifft man „den Immobilienmakler" nur einmal bei der Besichtigung — und dann wieder beim Notar. Dazwischen: Schweigen. Wir kennen diese Geschichten.
-                </p>
-                <p>
-                  Und wir haben immovativ<span className="font-black">Invest</span> genau deshalb anders aufgebaut.
-                </p>
-              </div>
-              <div className="mt-8 flex items-center gap-3 bg-brand-green-50 border border-brand-green-100 rounded-2xl px-5 py-4">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#16a34a' }}>
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
+              <div>
+                <div className="inline-flex items-center gap-2 bg-red-50 border border-red-100 text-red-600 rounded-full px-4 py-2 text-sm font-semibold mb-6">
+                  Ehrlichkeit zuerst
                 </div>
-                <p className="font-semibold text-brand-anthrazit text-sm">Wir machen es anders.</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+                  Genug davon!
+                </h2>
+                <div className="space-y-4 text-brand-gray-warm leading-relaxed">
+                  <p>
+                    Lass uns ehrlich sein… der Maklerberuf hat oft einen schlechten Ruf: „Wenig Arbeit, wenig Wissen, unpersönlich, überbezahlt." Wir verstehen, woher diese Vorurteile kommen.
+                  </p>
+                  <p>
+                    Oftmals trifft man „den Immobilienmakler" nur einmal bei der Besichtigung — und dann wieder beim Notar. Dazwischen: Schweigen. Wir kennen diese Geschichten.
+                  </p>
+                  <p>
+                    Und wir haben immovativ<span className="font-black">Invest</span> genau deshalb anders aufgebaut.
+                  </p>
+                </div>
+                <div className="mt-8 flex items-center gap-3 bg-brand-green-50 border border-brand-green-100 rounded-2xl px-5 py-4">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#16a34a' }}>
+                    <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p className="font-semibold text-brand-anthrazit text-sm">Wir machen es anders.</p>
+                </div>
               </div>
-            </div>
             </AnimateIn>
           </div>
         </div>
@@ -369,46 +361,46 @@ export default function UeberUnsPage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimateIn direction="up" delay={0}>
-            <div>
-              <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
-                Unser Anspruch
+              <div>
+                <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+                  Unser Anspruch
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+                  Wir brechen mit allen<br />Makler-Klischees.
+                </h2>
+                <div className="space-y-4 text-brand-gray-warm leading-relaxed">
+                  <p>
+                    Du verdienst einen Service, der Dich von Anfang an abholt — der Dir volle Transparenz gibt, Dir die Arbeit abnimmt und am Ende das beste Ergebnis rausholt.
+                  </p>
+                  <p>
+                    Bei uns trifft Marktexpertise auf echte Persönlichkeit. Wir sind keine anonyme Agentur — wir sind Niclas und Mazlum, zwei Menschen die Verantwortung für Deinen Verkauf übernehmen.
+                  </p>
+                </div>
+                <ul className="mt-6 space-y-3">
+                  {['Persönlicher Ansprechpartner – immer erreichbar', 'Vollständige Abwicklung von A bis Z', 'Transparente Kommunikation ohne Überraschungen'].map(item => (
+                    <li key={item} className="flex items-center gap-3 text-sm font-medium text-brand-anthrazit">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#16a34a' }}>
+                        <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
-                Wir brechen mit allen<br />Makler-Klischees.
-              </h2>
-              <div className="space-y-4 text-brand-gray-warm leading-relaxed">
-                <p>
-                  Du verdienst einen Service, der Dich von Anfang an abholt — der Dir volle Transparenz gibt, Dir die Arbeit abnimmt und am Ende das beste Ergebnis rausholt.
-                </p>
-                <p>
-                  Bei uns trifft Marktexpertise auf echte Persönlichkeit. Wir sind keine anonyme Agentur — wir sind Niclas und Mazlum, zwei Menschen die Verantwortung für Deinen Verkauf übernehmen.
-                </p>
-              </div>
-              <ul className="mt-6 space-y-3">
-                {['Persönlicher Ansprechpartner – immer erreichbar', 'Vollständige Abwicklung von A bis Z', 'Transparente Kommunikation ohne Überraschungen'].map(item => (
-                  <li key={item} className="flex items-center gap-3 text-sm font-medium text-brand-anthrazit">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#16a34a' }}>
-                      <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
             </AnimateIn>
             <AnimateIn direction="up" delay={150}>
-            <div className="relative">
-              <div className="absolute inset-0 bg-brand-green-50 rounded-3xl -translate-x-3 translate-y-3" />
-              <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop"
-                alt="Team immovativInvest"
-                className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
-                width={800}
-                height={480}
-              />
-            </div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-brand-green-50 rounded-3xl -translate-x-3 translate-y-3" />
+                <Image
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop"
+                  alt="Team immovativInvest"
+                  className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
+                  width={800}
+                  height={480}
+                />
+              </div>
             </AnimateIn>
           </div>
         </div>
@@ -418,16 +410,19 @@ export default function UeberUnsPage() {
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
-              <Image
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop"
-                alt="Kommunikation"
-                className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
-                width={800}
-                height={480}
-              />
-            </div>
+            <AnimateIn direction="up" delay={0}>
+              <div className="relative">
+                <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
+                <Image
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop"
+                  alt="Kommunikation"
+                  className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
+                  width={800}
+                  height={480}
+                />
+              </div>
+            </AnimateIn>
+            <AnimateIn direction="up" delay={150}>
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 Direkte Kommunikation
@@ -455,6 +450,7 @@ export default function UeberUnsPage() {
                 </a>
               </div>
             </div>
+            </AnimateIn>
           </div>
         </div>
       </section>

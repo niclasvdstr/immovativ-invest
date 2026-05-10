@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
+import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
   title: 'Kostenlose Immobilienberatung | immovativInvest',
@@ -55,6 +56,7 @@ export default function BeratungPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <AnimateIn direction="up">
         <div className="max-w-4xl mx-auto relative text-center">
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💬 Kostenlose Beratung
@@ -75,12 +77,14 @@ export default function BeratungPage() {
             </CTAButton>
           </div>
         </div>
+        </AnimateIn>
       </section>
 
       {/* Bild + Einleitung */}
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <AnimateIn direction="up" delay={0}>
             <div>
               <h2 className="text-3xl font-bold text-brand-anthrazit mb-5">
                 Die meisten Fehler entstehen vor der Entscheidung
@@ -110,6 +114,8 @@ export default function BeratungPage() {
                 ))}
               </div>
             </div>
+            </AnimateIn>
+            <AnimateIn direction="up" delay={150}>
             <div className="rounded-3xl overflow-hidden h-[480px]">
               <Image
                 src="/team-office.png"
@@ -120,6 +126,7 @@ export default function BeratungPage() {
                 priority
               />
             </div>
+            </AnimateIn>
           </div>
         </div>
       </section>
@@ -127,12 +134,14 @@ export default function BeratungPage() {
       {/* Themen */}
       <section className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
+          <AnimateIn direction="up">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Womit können wir helfen?</h2>
             <p className="text-brand-gray-warm text-sm max-w-xl mx-auto">
               Kein Thema ist zu groß oder zu klein. Hier sind die häufigsten Fragen, mit denen Menschen zu uns kommen.
             </p>
           </div>
+          </AnimateIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
@@ -171,8 +180,9 @@ export default function BeratungPage() {
                   'Wie viel Eigenkapital brauche ich wirklich?',
                 ],
               },
-            ].map(item => (
-              <div key={item.title} className="bg-white rounded-2xl p-6 border border-brand-gray-border">
+            ].map((item, index) => (
+              <AnimateIn key={item.title} direction="up" delay={index * 120}>
+              <div className="bg-white rounded-2xl p-6 border border-brand-gray-border">
                 <div className="text-3xl mb-4">{item.icon}</div>
                 <h3 className="font-bold text-brand-anthrazit text-lg mb-4">{item.title}</h3>
                 <ul className="space-y-2.5">
@@ -184,6 +194,7 @@ export default function BeratungPage() {
                   ))}
                 </ul>
               </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -191,6 +202,7 @@ export default function BeratungPage() {
 
       {/* CTA Banner */}
       <section className="bg-brand-anthrazit px-4 md:px-8 py-14">
+        <AnimateIn direction="fade">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="text-2xl font-bold text-white mb-2">Wie viel ist deine Immobilie wert?</h2>
@@ -200,6 +212,7 @@ export default function BeratungPage() {
             Immobilienbewertung starten →
           </CTAButton>
         </div>
+        </AnimateIn>
       </section>
 
       {/* Tipps */}

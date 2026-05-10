@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
   title: 'Unsere Services – Immobilien, Finanzierung & Beratung | immovativInvest',
@@ -94,26 +95,29 @@ export default function ServicePage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-        <div className="max-w-3xl mx-auto relative text-center">
-          <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
-            ✦ Unsere Leistungen
+        <AnimateIn direction="up">
+          <div className="max-w-3xl mx-auto relative text-center">
+            <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
+              ✦ Unsere Leistungen
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
+              Alles aus einer Hand.<br />
+              <span className="text-brand-green">Für jede Situation.</span>
+            </h1>
+            <p className="text-brand-gray-warm text-lg leading-relaxed">
+              Von der Immobilienvermittlung über Finanzierung bis zur Beratung in besonderen Lebenslagen — wir sind dein Partner in allen Immobilienfragen.
+            </p>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Alles aus einer Hand.<br />
-            <span className="text-brand-green">Für jede Situation.</span>
-          </h1>
-          <p className="text-brand-gray-warm text-lg leading-relaxed">
-            Von der Immobilienvermittlung über Finanzierung bis zur Beratung in besonderen Lebenslagen — wir sind dein Partner in allen Immobilienfragen.
-          </p>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* Services Grid */}
       <section className="section-padding px-4 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {services.map(service => (
-              <div key={service.href} className="bg-brand-cream rounded-3xl p-8 border border-brand-gray-border hover:shadow-medium transition-all duration-200 flex flex-col">
+            {services.map((service, index) => (
+              <AnimateIn key={service.href} direction="up" delay={index * 100} className="flex flex-col">
+              <div className="bg-brand-cream rounded-3xl p-8 border border-brand-gray-border hover:shadow-medium transition-all duration-200 flex flex-col flex-1">
                 <div className="text-4xl mb-5">{service.icon}</div>
                 <h2 className="text-xl font-bold text-brand-anthrazit mb-3">{service.title}</h2>
                 <p className="text-brand-gray-warm text-sm leading-relaxed flex-1 mb-6">
@@ -129,6 +133,7 @@ export default function ServicePage() {
                   </svg>
                 </Link>
               </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -137,6 +142,7 @@ export default function ServicePage() {
       {/* CTA */}
       <section className="section-padding px-4 md:px-8 bg-white">
         <div className="max-w-3xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-cream border border-brand-gray-border rounded-3xl px-8 py-12 md:px-16 flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1">
               <div className="text-3xl mb-3">💬</div>
@@ -154,6 +160,7 @@ export default function ServicePage() {
               </Link>
             </div>
           </div>
+          </AnimateIn>
         </div>
       </section>
 
