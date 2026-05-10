@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import AnimateIn from '@/components/AnimateIn'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import TrustBadges from '@/components/TrustBadges'
@@ -64,6 +65,7 @@ export default function ImmobilienbewertungPage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <div className="max-w-5xl mx-auto relative">
 
+          <AnimateIn direction="up">
           <div className="text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-5">
               <span style={{ color: '#ffa61c' }}>★★★★★</span>
@@ -76,8 +78,11 @@ export default function ImmobilienbewertungPage() {
               Erhalte deine unverbindliche Wertspanne in 2 Minuten – kostenlos, diskret und ohne Verpflichtung.
             </p>
           </div>
+          </AnimateIn>
 
+          <AnimateIn direction="up" delay={100}>
           <Wertrechner />
+          </AnimateIn>
 
           <p className="text-center text-xs text-brand-gray-warm mt-5">
             🔒 Deine Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
@@ -112,14 +117,16 @@ export default function ImmobilienbewertungPage() {
                 title: 'Kostenlos & unverbindlich',
                 desc: 'Die Bewertung ist vollständig kostenlos und verpflichtet dich zu absolut nichts.',
               },
-            ].map(item => (
-              <div key={item.title} className="flex flex-col items-center gap-4">
+            ].map((item, index) => (
+              <AnimateIn key={item.title} direction="up" delay={index * 100}>
+              <div className="flex flex-col items-center gap-4">
                 <div className="w-14 h-14 bg-brand-green-50 rounded-2xl flex items-center justify-center text-2xl">
                   {item.icon}
                 </div>
                 <h3 className="font-semibold text-brand-anthrazit">{item.title}</h3>
                 <p className="text-brand-gray-warm text-sm leading-relaxed">{item.desc}</p>
               </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -146,6 +153,7 @@ export default function ImmobilienbewertungPage() {
           </div>
 
           {/* Card */}
+          <AnimateIn direction="up">
           <div className="bg-brand-gray-light border border-brand-gray-border rounded-3xl p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-center gap-10">
 
@@ -224,6 +232,7 @@ export default function ImmobilienbewertungPage() {
 
             </div>
           </div>
+          </AnimateIn>
 
         </div>
       </section>

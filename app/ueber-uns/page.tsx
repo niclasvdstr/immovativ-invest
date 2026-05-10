@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import AnimateIn from '@/components/AnimateIn'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ContactForm from '@/components/ContactForm'
@@ -113,6 +114,7 @@ export default function UeberUnsPage() {
         <div className="max-w-6xl mx-auto relative">
 
           {/* Top: centered text */}
+          <AnimateIn direction="up">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-anthrazit leading-tight mb-6 whitespace-nowrap">
               Dein Erfolg ist <span className="text-brand-green">unsere Mission.</span>
@@ -121,11 +123,13 @@ export default function UeberUnsPage() {
               Immobilienverkauf sollte ehrlich, persönlich und auf Augenhöhe sein.<br />Dafür haben wir immovativ<span className="font-black">Invest</span> gegründet.
             </p>
           </div>
+          </AnimateIn>
 
           {/* Bottom: two portrait cards flush to section bottom */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
 
             {/* Niclas */}
+            <AnimateIn direction="up" delay={0}>
             <div className="relative rounded-t-3xl overflow-hidden group">
               <Image
                 src="/niclas-hochhaus.png"
@@ -142,8 +146,10 @@ export default function UeberUnsPage() {
                 <p className="text-gray-400 text-sm mt-2 leading-relaxed">Vermarktungsstrategie, Preisgestaltung & persönliche Kundenbetreuung</p>
               </div>
             </div>
+            </AnimateIn>
 
             {/* Mazlum */}
+            <AnimateIn direction="up" delay={150}>
             <div className="relative rounded-t-3xl overflow-hidden group">
               <Image
                 src="/mazlum-hochhaus.png"
@@ -160,6 +166,7 @@ export default function UeberUnsPage() {
                 <p className="text-gray-400 text-sm mt-2 leading-relaxed">Prozesse, Netzwerk & reibungslose Abwicklung bis zur Schlüsselübergabe</p>
               </div>
             </div>
+            </AnimateIn>
 
           </div>
         </div>
@@ -188,6 +195,7 @@ export default function UeberUnsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
 
             {/* Foto – nimmt 2/5 */}
+            <AnimateIn direction="up">
             <div className="lg:col-span-2">
               <div className="relative">
                 <Image
@@ -204,8 +212,10 @@ export default function UeberUnsPage() {
                 </div>
               </div>
             </div>
+            </AnimateIn>
 
             {/* Text – nimmt 3/5 */}
+            <AnimateIn direction="up" delay={100}>
             <div className="lg:col-span-3 lg:pl-6">
               <p className="text-brand-gray-warm text-base leading-relaxed mb-8">
                 Niclas ist der Kopf hinter der Vermarktungsstrategie bei immovativ<span className="font-black">Invest</span>. Mit einem tiefen Verständnis für den Rhein-Main-Markt und einem ausgeprägten Gespür für Preisgestaltung begleitet er Eigentümer vom ersten Gespräch bis zum Notartermin — ohne unrealistische Versprechen, dafür mit echter Erfahrung.
@@ -237,6 +247,7 @@ export default function UeberUnsPage() {
                 Immobilienbewertung starten →
               </CTAButton>
             </div>
+            </AnimateIn>
 
           </div>
         </div>
@@ -248,6 +259,7 @@ export default function UeberUnsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
 
             {/* Text – nimmt 3/5, links */}
+            <AnimateIn direction="up">
             <div className="lg:col-span-3 lg:pr-6 order-2 lg:order-1">
               <p className="text-brand-gray-warm text-base leading-relaxed mb-8">
                 Mazlum bringt das strukturelle Rückgrat in die Partnerschaft ein. Mit einem scharfen Blick für Prozesse und Kundenerlebnis stellt er sicher, dass jeder Verkauf reibungslos abläuft – von der Unterlagenbeschaffung bis zur Schlüsselübergabe. Sein tiefes Netzwerk im Rhein-Main-Raum ermöglicht es, Käufer oft schon vor dem ersten Portalinserat zu finden.
@@ -277,8 +289,10 @@ export default function UeberUnsPage() {
                 Immobilienbewertung starten →
               </CTAButton>
             </div>
+            </AnimateIn>
 
             {/* Foto – nimmt 2/5, rechts */}
+            <AnimateIn direction="up" delay={100}>
             <div className="lg:col-span-2 order-1 lg:order-2">
               <div className="relative">
                 <Image
@@ -295,6 +309,7 @@ export default function UeberUnsPage() {
                 </div>
               </div>
             </div>
+            </AnimateIn>
 
           </div>
         </div>
@@ -304,6 +319,7 @@ export default function UeberUnsPage() {
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <AnimateIn direction="up" delay={0}>
             <div className="relative">
               <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
               <Image
@@ -314,6 +330,8 @@ export default function UeberUnsPage() {
                 height={480}
               />
             </div>
+            </AnimateIn>
+            <AnimateIn direction="up" delay={150}>
             <div>
               <div className="inline-flex items-center gap-2 bg-red-50 border border-red-100 text-red-600 rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 Ehrlichkeit zuerst
@@ -341,6 +359,7 @@ export default function UeberUnsPage() {
                 <p className="font-semibold text-brand-anthrazit text-sm">Wir machen es anders.</p>
               </div>
             </div>
+            </AnimateIn>
           </div>
         </div>
       </section>
@@ -349,6 +368,7 @@ export default function UeberUnsPage() {
       <section className="section-padding bg-brand-gray-light px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <AnimateIn direction="up" delay={0}>
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 Unser Anspruch
@@ -377,6 +397,8 @@ export default function UeberUnsPage() {
                 ))}
               </ul>
             </div>
+            </AnimateIn>
+            <AnimateIn direction="up" delay={150}>
             <div className="relative">
               <div className="absolute inset-0 bg-brand-green-50 rounded-3xl -translate-x-3 translate-y-3" />
               <Image
@@ -387,6 +409,7 @@ export default function UeberUnsPage() {
                 height={480}
               />
             </div>
+            </AnimateIn>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import AnimateIn from '@/components/AnimateIn'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
@@ -282,6 +283,7 @@ export default function ReferenzenPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             {/* Left */}
+            <AnimateIn direction="up" delay={0}>
             <div>
               {/* Social proof */}
               <div className="inline-flex items-center gap-3 mb-6">
@@ -351,8 +353,10 @@ export default function ReferenzenPage() {
                 </CTAButton>
               </div>
             </div>
+            </AnimateIn>
 
             {/* Right – Ergebnisse auf einen Blick */}
+            <AnimateIn direction="up" delay={150}>
             <div className="bg-brand-gray-light rounded-3xl border border-brand-gray-border overflow-hidden">
               <div className="bg-brand-anthrazit px-6 py-4 flex items-center justify-between">
                 <span className="text-white text-sm font-bold">Ergebnisse auf einen Blick</span>
@@ -390,6 +394,7 @@ export default function ReferenzenPage() {
                 </span>
               </div>
             </div>
+            </AnimateIn>
 
           </div>
         </div>
@@ -416,6 +421,7 @@ export default function ReferenzenPage() {
       <section className="pt-16 pb-8 px-4 md:px-8 bg-brand-gray-light">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
+          <AnimateIn direction="up">
           <div className="flex items-center gap-4 mb-10">
             <div className="flex items-center gap-2 bg-brand-anthrazit text-white text-xs font-bold px-4 py-2 rounded-full">
               <span className="w-1.5 h-1.5 bg-brand-green rounded-full" />
@@ -424,10 +430,13 @@ export default function ReferenzenPage() {
             <div className="h-px flex-1 bg-brand-gray-border" />
             <span className="text-brand-gray-warm text-sm shrink-0">Diskret – ohne öffentliches Inserat</span>
           </div>
+          </AnimateIn>
 
           <div className="space-y-12">
-            {offMarketCases.map((c, idx) => (
-              <CaseCard key={c.id} c={c} idx={idx} />
+            {offMarketCases.map((c, index) => (
+              <AnimateIn key={c.id} direction="up" delay={index * 100}>
+              <CaseCard c={c} idx={index} />
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -437,6 +446,7 @@ export default function ReferenzenPage() {
       <section className="pt-8 pb-16 px-4 md:px-8 bg-brand-gray-light">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
+          <AnimateIn direction="up">
           <div className="flex items-center gap-4 mb-10 mt-6">
             <div className="flex items-center gap-2 bg-brand-green text-white text-xs font-bold px-4 py-2 rounded-full">
               <span className="w-1.5 h-1.5 bg-white rounded-full" />
@@ -445,10 +455,13 @@ export default function ReferenzenPage() {
             <div className="h-px flex-1 bg-brand-gray-border" />
             <span className="text-brand-gray-warm text-sm shrink-0">Inseriert · 6–8 Wochen Vermarktungszeit</span>
           </div>
+          </AnimateIn>
 
           <div className="space-y-12">
-            {marketCases.map((c, idx) => (
-              <CaseCard key={c.id} c={c} idx={idx} />
+            {marketCases.map((c, index) => (
+              <AnimateIn key={c.id} direction="up" delay={index * 100}>
+              <CaseCard c={c} idx={index} />
+              </AnimateIn>
             ))}
           </div>
         </div>

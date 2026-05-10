@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import AnimateIn from '@/components/AnimateIn'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import TrustBadges from '@/components/TrustBadges'
@@ -175,6 +176,7 @@ export default function AnkaufPage() {
 
         <div className="max-w-6xl mx-auto relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimateIn direction="up" delay={0}>
             <div>
               <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border text-brand-anthrazit rounded-full px-4 py-2 text-sm font-semibold mb-6 shadow-soft">
                 <svg className="w-4 h-4" style={{ color: '#2563EB' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -213,8 +215,10 @@ export default function AnkaufPage() {
                 </a>
               </div>
             </div>
+            </AnimateIn>
 
             {/* Hero contact form */}
+            <AnimateIn direction="up" delay={150}>
             <div className="bg-white rounded-3xl shadow-2xl border border-brand-gray-border p-8">
               <h3 className="text-xl font-bold text-brand-anthrazit mb-1">Jetzt kostenlos anfragen</h3>
               <p className="text-brand-gray-warm text-sm mb-6">Unverbindlich · Rückmeldung in 24h</p>
@@ -284,6 +288,7 @@ export default function AnkaufPage() {
                 </p>
               </form>
             </div>
+            </AnimateIn>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
   title: 'Immobilie verkaufen – Direktankauf oder Makler | immovativInvest',
@@ -45,6 +46,7 @@ export default function LandingPage() {
         <div className="w-full max-w-5xl flex flex-col md:flex-row gap-4 items-stretch">
 
           {/* ── MAKLER – featured, large ── */}
+          <AnimateIn direction="up" delay={0}>
           <Link
             href="/immobilienmakler"
             className="group relative flex-[3] flex flex-col rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white"
@@ -101,8 +103,10 @@ export default function LandingPage() {
               </div>
             </div>
           </Link>
+          </AnimateIn>
 
           {/* ── ANKAUF – dark elegant ── */}
+          <AnimateIn direction="up" delay={150}>
           <Link
             href="/ankauf"
             className="group relative flex-[2] flex flex-col rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
@@ -156,6 +160,7 @@ export default function LandingPage() {
               </div>
             </div>
           </Link>
+          </AnimateIn>
 
         </div>
 
@@ -163,6 +168,7 @@ export default function LandingPage() {
 
       {/* ── STATS BAR ── */}
       <section className="py-10 px-4 md:px-8 bg-brand-anthrazit">
+        <AnimateIn direction="fade">
         <div className="max-w-3xl mx-auto grid grid-cols-3 gap-6 md:gap-0 md:divide-x md:divide-white/10">
           {[
             { value: '500+', label: 'Verkaufte Immobilien' },
@@ -175,6 +181,7 @@ export default function LandingPage() {
             </div>
           ))}
         </div>
+        </AnimateIn>
       </section>
 
 
