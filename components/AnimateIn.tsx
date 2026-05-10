@@ -1,93 +1,76 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 interface AnimateInProps {
   children: React.ReactNode
   className?: string
   delay?: number
-  direction?: 'up' | 'down' | 'left' | 'right' | 'fade'
-  duration?: number
+  direction?: 'up' | 'fade'
 }
 
 export default function AnimateIn({
   children,
-  className,
+  className = '',
   delay = 0,
   direction = 'up',
-  duration = 0.6,
 }: AnimateInProps) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-80px' })
+  const ref = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState(false)
 
-  const variants = {
-    up:    { hidden: { opacity: 0, y: 32 }, visible: { opacity: 1, y: 0 } },
-    down:  { hidden: { opacity: 0, y: -32 }, visible: { opacity: 1, y: 0 } },
-    left:  { hidden: { opacity: 0, x: -32 }, visible: { opacity: 1, x: 0 } },
-    right: { hidden: { opacity: 0, x: 32 }, visible: { opacity: 1, x: 0 } },
-    fade:  { hidden: { opacity: 0 }, visible: { opacity: 1 } },
-  }
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: '-60px' }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
+  const base = 'transition-all duration-700 ease-out'
+  const hidden = direction === 'up' ? 'opacity-0 translate-y-8' : 'opacity-0'
+  const shown = 'opacity-100 translate-y-0'
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      className={className}
-      initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
-      variants={variants[direction]}
-      transition={{ duration, delay, ease: [0.25, 0.1, 0.25, 1] }}
+      className={`${base} ${visible ? shown : hidden} ${className}`}
+      style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
-    </motion.div>
+    </div>
   )
 }
 
-// Stagger-Wrapper für Listen/Grids
 export function StaggerContainer({
   children,
-  className,
-  staggerDelay = 0.1,
+  className = '',
 }: {
   children: React.ReactNode
   className?: string
-  staggerDelay?: number
 }) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-80px' })
-
-  return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
-      variants={{
-        hidden: {},
-        visible: { transition: { staggerChildren: staggerDelay } },
-      }}
-    >
-      {children}
-    </motion.div>
-  )
+  return <div className={className}>{children}</div>
 }
 
 export function StaggerItem({
   children,
-  className,
+  className = '',
+  index = 0,
 }: {
   children: React.ReactNode
   className?: string
+  index?: number
 }) {
   return (
-    <motion.div
-      className={className}
-      variants={{
-        hidden: { opacity: 0, y: 24 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } },
-      }}
-    >
+    <AnimateIn delay={index * 100} className={className}>
       {children}
-    </motion.div>
+    </AnimateIn>
   )
 }
