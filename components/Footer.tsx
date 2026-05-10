@@ -38,7 +38,7 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
               height={28}
               className="h-8 w-auto mb-4"
             />
-            <p className="text-gray-400 text-sm leading-relaxed max-w-[240px] mb-5">
+            <p className="text-white text-sm leading-relaxed max-w-[240px] mb-5">
               Wir verkaufen deine Immobilie zum bestmöglichen Preis – persönlich, diskret und ohne unnötige Wartezeiten.
             </p>
             <div className="flex items-center gap-2">
@@ -49,17 +49,17 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
                   </svg>
                 ))}
               </div>
-              <span className="text-gray-500 text-xs">4,9 / 5 · 100+ Bewertungen</span>
+              <span className="text-gray-200 text-xs">4,9 / 5 · 100+ Bewertungen</span>
             </div>
           </div>
 
           {/* Links */}
           <div>
-            <h3 className="text-gray-500 text-xs font-semibold uppercase tracking-widest mb-4">Seiten</h3>
+            <h3 className="text-gray-200 text-xs font-semibold uppercase tracking-widest mb-4">Seiten</h3>
             <ul className="space-y-2.5">
               {navLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-gray-400 hover:text-white text-sm transition-colors">
+                  <Link href={link.href} className="text-white hover:text-white text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -69,10 +69,10 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
 
           {/* Kontakt */}
           <div>
-            <h3 className="text-gray-500 text-xs font-semibold uppercase tracking-widest mb-4">Kontakt</h3>
+            <h3 className="text-gray-200 text-xs font-semibold uppercase tracking-widest mb-4">Kontakt</h3>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+4915129686979" className="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors group">
+                <a href="tel:+4915129686979" className="flex items-center gap-3 text-white hover:text-white text-sm transition-colors group">
                   <span className="w-8 h-8 rounded-xl bg-white/6 border border-white/10 flex items-center justify-center shrink-0 group-hover:border-white/20 transition-colors">
                     <svg className="w-3.5 h-3.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -82,7 +82,7 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@immovativ-invest.de" className="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors group">
+                <a href="mailto:info@immovativ-invest.de" className="flex items-center gap-3 text-white hover:text-white text-sm transition-colors group">
                   <span className="w-8 h-8 rounded-xl bg-white/6 border border-white/10 flex items-center justify-center shrink-0 group-hover:border-white/20 transition-colors">
                     <svg className="w-3.5 h-3.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -91,7 +91,7 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
                   info@immovativ-invest.de
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 text-sm">
+              <li className="flex items-center gap-3 text-white text-sm">
                 <span className="w-8 h-8 rounded-xl bg-white/6 border border-white/10 flex items-center justify-center shrink-0">
                   <svg className="w-3.5 h-3.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -107,13 +107,13 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-gray-600 text-xs">
-            © {new Date().getFullYear()} immovativ<span className="font-black text-gray-500">Invest</span> · Alle Rechte vorbehalten.
+          <p className="text-gray-200 text-xs">
+            © {new Date().getFullYear()} immovativ<span className="font-black text-gray-200">Invest</span> · Alle Rechte vorbehalten.
           </p>
           <div className="flex items-center gap-5">
-            <Link href="/impressum" className="text-gray-600 hover:text-gray-400 text-xs transition-colors">Impressum</Link>
-            <Link href="/datenschutz" className="text-gray-600 hover:text-gray-400 text-xs transition-colors">Datenschutz</Link>
-            <Link href="/agb" className="text-gray-600 hover:text-gray-400 text-xs transition-colors">AGB</Link>
+            <Link href="/impressum" className="text-gray-200 hover:text-white text-xs transition-colors">Impressum</Link>
+            <Link href="/datenschutz" className="text-gray-200 hover:text-white text-xs transition-colors">Datenschutz</Link>
+            <Link href="/agb" className="text-gray-200 hover:text-white text-xs transition-colors">AGB</Link>
           </div>
         </div>
       </div>
