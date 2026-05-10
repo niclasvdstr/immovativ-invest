@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Badge colors – defined here to avoid Tailwind purging */
+.bg-blue-500 { background-color: rgb(59 130 246); }
+.bg-purple-500 { background-color: rgb(168 85 247); }
+.bg-purple-600 { background-color: rgb(147 51 234); }
+.bg-orange-500 { background-color: rgb(249 115 22); }
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: #ffffff;
+    color: #1F1F1F;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+    letter-spacing: -0.03em;
+  }
+}
+
+/* Primary button gradient – used on all main CTAs */
+.btn-gradient {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%) !important;
+}
+.btn-gradient:hover {
+  filter: brightness(1.1);
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 md:py-32 px-6 md:px-8;
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Accordion animation */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+}
+
+/* Sticky mobile CTA */
+@media (max-width: 768px) {
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+  }
+}

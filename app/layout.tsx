@@ -1,0 +1,106 @@
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+export const metadata: Metadata = {
+  title: {
+    default: 'immovativInvest – Immobilie verkaufen: Direktankauf & Makler',
+    template: '%s | immovativInvest',
+  },
+  description: 'Verkaufen Sie Ihre Immobilie schnell, sicher und diskret. immovativInvest bietet Ihnen zwei Wege: Direktankauf oder professionelle Maklervermarktung – kostenlos & unverbindlich.',
+  keywords: ['Immobilie verkaufen', 'Direktankauf', 'Immobilienmakler', 'Immobilienbewertung', 'Haus verkaufen', 'Wohnung verkaufen'],
+  openGraph: {
+    type: 'website',
+    locale: 'de_DE',
+    siteName: 'immovativInvest',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'immovativInvest – Immobilie verkaufen im Rhein-Main-Gebiet',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og-image.jpg'],
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': ['LocalBusiness', 'RealEstateAgent'],
+      '@id': 'https://www.immovativ-invest.de/#organization',
+      name: 'immovativInvest',
+      legalName: 'immovativ Immobilien GmbH',
+      url: 'https://www.immovativ-invest.de',
+      logo: 'https://www.immovativ-invest.de/logo-new.png',
+      image: 'https://www.immovativ-invest.de/logo-new.png',
+      description:
+        'Immobilienmakler im Rhein-Main-Gebiet. Professioneller Immobilienverkauf – persönlich, diskret und zum bestmöglichen Preis.',
+      telephone: '+4915129686979',
+      email: 'info@immovativ-invest.de',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Frankfurt am Main',
+        addressRegion: 'Hessen',
+        addressCountry: 'DE',
+      },
+      areaServed: {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: 50.1109,
+          longitude: 8.6821,
+        },
+        geoRadius: '60000',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        bestRating: '5',
+        worstRating: '1',
+        ratingCount: '100',
+      },
+      priceRange: '€€',
+      openingHours: 'Mo-Su 08:00-20:00',
+      founder: {
+        '@type': 'Person',
+        name: 'Niclas van der Straeten',
+        jobTitle: 'Geschäftsführer',
+        worksFor: { '@id': 'https://www.immovativ-invest.de/#organization' },
+      },
+      sameAs: [],
+    },
+  ],
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="de">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className={inter.className}>
+        {children}
+      </body>
+    </html>
+  )
+}
