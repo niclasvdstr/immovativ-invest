@@ -597,15 +597,15 @@ export default function ImmobilienmaklerPage() {
       </section>
 
       {/* Mid-page CTA */}
-      <section className="py-16 px-4 md:px-8 bg-brand-green">
+      <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #0f2027 0%, #1e3a8a 50%, #0f2027 100%)' }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Deine Immobilie. Unser Einsatz. Dein Erfolg.
           </h2>
-          <p className="text-green-100 mb-6">
+          <p className="text-blue-200 mb-6">
             Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.
           </p>
-          <CTAButton href="#kontakt" variant="secondary" size="lg">
+          <CTAButton href="#kontakt" variant="primary" size="lg">
             Jetzt kostenlos beraten lassen →
           </CTAButton>
         </div>

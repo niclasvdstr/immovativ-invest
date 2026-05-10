@@ -67,9 +67,9 @@ export default function BeratungPage() {
             Immobilienentscheidungen sind komplex und oft emotional. Wir nehmen uns die Zeit, deine Situation wirklich zu verstehen — und geben dir eine ehrliche Einschätzung. Kostenlos, persönlich, ohne versteckte Agenda.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#kontakt" className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-green-dark transition-colors">
+            <CTAButton href="#kontakt" variant="primary" size="md">
               Beratung anfragen →
-            </Link>
+            </CTAButton>
             <CTAButton href="/verkaufen" variant="outline" size="md">
               Immobilienbewertung starten →
             </CTAButton>

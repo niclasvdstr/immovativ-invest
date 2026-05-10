@@ -579,11 +579,11 @@ function CaseCard({ c, idx }: { c: typeof cases[number]; idx: number }) {
           </div>
           <div>
             <div className="text-white/60 text-xs mb-0.5">Verkaufspreis</div>
-            <div className="text-brand-green font-bold text-lg">{c.result}</div>
+            <div className="text-white font-bold text-lg">{c.result}</div>
           </div>
           <div className="ml-auto text-right">
             <div className="text-white/60 text-xs mb-0.5">Mehrerlös</div>
-            <div className="text-brand-green font-bold">{c.delta} <span className="text-sm opacity-80">({c.deltaPercent})</span></div>
+            <div className="text-white font-bold">{c.delta} <span className="text-sm opacity-80">({c.deltaPercent})</span></div>
           </div>
           <div className="text-right">
             <div className="text-white/60 text-xs mb-0.5">Verkauft in</div>
