@@ -218,7 +218,6 @@ export default function ImmobilienmaklerPage() {
                 </CTAButton>
               </div>
             </AnimateIn>
-            </div>
 
             {/* Feature panel */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-large border border-brand-gray-border">
