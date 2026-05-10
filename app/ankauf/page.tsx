@@ -424,7 +424,7 @@ export default function AnkaufPage() {
                     ))}
                   </div>
                 </div>
-                <button type="submit" className="w-full btn-gradient text-white font-semibold rounded-xl px-6 py-4 text-sm transition-all duration-200 flex items-center justify-center gap-2">
+                <button type="submit" className="w-full text-white font-semibold rounded-xl px-6 py-4 text-sm transition-all duration-200 flex items-center justify-center gap-2" style={{ background: '#16a34a' }}>
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -553,17 +553,17 @@ export default function AnkaufPage() {
       </section>
 
       {/* Mid-page CTA */}
-      <section className="py-16 px-4 md:px-8 bg-brand-green">
+      <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #0f2027 0%, #1e3a8a 50%, #0f2027 100%)' }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Bereit für ein unverbindliches Angebot?
           </h2>
-          <p className="text-green-100 mb-6">
+          <p className="text-blue-200 mb-6">
             Kostenlos, diskret und ohne jede Verpflichtung.
           </p>
-          <CTAButton href="#kontakt" variant="secondary" size="lg">
+          <a href="#kontakt" className="inline-flex items-center justify-center whitespace-nowrap font-semibold rounded-xl px-8 py-4 text-lg bg-white text-brand-anthrazit hover:brightness-105 hover:-translate-y-0.5 transition-all duration-200">
             Jetzt kostenlos anfragen →
-          </CTAButton>
+          </a>
         </div>
       </section>
 
