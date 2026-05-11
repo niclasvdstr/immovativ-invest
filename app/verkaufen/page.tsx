@@ -67,9 +67,9 @@ export default function ImmobilienbewertungPage() {
 
           <AnimateIn direction="up">
           <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-5">
-              <span style={{ color: '#ffa61c' }}>★★★★★</span>
-              <span>4,9 von 5 · über 100 Bewertungen · 100% kostenlos</span>
+            <div className="inline-flex flex-col items-center gap-1 bg-white border border-brand-gray-border rounded-2xl px-5 py-3 text-sm font-semibold text-brand-anthrazit shadow-soft mb-5">
+              <span style={{ color: '#ffa61c' }} className="text-lg tracking-wider">★★★★★</span>
+              <span className="text-center">4,9 von 5 · über 100 Bewertungen · 100% kostenlos</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-4">
               Was ist deine Immobilie <span className="text-brand-green">wert?</span>

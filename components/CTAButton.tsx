@@ -21,7 +21,7 @@ export default function CTAButton({
   fullWidth = false,
   className = '',
 }: CTAButtonProps) {
-  const base = 'inline-flex items-center justify-center whitespace-nowrap font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2'
+  const base = 'inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 text-center'
 
   const variants = {
     primary: 'bg-[linear-gradient(135deg,#1e3a8a_0%,#2563EB_100%)] text-white hover:brightness-110 shadow-green hover:shadow-lg hover:-translate-y-0.5 focus:ring-brand-green',

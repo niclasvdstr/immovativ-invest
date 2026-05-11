@@ -124,9 +124,9 @@ export default function ImmobilienangebotePage() {
                 <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">Objektart</label>
                 <div className="grid grid-cols-2 gap-2">
                   {['Wohnung', 'Haus', 'Mehrfamilienhaus', 'Egal'].map((type) => (
-                    <label key={type} className="flex items-center gap-2 cursor-pointer border border-brand-gray-border rounded-xl px-3 py-2.5 hover:border-brand-green transition-colors has-[:checked]:border-brand-green has-[:checked]:bg-brand-green-50">
+                    <label key={type} className="flex items-center gap-1.5 cursor-pointer border border-brand-gray-border rounded-xl px-2.5 py-2.5 hover:border-brand-green transition-colors has-[:checked]:border-brand-green has-[:checked]:bg-brand-green-50">
                       <input type="radio" name="objektart" value={type} className="accent-brand-green shrink-0" />
-                      <span className="text-sm text-brand-anthrazit">{type}</span>
+                      <span className="text-xs sm:text-sm text-brand-anthrazit leading-tight">{type}</span>
                     </label>
                   ))}
                 </div>
