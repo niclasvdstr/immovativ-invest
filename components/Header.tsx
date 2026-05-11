@@ -75,7 +75,7 @@ export default function Header({
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-brand-gray-border shadow-soft">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-18 md:h-20 gap-8">
+        <div className="flex items-center justify-between h-20 md:h-20 gap-8">
 
           {/* Logo */}
           <Link href="/" className="shrink-0 flex items-center" aria-label="immovativInvest Startseite">
@@ -175,15 +175,8 @@ export default function Header({
             </Link>
           </div>
 
-          {/* Mobile: CTA klein + Burger */}
-          <div className="flex lg:hidden items-center gap-3">
-            <Link
-              href={ctaHref}
-              className="whitespace-nowrap inline-flex items-center text-white font-semibold rounded-xl px-3 py-2 text-xs shadow-green hover:brightness-110 transition-all duration-200"
-              style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}
-            >
-              Gratis Bewertung
-            </Link>
+          {/* Mobile: nur Burger */}
+          <div className="flex lg:hidden items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 rounded-xl text-brand-anthrazit hover:bg-brand-gray-light transition-colors"

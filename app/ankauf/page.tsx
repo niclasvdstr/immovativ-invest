@@ -172,8 +172,8 @@ export default function AnkaufPage() {
 
       {/* Hero */}
       <section className="relative overflow-hidden pt-16 pb-20 md:pt-24 md:pb-32 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #f0f4ff 0%, #ffffff 50%, #f5f7ff 100%)' }}>
-        <div className="absolute top-0 right-0 w-96 h-96 opacity-20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" style={{ backgroundColor: '#2563EB' }} />
-        <div className="absolute bottom-0 left-0 w-80 h-80 opacity-10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" style={{ backgroundColor: '#2563EB' }} />
+        <div className="hidden md:block absolute top-0 right-0 w-96 h-96 opacity-20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" style={{ backgroundColor: '#2563EB' }} />
+        <div className="hidden md:block absolute bottom-0 left-0 w-80 h-80 opacity-10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" style={{ backgroundColor: '#2563EB' }} />
 
         <div className="max-w-6xl mx-auto relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -308,7 +308,7 @@ export default function AnkaufPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
               Deine Vorteile beim Direktankauf
             </h2>
-            <p className="text-brand-gray-warm text-lg whitespace-nowrap">
+            <p className="text-brand-gray-warm text-lg max-w-lg mx-auto">
               Wir machen den Immobilienverkauf so einfach und stressfrei wie möglich – für dich.
             </p>
           </div>

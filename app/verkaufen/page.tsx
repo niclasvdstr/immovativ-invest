@@ -62,7 +62,7 @@ export default function ImmobilienbewertungPage() {
 
       {/* Hero – Wertrechner */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-16 pb-20 md:pt-24 md:pb-28 px-4 md:px-8">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <div className="max-w-5xl mx-auto relative">
 
           <AnimateIn direction="up">
@@ -71,7 +71,7 @@ export default function ImmobilienbewertungPage() {
               <span style={{ color: '#ffa61c' }}>★★★★★</span>
               <span>4,9 von 5 · über 100 Bewertungen · 100% kostenlos</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-4 whitespace-nowrap">
+            <h1 className="text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-4">
               Was ist deine Immobilie <span className="text-brand-green">wert?</span>
             </h1>
             <p className="text-brand-gray-warm text-lg max-w-xl mx-auto">
@@ -147,7 +147,7 @@ export default function ImmobilienbewertungPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
               Lieber direkt sprechen?
             </h2>
-            <p className="text-brand-gray-warm text-lg mx-auto whitespace-nowrap">
+            <p className="text-brand-gray-warm text-lg mx-auto max-w-lg">
               Wir stehen dir persönlich zur Verfügung – per Anruf, WhatsApp oder E-Mail.
             </p>
           </div>
