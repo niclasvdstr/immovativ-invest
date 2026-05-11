@@ -21,6 +21,12 @@ export default function AnimateIn({
   useEffect(() => {
     const el = ref.current
     if (!el) return
+    // Immediately reveal if already in viewport on mount
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      setVisible(true)
+      return
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -28,7 +34,7 @@ export default function AnimateIn({
           observer.disconnect()
         }
       },
-      { rootMargin: '-60px' }
+      { rootMargin: '0px' }
     )
     observer.observe(el)
     return () => observer.disconnect()

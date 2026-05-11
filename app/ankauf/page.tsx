@@ -11,6 +11,7 @@ import FAQ from '@/components/FAQ'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
+import StickyMobileCTA from '@/components/StickyMobileCTA'
 
 export const metadata: Metadata = {
   title: 'Immobilie direkt verkaufen – Schnell & Sicher | immovativInvest Ankauf',
@@ -584,12 +585,8 @@ export default function AnkaufPage() {
         subtitle="Füll das Formular aus – wir melden uns innerhalb von 24 Stunden bei dir."
       />
 
-      {/* Sticky mobile CTA */}
-      <div className="sticky-cta md:hidden">
-        <CTAButton href="#kontakt" fullWidth size="lg">
-          Jetzt kostenlos anfragen →
-        </CTAButton>
-      </div>
+      {/* Sticky mobile CTA – appears after scrolling past hero */}
+      <StickyMobileCTA href="#kontakt" label="Jetzt kostenlos anfragen →" />
 
       <Footer variant="ankauf" />
     </main>

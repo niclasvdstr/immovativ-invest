@@ -72,9 +72,9 @@ function GaugeCard({ value, label, description, wide, active }: {
 
   if (wide) {
     return (
-      <div className="col-span-2 bg-brand-anthrazit rounded-2xl p-7 text-white flex items-center gap-8">
-        <div className="w-44 shrink-0">{gauge}</div>
-        <div>
+      <div className="col-span-1 sm:col-span-2 bg-brand-anthrazit rounded-2xl p-6 text-white flex flex-col sm:flex-row items-center gap-5 sm:gap-8">
+        <div className="w-36 sm:w-44 shrink-0">{gauge}</div>
+        <div className="text-center sm:text-left">
           <div className="font-bold text-xl mb-2">{label}</div>
           <div className="text-gray-400 text-sm leading-relaxed">{description}</div>
         </div>
@@ -84,9 +84,9 @@ function GaugeCard({ value, label, description, wide, active }: {
 
   return (
     <div className="bg-brand-anthrazit rounded-2xl p-6 text-white flex flex-col">
-      <div className="w-full max-w-[160px]">{gauge}</div>
+      <div className="w-full max-w-[140px] sm:max-w-[160px]">{gauge}</div>
       <div className="mt-2">
-        <div className="font-bold text-lg mb-2">{label}</div>
+        <div className="font-bold text-base sm:text-lg mb-2">{label}</div>
         <div className="text-gray-400 text-sm leading-relaxed">{description}</div>
       </div>
     </div>
@@ -109,7 +109,7 @@ export default function GaugeStats() {
   return (
     <section ref={ref} className="section-padding bg-white">
       <div className="container-max">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Links */}
           <div>
@@ -154,7 +154,7 @@ export default function GaugeStats() {
           </div>
 
           {/* Rechts – Gauges */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {stats.map(stat => (
               <GaugeCard key={stat.label} {...stat} active={active} />
             ))}

@@ -116,7 +116,7 @@ export default function UeberUnsPage() {
           {/* Top: centered text */}
           <AnimateIn direction="up">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-anthrazit leading-tight mb-6 whitespace-nowrap">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-anthrazit leading-tight mb-6">
               Dein Erfolg ist <span className="text-brand-green">unsere Mission.</span>
             </h1>
             <p className="text-brand-gray-warm text-lg leading-relaxed mb-8">
@@ -134,15 +134,15 @@ export default function UeberUnsPage() {
               <Image
                 src="/niclas-hochhaus.png"
                 alt="Niclas van der Straeten"
-                className="w-full h-[400px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-64 md:h-[400px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 width={800}
                 height={400}
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-anthrazit via-brand-anthrazit/30 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-7">
+              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7">
                 <div className="text-white text-xs font-semibold uppercase tracking-widest mb-1">Geschäftsführer & Gründer</div>
-                <div className="text-white text-2xl font-bold">Niclas van der Straeten</div>
+                <div className="text-white text-xl md:text-2xl font-bold">Niclas van der Straeten</div>
                 <p className="text-gray-400 text-sm mt-2 leading-relaxed">Vermarktungsstrategie, Preisgestaltung & persönliche Kundenbetreuung</p>
               </div>
             </div>
@@ -154,15 +154,15 @@ export default function UeberUnsPage() {
               <Image
                 src="/mazlum-hochhaus.png"
                 alt="Mazlum Selcuk"
-                className="w-full h-[400px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-64 md:h-[400px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 width={800}
                 height={400}
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-anthrazit via-brand-anthrazit/30 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-7">
+              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7">
                 <div className="text-white text-xs font-semibold uppercase tracking-widest mb-1">Geschäftsführer & Gründer</div>
-                <div className="text-white text-2xl font-bold">Mazlum Selcuk</div>
+                <div className="text-white text-xl md:text-2xl font-bold">Mazlum Selcuk</div>
                 <p className="text-gray-400 text-sm mt-2 leading-relaxed">Prozesse, Netzwerk & reibungslose Abwicklung bis zur Schlüsselübergabe</p>
               </div>
             </div>
@@ -173,16 +173,16 @@ export default function UeberUnsPage() {
 
         {/* Stats strip */}
         <div className="border-t border-brand-gray-border mt-0">
-          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-brand-gray-border">
+          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4">
             {[
               { value: '500+', label: 'Verkäufe' },
               { value: '4,9★', label: 'Google-Bewertung' },
               { value: '6 Wo.', label: 'Ø Vertragslaufzeit' },
               { value: '100%', label: 'Persönlich' },
-            ].map(stat => (
-              <div key={stat.label} className="py-7 px-6 text-center">
-                <div className="text-2xl font-bold text-brand-anthrazit">{stat.value}</div>
-                <div className="text-brand-gray-warm text-sm mt-0.5">{stat.label}</div>
+            ].map((stat, i) => (
+              <div key={stat.label} className={`py-5 px-4 text-center ${i < 2 ? 'border-b md:border-b-0' : ''} ${i % 2 === 0 ? 'border-r' : ''} md:border-r border-brand-gray-border last:border-r-0 md:last:border-r-0`}>
+                <div className="text-xl md:text-2xl font-bold text-brand-anthrazit">{stat.value}</div>
+                <div className="text-brand-gray-warm text-xs md:text-sm mt-0.5">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -192,7 +192,7 @@ export default function UeberUnsPage() {
       {/* Niclas */}
       <section className="section-padding bg-brand-cream">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12 items-center">
 
             {/* Foto – nimmt 2/5 */}
             <AnimateIn direction="up" className="lg:col-span-2">
@@ -200,7 +200,7 @@ export default function UeberUnsPage() {
                 <Image
                   src="/NiclasAlleine 2.png"
                   alt="Niclas van der Straeten"
-                  className="w-full h-[580px] object-cover rounded-3xl shadow-large"
+                  className="w-full h-72 md:h-[580px] object-cover rounded-3xl shadow-large"
                   style={{ objectPosition: 'center top' }}
                   width={800}
                   height={580}
@@ -252,7 +252,7 @@ export default function UeberUnsPage() {
       {/* Mazlum */}
       <section className="section-padding bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12 items-center">
 
             {/* Text – nimmt 3/5, links */}
             <AnimateIn direction="up" className="lg:col-span-3 lg:pr-6 order-2 lg:order-1">
@@ -291,7 +291,7 @@ export default function UeberUnsPage() {
                 <Image
                   src="/mazlum.png"
                   alt="Mazlum Selcuk"
-                  className="w-full h-[580px] object-cover rounded-3xl shadow-large"
+                  className="w-full h-72 md:h-[580px] object-cover rounded-3xl shadow-large"
                   style={{ objectPosition: 'center top' }}
                   width={800}
                   height={580}
@@ -310,14 +310,14 @@ export default function UeberUnsPage() {
       {/* Sektion 1: Genug davon */}
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <AnimateIn direction="up" delay={0}>
               <div className="relative">
                 <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
                 <Image
                   src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop"
                   alt="Meeting"
-                  className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
+                  className="relative w-full h-64 md:h-[480px] object-cover rounded-3xl shadow-large"
                   width={800}
                   height={480}
                 />
@@ -359,7 +359,7 @@ export default function UeberUnsPage() {
       {/* Sektion 2: Wir brechen mit Klischees */}
       <section className="section-padding bg-brand-gray-light px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <AnimateIn direction="up" delay={0}>
               <div>
                 <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
@@ -396,7 +396,7 @@ export default function UeberUnsPage() {
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop"
                   alt="Team immovativInvest"
-                  className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
+                  className="relative w-full h-64 md:h-[480px] object-cover rounded-3xl shadow-large"
                   width={800}
                   height={480}
                 />
@@ -409,14 +409,14 @@ export default function UeberUnsPage() {
       {/* Sektion 3: Wir sprechen Deine Sprache */}
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <AnimateIn direction="up" delay={0}>
               <div className="relative">
                 <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
                 <Image
                   src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop"
                   alt="Kommunikation"
-                  className="relative w-full h-[480px] object-cover rounded-3xl shadow-large"
+                  className="relative w-full h-64 md:h-[480px] object-cover rounded-3xl shadow-large"
                   width={800}
                   height={480}
                 />
@@ -458,7 +458,7 @@ export default function UeberUnsPage() {
       {/* Tippgeber */}
       <section id="tippgeber" className="section-padding" style={{ background: 'linear-gradient(135deg, #0f2027 0%, #1a3a4a 50%, #0f2027 100%)' }}>
         <div className="container-max">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
 
             {/* Links – Formular */}
             <div className="bg-white rounded-3xl p-8 shadow-large">

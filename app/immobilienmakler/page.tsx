@@ -13,6 +13,7 @@ import { sharedFaqItems } from '@/lib/faq-items'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
 import AnimateIn, { StaggerContainer, StaggerItem } from '@/components/AnimateIn'
+import StickyMobileCTA from '@/components/StickyMobileCTA'
 import { seoStaedte } from '@/lib/seo-staedte'
 import TippgeberSection from '@/components/TippgeberSection'
 
@@ -139,11 +140,11 @@ export default function ImmobilienmaklerPage() {
       </nav>
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-16 pb-20 md:pt-24 md:pb-32 px-4 md:px-8">
+      <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-10 pb-14 md:pt-24 md:pb-32 px-4 md:px-8">
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
 
         <div className="max-w-6xl mx-auto relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <AnimateIn direction="up" delay={0}>
               {/* Social Proof */}
               <div className="inline-flex items-center gap-3 mb-6">
@@ -182,7 +183,7 @@ export default function ImmobilienmaklerPage() {
 
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
                 Immobilienmakler<br />
-                <span className="text-brand-green whitespace-nowrap">Frankfurt & Umgebung.</span>
+                <span className="text-brand-green">Frankfurt & Umgebung.</span>
               </h1>
 
               <p className="text-brand-gray-warm text-base leading-relaxed mb-2">
@@ -192,7 +193,7 @@ export default function ImmobilienmaklerPage() {
               </p>
 
               {/* Bullet Points vertikal */}
-              <ul className="space-y-5 mt-14 mb-14">
+              <ul className="space-y-4 mt-8 mb-8 md:mt-14 md:mb-14">
                 {[
                   'Nur 6 Wochen Vertragslaufzeit',
                   'Über 100+ positive Bewertungen',
@@ -226,7 +227,7 @@ export default function ImmobilienmaklerPage() {
                 <Image
                   src="/hero-niclas-2.png"
                   alt="Niclas van der Straeten"
-                  className="w-full h-64 object-cover" style={{ objectPosition: 'center 15%' }}
+                  className="w-full h-48 md:h-64 object-cover" style={{ objectPosition: 'center 15%' }}
                   width={800}
                   height={256}
                   priority
@@ -309,7 +310,7 @@ export default function ImmobilienmaklerPage() {
 
           </AnimateIn>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Links */}
             <AnimateIn direction="up" delay={0}>
             <div>
@@ -390,7 +391,7 @@ export default function ImmobilienmaklerPage() {
       {/* Verkaufsprozess */}
       <section id="prozess" className="section-padding bg-brand-gray-light">
         <div className="container-max">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
 
             {/* Links – Titel + Foto */}
             <AnimateIn direction="up" delay={0}>
@@ -508,7 +509,7 @@ export default function ImmobilienmaklerPage() {
       {/* Wieso immovativ<span className="font-black">Invest</span> */}
       <section id="warum" className="section-padding bg-white">
         <div className="container-max">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
 
             {/* Links – Foto */}
             <AnimateIn direction="up" delay={0}>
@@ -516,7 +517,7 @@ export default function ImmobilienmaklerPage() {
                 <Image
                   src="/mazlum.png"
                   alt="Mazlum Selcuk – immovativInvest"
-                  className="w-full h-[580px] object-cover rounded-3xl shadow-large"
+                  className="w-full h-72 md:h-[580px] object-cover rounded-3xl shadow-large"
                   style={{ objectPosition: 'center top' }}
                   width={800}
                   height={580}
@@ -569,7 +570,7 @@ export default function ImmobilienmaklerPage() {
       {/* Persönlich sprechen */}
       <section className="section-padding bg-brand-gray-light">
         <div className="container-max">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
 
             {/* Links – Text + Buttons */}
             <AnimateIn direction="up" delay={0}>
@@ -614,7 +615,7 @@ export default function ImmobilienmaklerPage() {
                 <Image
                   src="/NiclasAlleine 2.png"
                   alt="Niclas van der Straeten"
-                  className="w-full h-[480px] object-cover rounded-3xl shadow-large"
+                  className="w-full h-64 md:h-[480px] object-cover rounded-3xl shadow-large"
                   style={{ objectPosition: 'center top' }}
                   width={800}
                   height={480}
@@ -743,12 +744,8 @@ export default function ImmobilienmaklerPage() {
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 
-      {/* Sticky mobile CTA */}
-      <div className="sticky-cta md:hidden">
-        <CTAButton href="#kontakt" fullWidth size="lg">
-          Kostenlose Erstberatung →
-        </CTAButton>
-      </div>
+      {/* Sticky mobile CTA – appears after scrolling past hero */}
+      <StickyMobileCTA href="#kontakt" label="Kostenlose Erstberatung →" />
 
       <Footer variant="makler" />
     </main>
