@@ -37,11 +37,11 @@ const badges = [
 export default function TrustBadges({ variant = 'row' }: TrustBadgesProps) {
   if (variant === 'stats') {
     return (
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
         {stats.map((stat) => (
-          <div key={stat.label} className="text-center p-6 bg-white rounded-2xl shadow-soft border border-brand-gray-border">
-            <div className="text-3xl font-bold text-brand-green mb-1">{stat.value}</div>
-            <div className="text-sm text-brand-gray-warm font-medium">{stat.label}</div>
+          <div key={stat.label} className="text-center p-4 md:p-6 bg-white rounded-2xl shadow-soft border border-brand-gray-border">
+            <div className="text-lg md:text-3xl font-bold text-brand-green mb-1 leading-tight">{stat.value}</div>
+            <div className="text-xs md:text-sm text-brand-gray-warm font-medium">{stat.label}</div>
           </div>
         ))}
       </div>

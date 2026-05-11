@@ -370,11 +370,13 @@ export default function ImmobilienmaklerPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-12 pt-8 border-t border-brand-gray-border flex items-center justify-between">
-            <p className="text-brand-gray-warm text-sm">Kostenlos & unverbindlich — ohne Verpflichtung.</p>
-            <CTAButton href="/verkaufen" variant="outline" size="sm">
-              Immobilienbewertung starten →
-            </CTAButton>
+          <div className="mt-12 pt-8 border-t border-brand-gray-border flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-brand-gray-warm text-sm text-center sm:text-left">Kostenlos & unverbindlich — ohne Verpflichtung.</p>
+            <div className="w-full sm:w-auto shrink-0">
+              <CTAButton href="/verkaufen" variant="outline" size="sm">
+                Immobilienbewertung starten →
+              </CTAButton>
+            </div>
           </div>
         </div>
       </section>
@@ -395,7 +397,7 @@ export default function ImmobilienmaklerPage() {
 
             {/* Links – Titel + Foto */}
             <AnimateIn direction="up" delay={0}>
-            <div className="lg:sticky lg:top-28">
+            <div className="lg:sticky lg:top-28 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -527,7 +529,7 @@ export default function ImmobilienmaklerPage() {
 
             {/* Rechts – Text */}
             <AnimateIn direction="up" delay={150}>
-            <div>
+            <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -555,7 +557,7 @@ export default function ImmobilienmaklerPage() {
                 </div>
               </div>
 
-              <div className="mt-10">
+              <div className="mt-10 flex justify-center lg:justify-start">
                 <CTAButton href="/verkaufen" variant="primary" size="sm">
                   Immobilienbewertung starten →
                 </CTAButton>
@@ -574,7 +576,7 @@ export default function ImmobilienmaklerPage() {
 
             {/* Links – Text + Buttons */}
             <AnimateIn direction="up" delay={0}>
-            <div>
+            <div className="text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
                 Du möchtest persönlich sprechen?
               </h2>
@@ -584,7 +586,7 @@ export default function ImmobilienmaklerPage() {
               <p className="text-brand-gray-warm leading-relaxed mb-10">
                 Du erreichst uns von <strong className="text-brand-anthrazit">Montag–Sonntag zwischen 08:00–20:00 Uhr</strong>.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <a
                   href="tel:+4915129686979"
                   className="inline-flex items-center justify-center gap-3 btn-gradient text-white font-semibold rounded-xl px-7 py-4 transition-colors text-sm"
@@ -649,7 +651,7 @@ export default function ImmobilienmaklerPage() {
         <div className="container-max">
 
           {/* Header */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10 text-center md:text-left">
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-3.5 py-1.5 text-xs font-semibold mb-3">
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
