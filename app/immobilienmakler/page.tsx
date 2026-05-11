@@ -639,7 +639,7 @@ export default function ImmobilienmaklerPage() {
             <p className="text-blue-200 mb-6">
               Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.
             </p>
-            <a href="#kontakt" className="inline-flex items-center justify-center whitespace-nowrap font-semibold rounded-xl px-8 py-4 text-lg bg-white text-brand-anthrazit hover:brightness-105 hover:-translate-y-0.5 transition-all duration-200">
+            <a href="#kontakt" className="inline-flex items-center justify-center font-semibold rounded-xl px-5 md:px-8 py-3.5 md:py-4 text-base md:text-lg bg-white text-brand-anthrazit hover:brightness-105 hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto">
               Jetzt kostenlos beraten lassen →
             </a>
           </div>
