@@ -266,28 +266,35 @@ export default function ImmobilienmaklerPage() {
       {/* Trust strip */}
       <section className="py-10 px-4 md:px-8 bg-brand-gray-light border-b border-brand-gray-border">
         <div className="max-w-6xl mx-auto">
-          <TrustBadges variant="row" />
+          <AnimateIn direction="fade">
+            <TrustBadges variant="row" />
+          </AnimateIn>
         </div>
       </section>
 
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-white">
         <div className="container-max">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
-              <span className="text-brand-green">Deine Vorteile</span> mit immovativ<span className="font-black">Invest</span> als Makler.
-            </h2>
-            <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto">
-              Wir setzen alles daran, den bestmöglichen Preis für deine Immobilie zu erzielen – mit Erfahrung, Technologie und persönlichem Einsatz.
-            </p>
-          </div>
-          <BenefitCards benefits={benefits} layout="grid" columns={3} />
+          <AnimateIn direction="up">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
+                <span className="text-brand-green">Deine Vorteile</span> mit immovativ<span className="font-black">Invest</span> als Makler.
+              </h2>
+              <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto">
+                Wir setzen alles daran, den bestmöglichen Preis für deine Immobilie zu erzielen – mit Erfahrung, Technologie und persönlichem Einsatz.
+              </p>
+            </div>
+          </AnimateIn>
+          <AnimateIn direction="up" delay={100}>
+            <BenefitCards benefits={benefits} layout="grid" columns={3} />
+          </AnimateIn>
         </div>
       </section>
 
       {/* Warum jetzt verkaufen */}
       <section className="section-padding bg-brand-gray-light">
         <div className="container-max">
+          <AnimateIn direction="up">
           {/* Label */}
           <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -300,8 +307,11 @@ export default function ImmobilienmaklerPage() {
             Warum jetzt ein <span className="text-brand-green">guter Zeitpunkt</span><br className="hidden md:block" /> für den Verkauf ist.
           </h2>
 
+          </AnimateIn>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Links */}
+            <AnimateIn direction="up" delay={0}>
             <div>
               {/* Autor-Badge */}
               <div className="flex items-center gap-4 mb-8 bg-white rounded-2xl px-5 py-4 border border-brand-gray-border shadow-soft w-fit">
@@ -337,8 +347,10 @@ export default function ImmobilienmaklerPage() {
                 ))}
               </ul>
             </div>
+            </AnimateIn>
 
             {/* Rechts – Bild */}
+            <AnimateIn direction="up" delay={150}>
             <div className="relative">
               <Image
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
@@ -353,6 +365,7 @@ export default function ImmobilienmaklerPage() {
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br/>der letzten 10 Jahre</div>
               </div>
             </div>
+            </AnimateIn>
           </div>
 
           {/* CTA */}
@@ -368,7 +381,9 @@ export default function ImmobilienmaklerPage() {
       {/* Stats */}
       <section className="section-padding bg-white">
         <div className="container-max">
-          <TrustBadges variant="stats" />
+          <AnimateIn direction="up">
+            <TrustBadges variant="stats" />
+          </AnimateIn>
         </div>
       </section>
 
@@ -378,6 +393,7 @@ export default function ImmobilienmaklerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
             {/* Links – Titel + Foto */}
+            <AnimateIn direction="up" delay={0}>
             <div className="lg:sticky lg:top-28">
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -400,8 +416,10 @@ export default function ImmobilienmaklerPage() {
                 height={384}
               />
             </div>
+            </AnimateIn>
 
             {/* Rechts – Schritte */}
+            <AnimateIn direction="up" delay={150}>
             <div className="space-y-4">
               {[
                 {
@@ -476,13 +494,16 @@ export default function ImmobilienmaklerPage() {
                 </div>
               ))}
             </div>
+            </AnimateIn>
           </div>
         </div>
       </section>
 
       <TippgeberSection />
 
-      <GaugeStats />
+      <AnimateIn direction="up">
+        <GaugeStats />
+      </AnimateIn>
 
       {/* Wieso immovativ<span className="font-black">Invest</span> */}
       <section id="warum" className="section-padding bg-white">
@@ -490,18 +511,21 @@ export default function ImmobilienmaklerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             {/* Links – Foto */}
-            <div className="relative">
-              <Image
-                src="/mazlum.png"
-                alt="Mazlum Selcuk – immovativInvest"
-                className="w-full h-[580px] object-cover rounded-3xl shadow-large"
-                style={{ objectPosition: 'center top' }}
-                width={800}
-                height={580}
-              />
-            </div>
+            <AnimateIn direction="up" delay={0}>
+              <div className="relative">
+                <Image
+                  src="/mazlum.png"
+                  alt="Mazlum Selcuk – immovativInvest"
+                  className="w-full h-[580px] object-cover rounded-3xl shadow-large"
+                  style={{ objectPosition: 'center top' }}
+                  width={800}
+                  height={580}
+                />
+              </div>
+            </AnimateIn>
 
             {/* Rechts – Text */}
+            <AnimateIn direction="up" delay={150}>
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -536,6 +560,7 @@ export default function ImmobilienmaklerPage() {
                 </CTAButton>
               </div>
             </div>
+            </AnimateIn>
 
           </div>
         </div>
@@ -547,6 +572,7 @@ export default function ImmobilienmaklerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             {/* Links – Text + Buttons */}
+            <AnimateIn direction="up" delay={0}>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
                 Du möchtest persönlich sprechen?
@@ -580,18 +606,21 @@ export default function ImmobilienmaklerPage() {
                 </a>
               </div>
             </div>
+            </AnimateIn>
 
             {/* Rechts – Foto */}
-            <div className="relative">
-              <Image
-                src="/NiclasAlleine 2.png"
-                alt="Niclas van der Straeten"
-                className="w-full h-[480px] object-cover rounded-3xl shadow-large"
-                style={{ objectPosition: 'center top' }}
-                width={800}
-                height={480}
-              />
-            </div>
+            <AnimateIn direction="up" delay={150}>
+              <div className="relative">
+                <Image
+                  src="/NiclasAlleine 2.png"
+                  alt="Niclas van der Straeten"
+                  className="w-full h-[480px] object-cover rounded-3xl shadow-large"
+                  style={{ objectPosition: 'center top' }}
+                  width={800}
+                  height={480}
+                />
+              </div>
+            </AnimateIn>
 
           </div>
         </div>
