@@ -97,7 +97,7 @@ export default function LandingPage() {
 
               <div
                 className="mt-auto flex items-center justify-center gap-2 text-white font-bold rounded-2xl px-6 py-4 text-sm transition-opacity group-hover:opacity-90 w-full"
-                style={{ backgroundColor: '#2563EB' }}
+                style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}
               >
                 Unsere Makler-Website →
               </div>
