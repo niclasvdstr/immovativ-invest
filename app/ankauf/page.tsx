@@ -328,8 +328,8 @@ export default function AnkaufPage() {
           </div>
           <div className="max-w-6xl mx-auto">
             <BeforeAfterSlider
-              beforeSrc="/before-room.png"
-              afterSrc="/after-room.png"
+              beforeSrc="/before-room.jpg"
+              afterSrc="/after-room.jpg"
               beforeLabel="Vorher"
               afterLabel="Nachher"
             />
