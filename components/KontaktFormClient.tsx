@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import ThankYouModal from './ThankYouModal'
 
 export default function KontaktFormClient() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ export default function KontaktFormClient() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -30,6 +32,7 @@ export default function KontaktFormClient() {
       })
       if (!res.ok) throw new Error()
       setSubmitted(true)
+      setShowModal(true)
     } catch {
       setError(true)
     } finally {
@@ -37,21 +40,9 @@ export default function KontaktFormClient() {
     }
   }
 
-  if (submitted) {
-    return (
-      <div className="text-center py-10">
-        <div className="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-          </svg>
-        </div>
-        <h3 className="text-xl font-bold text-brand-anthrazit mb-2">Vielen Dank!</h3>
-        <p className="text-brand-gray-warm text-sm">Wir melden uns innerhalb von 24 Stunden bei dir.</p>
-      </div>
-    )
-  }
-
   return (
+    <>
+    {showModal && <ThankYouModal onClose={() => setShowModal(false)} />}
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
@@ -145,5 +136,6 @@ export default function KontaktFormClient() {
         <a href="/datenschutz" className="text-brand-green hover:underline">Datenschutzerklärung</a> zu.
       </p>
     </form>
+    </>
   )
 }

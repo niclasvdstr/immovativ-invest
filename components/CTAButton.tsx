@@ -10,6 +10,7 @@ interface CTAButtonProps {
   size?: 'sm' | 'md' | 'lg'
   fullWidth?: boolean
   className?: string
+  type?: 'button' | 'submit' | 'reset'
 }
 
 export default function CTAButton({
@@ -20,6 +21,7 @@ export default function CTAButton({
   size = 'md',
   fullWidth = false,
   className = '',
+  type = 'button',
 }: CTAButtonProps) {
   const base = 'inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 text-center'
 
@@ -46,7 +48,7 @@ export default function CTAButton({
   }
 
   return (
-    <button onClick={onClick} className={classes} type="button">
+    <button onClick={onClick} className={classes} type={type}>
       {children}
     </button>
   )

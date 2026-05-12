@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import CTAButton from './CTAButton'
+import ThankYouModal from './ThankYouModal'
 
 interface ContactFormProps {
   variant?: 'ankauf' | 'makler'
@@ -29,6 +30,7 @@ export default function ContactForm({
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -46,6 +48,7 @@ export default function ContactForm({
       })
       if (!res.ok) throw new Error('Fehler')
       setSubmitted(true)
+      setShowModal(true)
     } catch {
       setError(true)
     } finally {
@@ -53,28 +56,10 @@ export default function ContactForm({
     }
   }
 
-  if (submitted) {
-    return (
-      <section id="kontakt" className="section-padding bg-white">
-        <div className="container-max">
-          <div className="max-w-xl mx-auto text-center py-12">
-            <div className="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            <h3 className="text-2xl font-bold text-brand-anthrazit mb-3">Vielen Dank für deine Anfrage!</h3>
-            <p className="text-brand-gray-warm leading-relaxed">
-              Wir haben deine Nachricht erhalten und werden uns innerhalb von 24 Stunden bei dir melden.
-              Dein Anliegen ist bei uns in guten Händen.
-            </p>
-          </div>
-        </div>
-      </section>
-    )
-  }
 
   return (
+    <>
+    {showModal && <ThankYouModal onClose={() => setShowModal(false)} />}
     <section id="kontakt" className="section-padding bg-white">
       <div className="container-max">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -215,7 +200,7 @@ export default function ContactForm({
               <CTAButton
                 size="lg"
                 fullWidth
-                onClick={() => {}}
+                type="submit"
                 className={loading ? 'opacity-75 cursor-not-allowed' : ''}
               >
                 {loading ? (
@@ -241,5 +226,6 @@ export default function ContactForm({
         </div>
       </div>
     </section>
+    </>
   )
 }
