@@ -29,6 +29,7 @@ const NAV: NavItem[] = [
     label: 'Leistungen',
     children: [
       { label: 'Leistungen', href: '/service' },
+      { label: 'Immobilienbewertung', href: '/immobilienbewertung' },
       { label: 'Immobilienangebote', href: '/immobilienangebote' },
       { label: 'Finanzierung', href: '/finanzierung' },
       { label: 'Beratung', href: '/beratung' },

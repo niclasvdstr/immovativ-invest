@@ -86,6 +86,16 @@ export default function UeberUnsPage() {
                 knowsAbout: ['Immobilienverkauf', 'Besichtigungsmanagement', 'Kundenbetreuung', 'Rhein-Main-Immobilienmarkt'],
                 areaServed: 'Frankfurt am Main und Rhein-Main-Gebiet',
               },
+              {
+                '@type': 'AboutPage',
+                '@id': 'https://www.immovativ-invest.de/ueber-uns',
+                url: 'https://www.immovativ-invest.de/ueber-uns',
+                name: 'Über uns – Team immovativInvest',
+                description: 'Niclas van der Straeten und Mazlum Selcuk sind die Gründer und Geschäftsführer von immovativInvest. Als Immobilienmakler im Rhein-Main-Gebiet begleiten sie Eigentümer beim professionellen Immobilienverkauf.',
+                inLanguage: 'de-DE',
+                isPartOf: { '@id': 'https://www.immovativ-invest.de/#website' },
+                about: { '@id': 'https://www.immovativ-invest.de/#organization' },
+              },
             ],
           }),
         }}

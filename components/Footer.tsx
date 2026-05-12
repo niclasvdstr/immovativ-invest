@@ -17,6 +17,7 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
       ]
     : [
         { label: 'Immobilienmakler', href: '/immobilienmakler' },
+        { label: 'Immobilienbewertung', href: '/immobilienbewertung' },
         { label: 'Verkaufen', href: '/verkaufen' },
         { label: 'Leistungen', href: '/service' },
         { label: 'Über uns', href: '/ueber-uns' },

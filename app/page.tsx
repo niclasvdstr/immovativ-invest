@@ -240,7 +240,7 @@ export default function LandingPage() {
 
           {/* Bottom text */}
           <p className="text-brand-gray-warm leading-relaxed text-sm md:text-base max-w-3xl">
-            Beide Wege beginnen mit einer kostenlosen, unverbindlichen <a href="/verkaufen" className="text-brand-green font-semibold hover:underline">Immobilienbewertung</a>. Unsere Leistungen umfassen zudem <a href="/finanzierung" className="text-brand-green font-semibold hover:underline">Finanzierungsberatung</a>, Käuferqualifizierung und die vollständige Kaufabwicklung bis zur Schlüsselübergabe — alles aus einer Hand, persönlich und diskret.
+            Beide Wege beginnen mit einer kostenlosen, unverbindlichen <a href="/immobilienbewertung" className="text-brand-green font-semibold hover:underline">Immobilienbewertung</a>. Unsere Leistungen umfassen zudem <a href="/finanzierung" className="text-brand-green font-semibold hover:underline">Finanzierungsberatung</a>, Käuferqualifizierung und die vollständige Kaufabwicklung bis zur Schlüsselübergabe — alles aus einer Hand, persönlich und diskret.
           </p>
 
         </div>

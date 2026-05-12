@@ -235,26 +235,12 @@ export default function ReferenzenPage() {
               ratingCount: '100',
               reviewCount: '100',
             },
-            review: [
-              {
-                '@type': 'Review',
-                reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-                author: { '@type': 'Person', name: 'Familie W., Dreieich' },
-                reviewBody: 'Ich hätte nicht gedacht, dass es so schnell und zu diesem Preis geht. Niclas hat uns wirklich den Stress genommen.',
-              },
-              {
-                '@type': 'Review',
-                reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-                author: { '@type': 'Person', name: 'K. B., Frankfurt' },
-                reviewBody: 'Niclas hat nicht nur die Wohnung verkauft – er hat auch die Kommunikation zwischen uns gerettet.',
-              },
-              {
-                '@type': 'Review',
-                reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-                author: { '@type': 'Person', name: 'M. K., Darmstadt' },
-                reviewBody: 'Kein Online-Inserat, keine Schilder, kein Lärm. Trotzdem der beste Preis, den ich mir hätte vorstellen können.',
-              },
-            ],
+            review: cases.map(c => ({
+              '@type': 'Review',
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              author: { '@type': 'Person', name: c.author },
+              reviewBody: c.quote.replace(/[„""]/g, ''),
+            })),
           }),
         }}
       />
