@@ -56,11 +56,11 @@ export default function KontaktPage() {
             </svg>
             Rückmeldung innerhalb von 24 Stunden
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-5">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-5">
             Sprich mit uns –<br className="hidden md:block" />
             <span className="text-brand-green"> persönlich & unkompliziert.</span>
           </h1>
-          <p className="text-brand-gray-warm text-lg max-w-xl mx-auto mb-8">
+          <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg max-w-xl mx-auto mb-8">
             Ob Frage, Bewertung oder erstes Gespräch – wir sind für dich da.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -116,7 +116,7 @@ export default function KontaktPage() {
               </p>
 
               <form className="space-y-4" action="#">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Name *</label>
                     <input
@@ -301,7 +301,7 @@ export default function KontaktPage() {
             <div className="bg-brand-gray-light rounded-3xl p-8 border border-brand-gray-border">
               <h3 className="text-xl font-bold text-brand-anthrazit mb-6">Tipp einreichen</h3>
               <form className="space-y-5" action="#">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Vorname</label>
                     <input

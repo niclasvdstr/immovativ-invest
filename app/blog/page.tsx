@@ -69,10 +69,10 @@ export default function BlogPage() {
             </svg>
             Immobilienwissen auf den Punkt
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-5">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-5">
             Der immovativ<span className="font-black">Invest</span> <span className="text-brand-green">Blog.</span>
           </h1>
-          <p className="text-brand-gray-warm text-lg max-w-xl mx-auto">
+          <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg max-w-xl mx-auto">
             Marktentwicklung, Verkaufstipps, Steuerrecht und mehr – verständlich erklärt von unseren Experten.
           </p>
         </div>

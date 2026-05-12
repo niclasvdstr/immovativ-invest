@@ -113,10 +113,10 @@ export default function GaugeStats() {
 
           {/* Links */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-anthrazit mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-anthrazit mb-6 leading-tight">
               immovativ<span className="font-black">Invest</span><br />in Zahlen gemessen.
             </h2>
-            <p className="text-brand-gray-warm leading-relaxed mb-8 text-lg">
+            <p className="text-brand-gray-warm leading-relaxed mb-8 text-sm sm:text-base md:text-lg">
               Wir übernehmen nur Aufträge, die realistisch am Markt umsetzbar sind und wirtschaftlich sinnvoll für den Eigentümer sind. Genau dadurch entstehen unsere starken Ergebnisse.
             </p>
             <ul className="space-y-4 mb-10">

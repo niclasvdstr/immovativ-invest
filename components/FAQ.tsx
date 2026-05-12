@@ -19,8 +19,8 @@ export default function FAQ({ items, title = 'Häufig gestellte Fragen' }: FAQPr
     <section className="section-padding bg-white">
       <div className="container-max">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
-          <p className="text-brand-gray-warm text-lg">Antworten auf die wichtigsten Fragen</p>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
+          <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg">Antworten auf die wichtigsten Fragen</p>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-3">

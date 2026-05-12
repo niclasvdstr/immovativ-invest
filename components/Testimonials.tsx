@@ -74,7 +74,7 @@ export default function Testimonials({ items = testimonials, title = 'Das sagen 
       <div className="container-max">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
           {/* Google Rating Badge */}
           <div className="inline-flex items-center gap-3 bg-white border border-brand-gray-border rounded-2xl px-5 py-3 shadow-soft">
             <GoogleIcon />

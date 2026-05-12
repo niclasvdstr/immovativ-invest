@@ -318,12 +318,12 @@ export default function ReferenzenPage() {
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
                 Unsere Referenzen.<br />
                 <span className="text-brand-green">Echte Ergebnisse.</span>
               </h1>
 
-              <p className="text-brand-gray-warm text-base leading-relaxed mb-8">
+              <p className="text-brand-gray-warm text-sm sm:text-base leading-relaxed mb-8">
                 Acht abgeschlossene Verkäufe – mit konkreten Zahlen, echten Situationen und realen Ergebnissen aus dem Rhein-Main-Gebiet. Kein Marketing-Hochglanz, keine runden Zahlen.
               </p>
 
@@ -410,7 +410,7 @@ export default function ReferenzenPage() {
             { value: '100 %', label: 'diskret & persönlich' },
           ].map(s => (
             <div key={s.label} className="text-center md:px-8">
-              <div className="text-2xl md:text-3xl font-bold text-white mb-1 whitespace-nowrap">{s.value}</div>
+              <div className="text-xl md:text-3xl font-bold text-white mb-1">{s.value}</div>
               <div className="text-gray-400 text-xs">{s.label}</div>
             </div>
           ))}

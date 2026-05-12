@@ -69,8 +69,8 @@ export default function ContactForm({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left column */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
-            <p className="text-brand-gray-warm text-lg mb-8">{subtitle}</p>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
+            <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg mb-8">{subtitle}</p>
 
             <ul className="space-y-4">
               {[
@@ -110,7 +110,7 @@ export default function ContactForm({
             <form onSubmit={handleSubmit} className="space-y-5">
               {variant === 'ankauf' ? (
                 <>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Vorname *</label>
                       <input type="text" name="firstName" required value={formData.firstName} onChange={handleChange} placeholder="Max" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm" />
@@ -120,7 +120,7 @@ export default function ContactForm({
                       <input type="text" name="lastName" required value={formData.lastName} onChange={handleChange} placeholder="Mustermann" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm" />
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Telefon *</label>
                       <input type="tel" name="phone" required value={formData.phone} onChange={handleChange} placeholder="+49 151 000 000" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm" />
@@ -141,7 +141,7 @@ export default function ContactForm({
                       <option>Gewerbeimmobilie</option>
                     </select>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Wohnfläche (m²)</label>
                       <input type="number" name="livingArea" value={formData.livingArea} onChange={handleChange} placeholder="z.B. 120" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm" />
@@ -151,7 +151,7 @@ export default function ContactForm({
                       <input type="number" name="plotArea" value={formData.plotArea} onChange={handleChange} placeholder="z.B. 500" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm" />
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">PLZ</label>
                       <input type="text" name="zip" value={formData.zip} onChange={handleChange} placeholder="60311" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm" />

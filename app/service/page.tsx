@@ -100,11 +100,11 @@ export default function ServicePage() {
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
               ✦ Unsere Leistungen
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
               Alles aus einer Hand.<br />
               <span className="text-brand-green">Für jede Situation.</span>
             </h1>
-            <p className="text-brand-gray-warm text-lg leading-relaxed">
+            <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg leading-relaxed">
               Von der Immobilienvermittlung über Finanzierung bis zur Beratung in besonderen Lebenslagen — wir sind dein Partner in allen Immobilienfragen.
             </p>
           </div>
@@ -154,7 +154,7 @@ export default function ServicePage() {
             <div className="shrink-0">
               <Link
                 href="/beratung"
-                className="inline-flex items-center gap-2 bg-brand-green text-white font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-green-dark transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-2 btn-gradient text-white font-semibold rounded-xl px-5 py-3 sm:px-7 sm:py-3.5 transition-colors"
               >
                 Kostenlose Erstberatung →
               </Link>
