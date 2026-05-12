@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { transporter } from '@/lib/mailer'
+import { getTransporter } from '@/lib/mailer'
 
 function row(label: string, value: string) {
   if (!value) return ''
@@ -99,6 +99,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Unbekannter Formulartyp' }, { status: 400 })
     }
 
+    const transporter = getTransporter()
     await transporter.sendMail({
       from: `"immovativInvest Website" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_EMAIL,
