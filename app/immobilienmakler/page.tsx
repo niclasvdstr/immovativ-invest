@@ -103,8 +103,8 @@ const navItems = [
 const whyUs = [
   { icon: '📍', title: 'Regionale Expertise', description: 'Tiefes Marktwissen in deiner Region – wir kennen die lokalen Preise und Käufer.' },
   { icon: '🌐', title: 'Digitale Vermarktung', description: 'Präsenz auf allen führenden Immobilienportalen plus unser eigenes Käufernetzwerk.' },
-  { icon: '🏅', title: 'Nachgewiesene Erfolge', description: 'Über 500 erfolgreich verkaufte Immobilien sprechen für unsere Kompetenz.' },
-  { icon: '⭐', title: '4,9/5 Bewertung', description: 'Außerordentliche Kundenzufriedenheit, bestätigt durch über 230 echte Bewertungen.' },
+  { icon: '🏅', title: 'Nachgewiesene Erfolge', description: 'Über 125 erfolgreich verkaufte Immobilien sprechen für unsere Kompetenz.' },
+  { icon: '⭐', title: '4,9/5 Bewertung', description: 'Außerordentliche Kundenzufriedenheit, bestätigt durch über 100+ echte Bewertungen.' },
 ]
 
 export default function ImmobilienmaklerPage() {

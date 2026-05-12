@@ -299,7 +299,7 @@ export default function ReferenzenPage() {
                     ))}
                   </div>
                   <p className="text-sm font-medium text-brand-anthrazit">
-                    <span className="font-bold">4,9 von 5</span> Sternen (230+ Bewertungen)
+                    <span className="font-bold">4,9 von 5</span> Sternen (100+ Bewertungen)
                   </p>
                 </div>
               </div>
