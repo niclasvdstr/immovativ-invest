@@ -118,9 +118,7 @@ const jsonLd = {
         worksFor: { '@id': 'https://www.immovativ-invest.de/#organization' },
       },
       sameAs: [
-        'https://www.instagram.com/immovativinvest',
-        'https://www.linkedin.com/company/immovativinvest',
-        'https://www.facebook.com/immovativinvest',
+        'https://www.instagram.com/immovativ.de',
       ],
     },
   ],
