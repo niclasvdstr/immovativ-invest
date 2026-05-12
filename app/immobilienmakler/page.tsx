@@ -181,12 +181,12 @@ export default function ImmobilienmaklerPage() {
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
+              <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
                 Immobilienmakler<br />
                 <span className="text-brand-green">Frankfurt & Umgebung.</span>
               </h1>
 
-              <p className="text-brand-gray-warm text-base leading-relaxed mb-2">
+              <p className="hidden md:block text-brand-gray-warm text-base leading-relaxed mb-2">
                 Wir verkaufen Deine Immobilie zum bestmöglichen Preis.<br />
                 Persönlich. Diskret. Ohne unnötige Wartezeiten.<br />
                 Mit echten Ergebnissen — nicht mit leeren Versprechen.
