@@ -62,7 +62,7 @@ export default function TippgeberSection() {
               </div>
               <button
                 type="submit"
-                className="w-full text-white font-semibold rounded-xl px-6 py-4 text-sm transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 flex items-center justify-center gap-2 whitespace-nowrap"
+                className="w-full text-white font-semibold rounded-xl px-6 py-3.5 text-sm transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 flex items-center justify-center gap-2"
                 style={{ background: '#16a34a' }}
               >
                 <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -96,7 +96,7 @@ export default function TippgeberSection() {
               <span className="text-white font-semibold text-sm">Tippgeberprovision</span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
               Kennst du jemanden,<br />der verkaufen möchte?
             </h2>
 

@@ -116,7 +116,7 @@ export default function UeberUnsPage() {
           {/* Top: centered text */}
           <AnimateIn direction="up">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-anthrazit leading-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-brand-anthrazit leading-tight mb-6">
               Dein Erfolg ist <span className="text-brand-green">unsere Mission.</span>
             </h1>
             <p className="text-brand-gray-warm text-lg leading-relaxed mb-8">
@@ -324,11 +324,11 @@ export default function UeberUnsPage() {
               </div>
             </AnimateIn>
             <AnimateIn direction="up" delay={150}>
-              <div className="text-center lg:text-left">
+              <div className="text-left">
                 <div className="inline-flex items-center gap-2 bg-red-50 border border-red-100 text-red-600 rounded-full px-4 py-2 text-sm font-semibold mb-6">
                   Ehrlichkeit zuerst
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
                   Genug davon!
                 </h2>
                 <div className="space-y-4 text-brand-gray-warm leading-relaxed">
@@ -361,11 +361,11 @@ export default function UeberUnsPage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <AnimateIn direction="up" delay={0}>
-              <div className="text-center lg:text-left">
+              <div className="text-left">
                 <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                   Unser Anspruch
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
                   Wir brechen mit allen<br />Makler-Klischees.
                 </h2>
                 <div className="space-y-4 text-brand-gray-warm leading-relaxed">
@@ -438,7 +438,7 @@ export default function UeberUnsPage() {
                   Kontaktiere uns so, wie es Dir am besten passt — per Anruf, WhatsApp oder E-Mail. Wir sind für Dich da.
                 </p>
               </div>
-              <div className="mt-8 flex items-center justify-center lg:justify-start gap-3">
+              <div className="mt-8 flex items-center justify-start gap-3">
                 <a href="tel:+4915129686979" className="inline-flex items-center gap-2 btn-gradient text-white font-semibold rounded-xl px-6 py-3.5 text-sm transition-colors">
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

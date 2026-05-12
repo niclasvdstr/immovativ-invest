@@ -42,7 +42,7 @@ export default function ImmobilienangebotePage() {
               <span className="w-2 h-2 bg-brand-green rounded-full" />
               Demnächst verfügbar
             </div>
-            <h1 className="text-4xl font-bold text-brand-anthrazit mb-3">Unsere Immobilienangebote.</h1>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-anthrazit mb-3">Unsere Immobilienangebote.</h1>
             <p className="text-brand-gray-warm text-base max-w-lg mx-auto">
               Ausgewählte Objekte aus Frankfurt & Rhein-Main — diskret, geprüft, direkt von uns vermittelt.
             </p>
