@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: 'Immobilienmakler Schmitten – immovativInvest',
     description: 'Ihre Immobilie in Schmitten professionell vermarkten. Kostenlose Bewertung, nur 6 Wochen Vertragslaufzeit, 4,9★ Bewertung.',
     type: 'website',
+    url: 'https://www.immovativ-invest.de/immobilienmakler-schmitten',
   },
 }
 

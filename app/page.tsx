@@ -4,17 +4,17 @@ import Image from 'next/image'
 import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
-  title: 'Immobilie verkaufen – Direktankauf oder Makler | immovativInvest',
-  description: 'Wählen Sie den richtigen Weg für Ihren Immobilienverkauf: Direktankauf für schnellen Abschluss oder Profi-Makler für maximale Rendite. Kostenlos & unverbindlich.',
+  title: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
+  description: 'Immobilienmakler Frankfurt & Rhein-Main – professionell Immobilie verkaufen oder direkt verkaufen. Kostenlose Bewertung, 4,9★ Bewertung, 500+ vermittelte Objekte.',
   alternates: { canonical: 'https://www.immovativ-invest.de' },
   openGraph: {
     title: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
-    description: 'Professionell Immobilien verkaufen im Rhein-Main-Gebiet. Kostenlose Bewertung, persönliche Betreuung, nachgewiesene Ergebnisse.',
+    description: 'Immobilienmakler Frankfurt & Rhein-Main – Immobilie professionell vermarkten oder direkt verkaufen. Kostenlose Bewertung, 500+ Objekte, 4,9★.',
     url: 'https://www.immovativ-invest.de',
     siteName: 'immovativInvest',
     locale: 'de_DE',
     type: 'website',
-    images: [{ url: 'https://www.immovativ-invest.de/logo-new.png', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.immovativ-invest.de/og-image.jpg', width: 1200, height: 630, alt: 'immovativInvest – Immobilienmakler Frankfurt & Rhein-Main' }],
   },
 }
 
@@ -32,14 +32,17 @@ const Check = ({ light = false }: { light?: boolean }) => (
 export default function LandingPage() {
   return (
     <main className="min-h-screen bg-[#f0f2f5]">
-      <h1 className="sr-only">Immobilienmakler Frankfurt & Rhein-Main – Immobilie verkaufen mit immovativInvest</h1>
-
       {/* ── HERO ── */}
       <section className="flex flex-col items-center px-4 pt-16 pb-24 relative" style={{ backgroundColor: '#f0f4ff' }}>
 
-
         {/* Headline */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 max-w-3xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-3">
+            Immobilienmakler <span className="text-brand-green">Frankfurt</span> & Rhein-Main
+          </h1>
+          <p className="text-brand-gray-warm text-base md:text-lg">
+            Professionell verkaufen oder direkt verkaufen — wählen Sie den richtigen Weg für Ihre Immobilie.
+          </p>
         </div>
 
         {/* Cards container */}
@@ -184,6 +187,25 @@ export default function LandingPage() {
         </AnimateIn>
       </section>
 
+      {/* ── INTRO TEXT ── */}
+      <section className="py-14 px-4 md:px-8 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-brand-anthrazit mb-5">
+            Ihr Immobilienmakler in Frankfurt & dem Rhein-Main-Gebiet
+          </h2>
+          <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
+            <p>
+              immovativInvest ist Ihr persönlicher Ansprechpartner für den Immobilienverkauf in Frankfurt, dem Hochtaunuskreis, dem Main-Taunus-Kreis und dem gesamten Rhein-Main-Gebiet. Seit 2020 haben Niclas van der Straeten und Mazlum Selcuk über 500 Immobilien erfolgreich vermittelt — mit einer Kundenbewertung von 4,9 von 5 Sternen.
+            </p>
+            <p>
+              Wir bieten zwei Wege für Ihren Immobilienverkauf: professionelle <a href="/immobilienmakler" className="text-brand-green font-semibold hover:underline">Maklervermarktung</a> für den höchstmöglichen Marktpreis oder <a href="/ankauf" className="text-brand-green font-semibold hover:underline">Direktankauf</a> für einen schnellen, provisionsfreien Abschluss in durchschnittlich 21 Tagen. Beide Wege beginnen mit einer kostenlosen, unverbindlichen <a href="/verkaufen" className="text-brand-green font-semibold hover:underline">Immobilienbewertung</a>.
+            </p>
+            <p>
+              Unsere Leistungen umfassen Immobilienbewertung, professionelle Vermarktung, Käuferqualifizierung, <a href="/finanzierung" className="text-brand-green font-semibold hover:underline">Finanzierungsberatung</a> und vollständige Kaufabwicklung bis zur Schlüsselübergabe — alles aus einer Hand, persönlich und diskret.
+            </p>
+          </div>
+        </div>
+      </section>
 
     </main>
   )

@@ -37,6 +37,23 @@ export default function ScheidungPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              { '@type': 'Question', name: 'Was passiert mit der gemeinsamen Immobilie bei einer Scheidung?', acceptedAnswer: { '@type': 'Answer', text: 'Bei einer Scheidung gibt es drei Hauptoptionen: gemeinsamer Verkauf mit Aufteilung des Erlöses, eine Partei kauft die andere aus, oder eine Partei bleibt im Haus und zahlt dem anderen Teil den Zugewinnausgleich. Welche Option sinnvoll ist, hängt von der finanziellen Situation beider Parteien ab.' } },
+              { '@type': 'Question', name: 'Wer zahlt den Kredit weiter, wenn man sich bei einer Scheidung trennt?', acceptedAnswer: { '@type': 'Answer', text: 'Solange eine gemeinsame Immobilie existiert, laufen oft gemeinsame Kreditverpflichtungen weiter. Wer auszieht, haftet trotzdem weiter für den Kredit. Klärt frühzeitig, wie die Kosten bis zum Abschluss aufgeteilt werden.' } },
+              { '@type': 'Question', name: 'Kann man eine Immobilie bei Scheidung gegen den Willen des Partners verkaufen?', acceptedAnswer: { '@type': 'Answer', text: 'Nein — beide Eigentümer müssen einem Verkauf zustimmen. Ohne Einigkeit ist eine Teilungsversteigerung der letzte Ausweg, der jedoch für beide Seiten wirtschaftlich nachteilig ist. Ein neutraler Makler kann helfen, eine einvernehmliche Lösung zu finden.' } },
+              { '@type': 'Question', name: 'Wie wird der Wert der gemeinsamen Immobilie bei einer Scheidung ermittelt?', acceptedAnswer: { '@type': 'Answer', text: 'Eine unabhängige Marktbewertung durch einen professionellen Makler oder Sachverständigen schafft die neutrale Grundlage für alle weiteren Entscheidungen. Beide Parteien sollten der Bewertung zustimmen, um Konflikte zu vermeiden.' } },
+              { '@type': 'Question', name: 'Was ist beim Immobilienverkauf nach einer Scheidung steuerlich zu beachten?', acceptedAnswer: { '@type': 'Answer', text: 'Wenn die Immobilie innerhalb der 10-jährigen Spekulationsfrist verkauft wird und zwischenzeitlich nicht selbst genutzt wurde, kann Spekulationssteuer anfallen. Im Scheidungsfall gibt es besondere Regelungen — eine steuerliche Beratung ist empfehlenswert.' } },
+              { '@type': 'Question', name: 'Wie hilft immovativInvest bei einer Scheidungsimmobilie?', acceptedAnswer: { '@type': 'Answer', text: 'Wir agieren neutral gegenüber beiden Parteien, ermitteln den fairen Marktwert, organisieren den Verkauf diskret und professionell und sorgen dafür, dass beide Seiten den maximalen Erlös erzielen. Wir kommunizieren auf Wunsch getrennt mit beiden Parteien.' } },
+            ],
+          }),
+        }}
+      />
       <Header ctaLabel="Kostenlose Beratung" ctaHref="#kontakt" />
 
       {/* Breadcrumb */}
@@ -96,6 +113,9 @@ export default function ScheidungPage() {
                 Die Immobilie ist oft das schwierigste Kapitel
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
+                <p className="font-medium text-brand-anthrazit">
+                  Bei einer Scheidung mit gemeinsamer Immobilie gibt es drei mögliche Wege: gemeinsamer Verkauf, Auskauf einer Partei oder Teilungsversteigerung. Eine <a href="/beratung" className="text-brand-green hover:underline">neutrale Beratung</a> durch einen erfahrenen Immobilienmakler hilft, die sachlich beste Entscheidung zu treffen — unabhängig von der emotionalen Lage.
+                </p>
                 <p>
                   Bei einer Scheidung ist die gemeinsame Immobilie häufig das komplexeste und emotionalste Thema. Wer bekommt das Haus? Wer muss ausziehen? Wie wird der Wert aufgeteilt? Wer bezahlt weiterhin die Kreditrate?
                 </p>

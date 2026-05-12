@@ -37,6 +37,23 @@ export default function ErbschaftPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              { '@type': 'Question', name: 'Welche Fristen muss ich bei einer Erbschaftsimmobilie beachten?', acceptedAnswer: { '@type': 'Answer', text: 'Nach dem Erbfall haben Sie in Deutschland sechs Wochen Zeit, die Erbschaft auszuschlagen — bei Auslandserbschaften sogar sechs Monate. Wer eine Immobilie mit hohen Schulden erbt, sollte diese Frist kennen und nicht verstreichen lassen.' } },
+              { '@type': 'Question', name: 'Wie beantrage ich einen Erbschein für eine geerbte Immobilie?', acceptedAnswer: { '@type': 'Answer', text: 'Um als Erbe gegenüber Behörden und Banken handlungsfähig zu sein, benötigen Sie in der Regel einen Erbschein. Diesen beantragen Sie beim zuständigen Nachlassgericht. Der Prozess dauert je nach Auslastung Wochen bis Monate — früh anfangen lohnt sich.' } },
+              { '@type': 'Question', name: 'Muss ich auf eine geerbte Immobilie Erbschaftsteuer zahlen?', acceptedAnswer: { '@type': 'Answer', text: 'Kinder erben bis zu 400.000 € steuerfrei pro Elternteil. Wurde die Immobilie vom Erblasser selbst bewohnt und wird sie vom Erben mindestens 10 Jahre selbst genutzt, kann die Steuer komplett entfallen. Eine steuerliche Erstberatung lohnt sich immer.' } },
+              { '@type': 'Question', name: 'Was sollte ich vor der Entscheidung über eine geerbte Immobilie prüfen?', acceptedAnswer: { '@type': 'Answer', text: 'Bevor Sie Entscheidungen treffen, sollten Sie den Zustand der Immobilie kennen: Gibt es Mängel, einen laufenden Mietvertrag, ein eingetragenes Wohnrecht oder Hypotheken im Grundbuch? All das beeinflusst den Wert und die Handlungsoptionen.' } },
+              { '@type': 'Question', name: 'Was tun, wenn mehrere Erben eine Immobilie geerbt haben?', acceptedAnswer: { '@type': 'Answer', text: 'Wenn mehrere Personen erben, braucht es Einigkeit für alle wesentlichen Entscheidungen. Wer früh das Gespräch sucht und offen über Vorstellungen spricht, verhindert Blockaden, die im schlimmsten Fall zu einem Teilungsversteigerungsverfahren führen können.' } },
+              { '@type': 'Question', name: 'Was ist eine Erbschaftsimmobilie wert?', acceptedAnswer: { '@type': 'Answer', text: 'Sentimentale Werte und Marktwerte sind selten identisch. Lassen Sie die Immobilie unabhängig bewerten, bevor Sie Entscheidungen treffen — und bevor Sie Zahlen in der Erbengemeinschaft nennen. immovativInvest bietet eine kostenlose Immobilienbewertung an.' } },
+            ],
+          }),
+        }}
+      />
       <Header ctaLabel="Kostenlose Beratung" ctaHref="#kontakt" />
 
       {/* Breadcrumb */}
@@ -96,6 +113,9 @@ export default function ErbschaftPage() {
                 Was eine Erbschaft wirklich bedeutet
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
+                <p className="font-medium text-brand-anthrazit">
+                  Eine Erbschaftsimmobilie ist eine Immobilie, die durch Erbschaft oder Schenkung auf eine oder mehrere Personen übertragen wurde. Erben stehen vor der Entscheidung: verkaufen, selbst nutzen oder vermieten. Besonders bei <a href="/blog/erbengemeinschaft-immobilie-verkaufen" className="text-brand-green hover:underline">Erbengemeinschaften</a> sind frühzeitige Absprachen wichtig, um kostspielige Konflikte zu vermeiden.
+                </p>
                 <p>
                   Eine geerbte Immobilie ist selten nur eine Immobilie. Sie ist oft das Elternhaus, in dem man aufgewachsen ist. Ein Ort mit Geschichte. Und gleichzeitig eine Frage, die beantwortet werden muss — oft unter Zeitdruck und inmitten von Trauer.
                 </p>

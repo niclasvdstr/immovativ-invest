@@ -38,6 +38,23 @@ export default function BeratungPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              { '@type': 'Question', name: 'Wann ist der richtige Zeitpunkt zum Immobilienverkauf?', acceptedAnswer: { '@type': 'Answer', text: 'Den optimalen Verkaufszeitpunkt gibt es nicht pauschal — er hängt von Marktlage, persönlicher Situation und der Immobilie selbst ab. Im Frühling und Herbst ist die Nachfrage traditionell am stärksten. Generell gilt: Ein gut vorbereiteter Verkauf zum richtigen Preis schlägt jeden "perfekten" Zeitpunkt.' } },
+              { '@type': 'Question', name: 'Wie erkenne ich als Käufer einen fairen Immobilienpreis?', acceptedAnswer: { '@type': 'Answer', text: 'Vergleichen Sie aktuelle Verkaufspreise ähnlicher Objekte in der gleichen Lage — nicht Angebotspreise, sondern tatsächlich erzielte Preise. Faktoren wie Baujahr, Zustand, Ausstattung und Mikrolage beeinflussen den Wert erheblich. Eine professionelle Bewertung schafft Sicherheit.' } },
+              { '@type': 'Question', name: 'Makler oder Privatverkauf – was ist besser beim Immobilienverkauf?', acceptedAnswer: { '@type': 'Answer', text: 'Privatverkäufer erzielen im Durchschnitt 10–15 % geringere Preise als professionell vermarktete Immobilien. Der Grund: fehlende Marktkenntnis, unprofessionelle Präsentation und schwache Verhandlungsführung. Hinzu kommen rechtliche Risiken bei falschen Angaben im Exposé.' } },
+              { '@type': 'Question', name: 'Was sind versteckte Kosten beim Immobilienkauf?', acceptedAnswer: { '@type': 'Answer', text: 'Neben dem Kaufpreis fallen an: Grunderwerbsteuer (6 % in Hessen), Notarkosten (ca. 1,5 %), Grundbucheintragung (ca. 0,5 %) und ggf. Maklerprovision (3,57 % inkl. MwSt.). Insgesamt sind 8–12 % Kaufnebenkosten einzuplanen.' } },
+              { '@type': 'Question', name: 'Wie viel Eigenkapital brauche ich wirklich für den Immobilienkauf?', acceptedAnswer: { '@type': 'Answer', text: 'Mindestens 20 % des Kaufpreises als Eigenkapital, plus die gesamten Kaufnebenkosten (ca. 8–12 %). Bei einem 400.000 €-Objekt in Hessen sollten also mindestens 110.000–130.000 € Eigenkapital vorhanden sein.' } },
+              { '@type': 'Question', name: 'Was kostet die Immobilienberatung bei immovativInvest?', acceptedAnswer: { '@type': 'Answer', text: 'Die Erstberatung bei immovativInvest ist vollständig kostenlos und unverbindlich. Wir nehmen uns die Zeit, Ihre Situation zu verstehen und eine ehrliche Einschätzung zu geben — ohne versteckte Agenda und ohne Verpflichtung.' } },
+            ],
+          }),
+        }}
+      />
       <Header ctaLabel="Jetzt Beratung anfragen" ctaHref="#kontakt" />
 
       {/* Breadcrumb */}
@@ -62,8 +79,8 @@ export default function BeratungPage() {
             💬 Kostenlose Beratung
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Gute Beratung<br />
-            <span className="text-brand-green">braucht keine Rechnung.</span>
+            Kostenlose Immobilienberatung Frankfurt<br />
+            <span className="text-brand-green">– ehrlich, persönlich, unverbindlich.</span>
           </h1>
           <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Immobilienentscheidungen sind komplex und oft emotional. Wir nehmen uns die Zeit, deine Situation wirklich zu verstehen — und geben dir eine ehrliche Einschätzung. Kostenlos, persönlich, ohne versteckte Agenda.

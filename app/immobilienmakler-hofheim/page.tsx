@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: 'Immobilienmakler Hofheim am Taunus – immovativInvest',
     description: 'Ihre Immobilie in Hofheim professionell vermarkten. Kostenlose Bewertung, nur 6 Wochen Vertragslaufzeit, 4,9★ Bewertung.',
     type: 'website',
+    url: 'https://www.immovativ-invest.de/immobilienmakler-hofheim',
   },
 }
 

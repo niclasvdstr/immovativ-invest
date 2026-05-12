@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: 'Immobilienmakler Neu-Isenburg – immovativInvest',
     description: 'Ihre Immobilie in Neu-Isenburg professionell vermarkten. Kostenlose Bewertung, nur 6 Wochen Vertragslaufzeit, 4,9★ Bewertung.',
     type: 'website',
+    url: 'https://www.immovativ-invest.de/immobilienmakler-neu-isenburg',
   },
 }
 

@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   },
   description: 'Verkaufen Sie Ihre Immobilie schnell, sicher und diskret. immovativInvest bietet Ihnen zwei Wege: Direktankauf oder professionelle Maklervermarktung – kostenlos & unverbindlich.',
   keywords: ['Immobilie verkaufen', 'Direktankauf', 'Immobilienmakler', 'Immobilienbewertung', 'Haus verkaufen', 'Wohnung verkaufen'],
+  icons: {
+    icon: '/logo-new.png',
+    apple: '/logo-new.png',
+    shortcut: '/logo-new.png',
+  },
   robots: {
     index: true,
     follow: true,

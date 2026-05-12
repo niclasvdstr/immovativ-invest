@@ -8,8 +8,8 @@ import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
 
 export const metadata: Metadata = {
-  title: 'Immobilienfinanzierung – Wir helfen Ihnen | immovativInvest',
-  description: 'Durch unser starkes Netzwerk an Finanzierungsberatern und Bankkontakten helfen wir Ihnen, die passende Finanzierung für Ihre Immobilie auf die Beine zu stellen.',
+  title: 'Immobilienfinanzierung Frankfurt – Beratung & Vermittlung | immovativInvest',
+  description: 'Immobilienfinanzierung in Frankfurt & Rhein-Main – mit unserem Netzwerk aus Banken und Beratern zur besten Finanzierung. Kostenlos, persönlich & unverbindlich.',
   alternates: { canonical: 'https://www.immovativ-invest.de/finanzierung' },
   openGraph: {
     title: 'Immobilienfinanzierung Frankfurt – Beratung & Vermittlung | immovativInvest',
@@ -37,6 +37,23 @@ export default function FinanzierungPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              { '@type': 'Question', name: 'Wie viel Eigenkapital brauche ich für eine Immobilienfinanzierung?', acceptedAnswer: { '@type': 'Answer', text: 'Faustregel: Mindestens 20 % des Kaufpreises sollten als Eigenkapital vorhanden sein — plus Kaufnebenkosten (Grunderwerbsteuer, Notar, Makler). Wer weniger mitbringt, zahlt höhere Zinsen oder bekommt schlicht keine Finanzierung.' } },
+              { '@type': 'Question', name: 'Wie vergleiche ich Immobilienfinanzierungen richtig?', acceptedAnswer: { '@type': 'Answer', text: 'Niemals das erste Angebot annehmen. Schon 0,2 % Zinsunterschied können bei einer 400.000 €-Finanzierung über 20 Jahre mehr als 15.000 € ausmachen. Holen Sie mindestens drei Vergleichsangebote ein.' } },
+              { '@type': 'Question', name: 'Welche Tilgungsrate ist bei einer Immobilienfinanzierung sinnvoll?', acceptedAnswer: { '@type': 'Answer', text: 'Viele wählen die minimale Tilgungsrate von 1 %, um monatlich wenig zu zahlen. Das ist ein teurer Fehler: Bei 1 % Tilgung läuft ein Kredit oft 50+ Jahre. Empfehlenswert sind 2–3 % Anfangstilgung.' } },
+              { '@type': 'Question', name: 'Was sind Sondertilgungsrechte bei der Immobilienfinanzierung?', acceptedAnswer: { '@type': 'Answer', text: 'Sondertilgungen erlauben es, außerplanmäßige Rückzahlungen zu leisten — idealerweise 5 % der Darlehenssumme pro Jahr ohne Vorfälligkeitsentschädigung. So können Sie bei guter Einkommenslage schneller tilgen.' } },
+              { '@type': 'Question', name: 'Wie lange sollte die Zinsbindung bei einer Immobilienfinanzierung sein?', acceptedAnswer: { '@type': 'Answer', text: 'In Niedrigzinsphasen lohnen sich lange Zinsbindungen (15–20 Jahre), um sich günstige Konditionen langfristig zu sichern. Bei höheren Zinsen kann eine kürzere Bindung mit späterer Umschuldung besser sein.' } },
+              { '@type': 'Question', name: 'Welche Förderungen gibt es für die Immobilienfinanzierung in Frankfurt?', acceptedAnswer: { '@type': 'Answer', text: 'KfW-Darlehen, regionale Wohnraumförderprogramme, Baukindergeld oder Energieeffizienz-Boni — viele Förderungen werden nicht beantragt, weil Käufer sie nicht kennen. Wir behalten den Überblick und informieren Sie über alle relevanten Fördermöglichkeiten.' } },
+            ],
+          }),
+        }}
+      />
       <Header ctaLabel="Kostenlose Beratung" ctaHref="#kontakt" />
 
       {/* Breadcrumb */}
@@ -60,8 +77,8 @@ export default function FinanzierungPage() {
             💰 Finanzierung
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Die richtige Finanzierung<br />
-            <span className="text-brand-green">macht den Unterschied.</span>
+            Immobilienfinanzierung Frankfurt<br />
+            <span className="text-brand-green">– die richtige Lösung für Sie.</span>
           </h1>
           <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Ob Erstkauf, Anschlussfinanzierung oder Investition — durch unser starkes Netzwerk begleiten wir dich von der ersten Frage bis zum unterzeichneten Kreditvertrag.
@@ -96,6 +113,9 @@ export default function FinanzierungPage() {
                 Finanzierung ist mehr als ein Kredit
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
+                <p className="font-medium text-brand-anthrazit">
+                  Eine Immobilienfinanzierung ist ein langfristiger Kredit, der den Kauf einer Immobilie ermöglicht. In Frankfurt und dem Rhein-Main-Gebiet liegen die Kaufpreise oft zwischen 400.000 und 1.500.000 € — die Wahl der richtigen Finanzierung kann über die Laufzeit Zehntausende Euro Unterschied machen. Alternativ zum Kauf mit Finanzierung bieten wir auch unseren <a href="/ankauf" className="text-brand-green hover:underline">Direktankauf</a> an.
+                </p>
                 <p>
                   Viele Menschen glauben, eine Immobilienfinanzierung sei einfach: Man geht zur Bank, stellt einen Antrag und bekommt ein Angebot. In der Realität ist es deutlich komplexer — die Unterschiede zwischen einem guten und einem schlechten Angebot können über die Laufzeit Zehntausende Euro ausmachen.
                 </p>

@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: 'Immobilienmakler Neu-Anspach – immovativInvest',
     description: 'Ihre Immobilie in Neu-Anspach professionell vermarkten. Kostenlose Bewertung, nur 6 Wochen Vertragslaufzeit, 4,9★ Bewertung.',
     type: 'website',
+    url: 'https://www.immovativ-invest.de/immobilienmakler-neu-anspach',
   },
 }
 

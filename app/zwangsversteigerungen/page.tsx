@@ -8,8 +8,8 @@ import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
 
 export const metadata: Metadata = {
-  title: 'Zwangsversteigerungen – Chancen nutzen | immovativInvest',
-  description: 'Ob als Betroffener oder Kaufinteressent – wir kennen den Markt für Zwangsversteigerungen und begleiten Sie kompetent durch den gesamten Prozess.',
+  title: 'Zwangsversteigerung Frankfurt – Beratung für Betroffene & Käufer | immovativInvest',
+  description: 'Zwangsversteigerung in Frankfurt & Rhein-Main – als Betroffener oder Kaufinteressent: Wir begleiten Sie kompetent, diskret und mit echtem Marktüberblick.',
   alternates: { canonical: 'https://www.immovativ-invest.de/zwangsversteigerungen' },
   openGraph: {
     title: 'Zwangsversteigerung – Professionelle Begleitung | immovativInvest',
@@ -37,6 +37,23 @@ export default function ZwangsversteigerungenPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              { '@type': 'Question', name: 'Was ist eine Zwangsversteigerung?', acceptedAnswer: { '@type': 'Answer', text: 'Eine Zwangsversteigerung ist ein gerichtliches Verfahren, bei dem eine Immobilie auf Antrag eines Gläubigers — meist der Bank — öffentlich versteigert wird, um ausstehende Schulden zu begleichen. Der Erlös wird zur Schuldentilgung verwendet.' } },
+              { '@type': 'Question', name: 'Kann ich eine Zwangsversteigerung noch abwenden?', acceptedAnswer: { '@type': 'Answer', text: 'In vielen Fällen ja — wenn man früh genug handelt. Ein freihändiger Verkauf der Immobilie vor dem Versteigerungstermin erzielt fast immer einen höheren Erlös als die Versteigerung selbst und ermöglicht es, einen Teil der Schulden zu tilgen. Je früher Sie handeln, desto mehr Spielraum bleibt.' } },
+              { '@type': 'Question', name: 'Wie läuft eine Zwangsversteigerung ab?', acceptedAnswer: { '@type': 'Answer', text: 'Das Amtsgericht setzt einen Versteigerungstermin an. Interessenten können bieten — das Mindestgebot liegt in der Regel bei 70 % des Verkehrswerts. Der Höchstbietende erhält den Zuschlag und wird neuer Eigentümer. Wichtig: Die Immobilie wird so ersteigert wie sie ist — ohne Gewährleistung.' } },
+              { '@type': 'Question', name: 'Was sollte man beim Kauf einer Immobilie in der Zwangsversteigerung beachten?', acceptedAnswer: { '@type': 'Answer', text: 'Vor dem Gebot unbedingt: das Gutachten des Gerichts lesen, die Immobilie von außen besichtigen, bestehende Belastungen im Grundbuch prüfen und das Mindestgebot realistisch kalkulieren. Wer unvorbereitet bietet, riskiert teure Überraschungen nach dem Zuschlag.' } },
+              { '@type': 'Question', name: 'Wie viel Eigenkapital brauche ich für eine Zwangsversteigerung?', acceptedAnswer: { '@type': 'Answer', text: 'Beim Zuschlag muss sofort eine Sicherheitsleistung von 10 % des Verkehrswerts hinterlegt werden — in bar oder per Bankbürgschaft. Der Restbetrag wird nach Abschluss des Verfahrens fällig. Eine Bankfinanzierung sollte vorab gesichert sein.' } },
+              { '@type': 'Question', name: 'Lohnt sich der Kauf einer zwangsversteigerten Immobilie?', acceptedAnswer: { '@type': 'Answer', text: 'Manchmal ja — vor allem für erfahrene Investoren, die Risiken realistisch einschätzen können. Günstige Einstiegspreise sind möglich, aber oft gibt es versteckte Mängel, Mieter mit besonderen Rechten oder offene Nebenkosten. Eine professionelle Begleitung durch einen Experten ist empfehlenswert.' } },
+            ],
+          }),
+        }}
+      />
       <Header ctaLabel="Kostenlose Beratung" ctaHref="#kontakt" />
 
       {/* Breadcrumb */}
@@ -60,8 +77,8 @@ export default function ZwangsversteigerungenPage() {
             🔨 Zwangsversteigerungen
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Zwangsversteigerungen.<br />
-            <span className="text-brand-green">Wir kennen beide Seiten.</span>
+            Zwangsversteigerung Frankfurt<br />
+            <span className="text-brand-green">– wir kennen beide Seiten.</span>
           </h1>
           <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Ob du selbst betroffen bist oder gezielt nach einer Kaufgelegenheit suchst — wir begleiten dich mit Erfahrung, Diskretion und klarem Überblick durch den gesamten Prozess.
@@ -86,6 +103,9 @@ export default function ZwangsversteigerungenPage() {
                 Schnelles Handeln ist entscheidend
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
+                <p className="font-medium text-brand-anthrazit">
+                  Eine Zwangsversteigerung ist ein gerichtliches Verfahren, bei dem eine Immobilie auf Antrag eines Gläubigers öffentlich versteigert wird, um ausstehende Schulden zu begleichen. In Frankfurt und dem Rhein-Main-Gebiet finden regelmäßig Versteigerungstermine am Amtsgericht statt. Betroffene sollten frühzeitig handeln — ein <a href="/immobilienmakler" className="text-brand-green hover:underline">Immobilienverkauf vor dem Versteigerungstermin</a> erzielt fast immer höhere Erlöse.
+                </p>
                 <p>
                   Zwangsversteigerungen sind keine gewöhnlichen Immobilientransaktionen. Ob auf der Seite der Betroffenen oder als Käufer — der Prozess hat klare Spielregeln, enge Fristen und erhebliche finanzielle Konsequenzen für alle Beteiligten.
                 </p>

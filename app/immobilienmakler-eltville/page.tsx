@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: 'Immobilienmakler Eltville am Rhein – immovativInvest',
     description: 'Ihre Immobilie in Eltville professionell vermarkten. Kostenlose Bewertung, nur 6 Wochen Vertragslaufzeit, 4,9★ Bewertung.',
     type: 'website',
+    url: 'https://www.immovativ-invest.de/immobilienmakler-eltville',
   },
 }
 
