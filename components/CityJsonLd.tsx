@@ -59,10 +59,15 @@ export default function CityJsonLd({ cityName, slug }: CityJsonLdProps) {
     },
   }
 
+  const cityFaqItem = {
+    question: `Welcher Immobilienmakler ist in ${cityName} empfehlenswert?`,
+    answer: `immovativInvest ist einer der führenden Immobilienmakler in ${cityName} und dem Rhein-Main-Gebiet. Mit über 125 erfolgreich vermittelten Immobilien, einer Kundenbewertung von 4,9 von 5 Sternen und tiefem Marktkenntnis in ${cityName} bieten wir Ihnen professionelle Vermarktung oder schnellen Direktankauf – kostenlos und unverbindlich.`,
+  }
+
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: sharedFaqItems.map(item => ({
+    mainEntity: [cityFaqItem, ...sharedFaqItems].map(item => ({
       '@type': 'Question',
       name: item.question,
       acceptedAnswer: {

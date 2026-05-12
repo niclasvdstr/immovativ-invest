@@ -37,6 +37,18 @@ export const sharedFaqItems = [
   },
   {
     question: 'Wie finde ich den richtigen Immobilienmakler in Frankfurt?',
-    answer: 'Den richtigen Makler erkennst du an drei Dingen: lokaler Marktkenntnis, nachweisbaren Erfolgen und transparenter Kommunikation. Ein guter Makler kennt aktuelle Verkaufspreise in deiner Straße, hat echte Referenzen vorzuweisen und spricht klar über Kosten und Vertragsbedingungen. Bei immovativInvest kombinieren wir tiefes Regionalknowhow im Rhein-Main-Gebiet mit über 500 erfolgreich vermittelten Immobilien und einer 4,9-Sterne-Bewertung.',
+    answer: 'Den richtigen Makler erkennst du an drei Dingen: lokaler Marktkenntnis, nachweisbaren Erfolgen und transparenter Kommunikation. Ein guter Makler kennt aktuelle Verkaufspreise in deiner Straße, hat echte Referenzen vorzuweisen und spricht klar über Kosten und Vertragsbedingungen. Bei immovativInvest kombinieren wir tiefes Regionalknowhow im Rhein-Main-Gebiet mit über 125 erfolgreich vermittelten Immobilien und einer 4,9-Sterne-Bewertung.',
+  },
+  {
+    question: 'Wie hoch ist die Grunderwerbsteuer in Hessen?',
+    answer: 'In Hessen beträgt die Grunderwerbsteuer 6 % des Kaufpreises. Sie wird vom Käufer getragen und ist bei der Finanzierungsplanung unbedingt einzukalkulieren. Bei einem Kaufpreis von 500.000 € sind das 30.000 € allein für die Grunderwerbsteuer – zusätzlich zu Notar- und Grundbuchkosten. Insgesamt sollten Käufer in Hessen 10–12 % Kaufnebenkosten einplanen.',
+  },
+  {
+    question: 'Was ist der Unterschied zwischen Verbrauchsausweis und Bedarfsausweis?',
+    answer: 'Der Verbrauchsausweis basiert auf dem tatsächlichen Energieverbrauch der letzten drei Jahre – er ist günstiger (ab ca. 50 €) und einfacher zu erstellen, aber weniger aussagekräftig, weil er das Nutzerverhalten widerspiegelt. Der Bedarfsausweis analysiert technisch den Energiebedarf des Gebäudes (Dämmung, Heizung, Fenster) – er ist teurer (ab ca. 300 €), aber objektiver und für Käufer informativer. Für Gebäude mit weniger als 5 Wohneinheiten, die vor 1977 gebaut wurden, ist der Bedarfsausweis in der Regel Pflicht.',
+  },
+  {
+    question: 'Wie berechne ich den Quadratmeterpreis meiner Immobilie?',
+    answer: 'Der Quadratmeterpreis ergibt sich aus: Verkaufspreis ÷ Wohnfläche in m². Wichtig: Nur die Wohnfläche zählt – Keller, Garagen und Abstellräume werden nicht einbezogen. Dachgeschossflächen mit weniger als 2 Meter Stehhöhe werden nur zur Hälfte angerechnet. Eine korrekte Wohnflächenberechnung nach WoFlV ist deshalb entscheidend: Ältere Berechnungen können abweichen und führen zu falschen Preisvergleichen. Wir prüfen die Wohnfläche vor dem Verkauf kostenlos.',
   },
 ]

@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
-  title: 'Unsere Services – Immobilien, Finanzierung & Beratung | immovativInvest',
+  title: 'Leistungen – Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
   description: 'Von der Immobilienvermittlung über Finanzierung bis zur Beratung in besonderen Situationen — entdecken Sie alle Leistungen von immovativInvest.',
   alternates: { canonical: 'https://www.immovativ-invest.de/service' },
   openGraph: {

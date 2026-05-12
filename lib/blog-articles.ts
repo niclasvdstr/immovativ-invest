@@ -3205,6 +3205,204 @@ Hast du Fragen zu deiner Wohnung in Frankfurt? Ruf uns an oder schreib uns – w
     `,
   },
   {
+    slug: 'mietpreise-frankfurt-rhein-main-2026',
+    category: 'Markt',
+    badge: 'Aktuell',
+    badgeColor: 'bg-brand-green text-white',
+    title: 'Mietpreise Frankfurt & Rhein-Main 2026: Was Eigentümer jetzt wissen müssen',
+    excerpt: 'Mieten in Frankfurt sind auf Rekordniveau. Wie das die Kaufentscheidung beeinflusst, was Vermieter beachten müssen – und welche Stadtteile besonders gefragt sind.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '05. Mai 2026',
+    readTime: '6 Min.',
+    img: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=600&fit=crop',
+    content: `
+## Mietmarkt Frankfurt 2026 – ein Markt unter Druck
+
+Frankfurt am Main gehört 2026 zu den teuersten Mietstädten Deutschlands. Die Durchschnittsmiete für eine Neuvertragsmiete liegt je nach Stadtbezirk zwischen **14 und 22 €/m²** – Tendenz weiter steigend. Das Rhein-Main-Gebiet folgt diesem Trend, bleibt aber günstiger.
+
+## Die Zahlen im Überblick
+
+**Frankfurt Innenstadt & Westend:** 18–22 €/m² Kaltmiete für Neuverträge. Gesucht sind vor allem 2–3-Zimmer-Wohnungen für Berufstätige und Paare.
+
+**Sachsenhausen, Bornheim, Nordend:** 15–19 €/m². Sehr beliebt bei Familien und gut verdienenden Singles. Wer hier eine Wohnung vermietet, findet in der Regel innerhalb von Tagen qualifizierte Interessenten.
+
+**Höchst, Griesheim, Sossenheim:** 11–14 €/m². Steigende Nachfrage durch Preisentwicklung in der Innenstadt. Preiswachstum hier besonders dynamisch.
+
+**Rhein-Main-Umland (Wiesbaden, Offenbach, Darmstadt):** 10–15 €/m². Pendler aus Frankfurt treiben die Nachfrage – insbesondere in gut angebundenen Stadtteilen.
+
+## Was das für Eigentümer bedeutet
+
+**Hohe Mieten = hohe Kaufpreise:** Der Zusammenhang ist direkt. Wer als Investor eine Renditeimmobilie kauft, rechnet mit der erzielbaren Miete. Hohe Mietpreise in Frankfurt stützen die Kaufpreise auf einem historisch hohen Niveau.
+
+**Mieter bleiben länger:** In einem angespannten Mietmarkt kündigen Mieter seltener. Das ist gut für stabile Mieteinnahmen, kann aber die Vermarktung einer vermieteten Wohnung erschweren – denn Käufer, die selbst einziehen wollen, schreckt das ab.
+
+**Mietpreisbremse gilt:** In Frankfurt gilt die Mietpreisbremse. Bei Neuvermietungen darf die Miete maximal 10 % über der ortsüblichen Vergleichsmiete liegen – Ausnahmen: Neubau nach 2014 und umfassend sanierte Wohnungen.
+
+## Welche Stadtteile sind besonders gefragt?
+
+Unsere Erfahrung aus über 125 Verkäufen zeigt: Die Nachfrage nach Mietobjekten ist in diesen Frankfurter Stadtteilen am stärksten:
+
+- **Nordend & Bornheim** – klassische Altbaulagen, stabile Mieter, sehr gute Infrastruktur
+- **Sachsenhausen** – Apfelweinviertel trifft Gründerzeit, hohe Kaufpreise, loyale Mieter
+- **Bockenheim** – studierendenaffin, aber zunehmend auch Familien durch Westend-Nähe
+- **Niederrad & Gutleutviertel** – aufstrebende Viertel mit Entwicklungspotenzial
+
+## Was Verkäufer von vermieteten Wohnungen wissen sollten
+
+Eine vermietete Wohnung verkauft sich an einen anderen Käuferkreis als eine leerstehende. Renditeorientierte Investoren bezahlen gute Preise – wenn die Miete stimmt und der Mieter bonitätsstark ist.
+
+Wir haben ein aktives Netzwerk von Immobilieninvestoren im Rhein-Main-Gebiet, die gezielt nach vermieteten Objekten suchen. Kostenlose Bewertung auf Anfrage.
+    `,
+  },
+  {
+    slug: 'wohnrecht-niessbrauch-immobilienverkauf',
+    category: 'Recht & Steuern',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-500 text-white',
+    title: 'Wohnrecht & Nießbrauch beim Immobilienverkauf: Was Eigentümer wissen müssen',
+    excerpt: 'Wer eine Immobilie mit eingetragenem Wohnrecht oder Nießbrauch verkauft, steht vor besonderen Herausforderungen. Wir erklären die Unterschiede, die steuerlichen Folgen und was das für den Verkaufspreis bedeutet.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '28. April 2026',
+    readTime: '7 Min.',
+    img: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&h=600&fit=crop',
+    content: `
+## Was ist der Unterschied zwischen Wohnrecht und Nießbrauch?
+
+Beide Rechte sichern einer Person das Recht, eine Immobilie zu nutzen – obwohl sie nicht Eigentümer ist. Der Unterschied liegt im Umfang:
+
+**Wohnrecht (§ 1093 BGB):** Der Berechtigte darf die Immobilie bewohnen – und sonst nichts. Er darf sie nicht vermieten. Das Recht ist höchstpersönlich und nicht übertragbar.
+
+**Nießbrauch (§ 1030 BGB):** Der Berechtigte darf die Immobilie nicht nur bewohnen, sondern auch vermieten und die Mieteinnahmen behalten. Außerdem trägt er die laufenden Kosten (Grundsteuer, Instandhaltung). Der Nießbrauch ist wirtschaftlich deutlich stärker als das Wohnrecht.
+
+Beide Rechte werden ins Grundbuch eingetragen – sie bleiben auch bei einem Eigentümerwechsel bestehen.
+
+## Wie beeinflusst das den Verkaufspreis?
+
+Ein eingetragenes Wohnrecht oder ein Nießbrauch reduziert den Verkaufspreis erheblich. Der Käufer erwirbt eine Immobilie, die er weder selbst nutzen noch vermieten kann – zumindest nicht sofort.
+
+**Wertabschlag beim Wohnrecht:**
+
+Der Wert des Wohnrechts wird nach dem Jahreswert der Nutzung multipliziert mit einem Kapitalisierungsfaktor berechnet. Der Kapitalisierungsfaktor hängt vom Alter des Berechtigten ab (Lebenserwartung laut Sterbetafel).
+
+Beispiel: Berechtigte Person, 75 Jahre alt, Wohnwert 1.200 €/Monat.
+- Jahreswert: 14.400 €
+- Kapitalisierungsfaktor (ca.): 9,5
+- Wert des Wohnrechts: ca. 136.800 €
+
+Dieser Betrag wird vom Verkehrswert abgezogen. Eine Immobilie im Wert von 500.000 € erzielt dann nur noch ca. 363.000 € am Markt.
+
+**Wertabschlag beim Nießbrauch:**
+
+Noch höher, da der Nießbrauch umfassender ist. Die Berechnung ist identisch – allerdings wird zusätzlich die Pflicht zur Kostentragung berücksichtigt.
+
+## Steuerliche Aspekte
+
+**Beim Schenken:** Wenn Eltern eine Immobilie an Kinder schenken und sich gleichzeitig ein Wohnrecht oder Nießbrauch vorbehalten, reduziert das den schenkungsteuerlichen Wert erheblich. Nur der Nettowert (Immobilienwert minus Wert des Rechts) ist schenkungsteuerpflichtig.
+
+**Beim Verkauf:** Wird eine Immobilie mit eingetragenem Nießbrauch oder Wohnrecht verkauft, sind nur die Gegenansprüche des Verkäufers steuerlich relevant. Der Berechtigte hat davon getrennte Einkünfte (z. B. ersparte Miete oder Mieteinnahmen bei Nießbrauch).
+
+**Spekulationssteuer:** Die 10-Jahres-Frist beginnt mit dem ursprünglichen Kaufdatum, nicht mit dem Datum der Rechtseinräumung.
+
+## Welche Käufer kommen in Frage?
+
+Mit eingetragenem Wohnrecht oder Nießbrauch kommen nur bestimmte Käufergruppen in Frage:
+
+- **Investoren mit langem Anlagehorizont**, die den späteren Wert sichern wollen
+- **Familienangehörige**, die das Objekt innerhalb der Familie halten möchten
+- **Direkte Investoren**, die einen niedrigeren Einstiegspreis akzeptieren und auf den Wegfall des Rechts warten
+
+Die Vermarktung muss gezielt auf diese Gruppen ausgerichtet werden – breite Portalwerbung erzeugt hier oft wenig qualifizierte Anfragen.
+
+## Unser Rat
+
+Immobilien mit Wohnrecht oder Nießbrauch sind keine Problemimmobilien – sie brauchen aber eine spezifische Vermarktungsstrategie. Wir haben Erfahrung in diesem Bereich und ein Netzwerk von Investoren, die solche Objekte gezielt suchen.
+
+Lassen Sie uns gemeinsam prüfen, ob ein Verkauf zum jetzigen Zeitpunkt sinnvoll ist – oder ob eine andere Lösung mehr Sinn macht. Kostenlos und unverbindlich.
+
+*Hinweis: Dieser Artikel ersetzt keine rechtliche oder steuerliche Beratung.*
+    `,
+  },
+  {
+    slug: 'zwangsversteigerung-kaufen-als-kaeufer',
+    category: 'Spezialfälle',
+    badge: 'Spezialfall',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Zwangsversteigerung kaufen: Was Käufer wissen müssen – Chancen & Risiken',
+    excerpt: 'Eine Immobilie bei der Zwangsversteigerung kaufen klingt nach Schnäppchen. Aber wer unvorbereitet bietet, erlebt böse Überraschungen. Was wirklich hinter dem Verfahren steckt – und wie Sie es richtig angehen.',
+    author: 'Mazlum Selcuk',
+    authorImg: '/mazlum.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '20. April 2026',
+    readTime: '8 Min.',
+    img: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&h=600&fit=crop',
+    content: `
+## Was ist eine Zwangsversteigerung?
+
+Eine Zwangsversteigerung findet statt, wenn ein Eigentümer seine Schulden nicht mehr bedienen kann und ein Gläubiger (meist eine Bank) die Verwertung der Immobilie beantragt. Das Amtsgericht führt das Verfahren durch, ein Rechtspfleger leitet die Versteigerung.
+
+Das Ziel des Verfahrens ist nicht, der günstigste Weg zum Immobilienerwerb zu sein – sondern die Schulden des Eigentümers zu begleichen. Für Käufer entstehen dabei jedoch oft Möglichkeiten, die sie auf dem freien Markt nicht finden.
+
+## Die Chancen beim Kauf einer Zwangsversteigerung
+
+**Günstigerer Preis:** In vielen Fällen liegt der Zuschlagspreis unter dem Marktwert. Besonders bei Immobilien in schwierigen Situationen (schlechter Zustand, belastete Lage, emotionale Rahmenbedingungen) können Käufer profitieren.
+
+**Keine Maklerprovision:** Eine Zwangsversteigerung läuft ohne Makler. Käufer sparen die Provision – das sind im Rhein-Main-Gebiet typischerweise 3–4 % des Kaufpreises.
+
+**Klare Verfahrensregeln:** Der Prozess ist gesetzlich geregelt und transparent. Es gibt kein Bieterverfahren im Dunkeln – alles ist öffentlich.
+
+## Die Risiken – und warum sie oft unterschätzt werden
+
+**Keine Besichtigung vor dem Kauf (meist):** In den meisten Fällen hat der Käufer vor dem Zuschlag keine Möglichkeit, die Immobilie von innen zu besichtigen. Was er bekommt, sieht er erst nach dem Zuschlag – und das kann böse Überraschungen bergen.
+
+**Verkehrswertgutachten ≠ Marktwert:** Das Gutachten, das dem Verfahren zugrunde liegt, kann veraltet sein oder wesentliche Mängel nicht erfassen. Es ist eine Pflichtlektüre – aber kein Ersatz für eine unabhängige Einschätzung.
+
+**Versteckte Belastungen:** Nicht alle Belastungen im Grundbuch erlöschen mit dem Zuschlag. Wohnrechte und Nießbrauch, die vor der Grundschuld der Bank eingetragen wurden, bleiben bestehen. Genau lesen, was im Grundbuchauszug steht.
+
+**Barzahlungspflicht (praktisch):** Nach dem Zuschlag muss der Kaufpreis innerhalb von 6–8 Wochen gezahlt werden. Eine Finanzierungszusage sollte vorher vorliegen – nicht danach.
+
+**Räumung ist Käufersache:** Wenn der Vorbesitzer nicht auszieht, muss der neue Eigentümer die Räumung selbst durchsetzen. Das kostet Zeit und Nerven.
+
+## Der Ablauf im Überblick
+
+1. **Terminermittlung:** Versteigerungstermine sind öffentlich einsehbar – beim Amtsgericht oder auf zvg-portal.de
+2. **Unterlagen studieren:** Grundbuchauszug, Verkehrswertgutachten, Verfahrensakte (einsehbar beim Amtsgericht)
+3. **Sicherheitsleistung vorbereiten:** Beim Termin ist eine Sicherheitsleistung von 10 % des Verkehrswertes zu hinterlegen – meist als Bankbürgschaft oder Bundesbanküberweisung
+4. **Bieten:** Das Mindestgebot liegt bei 50 % des Verkehrswertes (5/10-Grenze). Das Gericht kann bei weniger als 70 % den Zuschlag verweigern (7/10-Grenze im ersten Termin)
+5. **Zuschlag:** Wer beim Hammerfall das höchste Gebot hat, erhält den Zuschlag
+6. **Kaufpreiszahlung:** Innerhalb der Frist zahlen oder mit Zinsen in Verzug geraten
+7. **Eintragung:** Das Gericht überträgt das Eigentum im Grundbuch
+
+## Was Sie vorher prüfen sollten
+
+- **Grundbuchauszug vollständig lesen** – welche Belastungen erlöschen, welche bleiben?
+- **Verkehrswertgutachten kritisch analysieren** – wie alt ist es? Was wurde vor Ort geprüft?
+- **Finanzierung sichern** – Vorgespräch mit der Bank führen, Finanzierungszusage einholen
+- **Gericht kontaktieren** – Akteneinsicht beantragen, ggf. Besichtigungsmöglichkeit erfragen
+- **Experten hinzuziehen** – Makler, Gutachter oder Rechtsanwalt mit Erfahrung in Zwangsversteigerungen
+
+## Wann ist eine Zwangsversteigerung eine gute Gelegenheit?
+
+Für erfahrene Käufer oder Investoren mit solider Finanzierung kann eine Zwangsversteigerung eine attraktive Option sein – insbesondere wenn:
+
+- Die Immobilie in einer guten Lage liegt und der Zustand kalkulierbar ist
+- Das Gutachten einen realistischen Wert zeigt und keine versteckten Belastungen existieren
+- Die Finanzierung gesichert ist und Zeit für das Verfahren eingeplant wurde
+- Der Käufer bereit ist, ggf. eine Räumung durchzuführen
+
+Für Erstkäufer ohne Erfahrung und ohne Begleitung ist die Zwangsversteigerung riskanter als ein Kauf auf dem freien Markt.
+
+## Wie wir Ihnen helfen können
+
+Als Immobilienmakler im Rhein-Main-Gebiet beraten wir Käufer vor Zwangsversteigerungen – von der Analyse der Unterlagen bis zur Einschätzung des Marktwertes. Wir helfen Ihnen zu beurteilen, ob ein konkretes Objekt eine echte Chance ist oder ob versteckte Risiken das Schnäppchen zunichte machen.
+
+*Hinweis: Dieser Artikel ersetzt keine Rechtsberatung. Ziehen Sie bei konkreten Fragen einen auf Zwangsversteigerungen spezialisierten Anwalt hinzu.*
+    `,
+  },
+  {
     slug: 'immobilienmakler-frankfurt-bewertungen-vergleich',
     category: 'Markt',
     badge: 'Vergleich',

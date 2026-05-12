@@ -5,11 +5,11 @@ import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
-  description: 'Immobilienmakler Frankfurt & Rhein-Main – professionell Immobilie verkaufen oder direkt verkaufen. Kostenlose Bewertung, 4,9★ Bewertung, 500+ vermittelte Objekte.',
+  description: 'Immobilienmakler Frankfurt & Rhein-Main – professionell Immobilie verkaufen oder direkt verkaufen. Kostenlose Bewertung, 4,9★ Bewertung, 125+ vermittelte Objekte.',
   alternates: { canonical: 'https://www.immovativ-invest.de' },
   openGraph: {
     title: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
-    description: 'Immobilienmakler Frankfurt & Rhein-Main – Immobilie professionell vermarkten oder direkt verkaufen. Kostenlose Bewertung, 500+ Objekte, 4,9★.',
+    description: 'Immobilienmakler Frankfurt & Rhein-Main – Immobilie professionell vermarkten oder direkt verkaufen. Kostenlose Bewertung, 125+ Objekte, 4,9★.',
     url: 'https://www.immovativ-invest.de',
     siteName: 'immovativInvest',
     locale: 'de_DE',
@@ -174,7 +174,7 @@ export default function LandingPage() {
         <AnimateIn direction="fade">
         <div className="max-w-3xl mx-auto grid grid-cols-3 gap-6 md:gap-0 md:divide-x md:divide-white/10">
           {[
-            { value: '500+', label: 'Verkaufte Immobilien' },
+            { value: '125+', label: 'Verkaufte Immobilien' },
             { value: '4,9 ★', label: 'Kundenbewertung' },
             { value: '24h', label: 'Rückmeldung garantiert' },
           ].map(item => (
@@ -188,22 +188,59 @@ export default function LandingPage() {
       </section>
 
       {/* ── INTRO TEXT ── */}
-      <section className="py-14 px-4 md:px-8 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-xl md:text-2xl font-bold text-brand-anthrazit mb-5">
-            Ihr Immobilienmakler in Frankfurt & dem Rhein-Main-Gebiet
-          </h2>
-          <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
-            <p>
-              immovativInvest ist Ihr persönlicher Ansprechpartner für den Immobilienverkauf in Frankfurt, dem Hochtaunuskreis, dem Main-Taunus-Kreis und dem gesamten Rhein-Main-Gebiet. Seit 2020 haben Niclas van der Straeten und Mazlum Selcuk über 500 Immobilien erfolgreich vermittelt — mit einer Kundenbewertung von 4,9 von 5 Sternen.
-            </p>
-            <p>
-              Wir bieten zwei Wege für Ihren Immobilienverkauf: professionelle <a href="/immobilienmakler" className="text-brand-green font-semibold hover:underline">Maklervermarktung</a> für den höchstmöglichen Marktpreis oder <a href="/ankauf" className="text-brand-green font-semibold hover:underline">Direktankauf</a> für einen schnellen, provisionsfreien Abschluss in durchschnittlich 21 Tagen. Beide Wege beginnen mit einer kostenlosen, unverbindlichen <a href="/verkaufen" className="text-brand-green font-semibold hover:underline">Immobilienbewertung</a>.
-            </p>
-            <p>
-              Unsere Leistungen umfassen Immobilienbewertung, professionelle Vermarktung, Käuferqualifizierung, <a href="/finanzierung" className="text-brand-green font-semibold hover:underline">Finanzierungsberatung</a> und vollständige Kaufabwicklung bis zur Schlüsselübergabe — alles aus einer Hand, persönlich und diskret.
+      <section className="py-16 px-4 md:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+
+          {/* Heading row */}
+          <div className="mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-3">
+              Ihr Immobilienmakler in Frankfurt & dem Rhein-Main-Gebiet
+            </h2>
+            <p className="text-brand-gray-warm leading-relaxed text-sm md:text-base max-w-3xl">
+              immovativInvest ist Ihr persönlicher Ansprechpartner für den Immobilienverkauf in Frankfurt, dem Hochtaunuskreis, dem Main-Taunus-Kreis und dem gesamten Rhein-Main-Gebiet. Seit 2020 haben Niclas van der Straeten und Mazlum Selcuk über 125 Immobilien erfolgreich vermittelt — mit einer Kundenbewertung von 4,9 von 5 Sternen.
             </p>
           </div>
+
+          {/* Two service cards */}
+          <div className="grid md:grid-cols-2 gap-5 mb-10">
+            {/* Makler card */}
+            <a href="/immobilienmakler" className="group flex flex-col gap-3 rounded-2xl border border-gray-100 bg-[#f8f9ff] p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #1e3a8a, #2563EB)' }}>
+                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                </div>
+                <h3 className="text-base font-bold text-brand-anthrazit group-hover:text-blue-700 transition-colors">Maklervermarktung</h3>
+              </div>
+              <p className="text-brand-gray-warm text-sm leading-relaxed">
+                Professionelle Vermarktung für den höchstmöglichen Verkaufspreis — mit persönlicher Betreuung, Profifotos und qualifizierten Käufern aus unserem Netzwerk.
+              </p>
+              <span className="text-sm font-semibold text-blue-700 group-hover:underline mt-auto">Mehr erfahren →</span>
+            </a>
+
+            {/* Ankauf card */}
+            <a href="/ankauf" className="group flex flex-col gap-3 rounded-2xl border border-gray-100 bg-[#f0fdf4] p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-brand-green">
+                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-base font-bold text-brand-anthrazit group-hover:text-brand-green transition-colors">Direktankauf</h3>
+              </div>
+              <p className="text-brand-gray-warm text-sm leading-relaxed">
+                Wir kaufen Ihre Immobilie direkt — ohne Provision, ohne Besichtigungstouren und ohne monatelange Wartezeit. Angebot in durchschnittlich 21 Tagen.
+              </p>
+              <span className="text-sm font-semibold text-brand-green group-hover:underline mt-auto">Direktankauf anfragen →</span>
+            </a>
+          </div>
+
+          {/* Bottom text */}
+          <p className="text-brand-gray-warm leading-relaxed text-sm md:text-base max-w-3xl">
+            Beide Wege beginnen mit einer kostenlosen, unverbindlichen <a href="/verkaufen" className="text-brand-green font-semibold hover:underline">Immobilienbewertung</a>. Unsere Leistungen umfassen zudem <a href="/finanzierung" className="text-brand-green font-semibold hover:underline">Finanzierungsberatung</a>, Käuferqualifizierung und die vollständige Kaufabwicklung bis zur Schlüsselübergabe — alles aus einer Hand, persönlich und diskret.
+          </p>
+
         </div>
       </section>
 
