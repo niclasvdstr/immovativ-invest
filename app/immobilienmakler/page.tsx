@@ -312,7 +312,7 @@ export default function ImmobilienmaklerPage() {
       <section id="vorteile" className="section-padding bg-white">
         <div className="container-max">
           <AnimateIn direction="up">
-            <div className="text-left mb-12">
+            <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
                 <span className="text-brand-green">Deine Vorteile</span> mit immovativ<span className="font-black">Invest</span> als Makler.
               </h2>
