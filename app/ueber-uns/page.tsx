@@ -185,7 +185,7 @@ export default function UeberUnsPage() {
         <div className="border-t border-brand-gray-border mt-0">
           <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4">
             {[
-              { value: '500+', label: 'Verkäufe' },
+              { value: '125+', label: 'Verkäufe' },
               { value: '4,9★', label: 'Google-Bewertung' },
               { value: '6 Wo.', label: 'Ø Vertragslaufzeit' },
               { value: '100%', label: 'Persönlich' },

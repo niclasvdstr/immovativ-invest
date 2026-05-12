@@ -700,7 +700,7 @@ export default function ImmobilienmaklerPage() {
               </h2>
             </div>
             <div className="flex items-center gap-6 md:gap-10 shrink-0">
-              {[['35+', 'Städte'], ['14', 'Regionen'], ['500+', 'Verkäufe']].map(([val, label]) => (
+              {[['35+', 'Städte'], ['14', 'Regionen'], ['125+', 'Verkäufe']].map(([val, label]) => (
                 <div key={label} className="text-center">
                   <div className="text-xl font-bold text-brand-anthrazit">{val}</div>
                   <div className="text-xs text-brand-gray-warm uppercase tracking-wide font-medium">{label}</div>
