@@ -6,6 +6,17 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { articles, type Category } from '@/lib/blog-articles'
 
+const categoryNav = [
+  { label: 'Alle', href: '/blog' },
+  { label: 'Markt', href: '/blog/kategorie/markt' },
+  { label: 'Verkaufen', href: '/blog/kategorie/verkaufen' },
+  { label: 'Bewertung', href: '/blog/kategorie/bewertung' },
+  { label: 'Recht & Steuern', href: '/blog/kategorie/recht-steuern' },
+  { label: 'Finanzierung', href: '/blog/kategorie/finanzierung' },
+  { label: 'Prozess', href: '/blog/kategorie/prozess' },
+  { label: 'Spezialfälle', href: '/blog/kategorie/spezialfaelle' },
+]
+
 const categoryMap: Record<string, { label: Category; title: string; description: string }> = {
   'markt': {
     label: 'Markt',
@@ -104,15 +115,31 @@ export default function CategoryPage({ params }: { params: { cat: string } }) {
         </div>
       </nav>
 
+      {/* Kategorie-Navigation */}
+      <section className="py-6 px-4 md:px-8 bg-white border-b border-brand-gray-border sticky top-20 z-10 shadow-soft">
+        <div className="max-w-6xl mx-auto flex gap-2 overflow-x-auto justify-center">
+          {categoryNav.map(cat => {
+            const isActive = cat.href === `/blog/kategorie/${params.cat}`
+            return (
+              <a
+                key={cat.href}
+                href={cat.href}
+                className={`whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold transition-colors shrink-0 ${
+                  isActive
+                    ? 'bg-brand-green text-white'
+                    : 'bg-brand-gray-light text-brand-anthrazit hover:bg-brand-green-50 hover:text-brand-green border border-brand-gray-border'
+                }`}
+              >
+                {cat.label}
+              </a>
+            )
+          })}
+        </div>
+      </section>
+
       {/* Hero */}
       <section className="py-12 px-4 md:px-8 bg-brand-gray-light border-b border-brand-gray-border">
         <div className="max-w-6xl mx-auto">
-          <Link href="/blog" className="inline-flex items-center gap-2 text-brand-green text-sm font-semibold hover:underline mb-6">
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-            Alle Artikel
-          </Link>
           <div className="inline-flex items-center gap-2 bg-brand-green text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4">
             {categoryArticles.length} Artikel
           </div>

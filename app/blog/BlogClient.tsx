@@ -1,13 +1,22 @@
 'use client'
 
-import { useState } from 'react'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { articles } from '@/lib/blog-articles'
 
-const categories = ['Alle', 'Markt', 'Verkaufen', 'Bewertung', 'Recht & Steuern', 'Finanzierung', 'Prozess', 'Spezialfälle']
+const categories: { label: string; href: string }[] = [
+  { label: 'Alle', href: '/blog' },
+  { label: 'Markt', href: '/blog/kategorie/markt' },
+  { label: 'Verkaufen', href: '/blog/kategorie/verkaufen' },
+  { label: 'Bewertung', href: '/blog/kategorie/bewertung' },
+  { label: 'Recht & Steuern', href: '/blog/kategorie/recht-steuern' },
+  { label: 'Finanzierung', href: '/blog/kategorie/finanzierung' },
+  { label: 'Prozess', href: '/blog/kategorie/prozess' },
+  { label: 'Spezialfälle', href: '/blog/kategorie/spezialfaelle' },
+]
 
 export default function BlogClient() {
-  const [activeCategory, setActiveCategory] = useState('Alle')
+  const pathname = usePathname()
 
   const sorted = [...articles].sort((a, b) => {
     const parseDate = (d: string) => {
@@ -21,35 +30,34 @@ export default function BlogClient() {
     return parseDate(b.date).getTime() - parseDate(a.date).getTime()
   })
 
-  const filtered = activeCategory === 'Alle'
-    ? sorted
-    : sorted.filter(a => a.category === activeCategory)
-
-  const featured = filtered[0]
-  const grid = filtered.slice(1)
+  const featured = sorted[0]
+  const grid = sorted.slice(1)
 
   return (
     <>
-      {/* Kategorie-Filter */}
+      {/* Kategorie-Navigation */}
       <section className="py-6 px-4 md:px-8 bg-white border-b border-brand-gray-border sticky top-0 z-10 shadow-soft">
         <div className="max-w-6xl mx-auto flex gap-2 overflow-x-auto justify-center">
-          {categories.map(cat => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold transition-colors shrink-0 ${
-                activeCategory === cat
-                  ? 'bg-brand-green text-white'
-                  : 'bg-brand-gray-light text-brand-anthrazit hover:bg-brand-green-50 hover:text-brand-green border border-brand-gray-border'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+          {categories.map(cat => {
+            const isActive = pathname === cat.href
+            return (
+              <a
+                key={cat.href}
+                href={cat.href}
+                className={`whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold transition-colors shrink-0 ${
+                  isActive
+                    ? 'bg-brand-green text-white'
+                    : 'bg-brand-gray-light text-brand-anthrazit hover:bg-brand-green-50 hover:text-brand-green border border-brand-gray-border'
+                }`}
+              >
+                {cat.label}
+              </a>
+            )
+          })}
         </div>
       </section>
 
-      {filtered.length === 0 ? (
+      {sorted.length === 0 ? (
         <section className="py-24 text-center text-brand-gray-warm">
           Keine Artikel in dieser Kategorie.
         </section>
