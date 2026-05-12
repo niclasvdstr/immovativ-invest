@@ -100,16 +100,14 @@ export default function TippgeberKontaktForm() {
         <div className="space-y-2.5">
           {propertyTypes.map((type) => (
             <label key={type} className="flex items-center gap-3 cursor-pointer group">
-              <div
-                className={`w-5 h-5 rounded-full border-2 transition-colors shrink-0 flex items-center justify-center ${
-                  formData.propertyType === type ? 'border-brand-green' : 'border-brand-gray-border group-hover:border-brand-green'
-                }`}
-                onClick={() => setFormData(prev => ({ ...prev, propertyType: type }))}
-              >
-                {formData.propertyType === type && (
-                  <div className="w-2.5 h-2.5 rounded-full bg-brand-green" />
-                )}
-              </div>
+              <input
+                type="radio"
+                name="propertyType"
+                value={type}
+                checked={formData.propertyType === type}
+                onChange={() => setFormData(prev => ({ ...prev, propertyType: type }))}
+                className="w-4 h-4 accent-brand-green cursor-pointer"
+              />
               <span className="text-sm text-brand-anthrazit">{type}</span>
             </label>
           ))}
