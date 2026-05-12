@@ -46,6 +46,7 @@ const categoryLinks: Record<string, { href: string; label: string; desc: string 
   'Spezialfälle': [
     { href: '/erbschaft', label: 'Erbschaftsimmobilie verkaufen', desc: 'Einfühlsame Begleitung beim Verkauf von Erbimmobilien' },
     { href: '/scheidung', label: 'Scheidungsimmobilie verkaufen', desc: 'Diskret und professionell – auch bei schwierigen Situationen' },
+    { href: '/ankauf', label: 'Direktankauf anfragen', desc: 'Schnell, provisionsfrei und ohne Stress verkaufen' },
     { href: '/zwangsversteigerungen', label: 'Zwangsversteigerungen', desc: 'Professionelle Begleitung bei Zwangsversteigerungen' },
   ],
   'Finanzierung': [
@@ -53,8 +54,9 @@ const categoryLinks: Record<string, { href: string; label: string; desc: string 
     { href: '/verkaufen', label: 'Immobilie verkaufen', desc: 'Jetzt kostenlose Bewertung anfragen' },
   ],
   'Bewertung': [
-    { href: '/verkaufen', label: 'Kostenlose Immobilienbewertung', desc: 'Erfahre den Marktwert deiner Immobilie – kostenlos & unverbindlich' },
+    { href: '/immobilienbewertung', label: 'Kostenlose Immobilienbewertung', desc: 'Erfahre den Marktwert deiner Immobilie – persönlich vor Ort, kostenlos & unverbindlich' },
     { href: '/immobilienmakler', label: 'Immobilienmakler Frankfurt', desc: 'Dein Partner für den erfolgreichen Immobilienverkauf' },
+    { href: '/ankauf', label: 'Direktankauf anfragen', desc: 'Schnell und provisionsfrei – Angebot in 21 Tagen' },
   ],
   'Recht & Steuern': [
     { href: '/beratung', label: 'Immobilienberatung', desc: 'Persönliche Beratung zu Rechtsfragen rund um Immobilien' },
@@ -66,7 +68,8 @@ const categoryLinks: Record<string, { href: string; label: string; desc: string 
   ],
   'Markt': [
     { href: '/immobilienmakler', label: 'Immobilienmakler Frankfurt', desc: 'Aktuelle Marktkenntnis für deinen erfolgreichen Verkauf' },
-    { href: '/verkaufen', label: 'Jetzt Immobilie bewerten lassen', desc: 'Erfahre den aktuellen Marktwert deiner Immobilie' },
+    { href: '/immobilienbewertung', label: 'Kostenlose Immobilienbewertung', desc: 'Erfahre den aktuellen Marktwert deiner Immobilie – persönlich vor Ort' },
+    { href: '/ankauf', label: 'Direktankauf anfragen', desc: 'Schnell und provisionsfrei verkaufen' },
   ],
   'Prozess': [
     { href: '/service', label: 'Unsere Leistungen', desc: 'Alle Leistungen von immovativInvest auf einen Blick' },

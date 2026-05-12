@@ -19,6 +19,19 @@ export const metadata: Metadata = {
 export default function ImmobilienangebotePage() {
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Start', item: 'https://www.immovativ-invest.de' },
+              { '@type': 'ListItem', position: 2, name: 'Immobilienangebote Frankfurt & Rhein-Main', item: 'https://www.immovativ-invest.de/immobilienangebote' },
+            ],
+          }),
+        }}
+      />
       <Header
         ctaLabel="Kostenlose Immobilienbewertung"
         ctaHref="/verkaufen"

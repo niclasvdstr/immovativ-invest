@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import AnimateIn from '@/components/AnimateIn'
+import FAQ from '@/components/FAQ'
+import { sharedFaqItems } from '@/lib/faq-items'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
@@ -243,6 +245,12 @@ export default function LandingPage() {
 
         </div>
       </section>
+
+      {/* ── FAQ ── */}
+      <FAQ
+        items={sharedFaqItems}
+        title="Häufige Fragen zum Immobilienverkauf"
+      />
 
     </main>
   )

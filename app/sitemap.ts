@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/beratung`,                      priority: 0.6, changeFrequency: 'monthly', lastModified: new Date('2025-04-01') },
     { url: `${BASE_URL}/immobilienangebote`,            priority: 0.6, changeFrequency: 'weekly',  lastModified: new Date('2025-05-01') },
     { url: `${BASE_URL}/karriere`,                      priority: 0.5, changeFrequency: 'monthly', lastModified: new Date('2025-03-01') },
+    { url: `${BASE_URL}/immobilienbewertung`,             priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2026-05-12') },
     { url: `${BASE_URL}/referenzen`,                    priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2025-05-01') },
   ]
 
