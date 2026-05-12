@@ -87,7 +87,9 @@ const jsonLd = {
       email: 'info@immovativ-invest.de',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Frankfurt am Main',
+        streetAddress: 'Hattsteiner Allee 51',
+        postalCode: '61250',
+        addressLocality: 'Usingen',
         addressRegion: 'Hessen',
         addressCountry: 'DE',
       },
