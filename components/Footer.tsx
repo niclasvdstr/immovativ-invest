@@ -30,7 +30,7 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
 
         {/* Brand – zentriert oben */}
         <div className="flex flex-col items-center text-center mb-8 md:hidden">
-          <Image src="/logo.svg" alt="immovativInvest Logo" width={140} height={28} className="h-8 w-auto mb-4" />
+          <Image src="/logo-white.png" alt="immovativInvest Logo" width={180} height={36} className="h-8 w-auto mb-4" />
           <p className="text-white/75 text-sm leading-relaxed max-w-[260px] mb-4">
             Wir verkaufen deine Immobilie zum bestmöglichen Preis – persönlich, diskret und ohne unnötige Wartezeiten.
           </p>
@@ -54,7 +54,7 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
 
           {/* Brand – Desktop */}
           <div className="flex flex-col items-start text-left">
-            <Image src="/logo.svg" alt="immovativInvest Logo" width={140} height={28} className="h-8 w-auto mb-4" />
+            <Image src="/logo-white.png" alt="immovativInvest Logo" width={180} height={36} className="h-8 w-auto mb-4" />
             <p className="text-white/75 text-sm leading-relaxed max-w-[260px] mb-5">
               Wir verkaufen deine Immobilie zum bestmöglichen Preis – persönlich, diskret und ohne unnötige Wartezeiten.
             </p>
