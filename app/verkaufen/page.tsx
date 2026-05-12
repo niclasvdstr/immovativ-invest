@@ -180,7 +180,7 @@ export default function ImmobilienbewertungPage() {
                 <h3 className="text-2xl font-bold text-brand-anthrazit mb-1">Niclas van der Straeten</h3>
                 <p className="text-brand-gray-warm text-sm mb-8">Immobilienmakler · immovativ<span className="font-black">Invest</span> · Rhein-Main-Gebiet</p>
 
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col sm:flex-row gap-3 text-left">
                   <a
                     href="tel:+4915129686979"
                     className="flex items-center gap-3 bg-white hover:bg-brand-gray-light border border-brand-gray-border rounded-xl px-5 py-3.5 transition-colors duration-200"
