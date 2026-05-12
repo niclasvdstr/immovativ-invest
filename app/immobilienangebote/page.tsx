@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import SuchauftragForm from '@/components/SuchauftragForm'
 
 export const metadata: Metadata = {
   title: 'Immobilienangebote – Frankfurt & Rhein-Main | immovativInvest',
@@ -106,92 +107,7 @@ export default function ImmobilienangebotePage() {
               </div>
             </div>
 
-            <form className="space-y-5" action="#">
-              <div>
-                <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">Budget</label>
-                <select className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all appearance-none">
-                  <option value="">Bitte auswählen</option>
-                  <option>Bis 200.000 €</option>
-                  <option>200.000 – 350.000 €</option>
-                  <option>350.000 – 500.000 €</option>
-                  <option>500.000 – 750.000 €</option>
-                  <option>750.000 – 1.000.000 €</option>
-                  <option>Über 1.000.000 €</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">Objektart</label>
-                <div className="grid grid-cols-2 gap-2">
-                  {['Wohnung', 'Haus', 'Mehrfamilienhaus', 'Egal'].map((type) => (
-                    <label key={type} className="flex items-center gap-1.5 cursor-pointer border border-brand-gray-border rounded-xl px-2.5 py-2.5 hover:border-brand-green transition-colors has-[:checked]:border-brand-green has-[:checked]:bg-brand-green-50">
-                      <input type="radio" name="objektart" value={type} className="accent-brand-green shrink-0" />
-                      <span className="text-xs sm:text-sm text-brand-anthrazit leading-tight">{type}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">Was suchst du?</label>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                  {[
-                    { value: 'fix-flip', label: 'Fix & Flip', desc: 'Sanieren & verkaufen' },
-                    { value: 'kapitalanlage', label: 'Kapitalanlage', desc: 'Kaufen & vermieten' },
-                    { value: 'eigenbezug', label: 'Eigenbezug', desc: 'Selbst einziehen' },
-                  ].map((opt) => (
-                    <label key={opt.value} className="flex flex-col gap-0.5 cursor-pointer border border-brand-gray-border rounded-xl px-4 py-3 hover:border-brand-green transition-colors has-[:checked]:border-brand-green has-[:checked]:bg-brand-green-50">
-                      <div className="flex items-center gap-2">
-                        <input type="radio" name="kaufzweck" value={opt.value} className="accent-brand-green" />
-                        <span className="text-sm font-semibold text-brand-anthrazit">{opt.label}</span>
-                      </div>
-                      <span className="text-xs text-brand-gray-warm pl-5">{opt.desc}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">Bist du schon Eigentümer/in?</label>
-                <div className="flex gap-3">
-                  {['Ja', 'Nein'].map((opt) => (
-                    <label key={opt} className="flex items-center gap-2 cursor-pointer border border-brand-gray-border rounded-xl px-5 py-3 hover:border-brand-green transition-colors has-[:checked]:border-brand-green has-[:checked]:bg-brand-green-50 flex-1 justify-center">
-                      <input type="radio" name="eigentuemer" value={opt} className="accent-brand-green" />
-                      <span className="text-sm text-brand-anthrazit font-medium">{opt}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">Name *</label>
-                  <input type="text" placeholder="Max Mustermann" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all" />
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">Telefon *</label>
-                  <input type="tel" placeholder="+49 151 000 000" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all" />
-                </div>
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">E-Mail *</label>
-                <input type="email" placeholder="ihre@email.de" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all" />
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-brand-anthrazit mb-2 uppercase tracking-wide">Nachricht (optional)</label>
-                <textarea rows={3} placeholder="Weitere Wünsche oder Anmerkungen..." className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all resize-none" />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full btn-gradient text-white font-semibold rounded-xl px-6 py-3.5 text-sm transition-colors flex items-center justify-center gap-2"
-              >
-                Suchauftrag absenden →
-              </button>
-              <p className="text-xs text-brand-gray-warm text-center">
-                Kostenlos & unverbindlich. Keine versteckten Kosten.
-              </p>
-            </form>
+            <SuchauftragForm />
           </div>
         </div>
       </section>

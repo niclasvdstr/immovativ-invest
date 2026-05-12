@@ -95,6 +95,21 @@ export async function POST(req: NextRequest) {
         row('Telefon', phone) +
         row('Immobilientyp', propertyType)
       )
+    } else if (formType === 'suchauftrag') {
+      const { budget, objektart, kaufzweck, eigentuemer, name, phone, email, message } = body
+      subject = `🔔 Neuer Suchauftrag – ${name}`
+      html = emailWrapper(
+        `Suchauftrag von ${name}`,
+        '🔔 Suchauftrag',
+        row('Name', name) +
+        row('Telefon', phone) +
+        row('E-Mail', email) +
+        row('Budget', budget) +
+        row('Objektart', objektart) +
+        row('Kaufzweck', kaufzweck) +
+        row('Eigentümer', eigentuemer) +
+        row('Nachricht', message)
+      )
     } else {
       return NextResponse.json({ error: 'Unbekannter Formulartyp' }, { status: 400 })
     }
