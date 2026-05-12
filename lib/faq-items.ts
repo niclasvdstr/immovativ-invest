@@ -51,4 +51,16 @@ export const sharedFaqItems = [
     question: 'Wie berechne ich den Quadratmeterpreis meiner Immobilie?',
     answer: 'Der Quadratmeterpreis ergibt sich aus: Verkaufspreis ÷ Wohnfläche in m². Wichtig: Nur die Wohnfläche zählt – Keller, Garagen und Abstellräume werden nicht einbezogen. Dachgeschossflächen mit weniger als 2 Meter Stehhöhe werden nur zur Hälfte angerechnet. Eine korrekte Wohnflächenberechnung nach WoFlV ist deshalb entscheidend: Ältere Berechnungen können abweichen und führen zu falschen Preisvergleichen. Wir prüfen die Wohnfläche vor dem Verkauf kostenlos.',
   },
+  {
+    question: 'Was ist ein Makleralleinauftrag?',
+    answer: 'Ein Makleralleinauftrag gibt einem einzigen Makler das exklusive Recht, Ihre Immobilie zu vermarkten. Im Gegensatz zum einfachen Maklerauftrag verpflichtet er den Eigentümer, während der Laufzeit nicht parallel weitere Makler einzuschalten. Der Vorteil: Der Makler investiert deutlich mehr in Vermarktung und Präsentation, weil er die Sicherheit hat, dass sein Aufwand sich auszahlt. Bei immovativInvest läuft der Alleinauftrag standardmäßig 6 Wochen und endet automatisch – keine Kündigung nötig.',
+  },
+  {
+    question: 'Wie läuft ein Notartermin beim Immobilienverkauf ab?',
+    answer: 'Beim Notartermin liest der Notar den Kaufvertrag vollständig vor – das dauert je nach Umfang 60–90 Minuten. Käufer und Verkäufer können Fragen stellen und Änderungswünsche äußern. Am Ende unterschreiben beide Parteien. Damit ist der Vertrag rechtlich bindend. Der Käufer zahlt dann die Grunderwerbsteuer und den Kaufpreis, sobald der Notar alle Voraussetzungen bestätigt (Auflassungsvormerkung, Lastenfreiheit). Die Eigentumsübertragung im Grundbuch erfolgt 4–8 Wochen nach dem Notartermin.',
+  },
+  {
+    question: 'Was bedeutet Auflassung beim Immobilienverkauf?',
+    answer: 'Die Auflassung ist die notarielle Einigung zwischen Käufer und Verkäufer über den Eigentumsübergang – sie findet beim Notartermin statt und ist in § 925 BGB geregelt. Die Auflassung allein überträgt das Eigentum noch nicht: Erst die Eintragung im Grundbuch macht den Käufer zum rechtlichen Eigentümer. Um den Käufer bis dahin abzusichern, wird unmittelbar nach der Auflassung eine Auflassungsvormerkung ins Grundbuch eingetragen. Diese blockiert weitere Verfügungen des Verkäufers über die Immobilie.',
+  },
 ]

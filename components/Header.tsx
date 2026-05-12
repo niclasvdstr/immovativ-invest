@@ -25,6 +25,7 @@ interface HeaderProps {
 const NAV: NavItem[] = [
   { label: 'Immobilienmakler', href: '/immobilienmakler' },
   { label: 'Verkaufen', href: '/verkaufen' },
+  { label: 'Direktankauf', href: '/ankauf' },
   {
     label: 'Leistungen',
     children: [

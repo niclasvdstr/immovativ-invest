@@ -49,6 +49,24 @@ export default function ImmobilienbewertungPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'Immobilie verkaufen in Frankfurt – So funktioniert es',
+            description: 'In wenigen Schritten zur kostenlosen Immobilienbewertung und zum erfolgreichen Verkauf mit immovativInvest.',
+            step: [
+              { '@type': 'HowToStep', position: 1, name: 'Kostenlose Bewertung anfragen', text: 'Füllen Sie unser kurzes Formular aus oder rufen Sie uns an. Wir melden uns innerhalb von 24 Stunden bei Ihnen.' },
+              { '@type': 'HowToStep', position: 2, name: 'Vor-Ort-Termin vereinbaren', text: 'Wir kommen persönlich zu Ihnen und begutachten die Immobilie. Dabei berücksichtigen wir Lage, Zustand und aktuelle Marktdaten.' },
+              { '@type': 'HowToStep', position: 3, name: 'Marktwert erhalten', text: 'Sie erhalten eine fundierte, kostenlose Werteinschätzung auf Basis echter Vergleichsobjekte aus Ihrer Nachbarschaft.' },
+              { '@type': 'HowToStep', position: 4, name: 'Vermarktung starten', text: 'Nach Ihrer Entscheidung übernehmen wir die gesamte Vermarktung – Exposé, Fotos, Inserate und Käuferqualifizierung.' },
+              { '@type': 'HowToStep', position: 5, name: 'Verkauf abschließen', text: 'Wir begleiten Sie durch Kaufpreisverhandlung und Notartermin bis zur Schlüsselübergabe – alles aus einer Hand.' },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'FAQPage',
             mainEntity: [
               {

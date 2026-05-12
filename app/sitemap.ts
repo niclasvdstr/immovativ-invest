@@ -53,5 +53,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: parseDeutschDatum(article.date),
   }))
 
-  return [...staticPages, ...cityPages, ...blogPages]
+  const categoryPages: MetadataRoute.Sitemap = [
+    'markt', 'verkaufen', 'bewertung', 'recht-steuern', 'finanzierung', 'prozess', 'spezialfaelle',
+  ].map(cat => ({
+    url: `${BASE_URL}/blog/kategorie/${cat}`,
+    priority: 0.6,
+    changeFrequency: 'weekly' as const,
+    lastModified: new Date('2026-05-12'),
+  }))
+
+  return [...staticPages, ...cityPages, ...blogPages, ...categoryPages]
 }

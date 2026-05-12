@@ -170,6 +170,50 @@ export default function AnkaufPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'In 5 Schritten zur Direktankauf-Anfrage',
+            description: 'So läuft der Direktankauf Ihrer Immobilie bei immovativInvest ab – schnell, diskret und ohne Provision.',
+            step: processSteps.map(step => ({
+              '@type': 'HowToStep',
+              position: step.number,
+              name: step.title,
+              text: step.description,
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Immobilien Direktankauf Frankfurt & Rhein-Main',
+            description: 'Wir kaufen Ihre Immobilie direkt – ohne Provision, ohne Besichtigungstouren und ohne monatelange Wartezeit. Angebot in durchschnittlich 21 Tagen.',
+            provider: {
+              '@type': 'RealEstateAgent',
+              name: 'immovativInvest',
+              url: 'https://www.immovativ-invest.de',
+            },
+            areaServed: {
+              '@type': 'AdministrativeArea',
+              name: 'Rhein-Main-Gebiet',
+            },
+            serviceType: 'Immobilien Direktankauf',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'EUR',
+              description: 'Kostenlose und unverbindliche Anfrage',
+            },
+          }),
+        }}
+      />
       <Header
         navItems={navItems}
         ctaLabel="Jetzt Angebot anfragen"

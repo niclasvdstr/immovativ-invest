@@ -34,15 +34,44 @@ const Check = ({ light = false }: { light?: boolean }) => (
 export default function LandingPage() {
   return (
     <main className="min-h-screen bg-[#f0f2f5]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            '@id': 'https://www.immovativ-invest.de/#website',
+            name: 'immovativInvest',
+            url: 'https://www.immovativ-invest.de',
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: 'https://www.immovativ-invest.de/blog?q={search_term_string}',
+              'query-input': 'required name=search_term_string',
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Start', item: 'https://www.immovativ-invest.de' },
+            ],
+          }),
+        }}
+      />
       {/* ── HERO ── */}
       <section className="flex flex-col items-center px-4 pt-16 pb-24 relative" style={{ backgroundColor: '#f0f4ff' }}>
 
         {/* Headline */}
-        <div className="text-center mb-10 max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-3">
-            Immobilienmakler <span className="text-brand-green">Frankfurt</span> & Rhein-Main
+        <div className="text-center mb-10">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-brand-anthrazit leading-tight mb-3">
+            Immobilienmakler <span className="text-brand-green">in Frankfurt</span> & Rhein-Main
           </h1>
-          <p className="text-brand-gray-warm text-base md:text-lg">
+          <p className="text-brand-gray-warm text-base md:text-lg max-w-xl mx-auto">
             Professionell verkaufen oder direkt verkaufen — wählen Sie den richtigen Weg für Ihre Immobilie.
           </p>
         </div>
