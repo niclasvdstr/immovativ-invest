@@ -240,7 +240,7 @@ export default function UeberUnsPage() {
                 {[
                   { value: '🏡 125+', label: 'Verkäufe' },
                   { value: '⭐ 4,9/5', label: 'Google-Bewertung' },
-                  { value: '⏱️ Ø 8 Wo.', label: 'bis Abschluss' },
+                  { value: '⏱️ Ø 6 Wo.', label: 'bis Abschluss' },
                   { value: '📍 Rhein-Main', label: 'Region' },
                 ].map(stat => (
                   <div key={stat.label} className="bg-white rounded-2xl px-5 py-4 shadow-soft border border-brand-gray-border">
