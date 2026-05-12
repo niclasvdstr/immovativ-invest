@@ -396,7 +396,7 @@ export default function ReferenzenPage() {
             { value: '100 %', label: 'diskret & persönlich' },
           ].map(s => (
             <div key={s.label} className="text-center md:px-8">
-              <div className="text-xl md:text-3xl font-bold text-white mb-1">{s.value}</div>
+              <div className="text-xl md:text-3xl font-bold text-white mb-1 whitespace-nowrap">{s.value}</div>
               <div className="text-gray-400 text-xs">{s.label}</div>
             </div>
           ))}
