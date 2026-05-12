@@ -5,6 +5,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import TrustBadges from '@/components/TrustBadges'
 import Testimonials from '@/components/Testimonials'
+import KontaktFormClient from '@/components/KontaktFormClient'
+import TippgeberKontaktForm from '@/components/TippgeberKontaktForm'
 
 export const metadata: Metadata = {
   title: 'Kontakt – immovativInvest',
@@ -115,63 +117,7 @@ export default function KontaktPage() {
                 Wir antworten innerhalb von 24 Stunden – diskret und unverbindlich.
               </p>
 
-              <form className="space-y-4" action="#">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Name *</label>
-                    <input
-                      type="text"
-                      placeholder="Max Mustermann"
-                      className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Telefon *</label>
-                    <input
-                      type="tel"
-                      placeholder="+49 151 000 000"
-                      className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">E-Mail *</label>
-                  <input
-                    type="email"
-                    placeholder="ihre@email.de"
-                    className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Wann bist du erreichbar?</label>
-                  <select className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm bg-white appearance-none">
-                    <option value="">Bitte auswählen</option>
-                    <option>Morgens (8–12 Uhr)</option>
-                    <option>Mittags (12–14 Uhr)</option>
-                    <option>Nachmittags (14–18 Uhr)</option>
-                    <option>Abends (18–20 Uhr)</option>
-                    <option>Jederzeit</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Nachricht (optional)</label>
-                  <textarea
-                    rows={4}
-                    placeholder="Was sind deine Erwartungen an den Verkauf?"
-                    className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm resize-none"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full btn-gradient text-white font-semibold rounded-xl px-6 py-4 text-sm transition-colors duration-200 mt-2"
-                >
-                  Jetzt kostenlos beraten lassen →
-                </button>
-                <p className="text-xs text-brand-gray-warm text-center pt-1">
-                  Mit dem Absenden stimmst du unserer{' '}
-                  <a href="/datenschutz" className="text-brand-green hover:underline">Datenschutzerklärung</a> zu.
-                </p>
-              </form>
+              <KontaktFormClient />
             </div>
 
             {/* Rechts – Direktkontakt (dunkel) */}
@@ -300,67 +246,7 @@ export default function KontaktPage() {
             {/* Links – Formular */}
             <div className="bg-brand-gray-light rounded-3xl p-8 border border-brand-gray-border">
               <h3 className="text-xl font-bold text-brand-anthrazit mb-6">Tipp einreichen</h3>
-              <form className="space-y-5" action="#">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Vorname</label>
-                    <input
-                      type="text"
-                      placeholder="Johannes"
-                      className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Nachname</label>
-                    <input
-                      type="text"
-                      placeholder="Müller"
-                      className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">E-Mail</label>
-                  <input
-                    type="email"
-                    placeholder="beispiel@gmail.com"
-                    className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Telefon</label>
-                  <div className="flex items-center border border-brand-gray-border rounded-xl overflow-hidden focus-within:border-brand-green focus-within:ring-1 focus-within:ring-brand-green transition-colors">
-                    <span className="px-3 py-3 text-lg border-r border-brand-gray-border bg-brand-gray-light">🇩🇪</span>
-                    <input
-                      type="tel"
-                      placeholder="Gib deine Telefonnummer ein"
-                      className="flex-1 px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none bg-transparent"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-anthrazit mb-3">Welcher Immobilientyp wird verkauft?</label>
-                  <div className="space-y-2.5">
-                    {['Wohnung', 'Haus', 'Mehrfamilienhaus', 'Andere'].map((type) => (
-                      <label key={type} className="flex items-center gap-3 cursor-pointer group">
-                        <div className="w-5 h-5 rounded-full border-2 border-brand-gray-border group-hover:border-brand-green transition-colors shrink-0 flex items-center justify-center">
-                          <div className="w-2.5 h-2.5 rounded-full bg-brand-green opacity-0 group-hover:opacity-30 transition-opacity" />
-                        </div>
-                        <span className="text-sm text-brand-anthrazit">{type}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full btn-gradient text-white font-semibold rounded-xl px-6 py-4 text-sm transition-all duration-200 flex items-center justify-center gap-2"
-                >
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Tippgeber-Provision sichern →
-                </button>
-              </form>
+              <TippgeberKontaktForm />
             </div>
 
             {/* Rechts – Info */}

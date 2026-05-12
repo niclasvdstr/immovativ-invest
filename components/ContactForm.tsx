@@ -28,6 +28,7 @@ export default function ContactForm({
   })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -36,10 +37,20 @@ export default function ContactForm({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    // Simulate form submission
-    await new Promise(r => setTimeout(r, 1200))
-    setLoading(false)
-    setSubmitted(true)
+    setError(false)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formType: variant, ...formData }),
+      })
+      if (!res.ok) throw new Error('Fehler')
+      setSubmitted(true)
+    } catch {
+      setError(true)
+    } finally {
+      setLoading(false)
+    }
   }
 
   if (submitted) {
@@ -196,6 +207,11 @@ export default function ContactForm({
                 </>
               )}
 
+              {error && (
+                <p className="text-red-500 text-sm text-center bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                  Leider ist ein Fehler aufgetreten. Bitte ruf uns direkt an: <strong>0151 29686979</strong>
+                </p>
+              )}
               <CTAButton
                 size="lg"
                 fullWidth
