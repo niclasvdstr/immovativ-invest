@@ -1,3 +1,5 @@
+import { sharedFaqItems } from '@/lib/faq-items'
+
 interface CityJsonLdProps {
   cityName: string
   slug: string
@@ -57,6 +59,19 @@ export default function CityJsonLd({ cityName, slug }: CityJsonLdProps) {
     },
   }
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: sharedFaqItems.map(item => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  }
+
   return (
     <>
       <script
@@ -66,6 +81,10 @@ export default function CityJsonLd({ cityName, slug }: CityJsonLdProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
     </>
   )

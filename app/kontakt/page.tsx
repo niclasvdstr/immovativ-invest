@@ -32,6 +32,19 @@ const navItems = [
 export default function KontaktPage() {
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Start', item: 'https://www.immovativ-invest.de' },
+              { '@type': 'ListItem', position: 2, name: 'Kontakt', item: 'https://www.immovativ-invest.de/kontakt' },
+            ],
+          }),
+        }}
+      />
       <Header
         ctaLabel="Kostenlose Immobilienbewertung"
         ctaHref="/verkaufen"

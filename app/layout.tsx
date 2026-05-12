@@ -16,6 +16,17 @@ export const metadata: Metadata = {
   },
   description: 'Verkaufen Sie Ihre Immobilie schnell, sicher und diskret. immovativInvest bietet Ihnen zwei Wege: Direktankauf oder professionelle Maklervermarktung – kostenlos & unverbindlich.',
   keywords: ['Immobilie verkaufen', 'Direktankauf', 'Immobilienmakler', 'Immobilienbewertung', 'Haus verkaufen', 'Wohnung verkaufen'],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'de_DE',
@@ -38,6 +49,25 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.immovativ-invest.de/#website',
+      url: 'https://www.immovativ-invest.de',
+      name: 'immovativInvest',
+      description: 'Immobilienmakler und Direktankauf im Rhein-Main-Gebiet',
+      inLanguage: 'de-DE',
+      publisher: {
+        '@id': 'https://www.immovativ-invest.de/#organization',
+      },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://www.immovativ-invest.de/blog?q={search_term_string}',
+        },
+        'query-input': 'required name=search_term_string',
+      },
+    },
     {
       '@type': ['LocalBusiness', 'RealEstateAgent'],
       '@id': 'https://www.immovativ-invest.de/#organization',
@@ -80,7 +110,11 @@ const jsonLd = {
         jobTitle: 'Geschäftsführer',
         worksFor: { '@id': 'https://www.immovativ-invest.de/#organization' },
       },
-      sameAs: [],
+      sameAs: [
+        'https://www.instagram.com/immovativinvest',
+        'https://www.linkedin.com/company/immovativinvest',
+        'https://www.facebook.com/immovativinvest',
+      ],
     },
   ],
 }

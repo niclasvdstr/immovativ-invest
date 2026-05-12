@@ -44,6 +44,41 @@ export default function ImmobilienbewertungPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Was kostet eine Immobilienbewertung bei immovativInvest?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Die Immobilienbewertung bei immovativInvest ist vollständig kostenlos und unverbindlich. Wir kommen persönlich zu dir, schauen uns die Immobilie an und erstellen eine fundierte Werteinschätzung auf Basis aktueller Marktdaten – ohne versteckte Kosten und ohne Verpflichtung.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Wie genau ist eine Online-Immobilienbewertung?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Online-Rechner liefern nur grobe Schätzungen, weil sie den tatsächlichen Zustand, die Mikrolage innerhalb der Straße und individuelle Besonderheiten nicht berücksichtigen können. Eine persönliche Vor-Ort-Bewertung durch einen Experten ist deutlich präziser und führt in der Regel zu einem höheren Verkaufspreis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Wie lange dauert es, bis ich meine Immobilienbewertung erhalte?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Nach deiner Anfrage melden wir uns innerhalb von 24 Stunden bei dir. Den Vor-Ort-Termin vereinbaren wir flexibel nach deinen Wünschen, häufig bereits innerhalb weniger Tage. Nach dem Besichtigungstermin erhältst du zeitnah deine Werteinschätzung.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <Header
         ctaLabel="Kostenlose Immobilienbewertung"
         ctaHref="#kontakt"
