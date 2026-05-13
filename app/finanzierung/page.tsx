@@ -76,9 +76,9 @@ export default function FinanzierungPage() {
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💰 Finanzierung
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Immobilienfinanzierung Frankfurt<br />
-            <span className="text-brand-green">– die richtige Lösung für Sie.</span>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <span className="text-brand-anthrazit">Immobilienfinanzierung Frankfurt.</span><br />
+            <span className="text-brand-green">Die richtige Lösung für Sie.</span>
           </h1>
           <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Ob Erstkauf, Anschlussfinanzierung oder Investition — durch unser starkes Netzwerk begleiten wir dich von der ersten Frage bis zum unterzeichneten Kreditvertrag.
@@ -201,15 +201,15 @@ export default function FinanzierungPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="bg-brand-anthrazit px-4 md:px-8 py-14">
+      <section className="px-4 md:px-8 py-14" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="text-2xl font-bold text-white mb-2">Weißt du, was deine Immobilie wert ist?</h2>
-            <p className="text-gray-400 text-sm">Kostenlose Wertermittlung — unverbindlich und innerhalb von 24 Stunden.</p>
+            <p className="text-white/70 text-sm">Kostenlose Wertermittlung — unverbindlich und innerhalb von 24 Stunden.</p>
           </div>
-          <CTAButton href="/verkaufen" variant="primary" size="md">
+          <Link href="/verkaufen" className="inline-flex items-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-gray-50 transition-colors whitespace-nowrap shrink-0">
             Immobilienbewertung starten →
-          </CTAButton>
+          </Link>
         </div>
       </section>
 

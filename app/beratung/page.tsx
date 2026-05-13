@@ -78,9 +78,9 @@ export default function BeratungPage() {
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💬 Kostenlose Beratung
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Kostenlose Immobilienberatung Frankfurt<br />
-            <span className="text-brand-green">– ehrlich, persönlich, unverbindlich.</span>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <span className="text-brand-anthrazit">Kostenlose Immobilienberatung Frankfurt.</span><br />
+            <span className="text-brand-green">Ehrlich, persönlich, unverbindlich.</span>
           </h1>
           <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Immobilienentscheidungen sind komplex und oft emotional. Wir nehmen uns die Zeit, deine Situation wirklich zu verstehen — und geben dir eine ehrliche Einschätzung. Kostenlos, persönlich, ohne versteckte Agenda.

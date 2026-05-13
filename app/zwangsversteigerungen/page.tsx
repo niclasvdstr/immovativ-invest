@@ -76,9 +76,9 @@ export default function ZwangsversteigerungenPage() {
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             🔨 Zwangsversteigerungen
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Zwangsversteigerung Frankfurt<br />
-            <span className="text-brand-green">– wir kennen beide Seiten.</span>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <span className="text-brand-anthrazit">Zwangsversteigerung Frankfurt.</span><br />
+            <span className="text-brand-green">Wir kennen beide Seiten.</span>
           </h1>
           <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Ob du selbst betroffen bist oder gezielt nach einer Kaufgelegenheit suchst — wir begleiten dich mit Erfahrung, Diskretion und klarem Überblick durch den gesamten Prozess.
