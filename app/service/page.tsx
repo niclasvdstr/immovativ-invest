@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import AnimateIn from '@/components/AnimateIn'
+import Testimonials from '@/components/Testimonials'
 
 export const metadata: Metadata = {
   title: 'Leistungen – Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
@@ -178,9 +179,12 @@ export default function ServicePage() {
         </div>
       </section>
 
+      {/* Bewertungen */}
+      <Testimonials title="Was unsere Kunden sagen" />
+
       {/* CTA */}
       <section className="section-padding px-4 md:px-8 bg-white">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <AnimateIn direction="up">
           <div className="bg-brand-cream border border-brand-gray-border rounded-3xl px-8 py-12 md:px-16 flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1">
