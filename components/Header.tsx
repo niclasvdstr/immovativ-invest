@@ -34,6 +34,7 @@ const NAV: NavItem[] = [
   {
     label: 'Leistungen',
     children: [
+      { label: 'Alle Leistungen', href: '/service' },
       { label: 'Direktankauf', href: '/ankauf' },
       { label: 'Immobilienangebote', href: '/immobilienangebote' },
       { label: 'Finanzierung', href: '/finanzierung' },
