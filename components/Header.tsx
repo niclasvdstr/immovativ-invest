@@ -23,13 +23,19 @@ interface HeaderProps {
 }
 
 const NAV: NavItem[] = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
-  { label: 'Verkaufen', href: '/verkaufen' },
+  { label: 'Start', href: '/' },
+  {
+    label: 'Verkaufen',
+    children: [
+      { label: 'Verkaufen', href: '/verkaufen' },
+      { label: 'Immobilienbewertung', href: '/immobilienbewertung' },
+    ],
+  },
   {
     label: 'Leistungen',
     children: [
       { label: 'Leistungen', href: '/service' },
-      { label: 'Immobilienbewertung', href: '/immobilienbewertung' },
+      { label: 'Direktankauf', href: '/ankauf' },
       { label: 'Immobilienangebote', href: '/immobilienangebote' },
       { label: 'Finanzierung', href: '/finanzierung' },
       { label: 'Beratung', href: '/beratung' },

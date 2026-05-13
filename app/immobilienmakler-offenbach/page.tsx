@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const niclasText = "Offenbach hat sich in den letzten Jahren stark verändert – die Nähe zu Frankfurt und die deutlich günstigeren Preise ziehen immer mehr Käufer an. Für Verkäufer bedeutet das: Die Nachfrage ist da. Ich sorge dafür, dass du vom richtigen Käufer zum besten Preis gefunden wirst."
 
 const navItems = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
+  { label: 'Immobilienmakler', href: '/' },
   { label: 'Verkaufen', href: '/verkaufen' },
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Blog', href: '/blog' },
@@ -130,7 +130,7 @@ export default function ImmobilienmaklerOffenbach() {
               <div className="flex items-center gap-2 text-sm text-brand-gray-warm mb-4">
                 <a href="/" className="hover:text-brand-green transition-colors">Start</a>
                 <span>›</span>
-                <a href="/immobilienmakler" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
+                <a href="/" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
                 <span>›</span>
                 <span className="text-brand-anthrazit font-medium">Offenbach am Main</span>
               </div>

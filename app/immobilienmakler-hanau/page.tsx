@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 }
 
 const navItems = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
+  { label: 'Immobilienmakler', href: '/' },
   { label: 'Verkaufen', href: '/verkaufen' },
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Blog', href: '/blog' },
@@ -101,7 +101,7 @@ export default function ImmobilienmaklerHanau() {
           <nav className="text-sm text-gray-500">
             <a href="/" className="hover:text-brand-green">Start</a>
             <span className="mx-2">/</span>
-            <a href="/immobilienmakler" className="hover:text-brand-green">Immobilienmakler</a>
+            <a href="/" className="hover:text-brand-green">Immobilienmakler</a>
             <span className="mx-2">/</span>
             <span className="text-gray-800 font-medium">Hanau</span>
           </nav>

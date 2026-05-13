@@ -55,7 +55,7 @@ const categoryLinks: Record<string, { href: string; label: string; desc: string 
   ],
   'Bewertung': [
     { href: '/immobilienbewertung', label: 'Kostenlose Immobilienbewertung', desc: 'Erfahre den Marktwert deiner Immobilie – persönlich vor Ort, kostenlos & unverbindlich' },
-    { href: '/immobilienmakler', label: 'Immobilienmakler Frankfurt', desc: 'Dein Partner für den erfolgreichen Immobilienverkauf' },
+    { href: '/', label: 'Immobilienmakler Frankfurt', desc: 'Dein Partner für den erfolgreichen Immobilienverkauf' },
     { href: '/ankauf', label: 'Direktankauf anfragen', desc: 'Schnell und provisionsfrei – Angebot in 21 Tagen' },
   ],
   'Recht & Steuern': [
@@ -63,22 +63,22 @@ const categoryLinks: Record<string, { href: string; label: string; desc: string 
     { href: '/verkaufen', label: 'Immobilie verkaufen', desc: 'Mit Experten steueroptimiert verkaufen' },
   ],
   'Verkaufen': [
-    { href: '/immobilienmakler', label: 'Immobilienmakler Frankfurt', desc: 'Professioneller Verkauf zum bestmöglichen Preis' },
+    { href: '/', label: 'Immobilienmakler Frankfurt', desc: 'Professioneller Verkauf zum bestmöglichen Preis' },
     { href: '/verkaufen', label: 'Kostenlose Bewertung starten', desc: 'In 2 Minuten zur kostenlosen Immobilienbewertung' },
   ],
   'Markt': [
-    { href: '/immobilienmakler', label: 'Immobilienmakler Frankfurt', desc: 'Aktuelle Marktkenntnis für deinen erfolgreichen Verkauf' },
+    { href: '/', label: 'Immobilienmakler Frankfurt', desc: 'Aktuelle Marktkenntnis für deinen erfolgreichen Verkauf' },
     { href: '/immobilienbewertung', label: 'Kostenlose Immobilienbewertung', desc: 'Erfahre den aktuellen Marktwert deiner Immobilie – persönlich vor Ort' },
     { href: '/ankauf', label: 'Direktankauf anfragen', desc: 'Schnell und provisionsfrei verkaufen' },
   ],
   'Prozess': [
     { href: '/service', label: 'Unsere Leistungen', desc: 'Alle Leistungen von immovativInvest auf einen Blick' },
-    { href: '/immobilienmakler', label: 'Immobilienmakler Frankfurt', desc: 'So begleiten wir dich durch den gesamten Verkaufsprozess' },
+    { href: '/', label: 'Immobilienmakler Frankfurt', desc: 'So begleiten wir dich durch den gesamten Verkaufsprozess' },
   ],
 }
 
 const navItems = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
+  { label: 'Immobilienmakler', href: '/' },
   { label: 'Verkaufen', href: '/verkaufen' },
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Blog', href: '/blog' },

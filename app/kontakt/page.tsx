@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 }
 
 const navItems = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
+  { label: 'Immobilienmakler', href: '/' },
   { label: 'Verkaufen', href: '/verkaufen' },
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Blog', href: '/blog' },

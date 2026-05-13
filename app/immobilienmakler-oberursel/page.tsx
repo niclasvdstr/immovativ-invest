@@ -101,7 +101,7 @@ const stadtteilPreise = [
 const niclasText = "Oberursel verbindet Taunusnähe mit direkter U-Bahn nach Frankfurt – eine Kombination, die Käufer lieben und die Preise stabil hält. Diese Lagequalität müssen wir in der Vermarktung aktiv kommunizieren, um für deine Immobilie den maximalen Preis zu erzielen."
 
 const navItems = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
+  { label: 'Immobilienmakler', href: '/' },
   { label: 'Verkaufen', href: '/verkaufen' },
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Blog', href: '/blog' },
@@ -128,7 +128,7 @@ export default function ImmobilienmaklerOberurselPage() {
               <div className="flex items-center gap-2 text-sm text-brand-gray-warm mb-4">
                 <a href="/" className="hover:text-brand-green transition-colors">Start</a>
                 <span>›</span>
-                <a href="/immobilienmakler" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
+                <a href="/" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
                 <span>›</span>
                 <span className="text-brand-anthrazit font-medium">Oberursel</span>
               </div>

@@ -23,7 +23,7 @@ export default function CityJsonLd({ cityName, slug }: CityJsonLdProps) {
         '@type': 'ListItem',
         position: 2,
         name: 'Immobilienmakler',
-        item: `${baseUrl}/immobilienmakler`,
+        item: `${baseUrl}`,
       },
       {
         '@type': 'ListItem',

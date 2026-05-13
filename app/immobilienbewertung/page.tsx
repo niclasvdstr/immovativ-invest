@@ -188,7 +188,7 @@ export default function ImmobilienbewertungPage() {
           </p>
           <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm md:text-base">
             <p>
-              Als <a href="/immobilienmakler" className="text-brand-green font-semibold hover:underline">Immobilienmakler in Frankfurt</a> und dem Rhein-Main-Gebiet führen wir Immobilienbewertungen persönlich vor Ort durch — kein Algorithmus, keine Online-Schätzung, sondern eine fundierte Einschätzung auf Basis echter Marktdaten und lokaler Expertise. Das ist der Unterschied zwischen einer Orientierungszahl und einem verlässlichen Wert, auf den Sie Ihre Entscheidung stützen können.
+              Als <a href="/" className="text-brand-green font-semibold hover:underline">Immobilienmakler in Frankfurt</a> und dem Rhein-Main-Gebiet führen wir Immobilienbewertungen persönlich vor Ort durch — kein Algorithmus, keine Online-Schätzung, sondern eine fundierte Einschätzung auf Basis echter Marktdaten und lokaler Expertise. Das ist der Unterschied zwischen einer Orientierungszahl und einem verlässlichen Wert, auf den Sie Ihre Entscheidung stützen können.
             </p>
             <p>
               Der Immobilienmarkt im Rhein-Main-Gebiet ist komplex: Preise variieren stark zwischen Stadtteilen, sogar zwischen einzelnen Straßen. Ein Einfamilienhaus in Kronberg erzielt andere Preise als ein vergleichbares Objekt in Kelkheim — selbst wenn Fläche und Baujahr identisch sind. Diese Nuancen kennen wir, weil wir täglich in diesem Markt aktiv sind.

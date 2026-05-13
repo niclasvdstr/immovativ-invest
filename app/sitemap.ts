@@ -18,8 +18,7 @@ function parseDeutschDatum(datum: string): Date {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE_URL,                                    priority: 1.0, changeFrequency: 'weekly',  lastModified: new Date('2025-05-10') },
-    { url: `${BASE_URL}/immobilienmakler`,                        priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2025-05-01') },
+    { url: BASE_URL,                                    priority: 1.0, changeFrequency: 'weekly',  lastModified: new Date('2026-05-13') },
     { url: `${BASE_URL}/verkaufen`,                     priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2025-05-01') },
     { url: `${BASE_URL}/ankauf`,                        priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2025-05-01') },
     { url: `${BASE_URL}/blog`,                          priority: 0.8, changeFrequency: 'weekly',  lastModified: new Date('2026-05-09') },

@@ -104,7 +104,7 @@ export default function ZwangsversteigerungenPage() {
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
                 <p className="font-medium text-brand-anthrazit">
-                  Eine Zwangsversteigerung ist ein gerichtliches Verfahren, bei dem eine Immobilie auf Antrag eines Gläubigers öffentlich versteigert wird, um ausstehende Schulden zu begleichen. In Frankfurt und dem Rhein-Main-Gebiet finden regelmäßig Versteigerungstermine am Amtsgericht statt. Betroffene sollten frühzeitig handeln — ein <a href="/immobilienmakler" className="text-brand-green hover:underline">Immobilienverkauf vor dem Versteigerungstermin</a> erzielt fast immer höhere Erlöse.
+                  Eine Zwangsversteigerung ist ein gerichtliches Verfahren, bei dem eine Immobilie auf Antrag eines Gläubigers öffentlich versteigert wird, um ausstehende Schulden zu begleichen. In Frankfurt und dem Rhein-Main-Gebiet finden regelmäßig Versteigerungstermine am Amtsgericht statt. Betroffene sollten frühzeitig handeln — ein <a href="/" className="text-brand-green hover:underline">Immobilienverkauf vor dem Versteigerungstermin</a> erzielt fast immer höhere Erlöse.
                 </p>
                 <p>
                   Zwangsversteigerungen sind keine gewöhnlichen Immobilientransaktionen. Ob auf der Seite der Betroffenen oder als Käufer — der Prozess hat klare Spielregeln, enge Fristen und erhebliche finanzielle Konsequenzen für alle Beteiligten.

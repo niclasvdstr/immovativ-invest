@@ -102,7 +102,7 @@ const stadtteilPreise = [
 const niclasText = "Bad Homburg ist ein Premiummarkt – hier zählen neben dem Preis vor allem Präsentation und Diskretion. Hochwertige Fotos, ein anspruchsvolles Exposé und die gezielte Ansprache des richtigen Käuferprofils machen in diesem Segment den entscheidenden Unterschied."
 
 const navItems = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
+  { label: 'Immobilienmakler', href: '/' },
   { label: 'Verkaufen', href: '/verkaufen' },
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Blog', href: '/blog' },
@@ -129,7 +129,7 @@ export default function ImmobilienmaklerBadHomburgPage() {
               <div className="flex items-center gap-2 text-sm text-brand-gray-warm mb-4">
                 <a href="/" className="hover:text-brand-green transition-colors">Start</a>
                 <span>›</span>
-                <a href="/immobilienmakler" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
+                <a href="/" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
                 <span>›</span>
                 <span className="text-brand-anthrazit font-medium">Bad Homburg</span>
               </div>

@@ -102,7 +102,7 @@ const stadtteilPreise = [
 const niclasText = 'Wiesbaden hat einen besonderen Markt – hier treffen historischer Charme, exklusive Villenviertel und internationale Käufer aufeinander. Diskrete Vermarktung und ein hochwertiges Exposé sind in dieser Preisklasse unverzichtbar. Ich kenne diese Käufer und spreche sie gezielt an.'
 
 const navItems = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
+  { label: 'Immobilienmakler', href: '/' },
   { label: 'Verkaufen', href: '/verkaufen' },
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Blog', href: '/blog' },
@@ -129,7 +129,7 @@ export default function ImmobilienmaklerWiesbadenPage() {
               <div className="flex items-center gap-2 text-sm text-brand-gray-warm mb-4">
                 <a href="/" className="hover:text-brand-green transition-colors">Start</a>
                 <span>›</span>
-                <a href="/immobilienmakler" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
+                <a href="/" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
                 <span>›</span>
                 <span className="text-brand-anthrazit font-medium">Wiesbaden</span>
               </div>

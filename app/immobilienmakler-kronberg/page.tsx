@@ -100,7 +100,7 @@ const stadtteilPreise = [
 const niclasText = "In Kronberg entscheidet nicht die Reichweite, sondern das Netzwerk. Viele der hochwertigsten Transaktionen laufen hier völlig diskret ab – direkt zwischen uns und vorgemerkten Kaufinteressenten, ohne öffentliche Anzeige. Das ist der Kronberg-Weg."
 
 const navItems = [
-  { label: 'Immobilienmakler', href: '/immobilienmakler' },
+  { label: 'Immobilienmakler', href: '/' },
   { label: 'Verkaufen', href: '/verkaufen' },
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Blog', href: '/blog' },
@@ -128,7 +128,7 @@ export default function ImmobilienmaklerKronbergPage() {
               <div className="flex items-center gap-2 text-sm text-brand-gray-warm mb-4">
                 <a href="/" className="hover:text-brand-green transition-colors">Start</a>
                 <span>›</span>
-                <a href="/immobilienmakler" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
+                <a href="/" className="hover:text-brand-green transition-colors">Immobilienmakler</a>
                 <span>›</span>
                 <span className="text-brand-anthrazit font-medium">Kronberg</span>
               </div>
