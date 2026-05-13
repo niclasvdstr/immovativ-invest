@@ -133,47 +133,29 @@ export default function ImmobilienbewertungPage() {
       </nav>
 
       {/* Hero + Wertrechner */}
-      <section id="bewertung" className="bg-[#f0f4ff] px-4 md:px-8 py-16 md:py-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Left: Heading */}
-            <AnimateIn direction="up">
-              <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
-                <span className="w-2 h-2 bg-brand-green rounded-full" />
-                Kostenlos & unverbindlich
+      <section id="bewertung" className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-16 pb-20 md:pt-24 md:pb-28 px-4 md:px-8">
+        <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <div className="max-w-5xl mx-auto relative">
+          <AnimateIn direction="up">
+            <div className="text-center mb-10">
+              <div className="inline-flex flex-col items-center gap-1 bg-white border border-brand-gray-border rounded-2xl px-5 py-3 text-sm font-semibold text-brand-anthrazit shadow-soft mb-5">
+                <span style={{ color: '#ffa61c' }} className="text-lg tracking-wider">★★★★★</span>
+                <span className="text-center">4,9 von 5 · über 100 Bewertungen · 100% kostenlos</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-5">
-                Immobilienbewertung <span className="text-brand-green">Frankfurt</span> & Rhein-Main
+              <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-4">
+                Was ist deine Immobilie <span className="text-brand-green">wert?</span>
               </h1>
-              <p className="text-brand-gray-warm text-base md:text-lg max-w-xl mb-8 leading-relaxed">
-                Was ist Ihre Immobilie wirklich wert? Füllen Sie das Formular aus — wir erstellen Ihre kostenlose Wertermittlung und melden uns innerhalb von 24 Stunden.
+              <p className="text-brand-gray-warm text-lg max-w-xl mx-auto">
+                Erhalte deine unverbindliche Wertspanne in 2 Minuten – kostenlos, diskret und ohne Verpflichtung.
               </p>
-              <div className="space-y-3">
-                {[
-                  '✅ Kostenlos & ohne Verpflichtung',
-                  '📍 Persönlich vor Ort im Rhein-Main-Gebiet',
-                  '⚡ Ergebnis innerhalb von 24 Stunden',
-                  '🔒 Diskret & vertraulich',
-                ].map(item => (
-                  <div key={item} className="text-sm text-brand-anthrazit font-medium">{item}</div>
-                ))}
-              </div>
-              <div className="mt-8 pt-8 border-t border-brand-gray-border">
-                <a
-                  href="tel:+4915129686979"
-                  className="inline-flex items-center gap-2 text-brand-anthrazit font-semibold text-sm hover:text-brand-green transition-colors"
-                >
-                  <span className="w-9 h-9 bg-white border border-brand-gray-border rounded-xl flex items-center justify-center shadow-soft">📞</span>
-                  +49 151 29 68 69 79
-                </a>
-              </div>
-            </AnimateIn>
-
-            {/* Right: Wertrechner */}
-            <AnimateIn direction="up" delay={150}>
-              <Wertrechner />
-            </AnimateIn>
-          </div>
+            </div>
+          </AnimateIn>
+          <AnimateIn direction="up" delay={100}>
+            <Wertrechner />
+          </AnimateIn>
+          <p className="text-center text-xs text-brand-gray-warm mt-5">
+            🔒 Deine Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
+          </p>
         </div>
       </section>
 
