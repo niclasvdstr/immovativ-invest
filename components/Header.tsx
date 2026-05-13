@@ -34,14 +34,10 @@ const NAV: NavItem[] = [
   {
     label: 'Leistungen',
     children: [
-      { label: 'Leistungen', href: '/service' },
       { label: 'Direktankauf', href: '/ankauf' },
       { label: 'Immobilienangebote', href: '/immobilienangebote' },
       { label: 'Finanzierung', href: '/finanzierung' },
       { label: 'Beratung', href: '/beratung' },
-      { label: 'Erbschaft', href: '/erbschaft' },
-      { label: 'Zwangsversteigerungen', href: '/zwangsversteigerungen' },
-      { label: 'Scheidung', href: '/scheidung' },
     ],
   },
   {

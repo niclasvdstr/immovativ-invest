@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 }
 
-const services = [
+const mainServices = [
   {
     icon: '🏡',
     title: 'Immobilienangebote',
@@ -40,26 +40,26 @@ const services = [
     href: '/beratung',
     cta: 'Beratung anfragen',
   },
+]
+
+const specialServices = [
   {
     icon: '⚖️',
     title: 'Erbschaft',
-    description: 'Eine geerbte Immobilie bringt viele Fragen mit sich. Wir begleiten dich diskret und einfühlsam — von der Marktbewertung über die Abstimmung mit Erbengemeinschaften bis zum Verkauf.',
+    description: 'Eine geerbte Immobilie bringt viele Fragen mit sich. Wir begleiten dich diskret und einfühlsam — von der Marktbewertung bis zum Verkauf.',
     href: '/erbschaft',
-    cta: 'Mehr erfahren',
   },
   {
     icon: '🔨',
-    title: 'Zwangsversteigerungen',
-    description: 'Ob als Betroffener oder als Kaufinteressent — wir kennen den Markt für Zwangsversteigerungen und begleiten dich mit Erfahrung, Überblick und dem nötigen Gespür für Chancen.',
+    title: 'Zwangsversteigerung',
+    description: 'Ob als Betroffener oder als Kaufinteressent — wir kennen den Markt und begleiten dich mit Erfahrung und echtem Marktüberblick.',
     href: '/zwangsversteigerungen',
-    cta: 'Mehr erfahren',
   },
   {
     icon: '💔',
     title: 'Scheidung',
-    description: 'Eine Trennung ist emotional belastend genug. Wir übernehmen die Immobilienfrage — neutral gegenüber beiden Parteien, diskret nach außen und mit dem Ziel einer fairen Lösung.',
+    description: 'Eine Trennung ist belastend genug. Wir übernehmen die Immobilienfrage — neutral, diskret und mit dem Ziel einer fairen Lösung.',
     href: '/scheidung',
-    cta: 'Mehr erfahren',
   },
 ]
 
@@ -111,11 +111,11 @@ export default function ServicePage() {
         </AnimateIn>
       </section>
 
-      {/* Services Grid */}
+      {/* Main Services Grid */}
       <section className="section-padding px-4 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {services.map((service, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {mainServices.map((service, index) => (
               <AnimateIn key={service.href} direction="up" delay={index * 100} className="flex flex-col">
               <div className="bg-brand-cream rounded-3xl p-8 border border-brand-gray-border hover:shadow-medium transition-all duration-200 flex flex-col flex-1">
                 <div className="text-4xl mb-5">{service.icon}</div>
@@ -133,6 +133,45 @@ export default function ServicePage() {
                   </svg>
                 </Link>
               </div>
+              </AnimateIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Spezielle Situationen */}
+      <section className="section-padding px-4 md:px-8 bg-brand-cream border-t border-brand-gray-border">
+        <div className="max-w-5xl mx-auto">
+          <AnimateIn direction="up">
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
+                🔐 Besondere Lebenslagen
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-3">
+                Auch in schwierigen Situationen an Ihrer Seite
+              </h2>
+              <p className="text-brand-gray-warm text-sm max-w-xl mx-auto leading-relaxed">
+                Manche Immobilienentscheidungen entstehen in herausfordernden Lebenslagen. Wir begleiten Sie diskret, erfahren und ohne Druck.
+              </p>
+            </div>
+          </AnimateIn>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {specialServices.map((service, index) => (
+              <AnimateIn key={service.href} direction="up" delay={index * 100}>
+              <Link
+                href={service.href}
+                className="group flex flex-col bg-white rounded-3xl p-7 border border-brand-gray-border hover:shadow-medium hover:border-brand-green/30 transition-all duration-200"
+              >
+                <div className="text-4xl mb-4">{service.icon}</div>
+                <h3 className="text-lg font-bold text-brand-anthrazit mb-2 group-hover:text-brand-green transition-colors">{service.title}</h3>
+                <p className="text-brand-gray-warm text-sm leading-relaxed flex-1 mb-4">{service.description}</p>
+                <span className="inline-flex items-center gap-1.5 text-brand-green font-semibold text-sm">
+                  Mehr erfahren
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+              </Link>
               </AnimateIn>
             ))}
           </div>

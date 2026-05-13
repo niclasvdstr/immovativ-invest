@@ -128,15 +128,6 @@ const propertyTypes = [
   { icon: '🏡', label: 'Doppelhaushälfte' },
 ]
 
-const navItems = [
-  { label: 'Vorteile', href: '#vorteile' },
-  { label: 'So funktioniert\'s', href: '#prozess' },
-  { label: 'Ankaufsprofil', href: '#immobilien' },
-  { label: 'Bewertungen', href: '#bewertungen' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Kontakt', href: '#kontakt' },
-]
-
 export default function AnkaufPage() {
   return (
     <main className="min-h-screen bg-white">
@@ -215,7 +206,6 @@ export default function AnkaufPage() {
         }}
       />
       <Header
-        navItems={navItems}
         ctaLabel="Jetzt Angebot anfragen"
         ctaHref="#kontakt"
       />
