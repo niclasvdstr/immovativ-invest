@@ -115,7 +115,7 @@ export default function VerkaufenPage() {
                 🏡 Immobilie verkaufen
               </div>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                <span className="text-brand-anthrazit">Immobilie verkaufen Frankfurt.</span><br />
+                <span className="text-brand-anthrazit">Fehler beim Immobilienverkauf.</span><br />
                 <span className="text-brand-green">Was Sie vorher wissen sollten.</span>
               </h1>
               <p className="text-brand-gray-warm text-lg leading-relaxed mb-8 max-w-xl">
@@ -162,7 +162,7 @@ export default function VerkaufenPage() {
                 ⚠️ Häufige Fehler beim Verkauf
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
-                Was beim Immobilienverkauf<br />wirklich schiefgehen kann
+                Was beim Immobilienverkauf<br />wirklich schiefgehen kann.
               </h2>
               <p className="text-brand-gray-warm max-w-2xl mx-auto text-sm leading-relaxed">
                 Viele Eigentümer unterschätzen die Komplexität eines Immobilienverkaufs. Diese Fehler kosten oft Zehntausende Euro — oder den gesamten Deal.
@@ -203,7 +203,7 @@ export default function VerkaufenPage() {
             </AnimateIn>
             <AnimateIn direction="up" delay={150}>
               <h2 className="text-3xl font-bold text-brand-anthrazit mb-5">
-                Der Immobilienmarkt im Rhein-Main-Gebiet ist komplex
+                Der Immobilienmarkt im Rhein-Main-Gebiet ist komplex.
               </h2>
               <div className="space-y-4 text-brand-gray-warm text-sm leading-relaxed">
                 <p className="font-medium text-brand-anthrazit">
@@ -233,7 +233,7 @@ export default function VerkaufenPage() {
                 💡 Unsere Empfehlungen
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
-                Was wirklich den Unterschied macht
+                Was wirklich den Unterschied macht.
               </h2>
               <p className="text-brand-gray-warm max-w-2xl mx-auto text-sm leading-relaxed">
                 Diese vier Punkte entscheiden über Erfolg oder Misserfolg beim Immobilienverkauf — unabhängig davon, ob Sie mit Makler oder privat verkaufen.
