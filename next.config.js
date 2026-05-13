@@ -3,13 +3,13 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/immobilienbewertung',
-        destination: '/verkaufen',
+        source: '/immobilienmakler',
+        destination: '/',
         permanent: true,
       },
       {
         source: '/makler',
-        destination: '/immobilienmakler',
+        destination: '/',
         permanent: true,
       },
     ]
