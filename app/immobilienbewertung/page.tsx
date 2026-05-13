@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import AnimateIn from '@/components/AnimateIn'
 import FAQ from '@/components/FAQ'
+import Wertrechner from '@/components/Wertrechner'
 
 export const metadata: Metadata = {
   title: 'Immobilienbewertung Frankfurt – Kostenlose Wertermittlung | immovativInvest',
@@ -118,7 +119,7 @@ export default function ImmobilienbewertungPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
-      <Header ctaLabel="Kostenlose Bewertung anfragen" ctaHref="/verkaufen" />
+      <Header ctaLabel="Kostenlose Bewertung anfragen" ctaHref="#bewertung" />
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-brand-gray-border">
@@ -131,35 +132,48 @@ export default function ImmobilienbewertungPage() {
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="bg-[#f0f4ff] px-4 md:px-8 py-16 md:py-20">
-        <div className="max-w-5xl mx-auto">
-          <AnimateIn direction="up">
-            <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
-              <span className="w-2 h-2 bg-brand-green rounded-full" />
-              Kostenlos & unverbindlich
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-5">
-              Immobilienbewertung <span className="text-brand-green">Frankfurt</span> & Rhein-Main
-            </h1>
-            <p className="text-brand-gray-warm text-base md:text-lg max-w-2xl mb-8 leading-relaxed">
-              Was ist Ihre Immobilie wirklich wert? Wir ermitteln den aktuellen Marktwert persönlich vor Ort — kostenlos, diskret und ohne jede Verpflichtung.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/verkaufen"
-                className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-bold rounded-2xl px-7 py-4 text-sm hover:opacity-90 transition-opacity"
-              >
-                Jetzt kostenlos bewerten lassen →
-              </Link>
-              <a
-                href="tel:+4915129686979"
-                className="inline-flex items-center justify-center gap-2 bg-white border border-brand-gray-border text-brand-anthrazit font-semibold rounded-2xl px-7 py-4 text-sm hover:bg-brand-gray-light transition-colors"
-              >
-                📞 +49 151 29 68 69 79
-              </a>
-            </div>
-          </AnimateIn>
+      {/* Hero + Wertrechner */}
+      <section id="bewertung" className="bg-[#f0f4ff] px-4 md:px-8 py-16 md:py-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left: Heading */}
+            <AnimateIn direction="up">
+              <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
+                <span className="w-2 h-2 bg-brand-green rounded-full" />
+                Kostenlos & unverbindlich
+              </div>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-5">
+                Immobilienbewertung <span className="text-brand-green">Frankfurt</span> & Rhein-Main
+              </h1>
+              <p className="text-brand-gray-warm text-base md:text-lg max-w-xl mb-8 leading-relaxed">
+                Was ist Ihre Immobilie wirklich wert? Füllen Sie das Formular aus — wir erstellen Ihre kostenlose Wertermittlung und melden uns innerhalb von 24 Stunden.
+              </p>
+              <div className="space-y-3">
+                {[
+                  '✅ Kostenlos & ohne Verpflichtung',
+                  '📍 Persönlich vor Ort im Rhein-Main-Gebiet',
+                  '⚡ Ergebnis innerhalb von 24 Stunden',
+                  '🔒 Diskret & vertraulich',
+                ].map(item => (
+                  <div key={item} className="text-sm text-brand-anthrazit font-medium">{item}</div>
+                ))}
+              </div>
+              <div className="mt-8 pt-8 border-t border-brand-gray-border">
+                <a
+                  href="tel:+4915129686979"
+                  className="inline-flex items-center gap-2 text-brand-anthrazit font-semibold text-sm hover:text-brand-green transition-colors"
+                >
+                  <span className="w-9 h-9 bg-white border border-brand-gray-border rounded-xl flex items-center justify-center shadow-soft">📞</span>
+                  +49 151 29 68 69 79
+                </a>
+              </div>
+            </AnimateIn>
+
+            {/* Right: Wertrechner */}
+            <AnimateIn direction="up" delay={150}>
+              <Wertrechner />
+            </AnimateIn>
+          </div>
         </div>
       </section>
 
@@ -284,12 +298,12 @@ export default function ImmobilienbewertungPage() {
           <p className="text-gray-400 text-sm mb-8 leading-relaxed max-w-xl mx-auto">
             Erfahren Sie den genauen Marktwert Ihrer Immobilie — persönlich vor Ort, ohne Verpflichtung und ohne versteckte Kosten.
           </p>
-          <Link
-            href="/verkaufen"
+          <a
+            href="#bewertung"
             className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-bold rounded-2xl px-8 py-4 text-sm hover:opacity-90 transition-opacity"
           >
             Bewertung starten →
-          </Link>
+          </a>
         </div>
       </section>
 
