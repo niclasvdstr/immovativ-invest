@@ -461,7 +461,7 @@ export default function ImmobilienmaklerFrankfurt() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Frankfurt am Main anfordern"
+        title="Kostenlose Erstberatung in Frankfurt am Main anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

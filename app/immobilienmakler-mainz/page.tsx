@@ -456,7 +456,7 @@ export default function ImmobilienmaklerMainzPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Mainz anfordern"
+        title="Kostenlose Erstberatung in Mainz anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

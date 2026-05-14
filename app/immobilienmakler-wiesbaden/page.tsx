@@ -451,7 +451,7 @@ export default function ImmobilienmaklerWiesbadenPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Wiesbaden anfordern"
+        title="Kostenlose Erstberatung in Wiesbaden anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

@@ -427,7 +427,7 @@ export default function ImmobilienmaklerBadSodenPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Bad Soden anfordern"
+        title="Kostenlose Erstberatung in Bad Soden anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

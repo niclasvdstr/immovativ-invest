@@ -329,7 +329,7 @@ export default function ImmobilienmaklerSchmittenPage() {
 
       <section id="faq"><FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Schmitten." /></section>
 
-      <ContactForm variant="makler" title="Kostenlose Erstberatung in Schmitten anfordern" subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden." />
+      <ContactForm variant="makler" title="Kostenlose Erstberatung in Schmitten anfordern." subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden." />
 
       <div className="sticky-cta md:hidden">
         <CTAButton href="#kontakt" fullWidth size="lg">Kostenlose Erstberatung →</CTAButton>

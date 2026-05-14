@@ -331,7 +331,7 @@ export default function ImmobilienmaklerNeuAnspachPage() {
 
       <section id="faq"><FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Neu-Anspach." /></section>
 
-      <ContactForm variant="makler" title="Kostenlose Erstberatung in Neu-Anspach anfordern" subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden." />
+      <ContactForm variant="makler" title="Kostenlose Erstberatung in Neu-Anspach anfordern." subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden." />
 
       <div className="sticky-cta md:hidden">
         <CTAButton href="#kontakt" fullWidth size="lg">Kostenlose Erstberatung →</CTAButton>

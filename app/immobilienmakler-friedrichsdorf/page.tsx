@@ -404,7 +404,7 @@ export default function ImmobilienmaklerFriedrichsdorfPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Friedrichsdorf anfordern"
+        title="Kostenlose Erstberatung in Friedrichsdorf anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

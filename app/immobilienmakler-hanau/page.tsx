@@ -309,7 +309,7 @@ export default function ImmobilienmaklerHanau() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Hanau anfordern"
+        title="Kostenlose Erstberatung in Hanau anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

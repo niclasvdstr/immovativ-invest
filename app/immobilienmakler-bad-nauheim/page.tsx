@@ -434,7 +434,7 @@ export default function ImmobilienmaklerBadNauheimPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Bad Nauheim anfordern"
+        title="Kostenlose Erstberatung in Bad Nauheim anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

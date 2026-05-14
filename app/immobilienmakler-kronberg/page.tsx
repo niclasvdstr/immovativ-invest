@@ -454,7 +454,7 @@ export default function ImmobilienmaklerKronbergPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Kronberg anfordern"
+        title="Kostenlose Erstberatung in Kronberg anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

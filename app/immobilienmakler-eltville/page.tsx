@@ -427,7 +427,7 @@ export default function ImmobilienmaklerEltvillePage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Eltville anfordern"
+        title="Kostenlose Erstberatung in Eltville anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

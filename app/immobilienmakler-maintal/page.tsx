@@ -400,7 +400,7 @@ export default function ImmobilienmaklerMaintaPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Maintal anfordern"
+        title="Kostenlose Erstberatung in Maintal anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

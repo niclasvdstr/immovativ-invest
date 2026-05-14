@@ -398,7 +398,7 @@ export default function ImmobilienmaklerKarbenPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Karben anfordern"
+        title="Kostenlose Erstberatung in Karben anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

@@ -427,7 +427,7 @@ export default function ImmobilienmaklerEschbornPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Eschborn anfordern"
+        title="Kostenlose Erstberatung in Eschborn anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

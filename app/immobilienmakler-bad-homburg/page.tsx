@@ -457,7 +457,7 @@ export default function ImmobilienmaklerBadHomburgPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Bad Homburg anfordern"
+        title="Kostenlose Erstberatung in Bad Homburg anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

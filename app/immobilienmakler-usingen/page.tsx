@@ -455,7 +455,7 @@ export default function ImmobilienmaklerUsingenPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Usingen anfordern"
+        title="Kostenlose Erstberatung in Usingen anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

@@ -309,7 +309,7 @@ export default function ImmobilienmaklerMoerfeldenWalldorf() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Mörfelden-Walldorf anfordern"
+        title="Kostenlose Erstberatung in Mörfelden-Walldorf anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

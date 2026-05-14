@@ -454,7 +454,7 @@ export default function ImmobilienmaklerDreieichPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Dreieich anfordern"
+        title="Kostenlose Erstberatung in Dreieich anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

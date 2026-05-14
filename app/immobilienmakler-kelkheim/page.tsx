@@ -398,7 +398,7 @@ export default function ImmobilienmaklerKelkheimPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Kelkheim anfordern"
+        title="Kostenlose Erstberatung in Kelkheim anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

@@ -453,7 +453,7 @@ export default function ImmobilienmaklerLangenPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Langen anfordern"
+        title="Kostenlose Erstberatung in Langen anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

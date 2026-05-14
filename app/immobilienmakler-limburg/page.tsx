@@ -405,7 +405,7 @@ export default function ImmobilienmaklerLimburgPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Limburg anfordern"
+        title="Kostenlose Erstberatung in Limburg anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

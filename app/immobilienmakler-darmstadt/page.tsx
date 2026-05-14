@@ -399,7 +399,7 @@ export default function ImmobilienmaklerDarmstadtPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Darmstadt anfordern"
+        title="Kostenlose Erstberatung in Darmstadt anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

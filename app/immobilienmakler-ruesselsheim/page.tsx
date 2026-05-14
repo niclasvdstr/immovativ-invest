@@ -399,7 +399,7 @@ export default function ImmobilienmaklerRuesselsheimPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Rüsselsheim anfordern"
+        title="Kostenlose Erstberatung in Rüsselsheim anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 

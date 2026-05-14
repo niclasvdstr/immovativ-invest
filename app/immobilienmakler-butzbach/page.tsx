@@ -434,7 +434,7 @@ export default function ImmobilienmaklerButzbachPage() {
       {/* Contact Form */}
       <ContactForm
         variant="makler"
-        title="Kostenlose Erstberatung in Butzbach anfordern"
+        title="Kostenlose Erstberatung in Butzbach anfordern."
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 
