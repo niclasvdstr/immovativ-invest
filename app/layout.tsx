@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 const inter = Inter({
@@ -77,7 +78,7 @@ const jsonLd = {
       '@type': ['LocalBusiness', 'RealEstateAgent'],
       '@id': 'https://www.immovativ-invest.de/#organization',
       name: 'immovativInvest',
-      legalName: 'immovativ Immobilien GmbH',
+      legalName: 'Niclas van der Straeten & Mazlum Selcuk GbR',
       url: 'https://www.immovativ-invest.de',
       logo: 'https://www.immovativ-invest.de/logo-new.png',
       image: 'https://www.immovativ-invest.de/logo-new.png',
@@ -139,6 +140,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
+        <GoogleAnalytics gaId="G-Z9VKLBRWHE" />
       </body>
     </html>
   )

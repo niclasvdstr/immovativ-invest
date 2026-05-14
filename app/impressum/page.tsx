@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Impressum | immovativInvest',
-  description: 'Impressum der immovativ Immobilien GmbH – Angaben gemäß § 5 TMG.',
+  description: 'Impressum der immovativInvest GbR – Angaben gemäß § 5 TMG.',
   alternates: { canonical: 'https://www.immovativ-invest.de/impressum' },
   robots: { index: false, follow: false },
 }
@@ -22,15 +22,16 @@ export default function ImpressumPage() {
           <div>
             <h2 className="text-lg font-bold text-brand-anthrazit mb-2">Angaben gemäß § 5 TMG</h2>
             <p>
-              immovativ Immobilien GmbH<br />
-              [Straße und Hausnummer]<br />
-              [PLZ] Frankfurt am Main<br />
+              Niclas van der Straeten &amp; Mazlum Selcuk GbR<br />
+              (geführt unter dem Namen: immovativInvest)<br />
+              Hattsteiner Allee 51<br />
+              61250 Usingen<br />
               Deutschland
             </p>
           </div>
 
           <div>
-            <h2 className="text-lg font-bold text-brand-anthrazit mb-2">Vertreten durch</h2>
+            <h2 className="text-lg font-bold text-brand-anthrazit mb-2">Gesellschafter</h2>
             <p>
               Niclas van der Straeten<br />
               Mazlum Selcuk
@@ -46,18 +47,10 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="text-lg font-bold text-brand-anthrazit mb-2">Handelsregister</h2>
-            <p>
-              Registergericht: Amtsgericht Frankfurt am Main<br />
-              Registernummer: [HRB-Nummer eintragen]
-            </p>
-          </div>
-
-          <div>
             <h2 className="text-lg font-bold text-brand-anthrazit mb-2">Umsatzsteuer-ID</h2>
             <p>
               Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:<br />
-              [USt-IdNr. eintragen]
+              Wird nachgereicht
             </p>
           </div>
 
@@ -65,7 +58,7 @@ export default function ImpressumPage() {
             <h2 className="text-lg font-bold text-brand-anthrazit mb-2">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
             <p>
               Berufsbezeichnung: Immobilienmakler<br />
-              Zuständige Aufsichtsbehörde: [Behörde eintragen]<br />
+              Zuständige Aufsichtsbehörde: Gewerbeamt der Stadt Usingen, Hochtaunuskreis<br />
               Erlaubnis gemäß § 34c GewO
             </p>
           </div>
@@ -74,7 +67,7 @@ export default function ImpressumPage() {
             <h2 className="text-lg font-bold text-brand-anthrazit mb-2">Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV</h2>
             <p>
               Niclas van der Straeten<br />
-              [Anschrift wie oben]
+              Hattsteiner Allee 51, 61250 Usingen
             </p>
           </div>
 
