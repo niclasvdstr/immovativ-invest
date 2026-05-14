@@ -271,17 +271,18 @@ export default function Wertrechner() {
                   set('immobilienart', type)
                   setTimeout(next, 120)
                 }}
-                className={`flex flex-col items-center gap-2.5 p-5 rounded-2xl border-2 transition-all duration-200 hover:border-brand-green hover:shadow-soft text-center cursor-pointer ${
+                className={`flex flex-col items-center gap-2 p-3 sm:p-5 rounded-2xl border-2 transition-all duration-200 hover:border-brand-green hover:shadow-soft text-center cursor-pointer ${
                   form.immobilienart === type
                     ? 'border-brand-green bg-brand-green-50'
                     : 'border-brand-gray-border bg-white'
                 }`}
               >
-                <span className="text-3xl">{icon}</span>
+                <span className="text-2xl sm:text-3xl">{icon}</span>
                 <span
-                  className={`font-semibold text-sm leading-tight ${
+                  className={`font-semibold text-xs sm:text-sm leading-snug hyphens-auto ${
                     form.immobilienart === type ? 'text-brand-green' : 'text-brand-anthrazit'
                   }`}
+                  lang="de"
                 >
                   {label}
                 </span>

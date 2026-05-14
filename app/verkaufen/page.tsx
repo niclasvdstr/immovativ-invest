@@ -157,7 +157,7 @@ export default function VerkaufenPage() {
       <section className="section-padding px-4 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <AnimateIn direction="up">
-            <div className="text-center mb-12">
+            <div className="text-left md:text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-red-50 border border-red-100 rounded-full px-4 py-2 text-sm font-semibold text-red-700 mb-4">
                 ⚠️ Häufige Fehler beim Verkauf
               </div>
@@ -228,7 +228,7 @@ export default function VerkaufenPage() {
       <section className="section-padding px-4 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <AnimateIn direction="up">
-            <div className="text-center mb-12">
+            <div className="text-left md:text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 rounded-full px-4 py-2 text-sm font-semibold text-brand-green mb-4">
                 💡 Unsere Empfehlungen
               </div>
@@ -258,7 +258,7 @@ export default function VerkaufenPage() {
       <section className="section-padding px-4 md:px-8 bg-[#f0f4ff] border-t border-brand-gray-border">
         <div className="max-w-5xl mx-auto">
           <AnimateIn direction="up">
-            <div className="text-center mb-10">
+            <div className="text-left md:text-center mb-10">
               <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
                 🏷️ Schritt 1: Marktwert kennen
               </div>
@@ -282,7 +282,7 @@ export default function VerkaufenPage() {
       {/* Direktkontakt – Niclas */}
       <section className="py-20 px-4 md:px-8 bg-white border-t border-brand-gray-border">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-left md:text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />

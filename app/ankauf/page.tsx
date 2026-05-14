@@ -338,11 +338,11 @@ export default function AnkaufPage() {
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-white">
         <div className="container-max">
-          <div className="text-center mb-12">
+          <div className="text-left md:text-center mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-4">
               Deine Vorteile beim Direktankauf
             </h2>
-            <p className="text-brand-gray-warm text-base md:text-lg max-w-lg mx-auto">
+            <p className="text-brand-gray-warm text-base md:text-lg md:max-w-lg md:mx-auto">
               Wir machen den Immobilienverkauf so einfach und stressfrei wie möglich – für dich.
             </p>
           </div>
@@ -353,11 +353,11 @@ export default function AnkaufPage() {
       {/* Before / After Slider */}
       <section className="section-padding bg-brand-gray-light">
         <div className="container-max">
-          <div className="text-center mb-10">
+          <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
               Wie wir qualitativen Wohnraum schaffen.
             </h2>
-            <p className="text-brand-gray-warm text-lg max-w-4xl mx-auto">
+            <p className="text-brand-gray-warm text-lg md:max-w-4xl md:mx-auto">
               Wir schaffen aus sanierungsbedürftigen Flächen modernen, lebenswerten Wohnraum.<br />Mit durchdachter Planung holen wir das volle Potenzial jeder Immobilie heraus.
             </p>
           </div>
@@ -531,14 +531,14 @@ export default function AnkaufPage() {
       {/* Property types */}
       <section id="immobilien" className="section-padding bg-brand-gray-light">
         <div className="container-max">
-          <div className="text-center mb-8">
+          <div className="text-left md:text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
               Für welche Immobilien geeignet?
             </h2>
             <p className="text-brand-gray-warm text-lg mb-6">
               Wir kaufen nahezu alle Immobilientypen – auch mit Renovierungsbedarf.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap justify-start md:justify-center gap-3">
               {[
                 'Renovierungsbedürftig',
                 'Sanierungsbedürftig',
@@ -546,7 +546,7 @@ export default function AnkaufPage() {
                 'Leerstand',
                 'Erbschaft oder Scheidung',
               ].map(item => (
-                <div key={item} className="flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 shadow-soft">
+                <div key={item} className="flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 shadow-soft w-fit">
                   <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#16a34a' }}>
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -565,7 +565,7 @@ export default function AnkaufPage() {
                 className="bg-white rounded-2xl p-6 text-center shadow-soft border border-brand-gray-border hover:border-brand-green hover:shadow-medium transition-all duration-300 group cursor-default"
               >
                 <span className="text-4xl block mb-3 group-hover:scale-110 transition-transform duration-300">{type.icon}</span>
-                <span className="font-semibold text-brand-anthrazit">{type.label}</span>
+                <span className="font-semibold text-brand-anthrazit text-sm leading-tight">{type.label}</span>
               </div>
             ))}
           </div>
@@ -594,7 +594,7 @@ export default function AnkaufPage() {
 
       {/* Mid-page CTA */}
       <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #0f2027 0%, #1e3a8a 50%, #0f2027 100%)' }}>
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-left md:text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Bereit für ein unverbindliches Angebot?
           </h2>

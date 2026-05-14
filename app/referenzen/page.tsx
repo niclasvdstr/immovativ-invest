@@ -272,8 +272,8 @@ export default function ReferenzenPage() {
             <AnimateIn direction="up" delay={0}>
             <div>
               {/* Social proof */}
-              <div className="inline-flex items-center gap-3 mb-6">
-                <div className="flex -space-x-2.5">
+              <div className="inline-flex items-center gap-2.5 mb-6">
+                <div className="flex -space-x-2">
                   {[
                     'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face',
                     'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
@@ -284,22 +284,22 @@ export default function ReferenzenPage() {
                       key={i}
                       src={src}
                       alt="Kunde"
-                      className="w-9 h-9 rounded-full border-2 border-white object-cover shrink-0"
-                      width={36}
-                      height={36}
+                      className="w-7 h-7 rounded-full border-2 border-white object-cover shrink-0"
+                      width={28}
+                      height={28}
                     />
                   ))}
                 </div>
                 <div>
                   <div className="flex gap-0.5 mb-0.5">
                     {[1,2,3,4,5].map(i => (
-                      <svg key={i} style={{ color: '#ffa61c' }} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <svg key={i} style={{ color: '#ffa61c' }} className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
                   </div>
-                  <p className="text-sm font-medium text-brand-anthrazit">
-                    <span className="font-bold">4,9 von 5</span> Sternen (100+ Bewertungen)
+                  <p className="text-xs font-medium text-brand-anthrazit leading-tight">
+                    <span className="font-bold">4,9 von 5</span> · 100+ Bewertungen
                   </p>
                 </div>
               </div>
@@ -387,7 +387,7 @@ export default function ReferenzenPage() {
       </section>
 
       {/* Stats Bar */}
-      <section className="bg-brand-anthrazit py-10 px-4 md:px-8">
+      <section className="py-10 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1d4ed8 100%)' }}>
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:divide-x md:divide-white/10">
           {[
             { value: 'Ø 6 Wochen', label: 'bis zum Notartermin' },
@@ -408,13 +408,15 @@ export default function ReferenzenPage() {
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <AnimateIn direction="up">
-          <div className="flex items-center gap-4 mb-10">
-            <div className="flex items-center gap-2 bg-brand-anthrazit text-white text-xs font-bold px-4 py-2 rounded-full">
-              <span className="w-1.5 h-1.5 bg-brand-green rounded-full" />
-              Off-Market Verkäufe
+          <div className="mb-10">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="flex items-center gap-2 bg-brand-anthrazit text-white text-xs font-bold px-4 py-2 rounded-full shrink-0">
+                <span className="w-1.5 h-1.5 bg-brand-green rounded-full" />
+                Off-Market Verkäufe
+              </div>
+              <div className="h-px flex-1 bg-brand-gray-border" />
             </div>
-            <div className="h-px flex-1 bg-brand-gray-border" />
-            <span className="text-brand-gray-warm text-sm shrink-0">Diskret – ohne öffentliches Inserat</span>
+            <p className="text-brand-gray-warm text-sm">Diskret – ohne öffentliches Inserat</p>
           </div>
           </AnimateIn>
 
@@ -433,13 +435,15 @@ export default function ReferenzenPage() {
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <AnimateIn direction="up">
-          <div className="flex items-center gap-4 mb-10 mt-6">
-            <div className="flex items-center gap-2 bg-brand-green text-white text-xs font-bold px-4 py-2 rounded-full">
-              <span className="w-1.5 h-1.5 bg-white rounded-full" />
-              Öffentliche Vermarktung
+          <div className="mb-10 mt-6">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="flex items-center gap-2 bg-brand-green text-white text-xs font-bold px-4 py-2 rounded-full shrink-0">
+                <span className="w-1.5 h-1.5 bg-white rounded-full" />
+                Öffentliche Vermarktung
+              </div>
+              <div className="h-px flex-1 bg-brand-gray-border" />
             </div>
-            <div className="h-px flex-1 bg-brand-gray-border" />
-            <span className="text-brand-gray-warm text-sm shrink-0">Inseriert · 6–8 Wochen Vermarktungszeit</span>
+            <p className="text-brand-gray-warm text-sm">Inseriert · 6–8 Wochen Vermarktungszeit</p>
           </div>
           </AnimateIn>
 
@@ -503,7 +507,7 @@ export default function ReferenzenPage() {
 
       {/* CTA Banner */}
       <section className="py-16 px-4 md:px-8 bg-brand-green">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-left md:text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Was ist deine Immobilie wert?
           </h2>
@@ -518,7 +522,7 @@ export default function ReferenzenPage() {
 
       <ContactForm
         variant="makler"
-        title="Schreib mir direkt"
+        title="Schreibe mir direkt"
         subtitle="Ich beantworte jede Anfrage persönlich – kein Callcenter, kein Assistent."
       />
 

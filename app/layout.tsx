@@ -126,6 +126,59 @@ const jsonLd = {
         'https://www.instagram.com/immovativ.de',
       ],
     },
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.immovativ-invest.de/#sitenavigation',
+      name: 'Hauptnavigation',
+      itemListElement: [
+        {
+          '@type': 'SiteLinksSearchBox',
+          target: 'https://www.immovativ-invest.de/blog?q={search_term_string}',
+        },
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Immobilie verkaufen',
+          url: 'https://www.immovativ-invest.de/verkaufen',
+          description: 'Professionell und diskret Ihre Immobilie verkaufen im Rhein-Main-Gebiet',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Direktankauf',
+          url: 'https://www.immovativ-invest.de/ankauf',
+          description: 'Schneller Direktankauf Ihrer Immobilie – ohne Makler, ohne Wartezeit',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Immobilienbewertung',
+          url: 'https://www.immovativ-invest.de/immobilienbewertung',
+          description: 'Kostenlose und unverbindliche Immobilienbewertung online',
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: 'Über uns',
+          url: 'https://www.immovativ-invest.de/ueber-uns',
+          description: 'Ihr Immobilienexperte im Taunus und Rhein-Main-Gebiet',
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          name: 'Kontakt',
+          url: 'https://www.immovativ-invest.de/kontakt',
+          description: 'Kontaktieren Sie immovativInvest – kostenlos und unverbindlich',
+        },
+        {
+          '@type': 'ListItem',
+          position: 6,
+          name: 'Referenzen',
+          url: 'https://www.immovativ-invest.de/referenzen',
+          description: 'Unsere erfolgreich verkauften Immobilien und Kundenbewertungen',
+        },
+      ],
+    },
   ],
 }
 

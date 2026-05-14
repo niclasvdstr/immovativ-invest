@@ -193,10 +193,10 @@ export default function ImmobilienmaklerHanau() {
       {/* Local Market Section */}
       <section className="py-14 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-left md:text-center">
             Der Immobilienmarkt in Hanau
           </h2>
-          <p className="text-gray-500 text-center mb-10">
+          <p className="text-gray-500 text-left md:text-center mb-10">
             Aktuelle Kennzahlen für deine Verkaufsentscheidung
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
@@ -289,7 +289,7 @@ export default function ImmobilienmaklerHanau() {
 
       {/* CTA Banner */}
       <section className="py-16 px-4 md:px-8 bg-brand-green">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-left md:text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">deine Immobilie in Hanau. Unser Einsatz. Ihr Erfolg.</h2>
           <p className="text-green-100 mb-6">Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.</p>
           <CTAButton href="/verkaufen" variant="secondary" size="lg">Immobilienbewertung starten →</CTAButton>

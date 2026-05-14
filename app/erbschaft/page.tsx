@@ -55,7 +55,7 @@ export default function ErbschaftPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-        <div className="max-w-4xl mx-auto relative text-center">
+        <div className="max-w-4xl mx-auto relative text-left md:text-center">
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             ⚖️ Erbschaft
           </div>
@@ -63,10 +63,10 @@ export default function ErbschaftPage() {
             Eine geerbte Immobilie.<br />
             <span className="text-brand-green">Wir begleiten dich einfühlsam.</span>
           </h1>
-          <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-brand-gray-warm text-lg md:max-w-2xl md:mx-auto leading-relaxed mb-8">
             Trauer und bürokratische Entscheidungen gleichzeitig — das überfordert viele Menschen. Wir nehmen dir die Immobilienfrage ab: diskret, erfahren und ohne Druck.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
             <Link href="#kontakt" className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-green-dark transition-colors">
               Kostenlose Beratung anfragen →
             </Link>
@@ -133,12 +133,12 @@ export default function ErbschaftPage() {
       {/* Tipps */}
       <section className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-left md:text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
               💡 Unsere Tipps
             </div>
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">Was Erben wissen sollten</h2>
-            <p className="text-brand-gray-warm text-sm max-w-2xl mx-auto">
+            <p className="text-brand-gray-warm text-sm md:max-w-2xl md:mx-auto">
               Diese Hinweise helfen dir, die häufigsten Fehler zu vermeiden und die richtigen Entscheidungen im richtigen Moment zu treffen.
             </p>
           </div>
@@ -201,9 +201,9 @@ export default function ErbschaftPage() {
       {/* Optionen */}
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Deine Optionen mit uns</h2>
-            <p className="text-brand-gray-warm text-sm max-w-xl mx-auto">
+            <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">
               Es gibt keine Standardlösung. Wir zeigen dir alle Wege — ehrlich und ohne Druck.
             </p>
           </div>
@@ -232,7 +232,7 @@ export default function ErbschaftPage() {
               </div>
             ))}
           </div>
-          <div className="mt-8 text-center">
+          <div className="mt-8 text-left md:text-center">
             <CTAButton href="/verkaufen" variant="primary" size="md">
               Immobilienbewertung starten →
             </CTAButton>

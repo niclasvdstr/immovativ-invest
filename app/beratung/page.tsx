@@ -57,7 +57,7 @@ export default function BeratungPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <AnimateIn direction="up">
-        <div className="max-w-4xl mx-auto relative text-center">
+        <div className="max-w-4xl mx-auto relative text-left md:text-center">
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💬 Kostenlose Beratung
           </div>
@@ -65,10 +65,10 @@ export default function BeratungPage() {
             <span className="text-brand-anthrazit">Kostenlose Immobilienberatung Frankfurt.</span><br />
             <span className="text-brand-green">Ehrlich, persönlich, unverbindlich.</span>
           </h1>
-          <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-brand-gray-warm text-lg md:max-w-2xl md:mx-auto leading-relaxed mb-8">
             Immobilienentscheidungen sind komplex und oft emotional. Wir nehmen uns die Zeit, deine Situation wirklich zu verstehen — und geben dir eine ehrliche Einschätzung. Kostenlos, persönlich, ohne versteckte Agenda.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
             <CTAButton href="#kontakt" variant="primary" size="md">
               Beratung anfragen →
             </CTAButton>
@@ -87,7 +87,7 @@ export default function BeratungPage() {
             <AnimateIn direction="up" delay={0}>
             <div>
               <h2 className="text-3xl font-bold text-brand-anthrazit mb-5">
-                Die meisten Fehler entstehen vor der Entscheidung
+                Die meisten Fehler entstehen vor der Entscheidung.
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
                 <p>
@@ -135,9 +135,9 @@ export default function BeratungPage() {
       <section className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <AnimateIn direction="up">
-          <div className="text-center mb-12">
+          <div className="text-left md:text-center mb-12">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Womit können wir helfen?</h2>
-            <p className="text-brand-gray-warm text-sm max-w-xl mx-auto">
+            <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">
               Kein Thema ist zu groß oder zu klein. Hier sind die häufigsten Fragen, mit denen Menschen zu uns kommen.
             </p>
           </div>
@@ -218,12 +218,12 @@ export default function BeratungPage() {
       {/* Tipps */}
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-left md:text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-brand-cream border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
               💡 Unsere Tipps
             </div>
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">So bereitest du dich auf eine Beratung vor</h2>
-            <p className="text-brand-gray-warm text-sm max-w-xl mx-auto">Je besser du vorbereitet bist, desto wertvoller wird das Gespräch für dich.</p>
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">So bereitest du dich auf eine Beratung vor.</h2>
+            <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">Je besser du vorbereitet bist, desto wertvoller wird das Gespräch für dich.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -261,9 +261,9 @@ export default function BeratungPage() {
       {/* Besondere Situationen */}
       <section className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Auch in besonderen Lebenslagen</h2>
-            <p className="text-brand-gray-warm text-sm max-w-xl mx-auto">
+          <div className="text-left md:text-center mb-10">
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Auch in besonderen Lebenslagen.</h2>
+            <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">
               Manchmal ist eine Immobilienentscheidung mit schwierigen persönlichen Umständen verbunden. Gerade dann braucht man einen neutralen, erfahrenen Ansprechpartner.
             </p>
           </div>
@@ -285,7 +285,7 @@ export default function BeratungPage() {
               </a>
             ))}
           </div>
-          <div className="mt-10 text-center">
+          <div className="mt-10 text-left md:text-center">
             <CTAButton href="/verkaufen" variant="primary" size="md">
               Immobilienbewertung starten →
             </CTAButton>

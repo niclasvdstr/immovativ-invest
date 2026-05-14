@@ -62,7 +62,7 @@ export default function BlogPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-16 md:pt-28 md:pb-20 px-4 md:px-8">
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <AnimateIn direction="up">
-        <div className="max-w-3xl mx-auto text-center relative">
+        <div className="max-w-3xl mx-auto text-left md:text-center relative">
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             <svg className="w-4 h-4 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
@@ -72,7 +72,7 @@ export default function BlogPage() {
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-5">
             Der immovativ<span className="font-black">Invest</span> <span className="text-brand-green">Blog.</span>
           </h1>
-          <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg max-w-xl mx-auto">
+          <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg md:max-w-xl md:mx-auto">
             Marktentwicklung, Verkaufstipps, Steuerrecht und mehr – verständlich erklärt von unseren Experten.
           </p>
         </div>

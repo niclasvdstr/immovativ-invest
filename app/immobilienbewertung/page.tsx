@@ -137,10 +137,13 @@ export default function ImmobilienbewertungPage() {
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <div className="max-w-5xl mx-auto relative">
           <AnimateIn direction="up">
-            <div className="text-center mb-10">
-              <div className="inline-flex flex-col items-center gap-1 bg-white border border-brand-gray-border rounded-2xl px-5 py-3 text-sm font-semibold text-brand-anthrazit shadow-soft mb-5">
-                <span style={{ color: '#ffa61c' }} className="text-lg tracking-wider">★★★★★</span>
-                <span className="text-center">4,9 von 5 · über 100 Bewertungen · 100% kostenlos</span>
+            <div className="text-left md:text-center mb-10">
+              <div className="inline-flex items-center gap-3 bg-white border border-brand-gray-border rounded-2xl px-5 py-3 shadow-soft mb-5">
+                <span style={{ color: '#ffa61c' }} className="text-xl tracking-wider shrink-0">★★★★★</span>
+                <div className="text-left">
+                  <div className="text-sm font-bold text-brand-anthrazit leading-tight">4,9 von 5</div>
+                  <div className="text-xs text-brand-gray-warm font-normal leading-tight">100+ Bewertungen · kostenlos</div>
+                </div>
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-4">
                 Was ist deine Immobilie <span className="text-brand-green">wert?</span>
@@ -204,7 +207,7 @@ export default function ImmobilienbewertungPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-2">Welche Immobilien wir bewerten.</h2>
             <p className="text-brand-gray-warm text-sm mb-10 max-w-2xl">Wir bewertet alle Immobilientypen im Rhein-Main-Gebiet — schnell, marktgerecht und kostenlos.</p>
           </AnimateIn>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
               { icon: '🏠', label: 'Einfamilienhäuser' },
               { icon: '🏘️', label: 'Doppel- & Reihenhäuser' },
@@ -214,9 +217,9 @@ export default function ImmobilienbewertungPage() {
               { icon: '🌿', label: 'Grundstücke' },
             ].map(item => (
               <AnimateIn key={item.label} direction="up">
-                <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-soft flex items-center gap-3">
-                  <span className="text-2xl">{item.icon}</span>
-                  <span className="font-semibold text-brand-anthrazit text-sm">{item.label}</span>
+                <div className="bg-white rounded-2xl p-3 sm:p-5 border border-gray-100 shadow-soft flex items-center gap-2 sm:gap-3">
+                  <span className="text-xl sm:text-2xl shrink-0">{item.icon}</span>
+                  <span className="font-semibold text-brand-anthrazit text-xs sm:text-sm leading-tight">{item.label}</span>
                 </div>
               </AnimateIn>
             ))}
@@ -276,7 +279,7 @@ export default function ImmobilienbewertungPage() {
 
       {/* CTA */}
       <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-left md:text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Jetzt kostenlose Bewertung anfragen</h2>
           <p className="text-white/70 text-sm mb-8 leading-relaxed max-w-xl mx-auto">
             Erfahren Sie den genauen Marktwert Ihrer Immobilie — persönlich vor Ort, ohne Verpflichtung und ohne versteckte Kosten.

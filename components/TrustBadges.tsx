@@ -49,7 +49,7 @@ export default function TrustBadges({ variant = 'row' }: TrustBadgesProps) {
   }
 
   return (
-    <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
+    <div className="flex flex-wrap items-center justify-start md:justify-center gap-3 md:gap-4">
       {badges.map((badge) => (
         <div
           key={badge}

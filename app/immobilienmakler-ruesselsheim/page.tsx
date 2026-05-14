@@ -297,7 +297,7 @@ export default function ImmobilienmaklerRuesselsheimPage() {
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">
-          <div className="text-center mb-12">
+          <div className="text-left md:text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
               <span className="text-brand-green">Deine Vorteile</span> mit immovativ<span className="font-black">Invest</span> in Rüsselsheim.
             </h2>
@@ -374,7 +374,7 @@ export default function ImmobilienmaklerRuesselsheimPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-16 px-4 md:px-8 bg-brand-green"><div className="max-w-3xl mx-auto text-center"><h2 className="text-2xl md:text-3xl font-bold text-white mb-4">deine Immobilie in Rüsselsheim. Unser Einsatz. Ihr Erfolg.</h2><p className="text-green-100 mb-6">Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.</p><CTAButton href="/verkaufen" variant="secondary" size="lg">
+      <section className="py-16 px-4 md:px-8 bg-brand-green"><div className="max-w-3xl mx-auto text-left md:text-center"><h2 className="text-2xl md:text-3xl font-bold text-white mb-4">deine Immobilie in Rüsselsheim. Unser Einsatz. Ihr Erfolg.</h2><p className="text-green-100 mb-6">Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.</p><CTAButton href="/verkaufen" variant="secondary" size="lg">
   Immobilienbewertung starten →
 </CTAButton></div></section>
 

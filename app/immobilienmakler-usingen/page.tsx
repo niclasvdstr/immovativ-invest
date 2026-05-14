@@ -302,7 +302,7 @@ export default function ImmobilienmaklerUsingenPage() {
       {/* Stadtteile & Preise */}
       <section className="section-padding bg-brand-gray-light">
         <div className="container-max">
-          <div className="text-center mb-10">
+          <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">
               Immobilienpreise nach <span className="text-brand-green">Stadtteil in Usingen</span>
             </h2>
@@ -325,7 +325,7 @@ export default function ImmobilienmaklerUsingenPage() {
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">
-          <div className="text-center mb-12">
+          <div className="text-left md:text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
               <span className="text-brand-green">Deine Vorteile</span> mit immovativ<span className="font-black">Invest</span> in Usingen.
             </h2>
@@ -419,7 +419,7 @@ export default function ImmobilienmaklerUsingenPage() {
 
       {/* Mid-page CTA */}
       <section className="py-16 px-4 md:px-8 bg-brand-green">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-left md:text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             deine Immobilie in Usingen. Unser Einsatz. Ihr Erfolg.
           </h2>

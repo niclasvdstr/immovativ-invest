@@ -51,7 +51,7 @@ export default function ImmobilienangebotePage() {
       {/* Angebote Grid */}
       <section className="section-padding bg-[#f2f4f8] px-4 md:px-8 pt-24">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-left md:text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
               <span className="w-2 h-2 bg-brand-green rounded-full" />
               Demnächst verfügbar
@@ -98,7 +98,7 @@ export default function ImmobilienangebotePage() {
       {/* Suchauftrag */}
       <section id="suchauftrag" className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-left md:text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-5">
               🔔 Suchauftrag
             </div>

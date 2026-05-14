@@ -30,9 +30,9 @@ export default function Footer({ variant = 'landing' }: FooterProps) {
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-12">
 
         {/* Brand – zentriert oben */}
-        <div className="flex flex-col items-center text-center mb-8 md:hidden">
+        <div className="flex flex-col items-start text-left mb-8 md:hidden">
           <Image src="/logo-banner-white.svg" alt="immovativInvest Logo" width={180} height={36} className="h-8 w-auto mb-4" />
-          <p className="text-white/75 text-sm leading-relaxed max-w-[260px] mb-4">
+          <p className="text-white/75 text-sm leading-relaxed mb-4">
             Wir verkaufen deine Immobilie zum bestmöglichen Preis – persönlich, diskret und ohne unnötige Wartezeiten.
           </p>
           <div className="flex items-center gap-2">

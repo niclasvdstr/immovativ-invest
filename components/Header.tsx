@@ -88,7 +88,7 @@ export default function Header({
               alt="immovativInvest Logo"
               width={180}
               height={36}
-              className="h-9 md:h-8 w-auto"
+              className="h-7 md:h-7 w-auto"
               priority
             />
           </Link>

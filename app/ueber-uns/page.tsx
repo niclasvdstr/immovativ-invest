@@ -125,7 +125,7 @@ export default function UeberUnsPage() {
 
           {/* Top: centered text */}
           <AnimateIn direction="up">
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-left max-w-3xl mx-auto mb-14">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-brand-anthrazit leading-tight mb-6">
               Dein Erfolg ist <span className="text-brand-green">unsere Mission.</span>
             </h1>
@@ -433,7 +433,7 @@ export default function UeberUnsPage() {
               </div>
             </AnimateIn>
             <AnimateIn direction="up" delay={150}>
-            <div className="text-center lg:text-left">
+            <div className="text-left">
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 Direkte Kommunikation
               </div>
@@ -574,7 +574,7 @@ export default function UeberUnsPage() {
       {/* Immobilienangebote Teaser */}
       <section className="section-padding px-4 md:px-8 bg-brand-gray-light">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-left md:text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-brand-green/10 border border-brand-green/20 text-brand-green rounded-full px-4 py-1.5 text-xs font-semibold mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse inline-block" />
               Demnächst verfügbar
@@ -620,7 +620,7 @@ export default function UeberUnsPage() {
             ))}
           </div>
 
-          <div className="text-center">
+          <div className="text-left md:text-center">
             <a
               href="/immobilienangebote"
               className="inline-flex items-center gap-2 bg-brand-anthrazit hover:bg-brand-anthrazit/90 text-white font-semibold rounded-xl px-8 py-4 text-sm transition-colors"

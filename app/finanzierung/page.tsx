@@ -55,7 +55,7 @@ export default function FinanzierungPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-        <div className="max-w-4xl mx-auto relative text-center">
+        <div className="max-w-4xl mx-auto relative text-left md:text-center">
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💰 Finanzierung
           </div>
@@ -63,10 +63,10 @@ export default function FinanzierungPage() {
             <span className="text-brand-anthrazit">Immobilienfinanzierung Frankfurt.</span><br />
             <span className="text-brand-green">Die richtige Lösung für Sie.</span>
           </h1>
-          <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-brand-gray-warm text-lg md:max-w-2xl md:mx-auto leading-relaxed mb-8">
             Ob Erstkauf, Anschlussfinanzierung oder Investition — durch unser starkes Netzwerk begleiten wir dich von der ersten Frage bis zum unterzeichneten Kreditvertrag.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
             <CTAButton href="/verkaufen" variant="primary" size="md">
               Immobilienbewertung starten →
             </CTAButton>
@@ -131,12 +131,12 @@ export default function FinanzierungPage() {
       {/* Tipps */}
       <section className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-left md:text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
               💡 Unsere Tipps
             </div>
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">Was du vor dem Bankgespräch wissen solltest</h2>
-            <p className="text-brand-gray-warm max-w-2xl mx-auto text-sm leading-relaxed">
+            <p className="text-brand-gray-warm md:max-w-2xl md:mx-auto text-sm leading-relaxed">
               Diese sechs Punkte machen den Unterschied zwischen einer durchschnittlichen und einer wirklich guten Finanzierung.
             </p>
           </div>
@@ -199,9 +199,9 @@ export default function FinanzierungPage() {
       {/* Finanzierungsarten */}
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Welche Finanzierungsform passt zu dir?</h2>
-            <p className="text-brand-gray-warm text-sm max-w-xl mx-auto">
+            <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">
               Nicht jede Situation erfordert dieselbe Lösung. Wir erklären die häufigsten Modelle.
             </p>
           </div>
@@ -236,9 +236,9 @@ export default function FinanzierungPage() {
       {/* Prozess */}
       <section className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">So begleiten wir dich</h2>
-            <p className="text-brand-gray-warm text-sm max-w-xl mx-auto">Von der ersten Frage bis zur Unterschrift — wir sind in jedem Schritt an deiner Seite.</p>
+            <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">Von der ersten Frage bis zur Unterschrift — wir sind in jedem Schritt an deiner Seite.</p>
           </div>
           <div className="space-y-5">
             {[
@@ -256,7 +256,7 @@ export default function FinanzierungPage() {
               </div>
             ))}
           </div>
-          <div className="mt-8 text-center">
+          <div className="mt-8 text-left md:text-center">
             <CTAButton href="/verkaufen" variant="primary" size="md">
               Immobilienbewertung starten →
             </CTAButton>
