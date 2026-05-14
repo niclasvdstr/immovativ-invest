@@ -200,14 +200,13 @@ export default function CategoryPage({ params }: { params: { cat: string } }) {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 md:px-8 bg-brand-anthrazit">
+      <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-white mb-3">Kostenlose Immobilienbewertung</h2>
-          <p className="text-gray-400 text-sm mb-6">Wir bewerten Ihre Immobilie persönlich vor Ort – kostenlos, unverbindlich und diskret.</p>
+          <p className="text-white/70 text-sm mb-6">Wir bewerten Ihre Immobilie persönlich vor Ort – kostenlos, unverbindlich und diskret.</p>
           <Link
             href="/verkaufen"
-            className="inline-flex items-center justify-center gap-2 text-white font-bold rounded-2xl px-8 py-4 text-sm hover:brightness-110 transition-all duration-200"
-            style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}
+            className="inline-flex items-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-gray-50 transition-colors whitespace-nowrap shrink-0"
           >
             Immobilienbewertung starten →
           </Link>

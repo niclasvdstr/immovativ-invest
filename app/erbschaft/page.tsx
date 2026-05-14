@@ -203,15 +203,15 @@ export default function ErbschaftPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="bg-brand-anthrazit px-4 md:px-8 py-14">
+      <section className="px-4 md:px-8 py-14" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="text-2xl font-bold text-white mb-2">Weißt du, was die geerbte Immobilie wert ist?</h2>
-            <p className="text-gray-400 text-sm">Kostenlose Wertermittlung — unverbindlich, diskret und ohne Verpflichtung.</p>
+            <p className="text-white/70 text-sm">Kostenlose Wertermittlung — unverbindlich, diskret und ohne Verpflichtung.</p>
           </div>
-          <CTAButton href="/verkaufen" variant="primary" size="md">
+          <Link href="/verkaufen" className="inline-flex items-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-gray-50 transition-colors whitespace-nowrap shrink-0">
             Immobilienbewertung starten →
-          </CTAButton>
+          </Link>
         </div>
       </section>
 

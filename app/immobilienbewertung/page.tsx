@@ -160,17 +160,18 @@ export default function ImmobilienbewertungPage() {
       </section>
 
       {/* Trust-Bar */}
-      <section className="bg-brand-anthrazit py-8 px-4 md:px-8">
+      <section className="py-8 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
-            { value: '100 %', label: 'Kostenlos & unverbindlich' },
-            { value: '125+', label: 'Bewertungen durchgeführt' },
-            { value: '4,9 ★', label: 'Kundenbewertung' },
-            { value: '24h', label: 'Ergebnis innerhalb von' },
+            { emoji: '✅', value: '100 %', label: 'Kostenlos & unverbindlich' },
+            { emoji: '🏠', value: '125+', label: 'Bewertungen durchgeführt' },
+            { emoji: '⭐', value: '4,9', label: 'Kundenbewertung Google' },
+            { emoji: '⚡', value: '24h', label: 'Ergebnis innerhalb von' },
           ].map(item => (
             <div key={item.label}>
+              <div className="text-2xl mb-1">{item.emoji}</div>
               <div className="text-xl md:text-2xl font-bold text-white mb-1">{item.value}</div>
-              <div className="text-gray-400 text-xs">{item.label}</div>
+              <div className="text-white/60 text-xs">{item.label}</div>
             </div>
           ))}
         </div>
@@ -200,7 +201,7 @@ export default function ImmobilienbewertungPage() {
       <section className="py-14 px-4 md:px-8 bg-[#f2f4f8]">
         <div className="max-w-5xl mx-auto">
           <AnimateIn direction="up">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-2">Welche Immobilien wir bewerten</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-2">Welche Immobilien wir bewerten.</h2>
             <p className="text-brand-gray-warm text-sm mb-10 max-w-2xl">Wir bewertet alle Immobilientypen im Rhein-Main-Gebiet — schnell, marktgerecht und kostenlos.</p>
           </AnimateIn>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -227,7 +228,7 @@ export default function ImmobilienbewertungPage() {
       <section className="py-14 px-4 md:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <AnimateIn direction="up">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-2">Was den Wert Ihrer Immobilie beeinflusst</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-2">Was den Wert Ihrer Immobilie beeinflusst.</h2>
             <p className="text-brand-gray-warm text-sm mb-10 max-w-2xl">Diese Faktoren fließen in jede professionelle Immobilienbewertung ein.</p>
           </AnimateIn>
           <div className="grid md:grid-cols-2 gap-5">
@@ -254,7 +255,7 @@ export default function ImmobilienbewertungPage() {
       <section className="py-14 px-4 md:px-8 bg-[#f2f4f8]">
         <div className="max-w-4xl mx-auto">
           <AnimateIn direction="up">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-2">So läuft die Bewertung ab</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-2">So läuft die Bewertung ab.</h2>
             <p className="text-brand-gray-warm text-sm mb-10 max-w-xl">In vier einfachen Schritten zur fundierten Werteinschätzung — kostenlos, persönlich, ohne Stress.</p>
           </AnimateIn>
           <div className="space-y-4">
@@ -274,18 +275,18 @@ export default function ImmobilienbewertungPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 md:px-8 bg-brand-anthrazit">
+      <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Jetzt kostenlose Bewertung anfragen</h2>
-          <p className="text-gray-400 text-sm mb-8 leading-relaxed max-w-xl mx-auto">
+          <p className="text-white/70 text-sm mb-8 leading-relaxed max-w-xl mx-auto">
             Erfahren Sie den genauen Marktwert Ihrer Immobilie — persönlich vor Ort, ohne Verpflichtung und ohne versteckte Kosten.
           </p>
-          <a
+          <Link
             href="#bewertung"
-            className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-bold rounded-2xl px-8 py-4 text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-gray-50 transition-colors whitespace-nowrap shrink-0"
           >
             Bewertung starten →
-          </a>
+          </Link>
         </div>
       </section>
 

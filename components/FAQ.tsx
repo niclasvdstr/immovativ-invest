@@ -22,7 +22,7 @@ const GoogleIcon = () => (
   </svg>
 )
 
-const featuredReviews = [
+const reviewSet0 = [
   {
     name: 'Sabine M.',
     location: 'Frankfurt',
@@ -52,10 +52,105 @@ const featuredReviews = [
   },
 ]
 
+const reviewSet1 = [
+  {
+    name: 'Markus R.',
+    location: 'Wiesbaden',
+    initials: 'MR',
+    avatarColor: '#9333ea',
+    text: 'Vom ersten Gespräch bis zur Schlüsselübergabe wurde alles professionell und ehrlich abgewickelt. In nur 4 Wochen war alles durch. Sehr empfehlenswert!',
+    propertyType: 'Doppelhaushälfte',
+    timeAgo: 'vor 5 Tagen',
+  },
+  {
+    name: 'Julia & Stefan F.',
+    location: 'Kronberg',
+    initials: 'JF',
+    avatarColor: '#f59e0b',
+    text: 'Wir waren anfangs skeptisch, aber immovativInvest hat uns wirklich positiv überrascht. Kompetente Beratung, schnelle Reaktionszeiten und ein top Verkaufspreis.',
+    propertyType: 'Einfamilienhaus',
+    timeAgo: 'vor 6 Wochen',
+  },
+  {
+    name: 'Peter L.',
+    location: 'Darmstadt',
+    initials: 'PL',
+    avatarColor: '#0ea5e9',
+    text: 'Für unsere Kapitalanlage haben wir den idealen Käufer gefunden. Die Vermarktung war erstklassig und der erzielte Preis hat unsere Erwartungen übertroffen.',
+    propertyType: 'Kapitalanlage',
+    timeAgo: 'vor 2 Monaten',
+  },
+]
+
+const reviewSet2 = [
+  {
+    name: 'Monika S.',
+    location: 'Offenbach',
+    initials: 'MS',
+    avatarColor: '#10b981',
+    text: 'Super unkompliziert und immer ehrlich. Niclas hat uns realistisch beraten statt unrealistische Preise zu versprechen. Am Ende alles genau wie besprochen.',
+    propertyType: 'Eigentumswohnung',
+    timeAgo: 'vor 1 Woche',
+  },
+  {
+    name: 'Familie Brandt',
+    location: 'Bad Vilbel',
+    initials: 'FB',
+    avatarColor: '#6366f1',
+    text: 'Diskret, schnell und professionell. Die Familie war sehr glücklich mit dem Ablauf. Kein Druck, klare Kommunikation – genau das haben wir gebraucht.',
+    propertyType: 'Reihenhaus',
+    timeAgo: 'vor 3 Monaten',
+  },
+  {
+    name: 'Rainer W.',
+    location: 'Hanau',
+    initials: 'RW',
+    avatarColor: '#ef4444',
+    text: 'Ich hatte ein schwieriges Grundstück zu verkaufen, das andere Makler abgelehnt hatten. immovativInvest hat es innerhalb von 6 Wochen erfolgreich vermarktet.',
+    propertyType: 'Grundstück',
+    timeAgo: 'vor 2 Wochen',
+  },
+]
+
+const reviewSet3 = [
+  {
+    name: 'Anna K.',
+    location: 'Frankfurt-Sachsenhausen',
+    initials: 'AK',
+    avatarColor: '#8b5cf6',
+    text: 'Absolut professionelle Abwicklung. Der Wert meiner Immobilie wurde realistisch eingeschätzt – nicht zu hoch, nicht zu niedrig. Verkauf lief reibungslos.',
+    propertyType: 'Penthouse',
+    timeAgo: 'vor 4 Tagen',
+  },
+  {
+    name: 'Gerhard & Petra M.',
+    location: 'Oberursel',
+    initials: 'GM',
+    avatarColor: '#f97316',
+    text: 'Wir wurden von Anfang bis Ende begleitet. Besonders gut: Die Kommunikation war immer transparent und wir wussten stets, wo wir stehen.',
+    propertyType: 'Einfamilienhaus',
+    timeAgo: 'vor 5 Wochen',
+  },
+  {
+    name: 'Lena T.',
+    location: 'Hofheim',
+    initials: 'LT',
+    avatarColor: '#14b8a6',
+    text: 'Beim Verkauf meiner Wohnung lief alles schneller als erwartet. Das Team ist jung, dynamisch und kennt den Markt wirklich gut.',
+    propertyType: 'Eigentumswohnung',
+    timeAgo: 'vor 1 Monat',
+  },
+]
+
+const allReviewSets = [reviewSet0, reviewSet1, reviewSet2, reviewSet3]
+
 export default function FAQ({ items, title = 'Häufig gestellte Fragen' }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const [reviewIndex, setReviewIndex] = useState(0)
-  const review = featuredReviews[reviewIndex]
+  // Auto-select based on title hash for variety
+  const reviewSetIndex = title ? title.length % 4 : 0
+  const reviews = allReviewSets[reviewSetIndex]
+  const review = reviews[reviewIndex]
 
   return (
     <section className="section-padding bg-white">
@@ -154,7 +249,7 @@ export default function FAQ({ items, title = 'Häufig gestellte Fragen' }: FAQPr
 
             {/* Navigation dots */}
             <div className="flex justify-center gap-2">
-              {featuredReviews.map((_, i) => (
+              {reviews.map((_, i) => (
                 <button
                   key={i}
                   onClick={() => setReviewIndex(i)}
