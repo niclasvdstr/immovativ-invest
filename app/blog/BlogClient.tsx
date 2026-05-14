@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { articles } from '@/lib/blog-articles'
+import AnimateIn from '@/components/AnimateIn'
 
 const categories: { label: string; href: string }[] = [
   { label: 'Alle', href: '/blog' },
@@ -66,6 +67,7 @@ export default function BlogClient() {
           {/* Featured */}
           <section className="section-padding bg-white">
             <div className="container-max">
+              <AnimateIn direction="up">
               <a
                 href={`/blog/${featured.slug}`}
                 className="group grid grid-cols-1 lg:grid-cols-2 gap-0 items-center bg-brand-anthrazit rounded-3xl overflow-hidden hover:shadow-large transition-shadow duration-300"
@@ -105,6 +107,7 @@ export default function BlogClient() {
                   </div>
                 </div>
               </a>
+              </AnimateIn>
             </div>
           </section>
 
@@ -113,9 +116,9 @@ export default function BlogClient() {
             <section className="pb-20 px-4 md:px-8 bg-white">
               <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {grid.map(article => (
+                  {grid.map((article, index) => (
+                    <AnimateIn key={article.slug} direction="up" delay={index * 60}>
                     <a
-                      key={article.slug}
                       href={`/blog/${article.slug}`}
                       className="group bg-white border border-brand-gray-border rounded-2xl overflow-hidden hover:shadow-medium hover:border-brand-green/20 transition-all duration-300 flex flex-col"
                     >
@@ -143,6 +146,7 @@ export default function BlogClient() {
                         </div>
                       </div>
                     </a>
+                    </AnimateIn>
                   ))}
                 </div>
               </div>

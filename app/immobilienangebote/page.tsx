@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SuchauftragForm from '@/components/SuchauftragForm'
+import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
   title: 'Immobilienangebote – Frankfurt & Rhein-Main | immovativInvest',
@@ -51,6 +52,7 @@ export default function ImmobilienangebotePage() {
       {/* Angebote Grid */}
       <section className="section-padding bg-[#f2f4f8] px-4 md:px-8 pt-24">
         <div className="max-w-5xl mx-auto">
+          <AnimateIn direction="up">
           <div className="text-left md:text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
               <span className="w-2 h-2 bg-brand-green rounded-full" />
@@ -61,6 +63,7 @@ export default function ImmobilienangebotePage() {
               Ausgewählte Objekte aus Frankfurt & Rhein-Main — diskret, geprüft, direkt von uns vermittelt.
             </p>
           </div>
+          </AnimateIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {[
@@ -70,8 +73,9 @@ export default function ImmobilienangebotePage() {
               { type: 'Eigentumswohnung', location: 'Wiesbaden · Nordost', size: 'ca. 78 m²', rooms: '2 Zimmer' },
               { type: 'Einfamilienhaus', location: 'Kronberg im Taunus', size: 'ca. 210 m²', rooms: '6 Zimmer' },
               { type: 'Kapitalanlage', location: 'Frankfurt · Bornheim', size: 'ca. 55 m²', rooms: '2 Zimmer' },
-            ].map(item => (
-              <div key={item.location} className="bg-white rounded-3xl overflow-hidden shadow-soft border border-gray-100">
+            ].map((item, index) => (
+              <AnimateIn key={item.location} direction="up" delay={index * 80}>
+              <div className="bg-white rounded-3xl overflow-hidden shadow-soft border border-gray-100">
                 <div className="relative h-48 bg-gradient-to-br from-brand-cream to-brand-gray-light flex items-center justify-center">
                   <div className="absolute top-4 left-4 bg-white rounded-full px-4 py-1.5 text-xs font-semibold text-brand-anthrazit shadow-soft">
                     Bald verfügbar
@@ -89,6 +93,7 @@ export default function ImmobilienangebotePage() {
                   <div className="h-2 bg-gray-100 rounded-full w-2/3" />
                 </div>
               </div>
+              </AnimateIn>
             ))}
           </div>
 
@@ -98,6 +103,7 @@ export default function ImmobilienangebotePage() {
       {/* Suchauftrag */}
       <section id="suchauftrag" className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-2xl mx-auto">
+          <AnimateIn direction="up">
           <div className="text-left md:text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-5">
               🔔 Suchauftrag
@@ -107,6 +113,7 @@ export default function ImmobilienangebotePage() {
               Hinterlegen Sie Ihren Suchauftrag — wir melden uns persönlich, sobald ein passendes Objekt verfügbar ist. Kostenlos & unverbindlich.
             </p>
           </div>
+          </AnimateIn>
           <div className="bg-white rounded-3xl border border-brand-gray-border p-8 shadow-soft text-left">
             <div className="flex items-center gap-3 mb-6 pb-6 border-b border-brand-gray-border">
               <div className="w-10 h-10 rounded-xl bg-brand-green flex items-center justify-center shrink-0">
