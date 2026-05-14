@@ -11,6 +11,7 @@ import FAQ from '@/components/FAQ'
 import { sharedFaqItems } from '@/lib/faq-items'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
+import AnimateIn from '@/components/AnimateIn'
 import NearbyStaedte from '@/components/NearbyStaedte'
 import CityJsonLd from '@/components/CityJsonLd'
 import TippgeberSection from '@/components/TippgeberSection'
@@ -121,6 +122,7 @@ export default function ImmobilienmaklerDreieichPage() {
 
         <div className="max-w-6xl mx-auto relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimateIn direction="up">
             <div>
               {/* Breadcrumb */}
               <div className="flex items-center gap-2 text-sm text-brand-gray-warm mb-4">
@@ -196,6 +198,7 @@ export default function ImmobilienmaklerDreieichPage() {
                 </CTAButton>
               </div>
             </div>
+            </AnimateIn>
 
             {/* Feature panel */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-large border border-brand-gray-border">
@@ -256,6 +259,7 @@ export default function ImmobilienmaklerDreieichPage() {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimateIn direction="up">
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -292,6 +296,7 @@ export default function ImmobilienmaklerDreieichPage() {
                 ))}
               </div>
             </div>
+            </AnimateIn>
 
             <div className="relative">
               <Image src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=600&fit=crop" alt="Immobilien Dreieich Landkreis Offenbach" className="w-full h-auto rounded-3xl shadow-large object-cover" width={800} height={600} />

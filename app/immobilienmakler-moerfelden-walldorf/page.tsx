@@ -11,6 +11,7 @@ import FAQ from '@/components/FAQ'
 import { sharedFaqItems } from '@/lib/faq-items'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
+import AnimateIn from '@/components/AnimateIn'
 import NearbyStaedte from '@/components/NearbyStaedte'
 import CityJsonLd from '@/components/CityJsonLd'
 import TippgeberSection from '@/components/TippgeberSection'
@@ -111,6 +112,7 @@ export default function ImmobilienmaklerMoerfeldenWalldorf() {
       {/* Hero Section */}
       <section className="bg-white pt-12 pb-10 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
               Immobilienmakler Mörfelden-Walldorf.
@@ -150,6 +152,7 @@ export default function ImmobilienmaklerMoerfeldenWalldorf() {
               </CTAButton>
             </div>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

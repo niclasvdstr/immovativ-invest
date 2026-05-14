@@ -11,6 +11,7 @@ import FAQ from '@/components/FAQ'
 import { sharedFaqItems } from '@/lib/faq-items'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
+import AnimateIn from '@/components/AnimateIn'
 import NearbyStaedte from '@/components/NearbyStaedte'
 import CityJsonLd from '@/components/CityJsonLd'
 import TippgeberSection from '@/components/TippgeberSection'
@@ -107,6 +108,7 @@ export default function ImmobilienmaklerWehrheimPage() {
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <div className="max-w-6xl mx-auto relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimateIn direction="up">
             <div>
               <div className="flex items-center gap-2 text-sm text-brand-gray-warm mb-4">
                 <a href="/" className="hover:text-brand-green transition-colors">Start</a>
@@ -161,6 +163,7 @@ export default function ImmobilienmaklerWehrheimPage() {
                 <CTAButton href="tel:+4915129686979" variant="outline" size="lg">Jetzt anrufen</CTAButton>
               </div>
             </div>
+            </AnimateIn>
             <div className="bg-white rounded-3xl overflow-hidden shadow-large border border-brand-gray-border">
               <div className="relative">
                 <Image src="/hero-niclas-2.png" alt="Niclas van der Straeten – Immobilienmakler Wehrheim" className="w-full h-64 object-cover" style={{ objectPosition: 'center 15%' }} width={800} height={256} priority />
@@ -213,6 +216,7 @@ export default function ImmobilienmaklerWehrheimPage() {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimateIn direction="up">
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -246,6 +250,7 @@ export default function ImmobilienmaklerWehrheimPage() {
                 ))}
               </div>
             </div>
+            </AnimateIn>
             <div className="relative">
               <Image src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop" alt="Immobilien Wehrheim Hochtaunuskreis" className="w-full h-auto rounded-3xl shadow-large object-cover" width={800} height={600} />
               <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-medium border border-brand-gray-border px-5 py-4">
