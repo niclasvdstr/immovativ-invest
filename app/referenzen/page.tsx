@@ -496,7 +496,7 @@ export default function ReferenzenPage() {
               Alle diese Situationen waren verschieden. Zeitdruck, Erbschaft, Scheidung, Kapitalanlage, Ruhestand – jede Geschichte hat ihre eigene Dynamik. Was alle gemeinsam hatten: Am Anfang wussten die Verkäufer nicht, was wirklich möglich ist.
             </p>
             <p className="text-brand-gray-warm mb-8 leading-relaxed">
-              Ich möchte herausfinden, was in deiner Situation möglich ist. Ruf mich an oder schreib mir – das Erstgespräch ist kostenlos und unverbindlich.
+              Ich möchte herausfinden, was in deiner Situation möglich ist. Ruf mich an oder schreibe mir – das Erstgespräch ist kostenlos und unverbindlich.
             </p>
             <CTAButton href="/verkaufen" variant="primary" size="lg">
               Immobilienbewertung starten →

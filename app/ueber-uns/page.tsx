@@ -380,10 +380,10 @@ export default function UeberUnsPage() {
                 </h2>
                 <div className="space-y-4 text-brand-gray-warm leading-relaxed">
                   <p>
-                    Du verdienst einen Service, der Dich von Anfang an abholt — der Dir volle Transparenz gibt, Dir die Arbeit abnimmt und am Ende das beste Ergebnis rausholt.
+                    Du verdienst einen Service, der dich von Anfang an abholt — der dir volle Transparenz gibt, dir die Arbeit abnimmt und am Ende das beste Ergebnis rausholt.
                   </p>
                   <p>
-                    Bei uns trifft Marktexpertise auf echte Persönlichkeit. Wir sind keine anonyme Agentur — wir sind Niclas und Mazlum, zwei Menschen die Verantwortung für Deinen Verkauf übernehmen.
+                    Bei uns trifft Marktexpertise auf echte Persönlichkeit. Wir sind keine anonyme Agentur — wir sind Niclas und Mazlum, zwei Menschen, die Verantwortung für deinen Verkauf übernehmen.
                   </p>
                 </div>
                 <ul className="mt-6 space-y-3">
@@ -438,14 +438,14 @@ export default function UeberUnsPage() {
                 Direkte Kommunikation
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
-                Wir sprechen<br />Deine Sprache.
+                Wir sprechen<br />deine Sprache.
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed">
                 <p>
-                  Offen, ehrlich, nahbar — ohne Floskeln und ohne Warteschleifen. Du erreichst uns direkt und bekommst regelmäßige Updates über Deinen Verkauf, ohne danach fragen zu müssen.
+                  Offen, ehrlich, nahbar — ohne Floskeln und ohne Warteschleifen. Du erreichst uns direkt und bekommst regelmäßige Updates über deinen Verkauf, ohne danach fragen zu müssen.
                 </p>
                 <p>
-                  Kontaktiere uns so, wie es Dir am besten passt — per Anruf, WhatsApp oder E-Mail. Wir sind für Dich da.
+                  Kontaktiere uns so, wie es dir am besten passt — per Anruf, WhatsApp oder E-Mail. Wir sind für dich da.
                 </p>
               </div>
               <div className="mt-8 flex items-center justify-start gap-3">
