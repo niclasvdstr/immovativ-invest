@@ -107,7 +107,7 @@ export default function Testimonials({ items = testimonials, title = 'Das sagen 
 
               {/* Review text */}
               <p className="mt-3 text-brand-anthrazit leading-relaxed text-sm flex-1 relative z-10">
-                „{t.text}"
+                &bdquo;{t.text}&ldquo;
               </p>
 
               {/* Author footer */}
