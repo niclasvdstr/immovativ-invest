@@ -6,7 +6,7 @@ interface CTAButtonProps {
   href?: string
   onClick?: () => void
   children: React.ReactNode
-  variant?: 'primary' | 'secondary' | 'outline'
+  variant?: 'primary' | 'secondary' | 'outline' | 'white'
   size?: 'sm' | 'md' | 'lg'
   fullWidth?: boolean
   className?: string
@@ -29,6 +29,7 @@ export default function CTAButton({
     primary: 'bg-[linear-gradient(135deg,#1e3a8a_0%,#2563EB_100%)] text-white hover:brightness-110 shadow-green hover:shadow-lg hover:-translate-y-0.5 focus:ring-brand-green',
     secondary: 'bg-brand-anthrazit text-white hover:bg-gray-800 hover:-translate-y-0.5 focus:ring-gray-700',
     outline: 'border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-white focus:ring-brand-green',
+    white: 'bg-white text-brand-anthrazit hover:bg-gray-50 hover:-translate-y-0.5 shadow-soft hover:shadow-medium focus:ring-white',
   }
 
   const sizes = {

@@ -498,7 +498,7 @@ export default function ReferenzenPage() {
             <p className="text-brand-gray-warm mb-8 leading-relaxed">
               Ich möchte herausfinden, was in deiner Situation möglich ist. Ruf mich an oder schreibe mir – das Erstgespräch ist kostenlos und unverbindlich.
             </p>
-            <CTAButton href="/verkaufen" variant="primary" size="lg">
+            <CTAButton href="/verkaufen" variant="white" size="lg">
               Immobilienbewertung starten →
             </CTAButton>
           </div>
@@ -506,7 +506,7 @@ export default function ReferenzenPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-16 px-4 md:px-8 bg-brand-green">
+      <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 60%, #16a34a 100%)' }}>
         <div className="max-w-3xl mx-auto text-left md:text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Was ist deine Immobilie wert?
@@ -528,7 +528,7 @@ export default function ReferenzenPage() {
 
       {/* Sticky CTA mobile */}
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg py-3 px-4 flex justify-center md:hidden">
-        <CTAButton href="/verkaufen" variant="primary" size="md">
+        <CTAButton href="/verkaufen" variant="white" size="md">
           Immobilienbewertung starten →
         </CTAButton>
       </div>

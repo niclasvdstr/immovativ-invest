@@ -381,7 +381,7 @@ export default function ImmobilienmaklerLimburgPage() {
       </section>
 
       {/* Mid-page CTA */}
-      <section className="py-16 px-4 md:px-8 bg-brand-green">
+      <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 60%, #16a34a 100%)' }}>
         <div className="max-w-3xl mx-auto text-left md:text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             deine Immobilie in Limburg. Unser Einsatz. Ihr Erfolg.
@@ -389,7 +389,7 @@ export default function ImmobilienmaklerLimburgPage() {
           <p className="text-green-100 mb-6">
             Kostenlose Erstberatung und Bewertung – ganz ohne Verpflichtung.
           </p>
-          <CTAButton href="/verkaufen" variant="secondary" size="lg">
+          <CTAButton href="/verkaufen" variant="white" size="lg">
             Immobilienbewertung starten →
           </CTAButton>
         </div>
