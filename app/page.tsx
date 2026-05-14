@@ -275,11 +275,11 @@ export default function HomePage() {
       <section id="vorteile" className="section-padding bg-white">
         <div className="container-max">
           <AnimateIn direction="up">
-            <div className="text-center mb-12">
+            <div className="text-left md:text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
                 <span className="text-brand-green">Deine Vorteile</span> mit immovativ<span className="font-black">Invest</span> als Makler.
               </h2>
-              <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto">
+              <p className="text-brand-gray-warm text-lg md:max-w-2xl md:mx-auto">
                 Wir setzen alles daran, den bestmöglichen Preis für deine Immobilie zu erzielen – mit Erfahrung, Technologie und persönlichem Einsatz.
               </p>
             </div>
@@ -616,7 +616,7 @@ export default function HomePage() {
       {/* Mid-page CTA */}
       <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #0f2027 0%, #1e3a8a 50%, #0f2027 100%)' }}>
         <AnimateIn direction="up">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-left md:text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Deine Immobilie. Unser Einsatz. Dein Erfolg.
             </h2>
