@@ -294,7 +294,7 @@ export default function ImmobilienbewertungPage() {
       </section>
 
       {/* FAQ */}
-      <FAQ items={faqItems} title="Häufige Fragen zur Immobilienbewertung" />
+      <FAQ items={faqItems} title="Häufige Fragen zur Immobilienbewertung." />
 
       <Footer />
     </main>

@@ -529,14 +529,14 @@ export default function HomePage() {
 
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-lg font-bold text-brand-anthrazit mb-2">Falsche Versprechen in der Branche…</h3>
+                  <h3 className="text-lg font-bold text-brand-anthrazit mb-2">Falsche Versprechen in der Branche.</h3>
                   <p className="text-brand-gray-warm leading-relaxed">
                     immovativ<strong className="text-brand-anthrazit font-semibold">Invest</strong> wurde gegründet, weil viele Eigentümer heute mit Bewertungen konfrontiert sind, die zwar schnell erstellt werden, aber oft an Tiefe und Verlässlichkeit fehlen. Verkaufsprozesse beginnen nicht selten ohne klare Strategie, mit unrealistischen Preisvorstellungen oder ohne fundierte Einschätzung der tatsächlichen Nachfrage.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-bold text-brand-anthrazit mb-2">Wieso wir anders arbeiten…</h3>
+                  <h3 className="text-lg font-bold text-brand-anthrazit mb-2">Wieso wir anders arbeiten.</h3>
                   <p className="text-brand-gray-warm leading-relaxed">
                     Wir verfolgen bewusst einen anderen Ansatz: Entscheidungen basieren nicht auf Bauchgefühl, sondern auf geprüften Bewertungsverfahren, aktuellen Marktdaten und fundierter regionaler Erfahrung. Das schafft Klarheit für Eigentümer und sorgt für einen stabilen, nachvollziehbaren Verkaufsprozess.
                   </p>
@@ -705,7 +705,7 @@ export default function HomePage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen zum Makler-Service" />
+        <FAQ items={faqItems} title="Häufige Fragen zum Makler-Service." />
       </section>
 
       {/* Contact Form */}

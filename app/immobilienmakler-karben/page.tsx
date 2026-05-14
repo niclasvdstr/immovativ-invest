@@ -381,7 +381,7 @@ export default function ImmobilienmaklerKarbenPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Karben" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Karben." />
       </section>
 
       {/* Contact Form */}

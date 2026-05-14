@@ -439,7 +439,7 @@ export default function ImmobilienmaklerMainzPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Mainz" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Mainz." />
       </section>
 
       {/* Contact Form */}

@@ -436,7 +436,7 @@ export default function ImmobilienmaklerNeuIsenburgPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Neu-Isenburg" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Neu-Isenburg." />
       </section>
 
       {/* Contact Form */}

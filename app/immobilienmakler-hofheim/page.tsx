@@ -381,7 +381,7 @@ export default function ImmobilienmaklerHofheimPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Hofheim am Taunus" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Hofheim am Taunus." />
       </section>
 
       {/* Contact Form */}

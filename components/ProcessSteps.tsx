@@ -14,7 +14,7 @@ interface ProcessStepsProps {
 
 export default function ProcessSteps({
   steps,
-  title = 'So einfach geht\'s',
+  title = 'So einfach geht\'s.',
   subtitle,
   accent = 'green',
 }: ProcessStepsProps) {

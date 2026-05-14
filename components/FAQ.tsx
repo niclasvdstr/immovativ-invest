@@ -144,7 +144,7 @@ const reviewSet3 = [
 
 const allReviewSets = [reviewSet0, reviewSet1, reviewSet2, reviewSet3]
 
-export default function FAQ({ items, title = 'Häufig gestellte Fragen' }: FAQProps) {
+export default function FAQ({ items, title = 'Häufig gestellte Fragen.' }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const [reviewIndex, setReviewIndex] = useState(0)
   // Auto-select based on title hash for variety

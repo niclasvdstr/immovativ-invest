@@ -309,7 +309,7 @@ export default function ImmobilienmaklerDreieichPage() {
         <div className="container-max">
           <div className="text-left md:text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
-              Immobilienpreise nach <span className="text-brand-green">Stadtteil in Dreieich</span>
+              Immobilienpreise nach <span className="text-brand-green">Stadtteil in Dreieich.</span>
             </h2>
             <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto">
               Jeder Stadtteil Dreieichs hat seinen eigenen Charakter und seine eigenen Preisniveaus – wir kennen alle.
@@ -437,7 +437,7 @@ export default function ImmobilienmaklerDreieichPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Dreieich" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Dreieich." />
       </section>
 
       {/* Contact Form */}

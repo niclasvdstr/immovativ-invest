@@ -383,7 +383,7 @@ export default function ImmobilienmaklerMaintaPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Maintal" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Maintal." />
       </section>
 
       {/* Contact Form */}

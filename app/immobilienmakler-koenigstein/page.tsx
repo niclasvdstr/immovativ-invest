@@ -387,7 +387,7 @@ export default function ImmobilienmaklerKoenigsteinPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Königstein" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Königstein." />
       </section>
 
       {/* Contact Form */}

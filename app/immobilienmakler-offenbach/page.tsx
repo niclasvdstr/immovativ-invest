@@ -311,7 +311,7 @@ export default function ImmobilienmaklerOffenbach() {
         <div className="container-max">
           <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">
-              Immobilienpreise nach <span className="text-brand-green">Stadtteil in Offenbach am Main</span>
+              Immobilienpreise nach <span className="text-brand-green">Stadtteil in Offenbach am Main.</span>
             </h2>
             <p className="text-brand-gray-warm max-w-2xl mx-auto">
               Je nach Lage variieren die Preise erheblich – wir kennen jede Mikrolage und erzielen für dich den optimalen Preis.
@@ -437,7 +437,7 @@ export default function ImmobilienmaklerOffenbach() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Offenbach am Main" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Offenbach am Main." />
       </section>
 
       {/* Contact Form */}

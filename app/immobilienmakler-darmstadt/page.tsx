@@ -382,7 +382,7 @@ export default function ImmobilienmaklerDarmstadtPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Darmstadt" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Darmstadt." />
       </section>
 
       {/* Contact Form */}

@@ -417,7 +417,7 @@ export default function ImmobilienmaklerBadNauheimPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Bad Nauheim" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Bad Nauheim." />
       </section>
 
       {/* Contact Form */}

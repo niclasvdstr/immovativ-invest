@@ -6,7 +6,8 @@ interface AnimateInProps {
   children: React.ReactNode
   className?: string
   delay?: number
-  direction?: 'up' | 'fade'
+  direction?: 'up' | 'fade' | 'scale' | 'left' | 'right'
+  duration?: number
 }
 
 export default function AnimateIn({
@@ -14,6 +15,7 @@ export default function AnimateIn({
   className = '',
   delay = 0,
   direction = 'up',
+  duration = 800,
 }: AnimateInProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
@@ -21,7 +23,6 @@ export default function AnimateIn({
   useEffect(() => {
     const el = ref.current
     if (!el) return
-    // Immediately reveal if already in viewport on mount
     const rect = el.getBoundingClientRect()
     if (rect.top < window.innerHeight && rect.bottom > 0) {
       setVisible(true)
@@ -34,21 +35,37 @@ export default function AnimateIn({
           observer.disconnect()
         }
       },
-      { rootMargin: '0px' }
+      { rootMargin: '-40px 0px' }
     )
     observer.observe(el)
     return () => observer.disconnect()
   }, [])
 
-  const base = 'transition-all duration-700 ease-out'
-  const hidden = direction === 'up' ? 'opacity-0 translate-y-8' : 'opacity-0'
-  const shown = 'opacity-100 translate-y-0'
+  const easing = 'cubic-bezier(0.16, 1, 0.3, 1)'
+
+  const hiddenStyles: Record<string, React.CSSProperties> = {
+    up:    { opacity: 0, transform: 'translateY(40px)' },
+    fade:  { opacity: 0 },
+    scale: { opacity: 0, transform: 'scale(0.94)' },
+    left:  { opacity: 0, transform: 'translateX(-32px)' },
+    right: { opacity: 0, transform: 'translateX(32px)' },
+  }
+
+  const visibleStyle: React.CSSProperties = {
+    opacity: 1,
+    transform: 'translateY(0) translateX(0) scale(1)',
+  }
 
   return (
     <div
       ref={ref}
-      className={`${base} ${visible ? shown : hidden} ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
+      className={className}
+      style={{
+        transition: `opacity ${duration}ms ${easing}, transform ${duration}ms ${easing}`,
+        transitionDelay: `${delay}ms`,
+        willChange: 'opacity, transform',
+        ...(visible ? visibleStyle : hiddenStyles[direction]),
+      }}
     >
       {children}
     </div>
@@ -75,7 +92,7 @@ export function StaggerItem({
   index?: number
 }) {
   return (
-    <AnimateIn delay={index * 100} className={className}>
+    <AnimateIn delay={index * 120} className={className}>
       {children}
     </AnimateIn>
   )

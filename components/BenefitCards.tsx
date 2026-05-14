@@ -35,26 +35,26 @@ export default function BenefitCards({ benefits, layout = 'grid', columns = 3 }:
     )
   }
 
-  const colClass = columns === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'
+  const colClass = columns === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 md:grid-cols-3'
 
   return (
-    <div className={`grid grid-cols-1 ${colClass} gap-6`}>
+    <div className={`grid grid-cols-1 ${colClass} gap-4 md:gap-6`}>
       {benefits.map((benefit) => (
         <div
           key={benefit.title}
-          className="bg-white border border-brand-gray-border rounded-2xl p-7 hover:border-brand-green/30 hover:shadow-soft transition-all duration-300 group"
+          className="bg-white border border-brand-gray-border rounded-2xl p-5 md:p-7 hover:border-brand-green/30 hover:shadow-soft transition-all duration-300 group flex gap-4 items-start md:block"
         >
           {benefit.icon && (
-            <div className="w-11 h-11 bg-brand-green-50 rounded-xl flex items-center justify-center mb-5">
-              <span className="text-xl">{benefit.icon}</span>
+            <div className="w-10 h-10 md:w-11 md:h-11 bg-brand-green-50 rounded-xl flex items-center justify-center shrink-0 md:mb-5">
+              <span className="text-lg md:text-xl">{benefit.icon}</span>
             </div>
           )}
-          <div className="flex items-start gap-3">
+          <div className={`${!benefit.icon ? 'flex items-start gap-3' : ''} flex-1 min-w-0`}>
             {!benefit.icon && <CheckIcon />}
             <div>
-              <h3 className="font-semibold text-brand-anthrazit mb-1.5">{benefit.title}</h3>
+              <h3 className="font-semibold text-brand-anthrazit text-sm md:text-base mb-1 leading-snug">{benefit.title}</h3>
               {benefit.description && (
-                <p className="text-brand-gray-warm text-sm leading-relaxed">{benefit.description}</p>
+                <p className="text-brand-gray-warm text-xs md:text-sm leading-relaxed">{benefit.description}</p>
               )}
             </div>
           </div>

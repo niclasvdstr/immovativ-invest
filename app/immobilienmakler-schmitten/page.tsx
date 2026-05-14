@@ -316,7 +316,7 @@ export default function ImmobilienmaklerSchmittenPage() {
 
       <TippgeberSection />
 
-      <section id="faq"><FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Schmitten" /></section>
+      <section id="faq"><FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Schmitten." /></section>
 
       <ContactForm variant="makler" title="Kostenlose Erstberatung in Schmitten anfordern" subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden." />
 

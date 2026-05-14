@@ -417,7 +417,7 @@ export default function ImmobilienmaklerBadCambergPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Bad Camberg" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Bad Camberg." />
       </section>
 
       {/* Contact Form */}

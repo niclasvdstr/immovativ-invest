@@ -340,7 +340,7 @@ export default function AnkaufPage() {
         <div className="container-max">
           <div className="text-left md:text-center mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-4">
-              Deine Vorteile beim Direktankauf
+              Deine Vorteile beim Direktankauf.
             </h2>
             <p className="text-brand-gray-warm text-base md:text-lg md:max-w-lg md:mx-auto">
               Wir machen den Immobilienverkauf so einfach und stressfrei wie möglich – für dich.
@@ -609,7 +609,7 @@ export default function AnkaufPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen zum Direktankauf" />
+        <FAQ items={faqItems} title="Häufige Fragen zum Direktankauf." />
       </section>
 
       {/* Contact Form */}

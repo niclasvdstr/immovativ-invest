@@ -387,7 +387,7 @@ export default function ImmobilienmaklerFriedrichsdorfPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Friedrichsdorf" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Friedrichsdorf." />
       </section>
 
       {/* Contact Form */}

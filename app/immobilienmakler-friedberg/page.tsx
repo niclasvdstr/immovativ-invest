@@ -309,7 +309,7 @@ export default function ImmobilienmaklerFriedbergPage() {
         <div className="container-max">
           <div className="text-left md:text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
-              Immobilienpreise nach <span className="text-brand-green">Stadtteil in Friedberg</span>
+              Immobilienpreise nach <span className="text-brand-green">Stadtteil in Friedberg.</span>
             </h2>
             <p className="text-brand-gray-warm text-lg max-w-2xl mx-auto">
               Von der historischen Kernstadt bis zu den ländlichen Stadtteilen – wir kennen die Preisniveaus im gesamten Stadtgebiet.
@@ -437,7 +437,7 @@ export default function ImmobilienmaklerFriedbergPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Friedberg" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Friedberg." />
       </section>
 
       {/* Contact Form */}

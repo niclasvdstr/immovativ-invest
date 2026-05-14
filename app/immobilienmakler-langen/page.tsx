@@ -436,7 +436,7 @@ export default function ImmobilienmaklerLangenPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Langen" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Langen." />
       </section>
 
       {/* Contact Form */}

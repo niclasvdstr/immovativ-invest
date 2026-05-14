@@ -149,7 +149,7 @@ export default function ServicePage() {
                 🔐 Besondere Lebenslagen
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit mb-3">
-                Auch in schwierigen Situationen an Ihrer Seite
+                Auch in schwierigen Situationen an Ihrer Seite.
               </h2>
               <p className="text-brand-gray-warm text-sm max-w-xl mx-auto leading-relaxed">
                 Manche Immobilienentscheidungen entstehen in herausfordernden Lebenslagen. Wir begleiten Sie diskret, erfahren und ohne Druck.

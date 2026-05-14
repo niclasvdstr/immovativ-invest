@@ -68,7 +68,7 @@ interface TestimonialsProps {
   title?: string
 }
 
-export default function Testimonials({ items = testimonials, title = 'Das sagen unsere Kunden' }: TestimonialsProps) {
+export default function Testimonials({ items = testimonials, title = 'Das sagen unsere Kunden.' }: TestimonialsProps) {
   return (
     <section className="section-padding bg-white">
       <div className="container-max">

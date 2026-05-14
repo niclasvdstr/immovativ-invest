@@ -410,7 +410,7 @@ export default function ImmobilienmaklerBadSodenPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Bad Soden" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Bad Soden." />
       </section>
 
       {/* Contact Form */}

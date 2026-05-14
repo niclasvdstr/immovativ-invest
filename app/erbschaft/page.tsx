@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
+import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
   title: 'Immobilien aus dem Erbfall – diskrete Begleitung | immovativInvest',
@@ -55,26 +56,28 @@ export default function ErbschaftPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-        <div className="max-w-4xl mx-auto relative text-left md:text-center">
-          <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
-            ⚖️ Erbschaft
+        <AnimateIn direction="up">
+          <div className="max-w-4xl mx-auto relative text-left md:text-center">
+            <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
+              ⚖️ Erbschaft
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
+              Eine geerbte Immobilie.<br />
+              <span className="text-brand-green">Wir begleiten dich einfühlsam.</span>
+            </h1>
+            <p className="text-brand-gray-warm text-lg md:max-w-2xl md:mx-auto leading-relaxed mb-8">
+              Trauer und bürokratische Entscheidungen gleichzeitig — das überfordert viele Menschen. Wir nehmen dir die Immobilienfrage ab: diskret, erfahren und ohne Druck.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
+              <Link href="#kontakt" className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-green-dark transition-colors">
+                Kostenlose Beratung anfragen →
+              </Link>
+              <CTAButton href="/verkaufen" variant="outline" size="md">
+                Immobilienbewertung starten →
+              </CTAButton>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Eine geerbte Immobilie.<br />
-            <span className="text-brand-green">Wir begleiten dich einfühlsam.</span>
-          </h1>
-          <p className="text-brand-gray-warm text-lg md:max-w-2xl md:mx-auto leading-relaxed mb-8">
-            Trauer und bürokratische Entscheidungen gleichzeitig — das überfordert viele Menschen. Wir nehmen dir die Immobilienfrage ab: diskret, erfahren und ohne Druck.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
-            <Link href="#kontakt" className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-green-dark transition-colors">
-              Kostenlose Beratung anfragen →
-            </Link>
-            <CTAButton href="/verkaufen" variant="outline" size="md">
-              Immobilienbewertung starten →
-            </CTAButton>
-          </div>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* Bild + Kontext */}
@@ -93,7 +96,7 @@ export default function ErbschaftPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-brand-anthrazit mb-5">
-                Was eine Erbschaft wirklich bedeutet
+                Was eine Erbschaft wirklich bedeutet.
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
                 <p className="font-medium text-brand-anthrazit">
@@ -137,7 +140,7 @@ export default function ErbschaftPage() {
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
               💡 Unsere Tipps
             </div>
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">Was Erben wissen sollten</h2>
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">Was Erben wissen sollten.</h2>
             <p className="text-brand-gray-warm text-sm md:max-w-2xl md:mx-auto">
               Diese Hinweise helfen dir, die häufigsten Fehler zu vermeiden und die richtigen Entscheidungen im richtigen Moment zu treffen.
             </p>
@@ -202,7 +205,7 @@ export default function ErbschaftPage() {
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-left md:text-center mb-10">
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Deine Optionen mit uns</h2>
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Deine Optionen mit uns.</h2>
             <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">
               Es gibt keine Standardlösung. Wir zeigen dir alle Wege — ehrlich und ohne Druck.
             </p>
@@ -250,7 +253,7 @@ export default function ErbschaftPage() {
       <section className="py-16 px-4 md:px-8 bg-brand-gray-light border-t border-brand-gray-border">
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Passende Ratgeber zum Thema</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Passende Ratgeber zum Thema.</h2>
             <p className="text-brand-gray-warm mt-2 text-sm">Alles, was du bei einem Erbfall wissen musst</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

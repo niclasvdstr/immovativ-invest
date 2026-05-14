@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
+import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
   title: 'Immobilienfinanzierung Frankfurt – Beratung & Vermittlung | immovativInvest',
@@ -55,6 +56,7 @@ export default function FinanzierungPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <AnimateIn direction="up">
         <div className="max-w-4xl mx-auto relative text-left md:text-center">
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💰 Finanzierung
@@ -75,6 +77,7 @@ export default function FinanzierungPage() {
             </Link>
           </div>
         </div>
+        </AnimateIn>
       </section>
 
       {/* Bild + Einleitung */}
@@ -93,7 +96,7 @@ export default function FinanzierungPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-brand-anthrazit mb-5">
-                Finanzierung ist mehr als ein Kredit
+                Finanzierung ist mehr als ein Kredit.
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
                 <p className="font-medium text-brand-anthrazit">
@@ -135,7 +138,7 @@ export default function FinanzierungPage() {
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
               💡 Unsere Tipps
             </div>
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">Was du vor dem Bankgespräch wissen solltest</h2>
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">Was du vor dem Bankgespräch wissen solltest.</h2>
             <p className="text-brand-gray-warm md:max-w-2xl md:mx-auto text-sm leading-relaxed">
               Diese sechs Punkte machen den Unterschied zwischen einer durchschnittlichen und einer wirklich guten Finanzierung.
             </p>
@@ -237,7 +240,7 @@ export default function FinanzierungPage() {
       <section className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-left md:text-center mb-10">
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">So begleiten wir dich</h2>
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">So begleiten wir dich.</h2>
             <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">Von der ersten Frage bis zur Unterschrift — wir sind in jedem Schritt an deiner Seite.</p>
           </div>
           <div className="space-y-5">
@@ -274,7 +277,7 @@ export default function FinanzierungPage() {
       <section className="py-16 px-4 md:px-8 bg-brand-gray-light border-t border-brand-gray-border">
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Passende Ratgeber zum Thema</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Passende Ratgeber zum Thema.</h2>
             <p className="text-brand-gray-warm mt-2 text-sm">Was du rund um Finanzierung und Kaufnebenkosten wissen solltest</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

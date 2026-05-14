@@ -388,7 +388,7 @@ export default function ImmobilienmaklerLimburgPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Limburg an der Lahn" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Limburg an der Lahn." />
       </section>
 
       {/* Contact Form */}

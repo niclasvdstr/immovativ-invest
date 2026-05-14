@@ -381,7 +381,7 @@ export default function ImmobilienmaklerKelkheimPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Kelkheim" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Kelkheim." />
       </section>
 
       {/* Contact Form */}

@@ -410,7 +410,7 @@ export default function ImmobilienmaklerEschbornPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Eschborn" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Eschborn." />
       </section>
 
       {/* Contact Form */}

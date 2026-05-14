@@ -1,5 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 'use client'
+/* eslint-disable react/no-unescaped-entities */
+import AnimateIn from '@/components/AnimateIn'
 import { useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -77,26 +78,28 @@ export default function KarriereClient() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-        <div className="max-w-4xl mx-auto relative text-left md:text-center">
-          <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
-            🚀 Karriere bei immovativInvest
+        <AnimateIn direction="up">
+          <div className="max-w-4xl mx-auto relative text-left md:text-center">
+            <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
+              🚀 Karriere bei immovativInvest
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
+              Werde Teil<br />
+              <span className="text-brand-green">unseres Teams.</span>
+            </h1>
+            <p className="text-brand-gray-warm text-lg md:max-w-2xl md:mx-auto leading-relaxed mb-8">
+              Wir wachsen — und suchen Menschen, die mit uns wachsen wollen. Ob Ausbildung, Quereinstieg oder Profi: Bei uns zählen Haltung, Einsatz und echte Ergebnisse.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
+              <a href="#stellen" className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-green-dark transition-colors">
+                Offene Stellen ansehen →
+              </a>
+              <a href="#bewerbung" className="inline-flex items-center justify-center gap-2 bg-white border border-brand-gray-border text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-cream transition-colors">
+                Direkt bewerben
+              </a>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-6">
-            Werde Teil<br />
-            <span className="text-brand-green">unseres Teams.</span>
-          </h1>
-          <p className="text-brand-gray-warm text-lg md:max-w-2xl md:mx-auto leading-relaxed mb-8">
-            Wir wachsen — und suchen Menschen, die mit uns wachsen wollen. Ob Ausbildung, Quereinstieg oder Profi: Bei uns zählen Haltung, Einsatz und echte Ergebnisse.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
-            <a href="#stellen" className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-green-dark transition-colors">
-              Offene Stellen ansehen →
-            </a>
-            <a href="#bewerbung" className="inline-flex items-center justify-center gap-2 bg-white border border-brand-gray-border text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-brand-cream transition-colors">
-              Direkt bewerben
-            </a>
-          </div>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* Warum wir */}
@@ -130,15 +133,17 @@ export default function KarriereClient() {
       {/* Offene Stellen */}
       <section id="stellen" className="section-padding bg-brand-cream px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="text-left md:text-center mb-12">
+          <AnimateIn direction="up">
+            <div className="text-left md:text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
               📌 Offene Positionen
             </div>
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Was wir suchen</h2>
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Was wir suchen.</h2>
             <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">
               Keine passende Stelle dabei? Schick uns trotzdem deine Initiativbewerbung — wir wachsen schnell.
             </p>
-          </div>
+            </div>
+          </AnimateIn>
           <div className="space-y-4">
             {positions.map(pos => (
               <div key={pos.id} className="bg-white rounded-2xl p-6 border border-brand-gray-border hover:shadow-medium transition-all">
@@ -173,7 +178,8 @@ export default function KarriereClient() {
       {/* Bewerbungsformular */}
       <section id="bewerbung" className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-2xl mx-auto">
-          <div className="text-left md:text-center mb-10">
+          <AnimateIn direction="up">
+            <div className="text-left md:text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-brand-cream border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
               ✉️ Bewerbung
             </div>
@@ -181,7 +187,8 @@ export default function KarriereClient() {
             <p className="text-brand-gray-warm text-sm md:max-w-md md:mx-auto">
               Füll das Formular aus — wir melden uns innerhalb von 48 Stunden persönlich bei dir.
             </p>
-          </div>
+            </div>
+          </AnimateIn>
 
           {submitted ? (
             <div className="bg-brand-cream rounded-3xl p-12 border border-brand-gray-border text-center">

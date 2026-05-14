@@ -410,7 +410,7 @@ export default function ImmobilienmaklerEltvillePage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Eltville" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Eltville." />
       </section>
 
       {/* Contact Form */}

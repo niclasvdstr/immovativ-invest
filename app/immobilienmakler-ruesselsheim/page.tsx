@@ -382,7 +382,7 @@ export default function ImmobilienmaklerRuesselsheimPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Rüsselsheim" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Rüsselsheim." />
       </section>
 
       {/* Contact Form */}

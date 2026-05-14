@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ContactForm from '@/components/ContactForm'
 import CTAButton from '@/components/CTAButton'
+import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
   title: 'Immobilienverkauf bei Scheidung – neutral & diskret | immovativInvest',
@@ -55,6 +56,7 @@ export default function ScheidungPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-20 pb-20 px-4 md:px-8">
         <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-brand-green opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <AnimateIn direction="up">
         <div className="max-w-4xl mx-auto relative text-left md:text-center">
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💔 Scheidung
@@ -75,6 +77,7 @@ export default function ScheidungPage() {
             </CTAButton>
           </div>
         </div>
+        </AnimateIn>
       </section>
 
       {/* Bild + Verständnis */}
@@ -93,7 +96,7 @@ export default function ScheidungPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-brand-anthrazit mb-5">
-                Die Immobilie ist oft das schwierigste Kapitel
+                Die Immobilie ist oft das schwierigste Kapitel.
               </h2>
               <div className="space-y-4 text-brand-gray-warm leading-relaxed text-sm">
                 <p className="font-medium text-brand-anthrazit">
@@ -134,7 +137,7 @@ export default function ScheidungPage() {
             <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-4">
               💡 Unsere Tipps
             </div>
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">Was du in dieser Situation wissen solltest</h2>
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">Was du in dieser Situation wissen solltest.</h2>
             <p className="text-brand-gray-warm text-sm md:max-w-2xl md:mx-auto">
               Diese Hinweise helfen dir, mit einem kühlen Kopf zu entscheiden — auch wenn die Lage emotional belastend ist.
             </p>
@@ -199,7 +202,7 @@ export default function ScheidungPage() {
       <section className="section-padding bg-white px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-left md:text-center mb-10">
-            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Mögliche Wege mit uns</h2>
+            <h2 className="text-3xl font-bold text-brand-anthrazit mb-4">Mögliche Wege mit uns.</h2>
             <p className="text-brand-gray-warm text-sm md:max-w-xl md:mx-auto">
               Es gibt keine Einheitslösung. Wir zeigen dir alle Optionen — und begleiten dich bei dem Weg, den du wählst.
             </p>
@@ -247,7 +250,7 @@ export default function ScheidungPage() {
       <section className="py-16 px-4 md:px-8 bg-brand-gray-light border-t border-brand-gray-border">
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Passende Ratgeber zum Thema</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Passende Ratgeber zum Thema.</h2>
             <p className="text-brand-gray-warm mt-2 text-sm">Was du beim Immobilienverkauf nach einer Trennung wissen musst</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

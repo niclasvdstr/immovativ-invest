@@ -316,7 +316,7 @@ export default function ImmobilienmaklerWehrheimPage() {
 
       <TippgeberSection />
 
-      <section id="faq"><FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Wehrheim" /></section>
+      <section id="faq"><FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Wehrheim." /></section>
 
       <ContactForm variant="makler" title="Kostenlose Erstberatung in Wehrheim anfordern" subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden." />
 

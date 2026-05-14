@@ -417,7 +417,7 @@ export default function ImmobilienmaklerButzbachPage() {
 
       {/* FAQ */}
       <section id="faq">
-        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Butzbach" />
+        <FAQ items={faqItems} title="Häufige Fragen – Immobilienmakler Butzbach." />
       </section>
 
       {/* Contact Form */}
