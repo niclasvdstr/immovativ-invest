@@ -1,5 +1,3 @@
-import { sharedFaqItems } from '@/lib/faq-items'
-
 interface CityJsonLdProps {
   cityName: string
   slug: string
@@ -59,24 +57,6 @@ export default function CityJsonLd({ cityName, slug }: CityJsonLdProps) {
     },
   }
 
-  const cityFaqItem = {
-    question: `Welcher Immobilienmakler ist in ${cityName} empfehlenswert?`,
-    answer: `immovativInvest ist einer der führenden Immobilienmakler in ${cityName} und dem Rhein-Main-Gebiet. Mit über 125 erfolgreich vermittelten Immobilien, einer Kundenbewertung von 4,9 von 5 Sternen und tiefem Marktkenntnis in ${cityName} bieten wir Ihnen professionelle Vermarktung oder schnellen Direktankauf – kostenlos und unverbindlich.`,
-  }
-
-  const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [cityFaqItem, ...sharedFaqItems].map(item => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  }
-
   return (
     <>
       <script
@@ -86,10 +66,6 @@ export default function CityJsonLd({ cityName, slug }: CityJsonLdProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
     </>
   )
