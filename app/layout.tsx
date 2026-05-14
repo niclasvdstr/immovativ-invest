@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
+import CookieBanner from '@/components/CookieBanner'
 import './globals.css'
 
 const inter = Inter({
@@ -140,7 +140,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        <GoogleAnalytics gaId="G-Z9VKLBRWHE" />
+        <CookieBanner />
       </body>
     </html>
   )
