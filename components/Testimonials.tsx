@@ -63,6 +63,8 @@ function StarRating({ rating }: { rating: number }) {
   )
 }
 
+import AnimateIn from '@/components/AnimateIn'
+
 interface TestimonialsProps {
   items?: Testimonial[]
   title?: string
@@ -73,6 +75,7 @@ export default function Testimonials({ items = testimonials, title = 'Das sagen 
     <section className="section-padding bg-white">
       <div className="container-max">
         {/* Header */}
+        <AnimateIn direction="up">
         <div className="text-left md:text-center mb-12">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
           {/* Google Rating Badge */}
@@ -94,11 +97,13 @@ export default function Testimonials({ items = testimonials, title = 'Das sagen 
             </div>
           </div>
         </div>
+        </AnimateIn>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {items.map((t) => (
-            <div key={t.name} className="bg-brand-cream rounded-2xl p-6 border border-brand-gray-border flex flex-col relative overflow-hidden">
+          {items.map((t, index) => (
+            <AnimateIn key={t.name} direction="up" delay={index * 100}>
+            <div className="bg-brand-cream rounded-2xl p-6 border border-brand-gray-border flex flex-col relative overflow-hidden h-full">
               {/* Decorative quote mark */}
               <div className="absolute top-3 right-5 text-7xl font-serif leading-none select-none pointer-events-none" style={{ color: 'rgba(37,99,235,0.08)' }}>&ldquo;</div>
 
@@ -125,6 +130,7 @@ export default function Testimonials({ items = testimonials, title = 'Das sagen 
                 <GoogleIcon />
               </div>
             </div>
+            </AnimateIn>
           ))}
         </div>
       </div>

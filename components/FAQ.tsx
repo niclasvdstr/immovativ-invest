@@ -2,6 +2,7 @@
 'use client'
 
 import { useState } from 'react'
+import AnimateIn from '@/components/AnimateIn'
 
 interface FAQItem {
   question: string
@@ -155,10 +156,12 @@ export default function FAQ({ items, title = 'Häufig gestellte Fragen.' }: FAQP
   return (
     <section className="section-padding bg-white">
       <div className="container-max">
+        <AnimateIn direction="up">
         <div className="text-left md:text-center mb-12">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
           <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg">Antworten auf die wichtigsten Fragen</p>
         </div>
+        </AnimateIn>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start max-w-6xl mx-auto">
 

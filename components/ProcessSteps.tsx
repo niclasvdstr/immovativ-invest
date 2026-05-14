@@ -1,3 +1,5 @@
+import AnimateIn from '@/components/AnimateIn'
+
 interface Step {
   number: number
   title: string
@@ -21,10 +23,12 @@ export default function ProcessSteps({
   return (
     <section className="section-padding bg-white">
       <div className="container-max">
+        <AnimateIn direction="up">
         <div className="text-left md:text-center mb-14">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-anthrazit mb-4">{title}</h2>
           {subtitle && <p className="text-brand-gray-warm text-sm sm:text-base md:text-lg md:max-w-2xl md:mx-auto">{subtitle}</p>}
         </div>
+        </AnimateIn>
 
         {/* Mobile: vertical timeline */}
         <div className="md:hidden">
