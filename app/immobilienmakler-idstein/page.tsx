@@ -231,11 +231,13 @@ export default function ImmobilienmaklerIdsteinPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„In Idstein gewinnt man Käufer nicht mit Daten – man gewinnt sie mit dem Gefühl, das die Stadt vermittelt. Das ist meine Aufgabe."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Altbau-Fachwerkhäuser in der Innenstadt und ruhige Wohnlagen am Stadtrand sind am stärksten gefragt. Pendler nach Wiesbaden und Frankfurt schätzen die Anbindung über die A3. Der Markt ist überschaubar – was bedeutet, dass jedes Objekt zählt.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

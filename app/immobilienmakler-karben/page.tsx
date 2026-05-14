@@ -231,11 +231,13 @@ export default function ImmobilienmaklerKarbenPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Karben hat einen stabilen, bodenständigen Markt – keine Hype-Preise, aber auch kein Überangebot. Wer hier verkauft, findet zuverlässig ernsthafte Käufer."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Besonders gefragt sind Klein-Karben und Rendel für ihre ruhigen Einfamilienhauslagen. Objekte mit Garten und Garage erzielen die besten Preise. Die Nachfrage kommt überwiegend aus Frankfurt und Bad Vilbel.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

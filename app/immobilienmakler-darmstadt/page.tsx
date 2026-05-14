@@ -232,11 +232,13 @@ export default function ImmobilienmaklerDarmstadtPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„In Darmstadt habe ich ein Haus in Bessungen verkauft – wir hatten eine Anfrage aus London und eine aus München. Der Käufer kam am Ende aus Heidelberg und zahlte über Zielpreis."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Besonders gefragt sind sanierte Gründerzeit-Objekte in Bessungen und Johannesviertel sowie ruhige Einfamilienhauslagen in Eberstadt und Wixhausen. Neubau-ETW im Wissenschaftsbereich stoßen ebenfalls auf starke Nachfrage von Merck-Mitarbeitern.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

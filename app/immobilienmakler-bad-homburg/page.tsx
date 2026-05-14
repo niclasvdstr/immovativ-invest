@@ -243,11 +243,13 @@ export default function ImmobilienmaklerBadHomburgPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„In Bad Homburg habe ich schon Wohnungen verkauft, bei denen das erste Angebot am Tag der Besichtigung kam – der Markt hier ist schnell und kaufkräftig."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Bad Homburg profitiert von der direkten U-Bahn-Verbindung nach Frankfurt und dem Ruf als eine der sichersten und grünsten Städte der Region. Besonders gefragt: Einfamilienhäuser in ruhigen Wohnstraßen und großzügige Eigentumswohnungen in Kurparknähe.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 
@@ -315,6 +317,7 @@ export default function ImmobilienmaklerBadHomburgPage() {
       {/* Stadtteile & Preise */}
       <section className="section-padding bg-brand-gray-light">
         <div className="container-max">
+          <AnimateIn direction="up">
           <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">
               Immobilienpreise nach <span className="text-brand-green">Stadtteil in Bad Homburg.</span>
@@ -323,6 +326,7 @@ export default function ImmobilienmaklerBadHomburgPage() {
               Je nach Lage variieren die Preise erheblich – wir kennen jede Mikrolage und erzielen für dich den optimalen Preis.
             </p>
           </div>
+          </AnimateIn>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {stadtteilPreise.map(st => (
               <div key={st.name} className="bg-white rounded-2xl p-5 border border-brand-gray-border shadow-soft">

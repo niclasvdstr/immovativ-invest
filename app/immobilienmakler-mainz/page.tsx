@@ -239,11 +239,13 @@ export default function ImmobilienmaklerMainzPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Mainz hat eine eigene Energie – die Altstadt, das Rheinufer, das Fasnachts-Flair. Das sind Verkaufsargumente, die ich gerne nutze."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Besonders gefragt: Altbauwohnungen im Stadtbezirk Mainz-Altstadt, Neubauprojekte in Mainz-Hechtsheim und Einfamilienhäuser in ruhigen Stadtrandlagen wie Gonsenheim oder Marienborn. BioNTech-Mitarbeiter und ZDF-Beschäftigte sind eine relevante Käufergruppe.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

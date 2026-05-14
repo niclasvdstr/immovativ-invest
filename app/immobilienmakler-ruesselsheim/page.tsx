@@ -230,11 +230,13 @@ export default function ImmobilienmaklerRuesselsheimPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Rüsselsheim wird gerade neu entdeckt – günstige Preise, gute Anbindung, Rheinlage. Das ist ein Dreiklang, der Käufer aus Wiesbaden und Darmstadt anzieht."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Rheinnahe Lagen und modernisierte Bestandsimmobilien erzielen in Rüsselsheim die besten Preise. Die Nähe zum Flughafen Frankfurt spricht internationales Fachpersonal an. Gut sanierte Objekte finden hier deutlich schneller Käufer als im Schnitt.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

@@ -240,11 +240,13 @@ export default function ImmobilienmaklerDreieichPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„In Dreieich-Sprendlingen habe ich ein Reihenhaus in 18 Tagen für 32.000 € über dem Zielpreis verkauft – der Markt hier reagiert extrem schnell auf gut aufbereitete Objekte."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Buchschlag ist besonders bei Frankfurter Käufern mit Waldliebe begehrt. Sprendlingen punktet mit direkter S-Bahn-Verbindung. Offenthal und Götzenhain sprechen Käufer an, die ländliche Ruhe suchen, ohne auf Infrastruktur zu verzichten.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

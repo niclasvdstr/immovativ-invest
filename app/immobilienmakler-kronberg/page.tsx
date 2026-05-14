@@ -240,11 +240,13 @@ export default function ImmobilienmaklerKronbergPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Kronberg ist ein Markt, wo die richtigen Käufer nicht auf Immoscout suchen – sie warten auf einen Anruf. Mein Job ist es, genau diese Verbindung herzustellen."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Hanglagen mit Frankfurter Skyline-Blick und historische Villen sind die begehrten Objekte in Kronberg. Der Käuferkreis kommt aus dem Frankfurter Unternehmens- und Bankensektor. Diskretion ist bei fast jedem Kronberger Verkauf das oberste Gebot.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 
@@ -312,6 +314,7 @@ export default function ImmobilienmaklerKronbergPage() {
       {/* Stadtteile & Preise */}
       <section className="section-padding bg-brand-gray-light">
         <div className="container-max">
+          <AnimateIn direction="up">
           <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">
               Immobilienpreise nach <span className="text-brand-green">Stadtteil in Kronberg.</span>
@@ -320,6 +323,7 @@ export default function ImmobilienmaklerKronbergPage() {
               Je nach Lage variieren die Preise erheblich – wir kennen jede Mikrolage und erzielen für dich den optimalen Preis.
             </p>
           </div>
+          </AnimateIn>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {stadtteilPreise.map(st => (
               <div key={st.name} className="bg-white rounded-2xl p-5 border border-brand-gray-border shadow-soft">

@@ -231,11 +231,13 @@ export default function ImmobilienmaklerFriedrichsdorfPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Friedrichsdorf ist der kleine Bruder von Bad Homburg – ruhiger, grüner, günstiger. Für Käufer ein Schnäppchen, für Verkäufer ein überzeugtes Käuferpublikum."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Köppern und Seulberg sind die begehrtesten Ortsteile – ruhige Wohnlagen mit direktem Taunuszugang. Die S-Bahn-Verbindung nach Frankfurt und Bad Homburg macht Friedrichsdorf für Pendler ideal. Einfamilienhäuser mit Garten sind am stärksten nachgefragt.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

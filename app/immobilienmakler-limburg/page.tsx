@@ -227,11 +227,13 @@ export default function ImmobilienmaklerLimburgPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Limburg ist für viele Käufer aus dem Rhein-Main-Gebiet die Entdeckung: gute Preise, starke Infrastruktur und eine Altstadt, die sich kein Neubaugebiet erkaufen kann."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Besonders gefragt sind Objekte in Domlage und gut erhaltene Altbauten in der Innenstadt. Pendler nach Frankfurt (ICE-Bahnhof Limburg) und Wiesbaden sorgen für eine konstante Nachfrage, die den Markt stabil hält.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

@@ -237,11 +237,13 @@ export default function ImmobilienmaklerLangenPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Langen wird oft unterschätzt – aber die Lage zwischen zwei Großstädten ist ein echtes Alleinstellungsmerkmal, das sich im Verkaufspreis niederschlägt, wenn man es richtig kommuniziert."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Gefragt sind vor allem Einfamilienhäuser in ruhigen Wohnlagen sowie Eigentumswohnungen mit guter Bahnanbindung. Die Flughafennähe spricht international mobiles Fachpersonal an – ein Käufersegment, das oft bereit ist, schnell zu entscheiden.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

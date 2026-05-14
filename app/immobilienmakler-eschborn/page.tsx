@@ -247,11 +247,13 @@ export default function ImmobilienmaklerEschbornPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Wohnimmobilien in Eschborn sind rar – und Knappheit ist das beste Verkaufsargument. Objekte hier brauchen keine lange Vermarktungszeit."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Die Nachfrage in Eschborn kommt vor allem von Berufstätigen in umliegenden Unternehmen (Deutsche Bahn, Deutsche Bank, Vodafone u. a.) sowie von Frankfurter Käufern, die günstiger in Top-Lage einsteigen wollen. Eigentumswohnungen und Doppelhaushälften sind am stärksten gefragt.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

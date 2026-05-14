@@ -240,11 +240,13 @@ export default function ImmobilienmaklerFriedbergPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Friedberg wird in den nächsten Jahren aufholen – kaufkräftige Nachfrage aus dem Frankfurter Raum entdeckt die Stadt gerade für sich. Als Verkäufer ist das ein gutes Timing."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Gefragt sind vor allem sanierte Altbauten in der Innenstadt und gepflegte Einfamilienhäuser in ruhigen Wohnlagen. Die Nähe zur A5 und zum Frankfurter Flughafen macht Friedberg auch für international mobile Käufer interessant.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

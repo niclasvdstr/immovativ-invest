@@ -247,11 +247,13 @@ export default function ImmobilienmaklerEltvillePage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Eltville verkauft man nicht mit Quadratmetern – man verkauft es mit dem Lebensgefühl. Das macht die Vermarktung hier besonders, und besonders wirkungsvoll."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Rheinnah gelegene Objekte und Häuser in den Weinbergslagen oberhalb der Stadt erzielen die höchsten Preise. Auch sanierte Fachwerk-Altbauten in der historischen Altstadt sind sehr begehrt. Die Nachfrage übersteigt das Angebot regelmäßig.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

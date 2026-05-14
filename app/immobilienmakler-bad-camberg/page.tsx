@@ -243,11 +243,13 @@ export default function ImmobilienmaklerBadCambergPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Bad Camberg ist ein Geheimtipp, der sich gerade auflöst. Wer jetzt verkauft, trifft auf eine Nachfrage, die noch nicht komplett eingepreist ist."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Die Preise in Bad Camberg liegen noch deutlich unter dem Taunus-Durchschnitt – gleichzeitig steigt die Nachfrage von Pendlern aus Frankfurt und Limburg spürbar. Wohnlagen in Kernstadtnähe mit guter S-Bahn-Erreichbarkeit erzielen aktuell die besten Preise.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

@@ -182,11 +182,13 @@ export default function ImmobilienmaklerMoerfeldenWalldorf() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„In Mörfelden-Walldorf habe ich Objekte an Käufer verkauft, die ich nie auf einem Immobilienportal gefunden hätte – Lufthansa-Personal, das nur unter sich kommuniziert. Das ist mein Netzwerk."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Die Flughafen-Community ist ein einzigartiger Käufermarkt: informiert, liquid, oft mit konkreten Zeitdruck-Kaufentscheidungen. Ruhige Wohnlagen in Mörfelden und gut angebundene Objekte in Walldorf erzielen die stärksten Preise.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

@@ -231,11 +231,13 @@ export default function ImmobilienmaklerKelkheimPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Kelkheim ist der Taunus für alle, die Königstein nicht ganz bezahlen können – und das ist mehr Käufer, als du denkst."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Besonders nachgefragt sind ruhige Lagen in Kelkheim-Mitte und Münster, Einfamilienhäuser mit Taunusblick und gut geschnittene Eigentumswohnungen. Die S-Bahn S2 macht den Ort für Frankfurt-Pendler ideal.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

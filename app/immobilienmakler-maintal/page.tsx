@@ -231,11 +231,13 @@ export default function ImmobilienmaklerMaintaPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Maintal ist die direkteste Alternative zu Frankfurt – wer ein Haus statt Wohnung will, kommt hier zwangsläufig vorbei. Die Nachfrage ist konstant stark."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Dörnigheim und Bischofsheim direkt an der S-Bahn erzielen die höchsten Preise. Hochstadt punktet mit ruhigerem Charakter. Käufer sind überwiegend Frankfurter Familien und Paare, die mehr Wohnfläche suchen.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 

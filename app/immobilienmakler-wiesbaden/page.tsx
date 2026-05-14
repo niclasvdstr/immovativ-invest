@@ -241,11 +241,13 @@ export default function ImmobilienmaklerWiesbadenPage() {
       {/* Niclas über den Markt */}
       <section className="py-12 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <AnimateIn direction="up">
           <div className="bg-brand-anthrazit rounded-2xl p-8 md:p-10">
             <p className="text-brand-green text-sm font-semibold uppercase tracking-wider mb-3">Niclas über den Markt</p>
             <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">„Wiesbaden hat das, was Frankfurt oft fehlt: Eleganz. Käufer, die das suchen, finden sich hier – und zahlen dafür. Als Verkäufer profitierst du von einer der stärksten Nachfragelagen in Hessen."</p>
             <p className="text-gray-400 text-sm leading-relaxed">Besonders begehrt: Villenlagen am Neroberg und in den historischen Stadtteilen, sanierte Altbauwohnungen in der Innenstadt, Neubau-ETW in Hafennähe. Wiesbaden zieht auch Käufer aus Mainz und dem Rheingau an, die Landeshauptstadt-Infrastruktur suchen.</p>
           </div>
+          </AnimateIn>
         </div>
       </section>
 
@@ -313,6 +315,7 @@ export default function ImmobilienmaklerWiesbadenPage() {
       {/* Stadtteile & Preise */}
       <section className="section-padding bg-brand-gray-light">
         <div className="container-max">
+          <AnimateIn direction="up">
           <div className="text-left md:text-center mb-10">
             <h2 className="text-3xl font-bold text-brand-anthrazit mb-3">
               Immobilienpreise nach <span className="text-brand-green">Stadtteil in Wiesbaden.</span>
@@ -321,6 +324,7 @@ export default function ImmobilienmaklerWiesbadenPage() {
               Je nach Lage variieren die Preise erheblich – wir kennen jede Mikrolage und erzielen für dich den optimalen Preis.
             </p>
           </div>
+          </AnimateIn>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {stadtteilPreise.map(st => (
               <div key={st.name} className="bg-white rounded-2xl p-5 border border-brand-gray-border shadow-soft">
