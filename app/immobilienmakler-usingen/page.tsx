@@ -431,7 +431,7 @@ export default function ImmobilienmaklerUsingenPage() {
       </section>
 
       {/* Mid-page CTA */}
-      <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 60%, #16a34a 100%)' }}>
+      <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
         <div className="max-w-3xl mx-auto text-left md:text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Deine Immobilie in Usingen. Dein Erfolg.
