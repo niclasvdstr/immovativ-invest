@@ -84,10 +84,10 @@ export default function Header({
           {/* Logo */}
           <Link href="/" className="shrink-0 flex items-center" aria-label="immovativInvest Startseite">
             <Image
-              src="/logo-new.png"
+              src="/logo-banner.svg"
               alt="immovativInvest Logo"
-              width={160}
-              height={32}
+              width={180}
+              height={36}
               className="h-9 md:h-8 w-auto"
               priority
             />
