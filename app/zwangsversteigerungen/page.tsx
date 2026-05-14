@@ -37,23 +37,6 @@ export default function ZwangsversteigerungenPage() {
           }),
         }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: [
-              { '@type': 'Question', name: 'Was ist eine Zwangsversteigerung?', acceptedAnswer: { '@type': 'Answer', text: 'Eine Zwangsversteigerung ist ein gerichtliches Verfahren, bei dem eine Immobilie auf Antrag eines Gläubigers — meist der Bank — öffentlich versteigert wird, um ausstehende Schulden zu begleichen. Der Erlös wird zur Schuldentilgung verwendet.' } },
-              { '@type': 'Question', name: 'Kann ich eine Zwangsversteigerung noch abwenden?', acceptedAnswer: { '@type': 'Answer', text: 'In vielen Fällen ja — wenn man früh genug handelt. Ein freihändiger Verkauf der Immobilie vor dem Versteigerungstermin erzielt fast immer einen höheren Erlös als die Versteigerung selbst und ermöglicht es, einen Teil der Schulden zu tilgen. Je früher Sie handeln, desto mehr Spielraum bleibt.' } },
-              { '@type': 'Question', name: 'Wie läuft eine Zwangsversteigerung ab?', acceptedAnswer: { '@type': 'Answer', text: 'Das Amtsgericht setzt einen Versteigerungstermin an. Interessenten können bieten — das Mindestgebot liegt in der Regel bei 70 % des Verkehrswerts. Der Höchstbietende erhält den Zuschlag und wird neuer Eigentümer. Wichtig: Die Immobilie wird so ersteigert wie sie ist — ohne Gewährleistung.' } },
-              { '@type': 'Question', name: 'Was sollte man beim Kauf einer Immobilie in der Zwangsversteigerung beachten?', acceptedAnswer: { '@type': 'Answer', text: 'Vor dem Gebot unbedingt: das Gutachten des Gerichts lesen, die Immobilie von außen besichtigen, bestehende Belastungen im Grundbuch prüfen und das Mindestgebot realistisch kalkulieren. Wer unvorbereitet bietet, riskiert teure Überraschungen nach dem Zuschlag.' } },
-              { '@type': 'Question', name: 'Wie viel Eigenkapital brauche ich für eine Zwangsversteigerung?', acceptedAnswer: { '@type': 'Answer', text: 'Beim Zuschlag muss sofort eine Sicherheitsleistung von 10 % des Verkehrswerts hinterlegt werden — in bar oder per Bankbürgschaft. Der Restbetrag wird nach Abschluss des Verfahrens fällig. Eine Bankfinanzierung sollte vorab gesichert sein.' } },
-              { '@type': 'Question', name: 'Lohnt sich der Kauf einer zwangsversteigerten Immobilie?', acceptedAnswer: { '@type': 'Answer', text: 'Manchmal ja — vor allem für erfahrene Investoren, die Risiken realistisch einschätzen können. Günstige Einstiegspreise sind möglich, aber oft gibt es versteckte Mängel, Mieter mit besonderen Rechten oder offene Nebenkosten. Eine professionelle Begleitung durch einen Experten ist empfehlenswert.' } },
-            ],
-          }),
-        }}
-      />
       <Header ctaLabel="Kostenlose Beratung" ctaHref="#kontakt" />
 
       {/* Breadcrumb */}

@@ -149,23 +149,6 @@ export default function AnkaufPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: faqItems.map(item => ({
-              '@type': 'Question',
-              name: item.question,
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: item.answer,
-              },
-            })),
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
             '@type': 'HowTo',
             name: 'In 5 Schritten zur Direktankauf-Anfrage',
             description: 'So läuft der Direktankauf Ihrer Immobilie bei immovativInvest ab – schnell, diskret und ohne Provision.',
