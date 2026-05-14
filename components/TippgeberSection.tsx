@@ -7,14 +7,14 @@ export default function TippgeberSection() {
       <div className="container-max">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          {/* Links – Formular */}
-          <div className="bg-white rounded-3xl p-8 shadow-large">
+          {/* Links – Formular (auf Mobile: unten) */}
+          <div className="bg-white rounded-3xl p-8 shadow-large order-2 lg:order-1">
             <h3 className="text-xl font-bold text-brand-anthrazit mb-6">Tipp einreichen</h3>
             <TippgeberKontaktForm />
           </div>
 
-          {/* Rechts – Info */}
-          <div className="text-white">
+          {/* Rechts – Info (auf Mobile: oben) */}
+          <div className="text-white order-1 lg:order-2">
             {/* Team-Avatare */}
             <div className="flex items-center gap-4 mb-6">
               <div className="flex -space-x-3">
