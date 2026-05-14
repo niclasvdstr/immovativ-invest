@@ -325,6 +325,7 @@ export default function ImmobilienmaklerEltvillePage() {
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">
+          <AnimateIn direction="up">
           <div className="text-left md:text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
               <span className="text-brand-green">Deine Vorteile</span> mit immovativ<span className="font-black">Invest</span> in Eltville.
@@ -333,6 +334,7 @@ export default function ImmobilienmaklerEltvillePage() {
               Lokale Expertise kombiniert mit professioneller Vermarktung – für den bestmöglichen Verkaufspreis deiner Immobilie in Eltville.
             </p>
           </div>
+          </AnimateIn>
           <BenefitCards benefits={benefits} layout="grid" columns={3} />
         </div>
       </section>
@@ -355,6 +357,7 @@ export default function ImmobilienmaklerEltvillePage() {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <AnimateIn direction="up">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
                 Du möchtest deine Immobilie<br />in Eltville verkaufen?
@@ -388,6 +391,7 @@ export default function ImmobilienmaklerEltvillePage() {
                 </a>
               </div>
             </div>
+            </AnimateIn>
 
             <div className="relative">
               <Image

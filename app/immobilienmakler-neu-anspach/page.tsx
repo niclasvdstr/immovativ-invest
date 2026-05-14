@@ -266,6 +266,7 @@ export default function ImmobilienmaklerNeuAnspachPage() {
 
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">
+          <AnimateIn direction="up">
           <div className="text-left md:text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-4">
               <span className="text-brand-green">Deine Vorteile</span> mit immovativ<span className="font-black">Invest</span> in Neu-Anspach.
@@ -274,6 +275,7 @@ export default function ImmobilienmaklerNeuAnspachPage() {
               Lokale Expertise kombiniert mit professioneller Vermarktung – für den bestmöglichen Verkaufspreis deiner Immobilie in Neu-Anspach.
             </p>
           </div>
+          </AnimateIn>
           <BenefitCards benefits={benefits} layout="grid" columns={3} />
         </div>
       </section>
@@ -287,6 +289,7 @@ export default function ImmobilienmaklerNeuAnspachPage() {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <AnimateIn direction="up">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
                 Du möchtest deine Immobilie<br />in Neu-Anspach verkaufen?
@@ -304,6 +307,7 @@ export default function ImmobilienmaklerNeuAnspachPage() {
                 </a>
               </div>
             </div>
+            </AnimateIn>
             <div className="relative">
               <Image src="/niclas-hochhaus.png" alt="Niclas van der Straeten – Immobilienmakler Neu-Anspach" className="w-full h-[480px] object-cover rounded-3xl shadow-large" style={{ objectPosition: 'center 20%' }} width={800} height={480} />
             </div>
