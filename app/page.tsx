@@ -124,23 +124,6 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: faqItems.map(item => ({
-              '@type': 'Question',
-              name: item.question,
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: item.answer,
-              },
-            })),
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
             '@type': 'HowTo',
             name: 'Immobilie verkaufen mit immovativInvest – So funktioniert es',
             description: 'In 4 Schritten zur erfolgreichen Immobilienvermarktung: von der kostenlosen Erstberatung bis zum Verkauf zum besten Preis.',
