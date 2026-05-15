@@ -360,6 +360,53 @@ export default function VerkaufenPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-16 px-4 md:px-8 bg-brand-gray-light border-t border-brand-gray-border">
+        <div className="max-w-4xl mx-auto">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: [
+                  { '@type': 'Question', name: 'Wie lange dauert ein Immobilienverkauf in Frankfurt?', acceptedAnswer: { '@type': 'Answer', text: 'Mit guter Vorbereitung dauert ein Immobilienverkauf in Frankfurt 6–10 Wochen von der ersten Vermarktung bis zum Notartermin. Die durchschnittliche Vermarktungszeit bei immovativInvest liegt bei 6 Wochen. Häufige Verzögerungsursachen: fehlende Unterlagen, überhöhter Angebotspreis, Finanzierungsprobleme beim Käufer.' } },
+                  { '@type': 'Question', name: 'Was kostet ein Immobilienmakler beim Verkauf?', acceptedAnswer: { '@type': 'Answer', text: 'In Hessen teilen Käufer und Verkäufer die Provision nach dem Halbteilungsprinzip (§ 656c BGB). Die ortsübliche Gesamtprovision im Rhein-Main-Gebiet beträgt ca. 5,95 % inkl. MwSt. – je zur Hälfte: ca. 2,975 % für den Verkäufer und ca. 2,975 % für den Käufer. Provision fällt ausschließlich im Erfolgsfall nach dem Notartermin an.' } },
+                  { '@type': 'Question', name: 'Welche Unterlagen brauche ich für den Immobilienverkauf?', acceptedAnswer: { '@type': 'Answer', text: 'Pflichtdokumente: aktueller Grundbuchauszug, gültiger Energieausweis, Lageplan, Grundrisse, Baupläne, bei Eigentumswohnungen zusätzlich Teilungserklärung, Protokolle der letzten 3 WEG-Versammlungen, Wirtschaftsplan und Hausgeldabrechnungen. Fehlende Dokumente können einen Verkauf um 4–8 Wochen verzögern.' } },
+                  { '@type': 'Question', name: 'Wie wird der Verkaufspreis meiner Immobilie ermittelt?', acceptedAnswer: { '@type': 'Answer', text: 'Eine fundierte Wertermittlung basiert auf dem Vergleichswertverfahren (reale Transaktionen vergleichbarer Objekte), Lage und Mikrolage, Zustand, Ausstattung und aktueller Marktnachfrage. Automatisierte Online-Bewertungen weichen oft stark vom Marktwert ab. Wir ermitteln den Wert persönlich vor Ort – kostenlos und unverbindlich.' } },
+                  { '@type': 'Question', name: 'Muss ich Steuern auf den Verkaufserlös zahlen?', acceptedAnswer: { '@type': 'Answer', text: 'Wer die Immobilie selbst bewohnt hat oder länger als 10 Jahre besitzt, zahlt keine Spekulationssteuer. Wer eine vermietete Immobilie innerhalb von 10 Jahren nach Kauf verkauft, zahlt auf den Gewinn Einkommensteuer (bis zu 45 %). Bei Erbschaft beginnt die 10-Jahresfrist mit dem Kaufdatum des Erblassers.' } },
+                ],
+              }),
+            }}
+          />
+          <div className="mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Häufige Fragen zum Immobilienverkauf</h2>
+            <p className="text-brand-gray-warm mt-2 text-sm">Antworten auf die wichtigsten Fragen – direkt und ohne Umwege</p>
+          </div>
+          <div className="divide-y divide-brand-gray-border border border-brand-gray-border rounded-3xl overflow-hidden bg-white">
+            {[
+              { q: 'Wie lange dauert ein Immobilienverkauf in Frankfurt?', a: 'Mit guter Vorbereitung dauert ein Immobilienverkauf in Frankfurt 6–10 Wochen von der ersten Vermarktung bis zum Notartermin. Die durchschnittliche Vermarktungszeit bei immovativInvest liegt bei 6 Wochen. Häufige Verzögerungsursachen: fehlende Unterlagen, überhöhter Angebotspreis, Finanzierungsprobleme beim Käufer.' },
+              { q: 'Was kostet ein Immobilienmakler beim Verkauf?', a: 'In Hessen teilen Käufer und Verkäufer die Provision nach dem Halbteilungsprinzip (§ 656c BGB). Die ortsübliche Gesamtprovision im Rhein-Main-Gebiet beträgt ca. 5,95 % inkl. MwSt. – je zur Hälfte: ca. 2,975 % für den Verkäufer und ca. 2,975 % für den Käufer. Provision fällt ausschließlich im Erfolgsfall nach dem Notartermin an.' },
+              { q: 'Welche Unterlagen brauche ich für den Immobilienverkauf?', a: 'Pflichtdokumente: aktueller Grundbuchauszug, gültiger Energieausweis, Lageplan, Grundrisse, Baupläne, bei Eigentumswohnungen zusätzlich Teilungserklärung, Protokolle der letzten 3 WEG-Versammlungen, Wirtschaftsplan und Hausgeldabrechnungen. Fehlende Dokumente können einen Verkauf um 4–8 Wochen verzögern.' },
+              { q: 'Wie wird der Verkaufspreis meiner Immobilie ermittelt?', a: 'Eine fundierte Wertermittlung basiert auf dem Vergleichswertverfahren (reale Transaktionen vergleichbarer Objekte), Lage und Mikrolage, Zustand, Ausstattung und aktueller Marktnachfrage. Automatisierte Online-Bewertungen weichen oft stark vom Marktwert ab. Wir ermitteln den Wert persönlich vor Ort – kostenlos und unverbindlich.' },
+              { q: 'Muss ich Steuern auf den Verkaufserlös zahlen?', a: 'Wer die Immobilie selbst bewohnt hat oder länger als 10 Jahre besitzt, zahlt keine Spekulationssteuer. Wer eine vermietete Immobilie innerhalb von 10 Jahren nach Kauf verkauft, zahlt auf den Gewinn Einkommensteuer (bis zu 45 %). Bei Erbschaft beginnt die 10-Jahresfrist mit dem Kaufdatum des Erblassers.' },
+            ].map((item, idx) => (
+              <details key={idx} className="group px-7 py-5">
+                <summary className="flex items-center justify-between cursor-pointer list-none gap-4">
+                  <span className="font-semibold text-brand-anthrazit text-sm leading-snug">{item.q}</span>
+                  <span className="shrink-0 w-6 h-6 bg-brand-green/10 rounded-full flex items-center justify-center transition-transform group-open:rotate-45">
+                    <svg className="w-3.5 h-3.5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                    </svg>
+                  </span>
+                </summary>
+                <p className="mt-3 text-brand-gray-warm text-sm leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer variant="makler" />
     </main>
   )

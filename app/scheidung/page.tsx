@@ -240,6 +240,53 @@ export default function ScheidungPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-16 px-4 md:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: [
+                  { '@type': 'Question', name: 'Wer bekommt die Immobilie bei einer Scheidung?', acceptedAnswer: { '@type': 'Answer', text: 'Gemeinsam erworbene Immobilien gehören zur Zugewinngemeinschaft und müssen im Scheidungsfall ausgeglichen werden. Möglichkeiten: Verkauf und Teilung des Erlöses, Auszahlung des anderen Partners, oder Übertragung auf einen Partner. Ohne Einigung entscheidet das Gericht – oft durch eine Teilungsversteigerung, bei der beide Parteien in der Regel schlechter abschneiden als bei einem freiwilligen Verkauf.' } },
+                  { '@type': 'Question', name: 'Kann ich die Immobilie verkaufen, wenn mein Partner nicht einverstanden ist?', acceptedAnswer: { '@type': 'Answer', text: 'Bei gemeinsamem Eigentum kann kein Partner ohne Zustimmung des anderen verkaufen. Verweigert ein Partner die Zustimmung, bleibt nur der Klageweg auf Zustimmung oder die Teilungsversteigerung. Deshalb ist eine einvernehmliche Lösung fast immer die bessere Option – wirtschaftlich und emotional.' } },
+                  { '@type': 'Question', name: 'Was passiert mit einem laufenden Kredit bei Scheidung?', acceptedAnswer: { '@type': 'Answer', text: 'Beide Partner haften gesamtschuldnerisch für gemeinsame Immobilienkredite – unabhängig davon, wer auszieht. Beim Verkauf wird der Kredit aus dem Erlös abgelöst. Zieht ein Partner aus und der andere übernimmt die Immobilie, muss die Bank zustimmen und den ausziehenden Partner aus der Haftung entlassen. Ohne Einigung der Bank bleiben beide in der Haftung.' } },
+                  { '@type': 'Question', name: 'Wie läuft der Verkauf einer Scheidungsimmobilie ab?', acceptedAnswer: { '@type': 'Answer', text: 'Grundsätzlich wie jeder Immobilienverkauf: Bewertung, Vermarktung, Besichtigungen, Kaufvertrag, Notartermin. Besonderheit: Beide Partner müssen allen Entscheidungen zustimmen und beim Notartermin anwesend sein (oder sich vertreten lassen). Wir koordinieren neutral zwischen beiden Parteien und halten beide stets auf dem gleichen Informationsstand.' } },
+                  { '@type': 'Question', name: 'Fällt beim Scheidungsverkauf Spekulationssteuer an?', acceptedAnswer: { '@type': 'Answer', text: 'Wenn die Immobilie länger als 10 Jahre gehalten wurde oder im Jahr des Verkaufs und den zwei Vorjahren selbst bewohnt war, fällt keine Spekulationssteuer an. Bei Verkauf innerhalb der 10-Jahresfrist ohne Eigennutzung fällt Einkommensteuer auf den Gewinn an. Die steuerliche Situation ist im Scheidungsfall oft komplex – ein Steuerberater sollte hinzugezogen werden.' } },
+                ],
+              }),
+            }}
+          />
+          <div className="mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Häufige Fragen zur Scheidungsimmobilie</h2>
+            <p className="text-brand-gray-warm mt-2 text-sm">Antworten auf die wichtigsten Fragen – neutral und ohne Partei zu ergreifen</p>
+          </div>
+          <div className="divide-y divide-brand-gray-border border border-brand-gray-border rounded-3xl overflow-hidden bg-white">
+            {[
+              { q: 'Wer bekommt die Immobilie bei einer Scheidung?', a: 'Gemeinsam erworbene Immobilien gehören zur Zugewinngemeinschaft und müssen im Scheidungsfall ausgeglichen werden. Möglichkeiten: Verkauf und Teilung des Erlöses, Auszahlung des anderen Partners, oder Übertragung auf einen Partner. Ohne Einigung entscheidet das Gericht – oft durch eine Teilungsversteigerung, bei der beide Parteien in der Regel schlechter abschneiden als bei einem freiwilligen Verkauf.' },
+              { q: 'Kann ich die Immobilie verkaufen, wenn mein Partner nicht einverstanden ist?', a: 'Bei gemeinsamem Eigentum kann kein Partner ohne Zustimmung des anderen verkaufen. Verweigert ein Partner die Zustimmung, bleibt nur der Klageweg auf Zustimmung oder die Teilungsversteigerung. Deshalb ist eine einvernehmliche Lösung fast immer die bessere Option – wirtschaftlich und emotional.' },
+              { q: 'Was passiert mit einem laufenden Kredit bei Scheidung?', a: 'Beide Partner haften gesamtschuldnerisch für gemeinsame Immobilienkredite – unabhängig davon, wer auszieht. Beim Verkauf wird der Kredit aus dem Erlös abgelöst. Zieht ein Partner aus und der andere übernimmt die Immobilie, muss die Bank zustimmen und den ausziehenden Partner aus der Haftung entlassen. Ohne Einigung der Bank bleiben beide in der Haftung.' },
+              { q: 'Wie läuft der Verkauf einer Scheidungsimmobilie ab?', a: 'Grundsätzlich wie jeder Immobilienverkauf: Bewertung, Vermarktung, Besichtigungen, Kaufvertrag, Notartermin. Besonderheit: Beide Partner müssen allen Entscheidungen zustimmen und beim Notartermin anwesend sein (oder sich vertreten lassen). Wir koordinieren neutral zwischen beiden Parteien und halten beide stets auf dem gleichen Informationsstand.' },
+              { q: 'Fällt beim Scheidungsverkauf Spekulationssteuer an?', a: 'Wenn die Immobilie länger als 10 Jahre gehalten wurde oder im Jahr des Verkaufs und den zwei Vorjahren selbst bewohnt war, fällt keine Spekulationssteuer an. Bei Verkauf innerhalb der 10-Jahresfrist ohne Eigennutzung fällt Einkommensteuer auf den Gewinn an. Die steuerliche Situation ist im Scheidungsfall oft komplex – ein Steuerberater sollte hinzugezogen werden.' },
+            ].map((item, idx) => (
+              <details key={idx} className="group px-7 py-5">
+                <summary className="flex items-center justify-between cursor-pointer list-none gap-4">
+                  <span className="font-semibold text-brand-anthrazit text-sm leading-snug">{item.q}</span>
+                  <span className="shrink-0 w-6 h-6 bg-brand-green/10 rounded-full flex items-center justify-center transition-transform group-open:rotate-45">
+                    <svg className="w-3.5 h-3.5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                    </svg>
+                  </span>
+                </summary>
+                <p className="mt-3 text-brand-gray-warm text-sm leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ContactForm
         variant="makler"
         title="Vertrauliches Erstgespräch anfragen."

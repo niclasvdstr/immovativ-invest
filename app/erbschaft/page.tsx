@@ -243,6 +243,53 @@ export default function ErbschaftPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-16 px-4 md:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: [
+                  { '@type': 'Question', name: 'Was passiert mit einer Immobilie im Erbfall?', acceptedAnswer: { '@type': 'Answer', text: 'Die Immobilie geht mit dem Erbfall automatisch auf die Erben über – ohne Grundbucheintragung, aber diese muss innerhalb von 2 Jahren nachgeholt werden (sonst kostet der Grundbucheintrag Gebühren). Gibt es mehrere Erben, entsteht eine Erbengemeinschaft, die gemeinsam über die Immobilie entscheiden muss.' } },
+                  { '@type': 'Question', name: 'Muss ich eine geerbte Immobilie versteuern?', acceptedAnswer: { '@type': 'Answer', text: 'Grundsätzlich fällt Erbschaftsteuer an, wenn der Freibetrag überschritten wird: Kinder haben 400.000 € Freibetrag pro Elternteil, Ehepartner 500.000 €. Wer die geerbte Immobilie selbst 10 Jahre bewohnt (bei Kindern bis 200 m² Wohnfläche), zahlt keine Erbschaftsteuer. Beim Verkauf innerhalb von 10 Jahren nach Erbfall fällt keine Spekulationssteuer an.' } },
+                  { '@type': 'Question', name: 'Wie schnell muss ich eine geerbte Immobilie verkaufen?', acceptedAnswer: { '@type': 'Answer', text: 'Es gibt keine gesetzliche Pflicht, eine geerbte Immobilie innerhalb eines bestimmten Zeitraums zu verkaufen. Allerdings laufen laufende Kosten (Grundsteuer, Versicherung, Instandhaltung) weiter. Bei einer Erbengemeinschaft kann jeder Erbe jederzeit die Auseinandersetzung verlangen – was im Streitfall zu einer Teilungsversteigerung führen kann.' } },
+                  { '@type': 'Question', name: 'Was kostet ein Makler beim Erbschaftsverkauf?', acceptedAnswer: { '@type': 'Answer', text: 'Nichts im Voraus. In Hessen gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Provision zu gleichen Teilen. Als Erbe und Verkäufer zahlst du ca. 2,975 % des Kaufpreises – ausschließlich nach erfolgreichem Notartermin. Energieausweis, Fotos und alle Unterlagen sind inklusive.' } },
+                  { '@type': 'Question', name: 'Was ist, wenn mehrere Erben sich nicht einig sind?', acceptedAnswer: { '@type': 'Answer', text: 'Bei einer Erbengemeinschaft müssen Entscheidungen über die Immobilie grundsätzlich gemeinsam getroffen werden. Kommt keine Einigung zustande, kann jeder Erbe die Aufhebung der Gemeinschaft verlangen – notfalls durch eine Teilungsversteigerung. Wir begleiten Erbengemeinschaften und helfen, Einigung zu erzielen, bevor es zum Konflikt kommt.' } },
+                ],
+              }),
+            }}
+          />
+          <div className="mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-anthrazit">Häufige Fragen zur Erbschaftsimmobilie</h2>
+            <p className="text-brand-gray-warm mt-2 text-sm">Antworten auf die wichtigsten Fragen rund um geerbte Immobilien</p>
+          </div>
+          <div className="divide-y divide-brand-gray-border border border-brand-gray-border rounded-3xl overflow-hidden bg-white">
+            {[
+              { q: 'Was passiert mit einer Immobilie im Erbfall?', a: 'Die Immobilie geht mit dem Erbfall automatisch auf die Erben über – ohne Grundbucheintragung, aber diese muss innerhalb von 2 Jahren nachgeholt werden (sonst kostet der Grundbucheintrag Gebühren). Gibt es mehrere Erben, entsteht eine Erbengemeinschaft, die gemeinsam über die Immobilie entscheiden muss.' },
+              { q: 'Muss ich eine geerbte Immobilie versteuern?', a: 'Grundsätzlich fällt Erbschaftsteuer an, wenn der Freibetrag überschritten wird: Kinder haben 400.000 € Freibetrag pro Elternteil, Ehepartner 500.000 €. Wer die geerbte Immobilie selbst 10 Jahre bewohnt (bei Kindern bis 200 m² Wohnfläche), zahlt keine Erbschaftsteuer. Beim Verkauf innerhalb von 10 Jahren nach Erbfall fällt keine Spekulationssteuer an.' },
+              { q: 'Wie schnell muss ich eine geerbte Immobilie verkaufen?', a: 'Es gibt keine gesetzliche Pflicht, eine geerbte Immobilie innerhalb eines bestimmten Zeitraums zu verkaufen. Allerdings laufen laufende Kosten (Grundsteuer, Versicherung, Instandhaltung) weiter. Bei einer Erbengemeinschaft kann jeder Erbe jederzeit die Auseinandersetzung verlangen – was im Streitfall zu einer Teilungsversteigerung führen kann.' },
+              { q: 'Was kostet ein Makler beim Erbschaftsverkauf?', a: 'Nichts im Voraus. In Hessen gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Provision zu gleichen Teilen. Als Erbe und Verkäufer zahlst du ca. 2,975 % des Kaufpreises – ausschließlich nach erfolgreichem Notartermin. Energieausweis, Fotos und alle Unterlagen sind inklusive.' },
+              { q: 'Was ist, wenn mehrere Erben sich nicht einig sind?', a: 'Bei einer Erbengemeinschaft müssen Entscheidungen über die Immobilie grundsätzlich gemeinsam getroffen werden. Kommt keine Einigung zustande, kann jeder Erbe die Aufhebung der Gemeinschaft verlangen – notfalls durch eine Teilungsversteigerung. Wir begleiten Erbengemeinschaften und helfen, Einigung zu erzielen, bevor es zum Konflikt kommt.' },
+            ].map((item, idx) => (
+              <details key={idx} className="group px-7 py-5">
+                <summary className="flex items-center justify-between cursor-pointer list-none gap-4">
+                  <span className="font-semibold text-brand-anthrazit text-sm leading-snug">{item.q}</span>
+                  <span className="shrink-0 w-6 h-6 bg-brand-green/10 rounded-full flex items-center justify-center transition-transform group-open:rotate-45">
+                    <svg className="w-3.5 h-3.5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                    </svg>
+                  </span>
+                </summary>
+                <p className="mt-3 text-brand-gray-warm text-sm leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ContactForm
         variant="makler"
         title="Wir sind für dich da."

@@ -450,6 +450,11 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               </div>
             ))}
 
+            {/* Article-specific FAQ section */}
+            {article.faqItems && article.faqItems.length > 0 && (
+              <ArticleFaq items={article.faqItems} />
+            )}
+
             {/* CTA */}
             <div className="bg-brand-anthrazit rounded-3xl p-8 md:p-10 text-center">
               <div className="w-12 h-12 rounded-2xl bg-brand-green/20 flex items-center justify-center mx-auto mb-5">
@@ -616,5 +621,45 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
       <Footer variant="makler" />
     </main>
+  )
+}
+
+function ArticleFaq({ items }: { items: { question: string; answer: string }[] }) {
+  return (
+    <div className="bg-white rounded-3xl border border-brand-gray-border shadow-soft overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: items.map(item => ({
+              '@type': 'Question',
+              name: item.question,
+              acceptedAnswer: { '@type': 'Answer', text: item.answer },
+            })),
+          }),
+        }}
+      />
+      <div className="flex items-center gap-3 px-8 py-5 border-b border-brand-gray-border bg-brand-gray-light/50">
+        <div className="w-8 h-8 rounded-full bg-brand-green text-white text-xs font-bold flex items-center justify-center shrink-0">?</div>
+        <h2 className="text-lg md:text-xl font-bold text-brand-anthrazit">Häufige Fragen zu diesem Thema</h2>
+      </div>
+      <div className="divide-y divide-brand-gray-border">
+        {items.map((item, idx) => (
+          <details key={idx} className="group px-8 py-5">
+            <summary className="flex items-center justify-between cursor-pointer list-none gap-4">
+              <span className="font-semibold text-brand-anthrazit text-sm leading-snug">{item.question}</span>
+              <span className="shrink-0 w-6 h-6 bg-brand-green/10 rounded-full flex items-center justify-center transition-transform group-open:rotate-45">
+                <svg className="w-3.5 h-3.5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                </svg>
+              </span>
+            </summary>
+            <p className="mt-3 text-brand-gray-warm text-sm leading-relaxed">{item.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
   )
 }

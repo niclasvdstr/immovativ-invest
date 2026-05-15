@@ -14,6 +14,7 @@ export interface Article {
   readTime: string
   img: string
   quickAnswer?: string
+  faqItems?: { question: string; answer: string }[]
   content: string
 }
 
@@ -97,6 +98,13 @@ Hast du Fragen zum aktuellen Marktwert deiner Immobilie? Wir beraten dich kosten
     readTime: '4 Min.',
     img: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1200&h=600&fit=crop',
     quickAnswer: 'Home Staging steigert den Verkaufspreis einer Immobilie um durchschnittlich 8–15 % und verkürzt die Vermarktungszeit erheblich. Die wichtigsten Maßnahmen: entrümpeln, neutralisieren, kleine Mängel beheben und professionelle Fotos. Kosten: 1.500–5.000 €. Mehrerlös bei einer 500.000-€-Immobilie: 40.000–75.000 €.',
+    faqItems: [
+      { question: 'Was kostet Home Staging?', answer: 'Professionelles Home Staging kostet je nach Umfang 1.500–5.000 €. Eine reine Beratung (ohne Möblierung) liegt bei 500–1.500 €. Wer bereits gut möbliert ist, kann mit gezieltem Entrümpeln und kleinen Korrekturen unter 500 € bleiben. Der ROI ist fast immer positiv: Bei einem Mehrerlös von 5 % auf 400.000 € sind das 20.000 € – für 2.000 € Einsatz.' },
+      { question: 'Lohnt sich Home Staging wirklich?', answer: 'Ja, in den meisten Fällen. Studien zeigen: Professionell gestylte Immobilien erzielen 8–15 % höhere Verkaufspreise und werden bis zu 73 % schneller verkauft. Besonders wirkungsvoll ist es bei leer stehenden Immobilien, Neubauten und Objekten in mittlerer bis gehobener Preisklasse.' },
+      { question: 'Muss ich für Home Staging ausziehen?', answer: 'Nein. Home Staging kann auch bei bewohnten Immobilien durchgeführt werden. Der Fokus liegt dann auf Entrümpeln, Neutralisieren und kleinen optischen Verbesserungen. Professionelle Fotos werden idealerweise ohne persönliche Gegenstände gemacht – das ist auch bei bewohnten Immobilien mit etwas Vorbereitung möglich.' },
+      { question: 'Was sind die wirksamsten Home-Staging-Maßnahmen?', answer: 'Die wirksamsten Maßnahmen nach Aufwand/Ertrag-Verhältnis: 1. Professionelle Immobilienfotografie (300–800 €, hohe Wirkung), 2. Entrümpeln und Neutralisieren (kostenlos, sehr hohe Wirkung), 3. Frische Wandfarbe in Neutraltönen (100–500 €), 4. Kleine Reparaturen sichtbarer Mängel, 5. Duft- und Lichtoptimierung für Besichtigungen.' },
+      { question: 'Gibt es Home Staging auch ohne Einrichtungskauf?', answer: 'Ja. Viele Home-Staging-Anbieter verleihen Möbel und Accessoires auf Mietbasis – speziell für die Verkaufsphase. Das ist besonders bei leer stehenden Immobilien sinnvoll: Eine möblierte Wohnung wirkt wärmer, lässt Räume größer erscheinen und hilft Käufern, sich das Leben darin vorzustellen.' },
+    ],
     content: `
 ## Der erste Eindruck entscheidet
 
@@ -150,6 +158,13 @@ Wir beraten dich gerne, welche Maßnahmen für deine Immobilie sinnvoll sind.
     readTime: '6 Min.',
     img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop',
     quickAnswer: 'Immobilien werden in Deutschland nach drei Verfahren bewertet: Vergleichswert (für Wohnungen und Häuser), Ertragswert (für vermietete Objekte) und Sachwert (für Einzelimmobilien ohne Vergleichsdaten). Das Vergleichswertverfahren liefert die marktnahesten Ergebnisse. Eine kostenlose Bewertung durch einen lokalen Makler ist genauer als jeder Online-Rechner.',
+    faqItems: [
+      { question: 'Welches Bewertungsverfahren ist das genaueste?', answer: 'Das Vergleichswertverfahren ist für Wohnimmobilien das genaueste, da es auf tatsächlich erzielten Kaufpreisen ähnlicher Objekte in der gleichen Lage basiert. Das Ertragswertverfahren eignet sich für vermietete Immobilien, der Sachwert für besondere Objekte ohne Vergleichsdaten. In der Praxis kombinieren erfahrene Gutachter mehrere Verfahren.' },
+      { question: 'Was kostet eine professionelle Immobilienbewertung?', answer: 'Eine Werteinschätzung durch einen lokalen Makler ist kostenlos und unverbindlich. Ein zertifiziertes Gutachten (z.B. für Gericht oder Erbschaftssteuer) kostet je nach Aufwand 1.500–3.500 €. Für den normalen Immobilienverkauf reicht die kostenlose Makler-Einschätzung vollständig aus.' },
+      { question: 'Wie genau sind Online-Immobilienbewertungen?', answer: 'Online-Bewertungsrechner weichen oft 15–30 % vom tatsächlichen Marktwert ab. Sie berücksichtigen keine Mikrolage, keinen Zustand, keine Besonderheiten wie Ausblick, Sanierungsstand oder Grundrissqualität. Für eine fundierte Verkaufsentscheidung ist eine persönliche Bewertung durch einen Makler unersetzlich.' },
+      { question: 'Was beeinflusst den Immobilienwert am stärksten?', answer: 'Die stärksten Werttreiber in absteigender Reihenfolge: Lage (Mikrolage, Infrastruktur, Nachbarschaft), Größe und Schnitt (Wohnfläche, Grundrissqualität), Zustand und Ausstattung, Baujahr und Energieeffizienz, aktuelle Marktnachfrage in der Region. Ein schlechter Grundriss in guter Lage ist oft wertvoller als ein guter Grundriss in schlechter Lage.' },
+      { question: 'Was ist der Unterschied zwischen Marktwert und Verkehrswert?', answer: 'Marktwert und Verkehrswert sind synonyme Begriffe — beide beschreiben den Preis, der im gewöhnlichen Geschäftsverkehr zu erzielen wäre (§ 194 BauGB). Der Beleihungswert ist dagegen ein konservativerer Wert, den Banken für die Finanzierungssicherheit nutzen — er liegt in der Regel 15–25 % unter dem Marktwert.' },
+    ],
     content: `
 ## Warum die Bewertungsmethode so wichtig ist
 
@@ -223,6 +238,13 @@ Eine professionelle Bewertung kombiniert immer Methode und Marktwissen. Wir füh
     readTime: '7 Min.',
     img: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=600&fit=crop',
     quickAnswer: 'Spekulationssteuer fällt an, wenn du eine Immobilie innerhalb von 10 Jahren nach dem Kauf mit Gewinn verkaufst. Ausnahme: Du hast die Immobilie im Verkaufsjahr und den beiden Vorjahren selbst bewohnt – dann ist der Verkauf steuerfrei. Der Steuersatz entspricht dem persönlichen Einkommensteuersatz (bis zu 45 %).',
+    faqItems: [
+      { question: 'Wann fällt keine Spekulationssteuer beim Hausverkauf an?', answer: 'Keine Spekulationssteuer fällt an, wenn: 1) Die Immobilie mindestens 10 Jahre im Eigentum war, oder 2) Du die Immobilie im Verkaufsjahr und den beiden Vorjahren selbst bewohnt hast (Eigennutzungsregel). Bei geerbten Immobilien zählt das Kaufdatum des Erblassers für die 10-Jahres-Frist.' },
+      { question: 'Wie hoch ist die Spekulationssteuer auf Immobilien?', answer: 'Die Spekulationssteuer ist keine eigene Steuer, sondern Teil der Einkommensteuer. Der Gewinn aus dem Verkauf (Verkaufspreis minus Anschaffungskosten minus Werbungskosten) wird mit dem persönlichen Einkommensteuersatz besteuert — das können 25 % bis 45 % sein, je nach Gesamteinkommen.' },
+      { question: 'Was gilt als Eigennutzung für die Spekulationssteuer?', answer: 'Als Eigennutzung gilt: Du hast die Immobilie im Jahr des Verkaufs und in den beiden vorangegangenen Kalenderjahren selbst bewohnt. Achtung: Kalenderjahrweise gerechnet, nicht 36 Monate. Das bedeutet: Wer im Dezember 2022 einzieht und im Januar 2024 verkauft, hat die Bedingung erfüllt (2022, 2023, 2024).' },
+      { question: 'Gilt die 10-Jahres-Frist auch für Erbschaften?', answer: 'Ja. Bei einer geerbten Immobilie beginnt die 10-Jahres-Spekulationsfrist nicht mit dem Erbfall, sondern mit dem ursprünglichen Kaufdatum des Erblassers. Hat der Erblasser die Immobilie vor mehr als 10 Jahren gekauft, ist der Verkauf für den Erben steuerfrei — unabhängig davon, wie lange der Erbe die Immobilie gehalten hat.' },
+      { question: 'Kann man die Spekulationssteuer legal reduzieren?', answer: 'Ja, durch Werbungskosten: Maklerprovisionen, Notarkosten, Renovierungskosten, Instandhaltungsaufwendungen und Grunderwerbsteuer beim Kauf können den steuerpflichtigen Gewinn mindern. Außerdem ist Eigennutzung (im Verkaufsjahr + 2 Vorjahre) steuerfrei. Eine steuerliche Beratung vor dem Verkauf kann erheblich Steuern sparen.' },
+    ],
     content: `
 ## Was ist die Spekulationssteuer?
 
@@ -346,6 +368,28 @@ Sprich mit uns – wir helfen dir, die richtigen Fragen zu stellen, bevor du ent
     readTime: '5 Min.',
     img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=600&fit=crop',
     quickAnswer: 'Professionell vermarktete Immobilien erzielen laut IVD durchschnittlich 5–10 % höhere Verkaufspreise als Privatverkäufe. Bei 500.000 € sind das 25.000–50.000 € mehr – deutlich mehr als eine typische Maklerprovision. Privatverkauf lohnt sich hauptsächlich, wenn Käufer bereits bekannt ist oder die Immobilie in sehr gefragter Lage liegt.',
+    faqItems: [
+      {
+        question: 'Spart man beim Privatverkauf wirklich Geld?',
+        answer: 'Nicht automatisch. Privatverkäufer erzielen laut IVD im Schnitt 5–10 % niedrigere Verkaufspreise. Bei einer Immobilie für 500.000 € entspricht das 25.000–50.000 € Differenz – mehr als die Maklerprovision. Hinzu kommen versteckte Kosten wie Anzeigenschaltung, Zeitaufwand und mögliche Haftungsrisiken bei fehlerhaften Angaben.',
+      },
+      {
+        question: 'Wann ist ein Privatverkauf sinnvoll?',
+        answer: 'Ein Privatverkauf lohnt sich vor allem, wenn der Käufer bereits bekannt ist (z. B. Familie, Nachbar), die Immobilie in sehr gefragter Lage liegt und sich von allein verkauft, oder wenn ausreichend Zeit und Fachwissen für Preisfindung, Marketing und rechtliche Abwicklung vorhanden ist.',
+      },
+      {
+        question: 'Wie viel mehr erzielt ein Makler beim Verkaufspreis?',
+        answer: 'Studien des IVD zeigen, dass professionell vermarktete Immobilien 5–10 % höhere Preise erzielen. Gründe: qualifizierte Preisermittlung, Zugang zu Käuferdatenbanken, professionelles Marketing und Verhandlungserfahrung. Selbst nach Provision bleibt beim Maklerverkauf oft mehr Netto übrig.',
+      },
+      {
+        question: 'Welche rechtlichen Risiken gibt es beim Privatverkauf?',
+        answer: 'Verkäufer haften für arglistig verschwiegene Mängel bis zu 10 Jahre nach Verkauf. Fehlerhafte Angaben im Exposé, fehlende Unterlagen oder ein falsch formulierter Kaufvertrag können zu Schadensersatzforderungen führen. Ein Makler kennt diese Fallstricke und schützt Verkäufer proaktiv.',
+      },
+      {
+        question: 'Was kostet ein Makler den Verkäufer konkret?',
+        answer: 'In Hessen gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Provision zu gleichen Teilen. Als Verkäufer zahlst du typischerweise ca. 2,975 % des Kaufpreises – ausschließlich im Erfolgsfall nach dem Notartermin. Kein Verkauf, keine Zahlung.',
+      },
+    ],
     content: `
 ## Der verständliche Gedanke
 
@@ -583,6 +627,28 @@ Sprich uns an – wir kennen die aktuellen Preise in deiner Lage aus erster Hand
     readTime: '7 Min.',
     img: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=600&fit=crop',
     quickAnswer: 'Ein Wohnungsverkauf läuft in 5 Phasen ab: Unterlagen zusammenstellen, Bewertung & Preisfindung, Vermarktung (Fotos, Exposé, Besichtigungen), Kaufvertrag & Notartermin, Übergabe. Die häufigsten Fehler: fehlende Dokumente, falscher Angebotspreis und mangelnde Präsentation. Mit guter Vorbereitung dauert ein Verkauf 6–10 Wochen.',
+    faqItems: [
+      {
+        question: 'Welche Unterlagen brauche ich für den Wohnungsverkauf?',
+        answer: 'Pflichtdokumente sind: aktueller Grundbuchauszug, Energieausweis, Teilungserklärung, Protokolle der letzten 3 Eigentümerversammlungen, Wirtschaftsplan, Hausgeldabrechnungen und Wohnflächenberechnung. Empfehlenswert sind außerdem Grundrisse und Nachweise über Modernisierungen. Fehlende Dokumente verzögern den Verkauf oft um mehrere Wochen.',
+      },
+      {
+        question: 'Wie lange dauert der Verkauf einer Wohnung?',
+        answer: 'Mit guter Vorbereitung dauert ein Wohnungsverkauf 6–10 Wochen von der ersten Vermarktung bis zum Notartermin. Die häufigsten Verzögerungen entstehen durch fehlende Unterlagen, zu hohe Angebotspreis oder Finanzierungsprobleme beim Käufer. Nach dem Notartermin folgt die Übergabe in der Regel innerhalb von 4–8 Wochen.',
+      },
+      {
+        question: 'Muss ich als Verkäufer einen Energieausweis haben?',
+        answer: 'Ja, seit 2014 ist der Energieausweis beim Verkauf Pflicht (§ 16 GEG). Er muss potenziellen Käufern spätestens bei der Besichtigung vorgelegt werden. Fehlt er, drohen Bußgelder bis 15.000 €. Es gibt zwei Arten: Verbrauchsausweis (günstiger, auf Basis von Heizkostenabrechnungen) und Bedarfsausweis (aufwändiger, aber aussagekräftiger).',
+      },
+      {
+        question: 'Wie viel kostet eine Wohnung zu verkaufen?',
+        answer: 'Hauptkosten: Maklerprovision (ca. 2,975 % für den Verkäufer in Hessen, nur im Erfolgsfall), ggf. Kosten für Energieausweis (80–300 €), Grundbuchauszug (10–20 €) und Notargebühren für Löschung alter Grundschulden (einige hundert Euro). Eventuell anfallende Spekulationssteuer ist der größte Kostenblock – aber nur bei Verkauf innerhalb von 10 Jahren.',
+      },
+      {
+        question: 'Was ist der häufigste Fehler beim Wohnungsverkauf?',
+        answer: 'Der häufigste Fehler ist ein zu hoher Angebotspreis. Überteuerte Wohnungen bleiben lange am Markt, Interessenten werden misstrauisch und am Ende wird oft unter Wert verkauft. Weitere typische Fehler: schlechte Fotos, unvollständige Unterlagen und fehlende Vorbereitung auf Käuferfragen bei Besichtigungen.',
+      },
+    ],
     content: `
 ## Vorbereitung ist alles
 
@@ -720,6 +786,28 @@ Plane mindestens **10–12 % des Kaufpreises** als Nebenkosten ein – zusätzli
     readTime: '10 Min.',
     img: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=600&fit=crop',
     quickAnswer: 'Ein Immobilienverkauf mit immovativInvest kostet als Verkäufer ca. 2,975 % Provision (Käufer und Verkäufer teilen sich nach Halbteilungsprinzip). Keine Vorabkosten – Energieausweis, Fotos, Grundbuchauszug, Exposé und Portalinserate sind inklusive. Provision fällt ausschließlich im Erfolgsfall nach dem Notartermin an. Vertragslaufzeit: 6 Wochen, danach automatisch beendet.',
+    faqItems: [
+      {
+        question: 'Was kostet der Verkauf mit immovativInvest?',
+        answer: 'Als Verkäufer zahlst du ca. 2,975 % des Kaufpreises als Provision – ausschließlich nach erfolgreichem Notartermin. Keine Vorabkosten. Energieausweis, Profifotografie, Grundbuchauszug, Exposé und Inserate auf allen relevanten Portalen sind inklusive.',
+      },
+      {
+        question: 'Fallen Kosten an, wenn die Immobilie nicht verkauft wird?',
+        answer: 'Nein. Das Erfolgsprinzip gilt absolut: Kein Verkauf, keine Provision, keine Kosten. Auch alle erbrachten Leistungen (Fotos, Exposé, Inserate, Besichtigungen) werden dir nicht in Rechnung gestellt, wenn kein Verkauf zustande kommt.',
+      },
+      {
+        question: 'Was ist im Maklerservice inklusive?',
+        answer: 'Inklusive sind: professionelle Immobilienfotografie, Exposé-Erstellung, Inserate auf Immobilienscout24, Immowelt und weiteren Portalen, Käuferqualifizierung, Besichtigungsmanagement, Verhandlungsführung, Kaufvertragsprüfung und vollständige Abwicklung bis zur Schlüsselübergabe. Auch Energieausweis und Grundbuchauszug werden beschafft.',
+      },
+      {
+        question: 'Wie lange gilt der Maklervertrag mit immovativInvest?',
+        answer: 'Die Vertragslaufzeit beträgt 6 Wochen. Danach endet der Vertrag automatisch – ohne Kündigung. Wir setzen auf kurze Laufzeiten, weil wir überzeugt sind, in dieser Zeit ein optimales Ergebnis zu erzielen. Es gibt keine automatische Verlängerung.',
+      },
+      {
+        question: 'Welche Kosten entstehen beim Verkauf zusätzlich zur Provision?',
+        answer: 'Mögliche weitere Kosten: Vorfälligkeitsentschädigung bei laufendem Darlehen (variiert je nach Bank), Notargebühren für Löschung alter Grundschulden (meist einige hundert Euro), und ggf. Spekulationssteuer bei Verkauf innerhalb von 10 Jahren ohne Eigennutzung. Wir kalkulieren das vor Verkaufsstart gemeinsam durch.',
+      },
+    ],
     content: `
 ## Was du beim Verkauf mit uns zahlst – und was du nicht zahlst
 
@@ -854,6 +942,28 @@ Möchtest du wissen, was deine Immobilie heute wert ist und was nach dem Verkauf
     readTime: '9 Min.',
     img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=600&fit=crop',
     quickAnswer: 'Ein Maklervertrag regelt Leistung, Provision und Laufzeit der Zusammenarbeit. Es gibt drei Arten: einfacher Auftrag (mehrere Makler erlaubt), einfacher Alleinauftrag (exklusiv, Eigenverkauf möglich) und qualifizierter Alleinauftrag (vollständig exklusiv). Provision ist immer erfolgsabhängig (§ 652 BGB) – kein Verkauf, keine Zahlung. Seit 2020: Textform Pflicht, Provision wird geteilt.',
+    faqItems: [
+      {
+        question: 'Was steht in einem Maklervertrag?',
+        answer: 'Ein Maklervertrag enthält: Art der Beauftragung (einfacher Auftrag oder Alleinauftrag), Provision (Höhe und wer zahlt), konkrete Maklerleistungen, Laufzeit und Kündigung sowie Pflichten des Verkäufers. Seit 2020 muss er in Textform vorliegen (§ 656a BGB) und die Provision wird bei Wohnimmobilien zu gleichen Teilen auf Käufer und Verkäufer aufgeteilt.',
+      },
+      {
+        question: 'Was ist der Unterschied zwischen Alleinauftrag und einfachem Auftrag?',
+        answer: 'Beim einfachen Auftrag darf der Eigentümer mehrere Makler gleichzeitig beauftragen. Beim einfachen Alleinauftrag ist nur ein Makler zugelassen, Eigenverkauf bleibt aber möglich. Beim qualifizierten Alleinauftrag ist jegliche Vermarktung durch den Eigentümer selbst ausgeschlossen – dieser Vertragstyp bietet dem Makler die stärkste Position.',
+      },
+      {
+        question: 'Wann fällt die Maklerprovision an?',
+        answer: 'Die Provision fällt ausschließlich bei Erfolg an – also wenn der Kaufvertrag notariell beurkundet wurde (§ 652 BGB). Kein Verkauf, keine Provision. Eine Provision ohne Verkaufserfolg ist gesetzlich nicht zulässig. Aufwandsentschädigungen oder Vorabgebühren sind beim seriösen Makler ebenfalls nicht üblich.',
+      },
+      {
+        question: 'Wie kann ich einen Maklervertrag kündigen?',
+        answer: 'Bei befristeten Verträgen (z. B. 6 Wochen) endet der Vertrag automatisch. Bei unbefristeten Verträgen gilt die gesetzliche Kündigungsfrist. Wichtig: Bei einem qualifizierten Alleinauftrag sind vorzeitige Kündigungen oft vertraglich eingeschränkt. Nach Vertragsende kann der Makler noch Provision verlangen, wenn ein von ihm benannter Käufer innerhalb der Nachweispflichtfrist kauft.',
+      },
+      {
+        question: 'Was passiert, wenn ich nach Vertragsende selbst verkaufe?',
+        answer: 'Wenn du nach Vertragsende an jemanden verkaufst, den der Makler nachweislich vermittelt oder kontaktiert hat, kann der Makler Schadensersatz geltend machen. Diese Nachweisklausel gilt je nach Vertrag 6–12 Monate nach Vertragsende. Verkaufst du an einen Interessenten, den der Makler nie kontaktiert hat, entsteht keine Zahlungspflicht.',
+      },
+    ],
     content: `
 ## Was ist ein Maklervertrag – und was steht drin?
 
@@ -998,6 +1108,28 @@ Möchtest du wissen, wie ein Verkauf mit immovativInvest konkret abläuft und wa
     readTime: '8 Min.',
     img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop',
     quickAnswer: 'Ein Haus kann in 6–10 Wochen zum Marktpreis verkauft werden. Die 3 wichtigsten Hebel: realistischer Angebotspreis (überhöhte Preise führen zu langen Standzeiten), professionelle Fotos (mehr Anfragen und schnellere Entscheidung), und vollständige Unterlagen vor dem Start (fehlende Dokumente verzögern jeden Verkauf um Wochen).',
+    faqItems: [
+      {
+        question: 'Wie schnell kann man ein Haus realistisch verkaufen?',
+        answer: 'Mit guter Vorbereitung ist ein Hausverkauf in 6–10 Wochen möglich. Bei immovativInvest liegt die durchschnittliche Vermarktungszeit bei 6–8 Wochen. Entscheidend sind: realistischer Angebotspreis, vollständige Unterlagen vor dem Start und professionelles Marketing. Ohne Vorbereitung können Verkäufe sich auf 6–12 Monate hinziehen.',
+      },
+      {
+        question: 'Warum verkauft sich mein Haus nicht?',
+        answer: 'Die häufigsten Gründe: Zu hoher Angebotspreis (Käufer meiden Objekte mit langer Standzeit), schlechte Fotos, unvollständiges Exposé oder fehlende Unterlagen. Auch ein unflexibler Besichtigungsplan kann Interessenten abschrecken. Ein professioneller Makler analysiert die Ursache und kann gezielt gegensteuern.',
+      },
+      {
+        question: 'Senkt ein niedrigerer Preis die Vermarktungszeit wirklich?',
+        answer: 'Ja – aber nicht durch Unterbieten. Der optimale Angebotspreis liegt knapp unter dem psychologischen Schwellenwert (z. B. 495.000 € statt 500.000 €) und entspricht dem realen Marktwert. Zu hohe Preise verlängern die Standzeit massiv, was zu Misstrauen führt und am Ende zu tatsächlichen Preissenkungen zwingt.',
+      },
+      {
+        question: 'Was sind die wichtigsten Vorbereitungsschritte vor dem Verkauf?',
+        answer: 'Die 5 wichtigsten Schritte: (1) Alle Unterlagen beschaffen (Grundbuch, Energieausweis, Baupläne), (2) professionelle Fotos beauftragen, (3) Wert realistisch ermitteln lassen, (4) kleine Schönheitsmängel beheben, (5) Exposé mit vollständigen Angaben erstellen. Wer diese Schritte überspringt, zahlt im Schnitt mit 4–8 zusätzlichen Wochen Vermarktungszeit.',
+      },
+      {
+        question: 'Ist es sinnvoll, das Haus vor dem Verkauf zu renovieren?',
+        answer: 'Kleine Maßnahmen (frischer Anstrich, saubere Böden, gepflegter Garten) lohnen sich fast immer. Große Renovierungen rechnen sich selten – Käufer wollen oft selbst gestalten und zahlen dafür keinen vollen Aufpreis. Unsere Empfehlung: Nur reparieren, was sichtbar defekt ist, und auf Home Staging statt auf Vollrenovierung setzen.',
+      },
+    ],
     content: `
 ## Schnell und gut – das ist kein Widerspruch
 

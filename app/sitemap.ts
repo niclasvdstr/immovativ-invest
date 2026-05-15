@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/makler-oder-privatverkauf`,         priority: 0.85, changeFrequency: 'monthly', lastModified: new Date('2026-05-15') },
     { url: `${BASE_URL}/immobilie-schnell-verkaufen`,       priority: 0.85, changeFrequency: 'monthly', lastModified: new Date('2026-05-15') },
     { url: `${BASE_URL}/serioeser-makler-erkennen`,         priority: 0.85, changeFrequency: 'monthly', lastModified: new Date('2026-05-15') },
+    { url: `${BASE_URL}/maklerprovision`,                   priority: 0.9,  changeFrequency: 'monthly', lastModified: new Date('2026-05-15') },
   ]
 
   const cityPages: MetadataRoute.Sitemap = seoStaedte.map((stadt) => ({
