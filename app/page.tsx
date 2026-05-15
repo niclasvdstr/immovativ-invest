@@ -137,6 +137,59 @@ export default function HomePage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'RealEstateAgent',
+                '@id': 'https://www.immovativ-invest.de/#organization',
+                name: 'immovativInvest',
+                url: 'https://www.immovativ-invest.de',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://www.immovativ-invest.de/logo.svg',
+                  width: 200,
+                  height: 60,
+                },
+                image: 'https://www.immovativ-invest.de/og-image.jpg',
+                description: 'Ihr Immobilienmakler in Frankfurt und der Rhein-Main-Region. Professioneller Verkauf, persönliche Betreuung, durchschnittlich 6 Wochen bis zum Abschluss.',
+                telephone: '+4915129686979',
+                email: 'info@immovativ-invest.de',
+                address: {
+                  '@type': 'PostalAddress',
+                  addressLocality: 'Frankfurt am Main',
+                  addressRegion: 'Hessen',
+                  postalCode: '60329',
+                  addressCountry: 'DE',
+                },
+                geo: {
+                  '@type': 'GeoCoordinates',
+                  latitude: 50.1109,
+                  longitude: 8.6821,
+                },
+                areaServed: [
+                  'Frankfurt am Main', 'Wiesbaden', 'Darmstadt', 'Bad Homburg',
+                  'Offenbach', 'Hanau', 'Mainz', 'Hochtaunus', 'Rhein-Main-Region',
+                ],
+                priceRange: '€€€',
+                aggregateRating: {
+                  '@type': 'AggregateRating',
+                  ratingValue: '4.9',
+                  ratingCount: '100',
+                  bestRating: '5',
+                  worstRating: '1',
+                },
+                sameAs: [
+                  'https://www.instagram.com/immovativinvest',
+                ],
+              },
+            ],
+          }),
+        }}
+      />
       <Header
         ctaLabel="Kostenlose Immobilienbewertung"
         ctaHref="#kontakt"
