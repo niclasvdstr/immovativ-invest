@@ -13,6 +13,7 @@ export interface Article {
   date: string
   readTime: string
   img: string
+  quickAnswer?: string
   content: string
 }
 
@@ -30,12 +31,26 @@ export const articles: Article[] = [
     date: '02. Mai 2025',
     readTime: '5 Min.',
     img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&h=600&fit=crop',
+    quickAnswer: 'Der Immobilienmarkt im Rhein-Main-Gebiet stabilisiert sich 2025 nach zwei Jahren Preisrückgang. Die Nachfrage nach qualitativ hochwertigen Immobilien steigt wieder – besonders in Frankfurt, Bad Homburg und Wiesbaden. Gut vorbereitete Verkäufer mit realistischem Angebotspreis erzielen 2025 wieder sehr gute Preise.',
     content: `
 ## Der Markt hat sich verändert – aber nicht eingebrochen
 
 Die letzten zwei Jahre haben den Immobilienmarkt in Deutschland stark verändert. Steigende Zinsen, unsichere Konjunktur und zurückhaltende Käufer führten zu einem spürbaren Preisrückgang – vor allem bei Objekten mit schlechter Energiebilanz oder überhöhten Angebotspreisen.
 
 Doch 2025 zeigt ein anderes Bild: **Der Markt stabilisiert sich.** Besonders im Rhein-Main-Gebiet ist die Nachfrage nach qualitativ hochwertigen Immobilien wieder gestiegen.
+
+## Aktuelle Preise nach Region – Überblick 2025
+
+| Region | Eigentumswohnung (€/m²) | Einfamilienhaus (Ø) | Tendenz |
+|--------|------------------------|---------------------|---------|
+| Frankfurt | 5.500–7.500 € | 750.000–1.200.000 € | **stabil** |
+| Bad Homburg | 5.000–7.000 € | 800.000–1.500.000 € | **stabil** |
+| Wiesbaden | 4.200–6.500 € | 550.000–950.000 € | **leicht steigend** |
+| Offenbach | 3.400–5.000 € | 420.000–700.000 € | **steigend** |
+| Main-Kinzig-Kreis | 2.800–4.200 € | 350.000–600.000 € | **steigend** |
+| Hochtaunus | 5.000–8.000 € | 700.000–2.000.000 € | **stabil** |
+
+> Der Hochtaunus und Frankfurt bleiben Premiummärkte. Käufer kommen wieder – aber sie prüfen genauer als noch 2021/2022.
 
 ## Was die Zahlen sagen
 
@@ -49,9 +64,17 @@ Offenbach und der Main-Kinzig-Kreis verzeichnen eine steigende Nachfrage – get
 
 Wer 2025 verkaufen möchte, profitiert von einem Markt, der wieder Käufer anzieht. Entscheidend ist jedoch:
 
-- **Realistischer Angebotspreis** – überhöhte Preise führen zu langen Standzeiten
-- **Energetischer Zustand** – Käufer kalkulieren Sanierungskosten konsequent ein
-- **Professionelle Präsentation** – professionelle Fotos und Exposés sind kein Luxus, sondern Standard
+- **Realistischer Angebotspreis** – überhöhte Preise führen zu langen Standzeiten und Vertrauensverlust
+- **Energetischer Zustand** – Käufer kalkulieren Sanierungskosten konsequent ein; Klasse F, G oder H kostet Preis
+- **Professionelle Präsentation** – Fotos, Exposé und Beschreibung entscheiden über die Klickrate auf Portalen
+- **Schnelle Reaktion auf Anfragen** – ernsthafte Käufer haben oft mehrere Objekte gleichzeitig im Blick
+
+## In 4 Schritten optimal vorbereitet verkaufen
+
+1. **Marktwert ermitteln lassen** – nicht durch Online-Rechner, sondern durch lokale Expertise vor Ort
+2. **Unterlagen vollständig machen** – Grundbuch, Energieausweis, Grundriss, Protokolle (bei WEG)
+3. **Immobilie präsentieren** – Fotos, ggf. Home Staging, professionelles Exposé
+4. **Käufer qualifizieren** – Bonität prüfen, bevor Termine vereinbart werden
 
 ## Unsere Einschätzung
 
@@ -73,6 +96,7 @@ Hast du Fragen zum aktuellen Marktwert deiner Immobilie? Wir beraten dich kosten
     date: '24. April 2025',
     readTime: '4 Min.',
     img: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1200&h=600&fit=crop',
+    quickAnswer: 'Home Staging steigert den Verkaufspreis einer Immobilie um durchschnittlich 8–15 % und verkürzt die Vermarktungszeit erheblich. Die wichtigsten Maßnahmen: entrümpeln, neutralisieren, kleine Mängel beheben und professionelle Fotos. Kosten: 1.500–5.000 €. Mehrerlös bei einer 500.000-€-Immobilie: 40.000–75.000 €.',
     content: `
 ## Der erste Eindruck entscheidet
 
@@ -86,15 +110,24 @@ In Deutschland erzielen professionell gestagete Immobilien im Durchschnitt **8 b
 
 Die Kosten für professionelles Staging liegen je nach Größe bei **1.500 bis 5.000 €** – ein Bruchteil des potenziellen Mehrerlöses.
 
-## Die wichtigsten Maßnahmen
+## Kosten vs. Mehrerlös: Die Rechnung
 
-**Entrümpeln und neutralisieren:** Persönliche Gegenstände, überladene Regale und alte Möbel schmälern die Wirkung. Käufer wollen sich vorstellen, selbst dort zu leben.
+| Maßnahme | Kosten | Typischer Mehrerlös |
+|----------|--------|---------------------|
+| Professionelle Fotos | 300–800 € | 3–5 % mehr Anfragen |
+| Entrümpeln & Neutralisieren | 0–500 € | Schnellerer Abschluss |
+| Kleine Reparaturen | 200–1.000 € | Weniger Preisverhandlung |
+| Vollständiges Home Staging | 1.500–5.000 € | **8–15 % höherer Preis** |
 
-**Kleine Reparaturen:** Tropfende Wasserhähne, quietschende Türen, fleckige Wände – diese Kleinigkeiten signalisieren mangelnde Pflege und drücken den Preis.
+> Bei einer Immobilie im Wert von 500.000 € entsprechen 10 % Mehrerlös 50.000 € – für eine Investition von 5.000 € eine klare Rechnung.
 
-**Professionelle Fotos:** Schlechte Fotos kosten mehr als gute Fotos. In einem Markt, der online entschieden wird, sind Profifotos Pflicht.
+## Die 5 wichtigsten Home-Staging-Maßnahmen
 
-**Duft und Atmosphäre:** Frische Luft, dezenter Duft, warmes Licht – das klingt banal, macht aber einen messbaren Unterschied.
+1. **Entrümpeln und neutralisieren** – Persönliche Gegenstände, überladene Regale und alte Möbel schmälern die Wirkung. Käufer wollen sich vorstellen, selbst dort zu leben.
+2. **Kleine Reparaturen erledigen** – Tropfende Wasserhähne, quietschende Türen, fleckige Wände signalisieren mangelnde Pflege und drücken den Preis.
+3. **Professionelle Fotos beauftragen** – In einem Markt, der online entschieden wird, sind Profifotos Pflicht. Schlechte Fotos kosten mehr als gute.
+4. **Licht und Atmosphäre optimieren** – Frische Luft, dezenter Duft, warmes Licht – das klingt banal, macht aber einen messbaren Unterschied.
+5. **Leerstehende Räume möblieren** – Leere Räume wirken kleiner als möblierte. Mietmöbel für die Vermarktungsphase lohnen sich fast immer.
 
 ## Wann lohnt es sich besonders?
 
@@ -116,6 +149,7 @@ Wir beraten dich gerne, welche Maßnahmen für deine Immobilie sinnvoll sind.
     date: '15. April 2025',
     readTime: '6 Min.',
     img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop',
+    quickAnswer: 'Immobilien werden in Deutschland nach drei Verfahren bewertet: Vergleichswert (für Wohnungen und Häuser), Ertragswert (für vermietete Objekte) und Sachwert (für Einzelimmobilien ohne Vergleichsdaten). Das Vergleichswertverfahren liefert die marktnahesten Ergebnisse. Eine kostenlose Bewertung durch einen lokalen Makler ist genauer als jeder Online-Rechner.',
     content: `
 ## Warum die Bewertungsmethode so wichtig ist
 
@@ -152,9 +186,25 @@ Das Sachwertverfahren berechnet den Wert aus dem Bodenwert plus den Herstellungs
 **Vorteil:** Unabhängig vom Markt.
 **Nachteil:** Kann stark vom tatsächlichen Marktpreis abweichen.
 
+## Die 3 Verfahren im Vergleich
+
+| Verfahren | Geeignet für | Aussagekraft | Häufigkeit |
+|-----------|-------------|--------------|------------|
+| Vergleichswert | Wohnungen, ETW, Häuser in urbanen Lagen | Sehr hoch (marktbasiert) | Am häufigsten |
+| Ertragswert | Vermietete Objekte, MFH, Gewerbe | Hoch für Investoren | Bei Renditeobjekten |
+| Sachwert | Häuser ohne Vergleichsdaten, ländliche Lagen | Mittel | Ergänzend |
+
+> In der Praxis kombinieren erfahrene Makler und Gutachter oft mehrere Methoden und gewichten sie nach Objekttyp und Marktlage.
+
 ## Was Gutachter und Makler darüber hinaus beachten
 
-Neben dem Verfahren fließen viele weitere Faktoren ein: Lage (Mikro- und Makrolage), Zustand, Energieeffizienzklasse, Grundrissqualität, Ausrichtung, Lärmbelastung und aktuelle Nachfragesituation.
+Neben dem Verfahren fließen viele weitere Faktoren ein:
+
+1. **Lage (Mikro- und Makrolage)** – Straßenlage, Lärmbelastung, Infrastruktur, Schule in der Nähe
+2. **Zustand und Energieklasse** – Sanierungsbedarf wird direkt vom Kaufpreis abgezogen
+3. **Grundrissqualität** – Durchgangszimmer, schlechte Raumaufteilung mindern den Wert
+4. **Aktuelle Nachfragesituation** – Angebot und Nachfrage im konkreten Mikrosegment
+5. **Besondere Merkmale** – Garten, Balkon, Stellplatz, Denkmalschutz
 
 Eine professionelle Bewertung kombiniert immer Methode und Marktwissen. Wir führen kostenlose Bewertungen durch – persönlich, vor Ort und ohne Verpflichtung.
     `,
@@ -172,6 +222,7 @@ Eine professionelle Bewertung kombiniert immer Methode und Marktwissen. Wir füh
     date: '08. April 2025',
     readTime: '7 Min.',
     img: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=600&fit=crop',
+    quickAnswer: 'Spekulationssteuer fällt an, wenn du eine Immobilie innerhalb von 10 Jahren nach dem Kauf mit Gewinn verkaufst. Ausnahme: Du hast die Immobilie im Verkaufsjahr und den beiden Vorjahren selbst bewohnt – dann ist der Verkauf steuerfrei. Der Steuersatz entspricht dem persönlichen Einkommensteuersatz (bis zu 45 %).',
     content: `
 ## Was ist die Spekulationssteuer?
 
@@ -204,6 +255,25 @@ Zu den abzugsfähigen Kosten zählen:
 - Modernisierungskosten (sofern nicht schon steuerlich abgesetzt)
 - Maklergebühren beim Verkauf
 
+## Wann fällt Spekulationssteuer an – und wann nicht?
+
+| Situation | Steuerpflichtig? |
+|-----------|-----------------|
+| Haltedauer über 10 Jahre | Nein |
+| Selbstgenutzt im Verkaufsjahr + 2 Vorjahre | Nein |
+| Vermietet, unter 10 Jahre gehalten | **Ja** |
+| Geerbt, unter 10 Jahre seit Kauf durch Erblasser | Ggf. Ja |
+| Selbst gebaut und nie vermietet, unter 10 Jahre | Ggf. Nein – Einzelfallprüfung nötig |
+
+> Wichtig: Es zählt immer das Datum des notariellen Kaufvertrags – nicht das Datum der Schlüsselübergabe oder der Eigentumsumschreibung.
+
+## So berechnest du deinen steuerpflichtigen Gewinn
+
+1. **Verkaufspreis ermitteln** – der im notariellen Kaufvertrag vereinbarte Preis
+2. **Anschaffungskosten abziehen** – ursprünglicher Kaufpreis inkl. Notar, Grunderwerbsteuer, Makler beim Kauf
+3. **Werbungskosten abziehen** – Maklerkosten beim Verkauf, Modernisierungen (die nicht schon steuerlich abgesetzt wurden)
+4. **Verbleibender Gewinn** wird zum persönlichen Einkommensteuersatz versteuert
+
 ## Unser Rat
 
 Steuerliche Fragen beim Immobilienverkauf sind komplex. Lass dich vor dem Verkauf von einem Steuerberater beraten – die Kosten rechnen sich fast immer.
@@ -226,6 +296,7 @@ Wir können dir erfahrene Steuerberater aus unserem Netzwerk empfehlen, die auf 
     date: '01. April 2025',
     readTime: '5 Min.',
     img: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=600&fit=crop',
+    quickAnswer: 'Die EZB hat die Zinsen 2024/2025 mehrfach gesenkt. Bauzinsen liegen 2025 bei 3,2–3,9 % (vs. 4,5 % im Hochpunkt 2023). Wer langfristig plant und eine Immobilie zur Eigennutzung sucht, sollte nicht auf den "perfekten" Zeitpunkt warten. Entscheidend ist ein fairer Preis, eine solide Finanzierung und ein passendes Objekt.',
     content: `
 ## Die Zinswende ist Realität
 
@@ -242,20 +313,17 @@ Das sind **333 € weniger pro Monat** – oder knapp 4.000 € pro Jahr.
 
 Diese verbesserte Erschwinglichkeit hat die Nachfrage im Rhein-Main-Gebiet bereits spürbar belebt. Wer im vergangenen Jahr noch gezögert hat, kommt jetzt wieder auf den Markt.
 
-## Kaufen oder warten?
+## Kaufen oder warten? Die ehrliche Abwägung
 
-Eine pauschale Antwort gibt es nicht. Aber einige Faktoren sprechen für jetzt:
+| Faktor | Spricht für Kaufen | Spricht für Warten |
+|--------|-------------------|-------------------|
+| Zinsentwicklung | Zinsen bereits gesunken | Weitere Senkungen möglich |
+| Preisentwicklung | Rhein-Main stabilisiert sich | Konjunkturunsicherheit |
+| Mietmarkt | Mieten steigen weiter | – |
+| Objektverfügbarkeit | Gute Objekte gehen schneller | Mehr Angebot möglich |
+| Energiepflichten | Jetzt noch mehr Auswahl | Ältere Objekte könnten günstiger werden |
 
-**Pro Kaufen:**
-- Zinsen sind gesunken, könnten aber wieder steigen
-- Preise im Rhein-Main-Gebiet stabilisieren sich
-- Gute Objekte werden wieder schneller verkauft
-- Mietpreise steigen weiter – Kaufen wird attraktiver
-
-**Pro Warten:**
-- Weitere Zinssenkungen möglich (aber nicht sicher)
-- Konjunkturunsicherheit könnte Preise drücken
-- Energetische Anforderungen steigen – ältere Objekte könnten günstiger werden
+> Wer auf den "perfekten" Zeitpunkt wartet, wartet oft zu lange. Den gibt es selten – und er ist im Rückspiegel oft deutlicher sichtbar als in der Gegenwart.
 
 ## Unsere Einschätzung
 
@@ -277,6 +345,7 @@ Sprich mit uns – wir helfen dir, die richtigen Fragen zu stellen, bevor du ent
     date: '22. März 2025',
     readTime: '5 Min.',
     img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=600&fit=crop',
+    quickAnswer: 'Professionell vermarktete Immobilien erzielen laut IVD durchschnittlich 5–10 % höhere Verkaufspreise als Privatverkäufe. Bei 500.000 € sind das 25.000–50.000 € mehr – deutlich mehr als eine typische Maklerprovision. Privatverkauf lohnt sich hauptsächlich, wenn Käufer bereits bekannt ist oder die Immobilie in sehr gefragter Lage liegt.',
     content: `
 ## Der verständliche Gedanke
 
@@ -293,6 +362,20 @@ Wir zeigen, was Privatverkäufer wirklich bekommen – und was sie oft nicht bek
 **Verhandlung:** Professionelle Käufer und ihre Makler verhandeln täglich. Privatverkäufer tun das vielleicht einmal im Leben. Wer hat da den Vorteil?
 
 **Fehler:** Falsche Angaben im Exposé, fehlende Unterlagen, rechtliche Fallstricke – Fehler im Verkaufsprozess können teuer werden.
+
+## Makler vs. Privatverkauf: Der direkte Vergleich
+
+| Kriterium | Mit Makler | Privatverkauf |
+|-----------|-----------|---------------|
+| Erzielter Preis | 5–10 % höher (IVD) | Marktpreis oder darunter |
+| Reichweite | Portale + Netzwerk + Social | Portale (eigenes Inserat) |
+| Zeitaufwand für Verkäufer | ~4–5 Stunden gesamt | Wochen bis Monate |
+| Käuferqualifikation | Bonität geprüft | Eigenverantwortung |
+| Verhandlung | Erfahrener Profi | Einmalerfahrung |
+| Unterlagen | Werden beschafft | Eigenverantwortung |
+| Kosten | Provision im Erfolgsfall | 1.000–4.000 € direkte Kosten |
+
+> Das häufigste Missverständnis: "Ohne Makler spare ich die Provision." Richtig ist: Ohne Makler entgehen dir oft 5–10 % Mehrerlös – deutlich mehr als die Provision.
 
 ## Was die Daten sagen
 
@@ -322,6 +405,7 @@ Lass dich unverbindlich beraten – wir zeigen dir, was realistisch für deine I
     date: '14. April 2026',
     readTime: '5 Min.',
     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=600&fit=crop',
+    quickAnswer: 'Der Energieausweis ist beim Immobilienverkauf Pflicht und muss Käufern beim ersten Besichtigungstermin unaufgefordert vorgelegt werden. Es gibt zwei Arten: Verbrauchsausweis (ab 50 €, günstiger) und Bedarfsausweis (ab 300 €, objektiver). Immobilien mit Energieklasse F, G oder H erzielen bis zu 20 % niedrigere Preise.',
     content: `
 ## Energieausweis – mehr als ein Pflichtdokument
 
@@ -337,9 +421,14 @@ Der Energieausweis ist seit Jahren Pflicht beim Immobilienverkauf. Doch 2026 gel
 
 ## Welche Arten gibt es?
 
-**Verbrauchsausweis:** Basiert auf dem tatsächlichen Energieverbrauch der letzten drei Jahre. Günstiger, aber weniger aussagekräftig.
+| Merkmal | Verbrauchsausweis | Bedarfsausweis |
+|---------|------------------|----------------|
+| Grundlage | Tatsächlicher Verbrauch (3 Jahre) | Technische Gebäudeanalyse |
+| Kosten | ab 50 € | ab 300 € |
+| Aussagekraft | Begrenzt (nutzerabhängig) | Hoch (objektbezogen) |
+| Pflicht bei | Neubauten mit ≥5 WE, Bestandsbauten nach 1977 | Gebäude vor 1977 mit <5 WE |
 
-**Bedarfsausweis:** Basiert auf einer technischen Analyse des Gebäudes. Teurer, aber objektiver – und für ältere Gebäude oft Pflicht.
+> Wenn du unsicher bist, welcher Ausweis für deine Immobilie gilt, können wir das prüfen und den Ausweis für dich beschaffen – kostenlos im Rahmen des Verkaufsauftrags.
 
 ## Was schlechte Energieklassen kosten
 
@@ -365,6 +454,7 @@ Wir beraten dich, welche Maßnahmen sich vor dem Verkauf wirklich lohnen.
     date: '28. März 2026',
     readTime: '6 Min.',
     img: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1200&h=600&fit=crop',
+    quickAnswer: 'Bei einer geerbten Immobilie gibt es drei Optionen: Verkaufen (sofortige Liquidität, kein Aufwand), Vermieten (laufende Einnahmen, aber Verwaltungsaufwand) oder Selbst einziehen (Mietkosten sparen). Steuerlich wichtig: Liegt der Kauf durch den Erblasser weniger als 10 Jahre zurück, kann Spekulationssteuer anfallen – außer bei Selbstnutzung.',
     content: `
 ## Eine Erbschaft – drei Möglichkeiten
 
@@ -401,6 +491,16 @@ Wer selbst einzieht, spart Miete und nutzt die Immobilie direkt. Steuerlich kann
 
 **Aber:** Nur wenn Lage, Größe und Zustand zur eigenen Lebenssituation passen.
 
+## Die drei Optionen im Vergleich
+
+| Option | Vorteil | Nachteil | Geeignet wenn |
+|--------|---------|----------|----------------|
+| Verkaufen | Sofortige Liquidität, kein Aufwand | Kein laufendes Einkommen | Mehrere Erben, Liquiditätsbedarf |
+| Vermieten | Laufende Einnahmen, Wertsteigerung | Verwaltungsaufwand, Mietrecht | Gute Lage, langfristige Planung |
+| Selbst einziehen | Mietkosten sparen, steuerlich vorteilhaft | Lage muss passen | Immobilie passt zur Lebenssituation |
+
+> Bei Erbengemeinschaften empfiehlt sich frühzeitig eine schriftliche Einigung. Wer sich nicht einigt, riskiert eine Teilungsversteigerung – dabei wird fast immer unter Marktwert verkauft.
+
 ## Erbengemeinschaft – der häufigste Konfliktfall
 
 Wenn mehrere Erben beteiligt sind, sind Einigkeit und klare Kommunikation entscheidend. Jeder Miterbe kann die Auseinandersetzung der Gemeinschaft verlangen – notfalls auch durch eine Teilungsversteigerung, die selten im Interesse aller ist.
@@ -423,6 +523,7 @@ Lass dich vor einer Entscheidung beraten – steuerrechtlich und immobilienwirts
     date: '10. März 2026',
     readTime: '5 Min.',
     img: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=600&fit=crop',
+    quickAnswer: 'Der Immobilienmarkt im Rhein-Main-Gebiet zeigt 2026 moderates Wachstum bei gestiegener Nachfrage. Frankfurt: 5.800–8.200 €/m², Hochtaunus: 700.000–1,8 Mio. € (Häuser), Wiesbaden: 4.200–6.500 €/m², Offenbach: bestes Preis-Leistungs-Verhältnis der Region. Gut präsentierte Objekte mit realistischem Preis verkaufen sich wieder schnell.',
     content: `
 ## Der Markt 2026 im Überblick
 
@@ -448,6 +549,19 @@ Wiesbaden profitiert von seiner Nähe zu Frankfurt und dem rheinland-pfälzische
 
 Diese Lagen bieten 2026 das beste Preis-Leistungs-Verhältnis für Käufer. Für Verkäufer bedeutet das: Nachfrage ist da, aber Käufer kalkulieren genauer.
 
+## Preisentwicklung 2026 auf einen Blick
+
+| Region | Eigentumswohnung (€/m²) | Einfamilienhaus (Ø) | Tendenz 2026 |
+|--------|------------------------|---------------------|--------------|
+| Frankfurt | 5.800–8.200 € | 800.000–1.400.000 € | **stabil-steigend** |
+| Bad Homburg | 5.200–7.500 € | 850.000–1.800.000 € | **stabil** |
+| Wiesbaden | 4.200–6.500 € | 580.000–1.000.000 € | **leicht steigend** |
+| Offenbach | 3.500–5.200 € | 450.000–750.000 € | **steigend** |
+| Dreieich | 3.200–4.800 € | 420.000–700.000 € | **steigend** |
+| Hochtaunus | 5.500–9.000 € | 700.000–2.000.000 € | **stabil** |
+
+> Das beste Preis-Leistungs-Verhältnis für Käufer bieten 2026 Offenbach und Dreieich – für Verkäufer bedeutet das: Nachfrage ist da, aber Käufer vergleichen genauer.
+
 ## Unser Fazit
 
 Der Markt belohnt gut vorbereitete Verkäufer. Realistischer Preis, professionelle Präsentation und schnelle Reaktion auf Anfragen sind 2026 entscheidender denn je.
@@ -468,10 +582,19 @@ Sprich uns an – wir kennen die aktuellen Preise in deiner Lage aus erster Hand
     date: '18. Februar 2026',
     readTime: '7 Min.',
     img: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=600&fit=crop',
+    quickAnswer: 'Ein Wohnungsverkauf läuft in 5 Phasen ab: Unterlagen zusammenstellen, Bewertung & Preisfindung, Vermarktung (Fotos, Exposé, Besichtigungen), Kaufvertrag & Notartermin, Übergabe. Die häufigsten Fehler: fehlende Dokumente, falscher Angebotspreis und mangelnde Präsentation. Mit guter Vorbereitung dauert ein Verkauf 6–10 Wochen.',
     content: `
 ## Vorbereitung ist alles
 
 Ein Wohnungsverkauf ist kein Spontankauf – er braucht Vorbereitung. Wer strukturiert vorgeht, spart Zeit, Nerven und bares Geld.
+
+## Die 5 Phasen im Überblick
+
+1. **Unterlagen zusammenstellen** – alle Dokumente vor dem Start beschaffen
+2. **Bewertung und Preisfindung** – realistischer Marktpreis auf Basis aktueller Daten
+3. **Vermarktung** – Fotos, Exposé, Portale, Besichtigungen
+4. **Kaufvertrag und Notartermin** – rechtssichere Abwicklung
+5. **Nach dem Verkauf** – Steuer, Ummeldungen, Erlös sichern
 
 ## Phase 1: Unterlagen zusammenstellen
 
@@ -484,6 +607,8 @@ Folgende Dokumente brauchst du vor dem Verkauf:
 - **Aktuelle Hausgeldabrechnung und Wirtschaftsplan**
 - **Grundriss** (möglichst maßstabsgetreu)
 - **Nachweise über Renovierungen und Modernisierungen**
+
+> Fehlende Unterlagen sind einer der häufigsten Gründe für verzögerte Verkäufe. Wer frühzeitig anfängt, gewinnt Wochen.
 
 ## Phase 2: Bewertung und Preisfindung
 
@@ -531,6 +656,7 @@ Wir begleiten dich durch alle Phasen – von der Bewertung bis zum Notartermin. 
     date: '05. Januar 2026',
     readTime: '5 Min.',
     img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=600&fit=crop',
+    quickAnswer: 'Beim Immobilienkauf fallen in Hessen 10–12 % Kaufnebenkosten an: 6 % Grunderwerbsteuer, 1,5–2 % Notar & Grundbuch und bis zu 3,57 % Maklerprovision (Käuferanteil). Bei einem Kaufpreis von 500.000 € sind das rund 56.000 € zusätzlich – diese müssen aus Eigenkapital bezahlt werden, da Banken sie in der Regel nicht finanzieren.',
     content: `
 ## Warum Nebenkosten oft unterschätzt werden
 
@@ -593,6 +719,7 @@ Plane mindestens **10–12 % des Kaufpreises** als Nebenkosten ein – zusätzli
     date: '09. Mai 2026',
     readTime: '10 Min.',
     img: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=600&fit=crop',
+    quickAnswer: 'Ein Immobilienverkauf mit immovativInvest kostet als Verkäufer ca. 2,975 % Provision (Käufer und Verkäufer teilen sich nach Halbteilungsprinzip). Keine Vorabkosten – Energieausweis, Fotos, Grundbuchauszug, Exposé und Portalinserate sind inklusive. Provision fällt ausschließlich im Erfolgsfall nach dem Notartermin an. Vertragslaufzeit: 6 Wochen, danach automatisch beendet.',
     content: `
 ## Was du beim Verkauf mit uns zahlst – und was du nicht zahlst
 
@@ -726,6 +853,7 @@ Möchtest du wissen, was deine Immobilie heute wert ist und was nach dem Verkauf
     date: '09. Mai 2026',
     readTime: '9 Min.',
     img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=600&fit=crop',
+    quickAnswer: 'Ein Maklervertrag regelt Leistung, Provision und Laufzeit der Zusammenarbeit. Es gibt drei Arten: einfacher Auftrag (mehrere Makler erlaubt), einfacher Alleinauftrag (exklusiv, Eigenverkauf möglich) und qualifizierter Alleinauftrag (vollständig exklusiv). Provision ist immer erfolgsabhängig (§ 652 BGB) – kein Verkauf, keine Zahlung. Seit 2020: Textform Pflicht, Provision wird geteilt.',
     content: `
 ## Was ist ein Maklervertrag – und was steht drin?
 
@@ -742,6 +870,16 @@ Die wichtigsten Inhalte:
 **Die gesetzliche Grundlage** liefert das BGB: § 652 BGB regelt, dass die Provision ausschließlich im Erfolgsfall fällig wird – also erst dann, wenn der Kaufvertrag notariell beurkundet ist. Kein Verkauf, keine Zahlung. Dieses Erfolgsprinzip ist für Verkäufer eine wichtige Absicherung.
 
 Seit 2020 gilt außerdem: Bei Einfamilienhäusern und Eigentumswohnungen muss die Maklerprovision zwischen Käufer und Verkäufer zu gleichen Teilen aufgeteilt werden (§ 656c BGB). In Hessen bedeutet das in der Praxis: ca. 2,975 % für jede Seite.
+
+## Die drei Vertragsarten im Vergleich
+
+| Vertragsart | Exklusivität | Eigenverkauf möglich? | Makler-Engagement |
+|-------------|-------------|----------------------|-------------------|
+| Einfacher Auftrag | Nein (mehrere Makler erlaubt) | Ja, ohne Provision | Gering |
+| Einfacher Alleinauftrag | Ja (nur ein Makler) | Ja, ohne Provision | Mittel |
+| Qualifizierter Alleinauftrag | Vollständig exklusiv | Nein | Hoch |
+
+> Der qualifizierte Alleinauftrag ist für Verkäufer, die maximales Engagement wollen. Der Makler investiert deutlich mehr – weil er weiß, dass sein Aufwand sich auszahlt.
 
 ## Die drei Vertragsarten – und was sie bedeuten
 
@@ -859,6 +997,7 @@ Möchtest du wissen, wie ein Verkauf mit immovativInvest konkret abläuft und wa
     date: '09. Mai 2026',
     readTime: '8 Min.',
     img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop',
+    quickAnswer: 'Ein Haus kann in 6–10 Wochen zum Marktpreis verkauft werden. Die 3 wichtigsten Hebel: realistischer Angebotspreis (überhöhte Preise führen zu langen Standzeiten), professionelle Fotos (mehr Anfragen und schnellere Entscheidung), und vollständige Unterlagen vor dem Start (fehlende Dokumente verzögern jeden Verkauf um Wochen).',
     content: `
 ## Schnell und gut – das ist kein Widerspruch
 
@@ -956,6 +1095,7 @@ Möchtest du wissen, was deine Immobilie heute wert ist und wie schnell ein real
     date: '09. Mai 2026',
     readTime: '11 Min.',
     img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&h=600&fit=crop',
+    quickAnswer: 'Ein erfolgreicher Immobilienverkauf folgt 12 Schritten: Unterlagen zusammenstellen, Preis ermitteln, Energieausweis klären, Präsentation erstellen, Besichtigungen strukturieren, Verhandlung führen, Bonität prüfen, Notar beauftragen, Steuer klären, Zeitpunkt wählen, bei Bedarf Strategie anpassen, Übergabe vorbereiten. Die häufigsten teuren Fehler: falscher Preis, fehlende Unterlagen, unkualifizierte Käufer.',
     content: `
 ## Erfolg beim Immobilienverkauf ist kein Zufall
 
@@ -1103,6 +1243,7 @@ Möchtest du deine Immobilie strukturiert und mit einer klaren Strategie verkauf
     date: '09. Mai 2026',
     readTime: '7 Min.',
     img: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1200&h=600&fit=crop',
+    quickAnswer: 'Ein Immobilienverkauf dauert realistisch 3–5 Monate: 2–4 Wochen Vorbereitung, 3–8 Wochen Vermarktung, 1–2 Wochen Vertragsphase, 4–8 Wochen zwischen Notartermin und Geldeingang. Die häufigsten Verzögerungen: falscher Preis (verlängert die Vermarktung um Monate), fehlende Unterlagen und Finanzierungsprobleme beim Käufer.',
     content: `
 ## Eine Frage, keine pauschale Antwort
 
@@ -1190,6 +1331,7 @@ Möchtest du eine realistische Einschätzung, wie lange der Verkauf deiner Immob
     date: '09. Mai 2026',
     readTime: '6 Min.',
     img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=600&fit=crop',
+    quickAnswer: 'Im Rhein-Main-Gebiet braucht eine Immobilie bei realistischem Preis typischerweise 3–8 Besichtigungen (Frankfurt-Innenstadt), 8–15 (Speckgürtel) oder 15–25+ (weniger gefragte Lagen) bis zum Kaufangebot. Nach 10–15 Besichtigungen ohne Angebot ist die Strategie zu überdenken – meistens ist der Preis das Problem.',
     content: `
 ## Die Zahl sagt wenig – die Qualität alles
 
@@ -1268,6 +1410,7 @@ Möchtest du wissen, wie viele Interessenten für deine Immobilie realistisch zu
     date: '09. Mai 2026',
     readTime: '8 Min.',
     img: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=600&fit=crop',
+    quickAnswer: 'Beim Immobilienverkauf brauchst du mindestens: Grundbuchauszug (max. 3 Monate alt), Energieausweis (Pflicht vor Inserierung), Grundriss mit Wohnflächenberechnung und – bei ETW – Teilungserklärung, WEG-Protokolle und Hausgeldabrechnung. Fehlende Dokumente verzögern den Verkauf um Wochen und können Käufer und deren Banken abschrecken.',
     content: `
 ## Warum Unterlagen über den Erfolg des Verkaufs entscheiden
 
@@ -1367,6 +1510,7 @@ Möchtest du eine kostenlose Prüfung deiner vorhandenen Unterlagen? Wir analysi
     date: '09. Mai 2026',
     readTime: '7 Min.',
     img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop',
+    quickAnswer: 'Der richtige Verkaufspreis basiert auf drei Faktoren: aktuellen Vergleichstransaktionen in der Mikrolage, Zustand und Energiestandard der Immobilie sowie der aktuellen Nachfragesituation. Ein zu hoher Preis "verbrennt" die Immobilie – nach 3 Monaten online nimmt das Interesse stark ab. Ein realistischer Startpreis führt fast immer zu besseren Ergebnissen.',
     content: `
 Der Angebotspreis ist die wichtigste Entscheidung beim Immobilienverkauf – und gleichzeitig die, die am häufigsten falsch getroffen wird. Zu hoch ansetzen klingt verlockend ("kann man ja noch runterverhandeln"), führt aber fast immer zu schlechteren Ergebnissen als ein realistischer Startpreis.
 
@@ -1449,6 +1593,7 @@ Am verlässlichsten ist ein persönliches Vor-Ort-Gespräch. Wir kommen zu dir, 
     badge: 'Checkliste',
     badgeColor: 'bg-orange-500 text-white',
     title: 'Übergabeprotokoll beim Hausverkauf: Was rein muss – und was dich schützt',
+    quickAnswer: 'Das Übergabeprotokoll beim Hausverkauf muss enthalten: alle Schlüssel, alle Zählerstände (Strom, Gas, Wasser), den Zustand aller Räume, mitverkauftes Inventar und Datum/Uhrzeit der Übergabe. Die Übergabe erfolgt erst nach vollständiger Kaufpreiszahlung. Ein fehlendes oder lückenhaftes Protokoll kann zu jahrelangem Streit mit dem Käufer führen.',
     excerpt: 'Das Übergabeprotokoll ist das letzte Dokument beim Immobilienverkauf – und eines der wichtigsten. Wer es falsch ausfüllt oder ganz weglässt, riskiert jahrelangen Streit mit dem Käufer.',
     author: 'Mazlum Külahci',
     authorImg: '/mazlum.png',
@@ -1573,6 +1718,7 @@ Bei immovativInvest begleiten wir die Übergabe persönlich, füllen das Protoko
     badge: 'Prozess',
     badgeColor: 'bg-orange-500 text-white',
     title: 'Wie lange dauert es vom Notartermin bis zur Kaufpreiszahlung?',
+    quickAnswer: 'Zwischen Notartermin und Kaufpreiszahlung vergehen in der Regel 4–8 Wochen. Grund: Nach dem Notartermin muss die Auflassungsvormerkung eingetragen, der Grunderwerbsteuerbescheid abgewartet, eine etwaige Genehmigung der Gemeinde eingeholt und die Löschungsbewilligung der Verkäuferbank ausgestellt werden. Erst dann gibt der Notar die Kaufpreiszahlung frei.',
     excerpt: 'Der Notartermin ist nicht das Ende – sondern der Beginn des letzten Abschnitts. Bis das Geld tatsächlich fließt, vergehen in der Regel 4 bis 8 Wochen. Warum – und was in dieser Zeit passiert.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -1663,6 +1809,7 @@ Bei immovativInvest begleiten wir den gesamten Prozess vom Notartermin bis zur �
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Erbengemeinschaft: Wie verkaufst du ein geerbtes Haus, wenn mehrere Erben beteiligt sind?',
+    quickAnswer: 'Bei einer Erbengemeinschaft können Entscheidungen zur Immobilie nur einstimmig getroffen werden – außer bei dringenden Erhaltungsmaßnahmen. Einigt man sich nicht, kann jeder Miterbe die Auseinandersetzung verlangen, notfalls per Teilungsversteigerung (meist unter Marktwert). Der einfachste Weg: gemeinsamer Beschluss zum Verkauf mit fairer Erlösaufteilung.',
     excerpt: 'Eine Erbschaft klingt zunächst nach einem Glücksfall. Aber wenn mehrere Erben beteiligt sind, wird die Immobilie schnell zur Belastungsprobe. Wie der Verkauf trotzdem funktioniert.',
     author: 'Mazlum Külahci',
     authorImg: '/mazlum.png',
@@ -1786,6 +1933,7 @@ Gerne kommen wir zum gemeinsamen Erstgespräch mit allen Erben – auch per Vide
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Haus verkaufen nach der Scheidung: Was Eigentümer im Rhein-Main-Gebiet wissen müssen',
+    quickAnswer: 'Nach einer Scheidung kann die gemeinsame Immobilie nur verkauft werden, wenn beide Eigentümer zustimmen – erzwingen lässt sich das nicht ohne Gericht. Optionen: gemeinsamer Verkauf (empfohlen), Übernahme durch einen Partner (Auszahlung des anderen), oder Teilungsversteigerung (letzter Ausweg, fast immer unter Marktwert).',
     excerpt: 'Trennung und Immobilie – eine Kombination, die schnell eskaliert. Wer muss zustimmen? Wer bekommt was? Und was passiert, wenn sich die Parteien nicht einigen können? Ein klarer Überblick.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -1882,6 +2030,7 @@ Die Bewertung der Immobilie übernehmen wir kostenlos und unverbindlich – und 
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Haus verkaufen trotz laufendem Kredit – so funktioniert es',
+    quickAnswer: 'Ein Haus kann trotz laufendem Kredit verkauft werden. Der Erlös wird beim Notartermin direkt zur Ablösung des Darlehens genutzt. Wird das Darlehen vor Ende der Zinsbindung abgelöst, verlangt die Bank eine Vorfälligkeitsentschädigung (VFE). Diese kann erheblich sein – sollte aber vor dem Verkauf berechnet werden, da der Nettoerlös oft trotzdem deutlich positiv ist.',
     excerpt: 'Viele Eigentümer glauben, sie können erst verkaufen, wenn der Kredit abbezahlt ist. Das stimmt nicht. Wie ein Verkauf mit bestehender Hypothek abläuft – und was die Vorfälligkeitsentschädigung kostet.',
     author: 'Mazlum Külahci',
     authorImg: '/mazlum.png',
@@ -1971,6 +2120,7 @@ Wir klären mit Ihnen vorab die Gesamtrechnung: Wie hoch ist der realistische Ve
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Hausverkauf bei Pflegebedürftigkeit: Was Sie wissen müssen, bevor Sie entscheiden',
+    quickAnswer: 'Wer pflegebedürftig wird und die Kosten nicht aus Rente und Ersparnissen decken kann, muss in der Regel das Eigenheim verkaufen – das Sozialamt greift erst, wenn das verwertbare Vermögen aufgebraucht ist. Wichtig: Wohnimmobilien gelten als "nicht sofort verwertbar", solange man selbst darin wohnt. Schenkungen an Kinder in den letzten 10 Jahren können zurückgefordert werden.',
     excerpt: 'Ein Pflegeheimplatz kostet zwischen 2.000 und 5.000 Euro im Monat. Oft reicht die Rente nicht – und das Haus muss verkauft werden. Was ist Schonvermögen? Wann greift das Sozialamt? Was droht beim Verkauf an Kinder?',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -2061,6 +2211,7 @@ Wer erst aktiv wird, wenn die Pflege bereits begonnen hat, hat weniger Optionen.
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Vermietete Wohnung verkaufen: Was Vermieter in Frankfurt wissen müssen',
+    quickAnswer: '"Kauf bricht nicht Miete" – der Mieter bleibt auch nach dem Verkauf mit allen Rechten bestehen. Vermietete Wohnungen erzielen typischerweise 10–20 % weniger als leerstehende (sog. Vermietungsabschlag). Käufer sind meist Kapitalanleger, die auf die Mietrendite schauen. Eigenbedarfskündigung ist möglich, aber an strenge gesetzliche Voraussetzungen geknüpft.',
     excerpt: 'Kauf bricht nicht Miete – das gilt auch beim Verkauf. Aber was bedeutet das konkret für den Preis, den Prozess und die Rechte des Mieters? Ein praxisnaher Überblick für Vermieter im Rhein-Main-Gebiet.',
     author: 'Mazlum Külahci',
     authorImg: '/mazlum.png',
@@ -2150,6 +2301,7 @@ Wir bewerten vermietete Objekte realistisch – unter Berücksichtigung der aktu
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Sanierungsbedürftiges Haus verkaufen: Erst renovieren oder so verkaufen?',
+    quickAnswer: 'In den meisten Fällen lohnt sich eine umfangreiche Renovierung vor dem Verkauf nicht – der Mehrerlös deckt selten die Kosten. Besser: kleinen Mängel beheben, Sanierungsumfang transparent kommunizieren und gezielt Käufer ansprechen, die das Potential sehen. Käufer kalkulieren Sanierungskosten ohnehin ein – wer transparent ist, gewinnt Vertrauen.',
     excerpt: 'Ein Haus mit Sanierungsstau zu verkaufen klingt nach Wertverlust. Aber oft ist die Renovierung vor dem Verkauf keine gute Idee. Wie Sie ein sanierungsbedürftiges Haus richtig positionieren – und welche Käufer Sie suchen sollten.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -2229,6 +2381,7 @@ Wir beschaffen alle fehlenden Unterlagen kostenlos, erstellen ein professionelle
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Mehrfamilienhaus verkaufen im Rhein-Main-Gebiet: Alles was Eigentümer wissen müssen',
+    quickAnswer: 'Mehrfamilienhäuser werden nach dem Ertragswertverfahren bewertet: Der Wert ergibt sich aus dem Jahresreinertrag geteilt durch den Liegenschaftszinssatz. Käufer sind meist institutionelle Investoren oder Privatpersonen mit Renditefokus. Vermarktungszeit: 12–20 Wochen. Wichtig: Mieterportfolio, Mietverträge und WEG-Unterlagen müssen vollständig vorliegen.',
     excerpt: 'Ein Mehrfamilienhaus verkaufen ist komplexer als eine Eigentumswohnung. Andere Bewertungsmethoden, andere Käufer, andere Steuern – und andere Maklerkosten. Der vollständige Leitfaden für Frankfurt und Umgebung.',
     author: 'Mazlum Külahci',
     authorImg: '/mazlum.png',
@@ -2329,6 +2482,7 @@ Wir bewerten Ihr Mehrfamilienhaus nach dem Ertragswertverfahren und erstellen ei
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Haus verkaufen und wohnen bleiben: 4 Modelle im Vergleich',
+    quickAnswer: 'Es gibt 4 Modelle, um ein Haus zu verkaufen und trotzdem darin wohnen zu bleiben: (1) Wohnrecht (lebenslanges Wohnrecht eingetragen ins Grundbuch), (2) Nießbrauch (auch Mieteinnahmen behalten), (3) Leibrente (monatliche Zahlung statt Einmalerlös), (4) Sale-and-Rent-Back (Verkauf zum Marktpreis, Rückmiete). Alle Modelle bedeuten einen Preisabschlag gegenüber dem regulären Verkauf.',
     excerpt: 'Das Haus verkaufen, aber weiter im eigenen Zuhause wohnen – das ist möglich. Wohnrecht, Nießbrauch, Leibrente oder Sale-and-Rent-Back: Welches Modell passt zu Ihnen? Und wie viel weniger Geld bekommen Sie dafür?',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -2441,6 +2595,7 @@ Diese Modelle sind komplex – und jede Entscheidung hat langfristige finanziell
     badge: 'Steuern',
     badgeColor: 'bg-orange-500 text-white',
     title: 'Welche Steuern fallen beim Immobilienverkauf an? Der Überblick für Hessen',
+    quickAnswer: 'Beim Immobilienverkauf in Hessen können anfallen: Spekulationssteuer (wenn unter 10 Jahren gehalten und nicht selbst bewohnt), Grunderwerbsteuer (6 % – zahlt der Käufer), und ggf. Gewerbesteuer (bei gewerblichem Grundstückshandel = mehr als 3 Verkäufe in 5 Jahren). Wer länger als 10 Jahre hält oder selbst bewohnt hat, zahlt in der Regel keine Steuer.',
     excerpt: 'Spekulationssteuer, Gewerbesteuer, Grunderwerbsteuer – beim Immobilienverkauf lauern steuerliche Fallstricke. Welche Steuern wann anfallen und wie Sie sie legal vermeiden.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -2533,6 +2688,7 @@ Die steuerlichen Auswirkungen eines Immobilienverkaufs können je nach Situation
     badge: 'Steuern',
     badgeColor: 'bg-orange-500 text-white',
     title: 'Spekulationsfrist bei Immobilien: Alles zur 10-Jahres-Regel',
+    quickAnswer: 'Die Spekulationsfrist bei Immobilien beträgt 10 Jahre. Maßgeblich ist das Datum des notariellen Kaufvertrags – nicht der Eigentumsübergang. Wer nach mehr als 10 Jahren verkauft: steuerfrei. Ausnahme: Wer die Immobilie im Verkaufsjahr und den beiden Vorjahren selbst bewohnt hat, ist unabhängig von der Haltedauer steuerfrei.',
     excerpt: 'Wer seine Immobilie innerhalb von 10 Jahren verkauft, zahlt Steuern auf den Gewinn. Wer länger wartet, nicht. Was genau die Spekulationsfrist bedeutet, wie sie berechnet wird – und wann Ausnahmen gelten.',
     author: 'Mazlum Külahci',
     authorImg: '/mazlum.png',
@@ -2641,6 +2797,7 @@ Wir helfen Ihnen, den optimalen Zeitpunkt zu finden – und empfehlen bei Bedarf
     slug: 'immobilienverkauf-steuerfrei',
     category: 'Recht & Steuern',
     badge: 'Steuern',
+    quickAnswer: 'Ein Immobilienverkauf ist in Deutschland steuerfrei, wenn: (1) die Immobilie länger als 10 Jahre im Eigentum war, oder (2) sie im Verkaufsjahr und den beiden Vorjahren selbst bewohnt wurde. Wer mehr als 3 Immobilien in 5 Jahren verkauft, riskiert als gewerblicher Grundstückshändler eingestuft zu werden – dann entfällt die Steuerfreiheit vollständig.',
     badgeColor: 'bg-orange-500 text-white',
     title: 'Wann ist der Verkauf einer Immobilie steuerfrei? Die drei Wege',
     excerpt: 'Immobiliengewinne müssen nicht versteuert werden – wenn man die Regeln kennt. Drei Szenarien, in denen Sie Ihre Immobilie legal steuerfrei verkaufen können.',
@@ -2721,6 +2878,7 @@ Wir bei immovativInvest beantworten Ihnen gerne erste Fragen und vermitteln bei 
     slug: 'notarkosten-grundbuchkosten-hessen',
     category: 'Recht & Steuern',
     badge: 'Kosten',
+    quickAnswer: 'Notar- und Grundbuchkosten beim Immobilienkauf in Hessen betragen ca. 1,5–2 % des Kaufpreises und sind gesetzlich geregelt (GNotKG). Bei 500.000 € sind das ca. 7.500–10.000 €. Der Käufer trägt diese Kosten. Beim Verkauf zahlt der Verkäufer nur die Kosten für etwaige Löschungen (z.B. alte Grundschuld) – typischerweise einige hundert Euro.',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Notarkosten & Grundbuchkosten in Hessen: Was kostet der Immobilienverkauf wirklich?',
     excerpt: 'Notarkosten sind bundesweit geregelt – aber die Grunderwerbsteuer variiert stark. In Hessen zahlen Käufer 6 %. Was Käufer und Verkäufer in Frankfurt wirklich zahlen und wie man Kosten spart.',
@@ -2822,6 +2980,7 @@ In Hessen sind die Grundbuchämter bei den Amtsgerichten angesiedelt. Für Frank
     slug: 'kosten-immobilienverkauf-hessen',
     category: 'Recht & Steuern',
     badge: 'Kosten',
+    quickAnswer: 'Als Verkäufer in Hessen zahlst du: ca. 2,975 % Maklerprovision (Halbteilungsprinzip), ggf. Vorfälligkeitsentschädigung der Bank bei laufendem Kredit, und ggf. Spekulationssteuer. Energieausweis, Grundbuchauszug und Fotos übernimmt bei uns der Makler kostenlos. Als Käufer kommen 6 % Grunderwerbsteuer, 1,5–2 % Notar/Grundbuch und bis zu 3,57 % Maklerprovision hinzu.',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Gesamtkosten beim Immobilienverkauf in Hessen: Was bleibt wirklich übrig?',
     excerpt: 'Maklerprovision, Notarkosten, Vorfälligkeitsentschädigung, Steuern – der Verkauf einer Immobilie kostet mehr als die meisten denken. Eine vollständige Kostenaufstellung für Verkäufer in Frankfurt und Hessen.',
@@ -2949,6 +3108,7 @@ Bevor Sie den Verkauf starten, sollten Sie Ihre persönliche Nettoerlösrechnung
     badge: 'Steuern',
     badgeColor: 'bg-orange-500 text-white',
     title: 'Immobilie verkaufen Frankfurt: Welche Steuern fallen 2025 an?',
+    quickAnswer: 'Beim Immobilienverkauf in Frankfurt fällt Spekulationssteuer an, wenn du die Immobilie weniger als 10 Jahre hältst und nicht selbst bewohnt hast. Steuerfreiheit gilt nach 10 Jahren Haltedauer oder bei Selbstnutzung im Verkaufsjahr und den beiden Vorjahren. Die Grunderwerbsteuer (6 %) zahlt der Käufer. Für geerbte Immobilien gilt die Spekulationsfrist des Erblassers.',
     excerpt: 'Spekulationssteuer, Schenkungsteuer, Erbschaftsteuer – beim Immobilienverkauf in Frankfurt lauern steuerliche Fallstricke. Wir erklären, wann du steuerfrei verkaufen kannst.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3025,6 +3185,7 @@ Die steuerlichen Fragen rund um den Immobilienverkauf in Frankfurt sind komplex 
     badge: 'Kosten',
     badgeColor: 'bg-blue-600 text-white',
     title: 'Makler Frankfurt: Was kostet ein Immobilienmakler wirklich?',
+    quickAnswer: 'In Frankfurt gilt seit 2020 das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision je hälftig. Die ortsübliche Gesamtprovision liegt bei ca. 5,95 % inkl. MwSt. (je ca. 2,975 % pro Seite). Es gibt keine Vorabkosten – Energieausweis, Fotos, Exposé und Portale sind durch die Erfolgsprovision abgedeckt. Kein Verkauf = keine Zahlung.',
     excerpt: 'Maklerprovision, Vermarktungskosten, versteckte Gebühren – wir erklären transparent, was ein guter Immobilienmakler in Frankfurt kostet und wann er sich lohnt.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3113,6 +3274,7 @@ Nicht alle Makler in Frankfurt sind gleich. Diese Kriterien helfen dir bei der A
     badge: 'Erfahrungen',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Wohnung verkaufen Frankfurt: Erfahrungen & was du wissen musst',
+    quickAnswer: 'In Frankfurt erzielen Eigentumswohnungen 2025/2026 je nach Lage 4.500–8.000 €/m². Der Verkaufsprozess dauert typischerweise 6–10 Wochen. Die wichtigsten Erfolgsfaktoren: realistischer Angebotspreis, professionelle Fotos und vollständige WEG-Unterlagen. Besonders gefragt: Sachsenhausen, Westend, Bornheim und Nordend.',
     excerpt: 'Was erwartet dich beim Wohnungsverkauf in Frankfurt wirklich? Unsere Erfahrungen aus über 100 Verkäufen im Rhein-Main-Gebiet – von der Bewertung bis zur Schlüsselübergabe.',
     author: 'Mazlum Selcuk',
     authorImg: '/mazlum.png',
@@ -3210,6 +3372,7 @@ Hast du Fragen zu deiner Wohnung in Frankfurt? Ruf uns an oder schreib uns – w
     badge: 'Aktuell',
     badgeColor: 'bg-brand-green text-white',
     title: 'Mietpreise Frankfurt & Rhein-Main 2026: Was Eigentümer jetzt wissen müssen',
+    quickAnswer: 'Mietpreise in Frankfurt 2026: Innenstadt/Westend 18–22 €/m², Sachsenhausen/Bornheim/Nordend 15–19 €/m², Randbezirke 11–14 €/m². Im Rhein-Main-Umland (Wiesbaden, Offenbach) 10–15 €/m². Die Mietpreisbremse gilt – Neuverträge max. 10 % über Vergleichsmiete. Ausnahmen: Neubauten nach 2014, umfassend sanierte Wohnungen.',
     excerpt: 'Mieten in Frankfurt sind auf Rekordniveau. Wie das die Kaufentscheidung beeinflusst, was Vermieter beachten müssen – und welche Stadtteile besonders gefragt sind.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3262,6 +3425,7 @@ Wir haben ein aktives Netzwerk von Immobilieninvestoren im Rhein-Main-Gebiet, di
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-500 text-white',
     title: 'Wohnrecht & Nießbrauch beim Immobilienverkauf: Was Eigentümer wissen müssen',
+    quickAnswer: 'Wohnrecht (§ 1093 BGB) gibt dem Inhaber das Recht, in der Immobilie zu wohnen – aber kein Vermietungsrecht. Nießbrauch (§ 1030 BGB) ist umfassender: Auch Mieteinnahmen stehen dem Inhaber zu. Beide Rechte werden im Grundbuch eingetragen und mindern den Verkaufspreis – der Abschlag hängt vom Alter des Inhabers und der statistischen Lebenserwartung ab.',
     excerpt: 'Wer eine Immobilie mit eingetragenem Wohnrecht oder Nießbrauch verkauft, steht vor besonderen Herausforderungen. Wir erklären die Unterschiede, die steuerlichen Folgen und was das für den Verkaufspreis bedeutet.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3332,6 +3496,7 @@ Lassen Sie uns gemeinsam prüfen, ob ein Verkauf zum jetzigen Zeitpunkt sinnvoll
     badge: 'Spezialfall',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Zwangsversteigerung kaufen: Was Käufer wissen müssen – Chancen & Risiken',
+    quickAnswer: 'Bei einer Zwangsversteigerung beginnt das Gebot typischerweise bei 50 % des Verkehrswerts (Mindestgebot). Risiken: keine Besichtigung möglich, keine Sachmängelgewährleistung, Käufer übernimmt das Objekt im Ist-Zustand inkl. evtl. Mietern oder Bewohnern. Das Verfahren läuft am Amtsgericht – Termine sind öffentlich. Termine im Rhein-Main-Gebiet unter zvg.de findbar.',
     excerpt: 'Eine Immobilie bei der Zwangsversteigerung kaufen klingt nach Schnäppchen. Aber wer unvorbereitet bietet, erlebt böse Überraschungen. Was wirklich hinter dem Verfahren steckt – und wie Sie es richtig angehen.',
     author: 'Mazlum Selcuk',
     authorImg: '/mazlum.png',
@@ -3408,6 +3573,7 @@ Als Immobilienmakler im Rhein-Main-Gebiet beraten wir Käufer vor Zwangsversteig
     badge: 'Vergleich',
     badgeColor: 'bg-brand-green text-white',
     title: 'Immobilienmakler Frankfurt: Bewertungen & Auswahlkriterien 2026',
+    quickAnswer: 'Den richtigen Immobilienmakler in Frankfurt erkennst du an: lokaler Marktkenntnis (konkrete Verkaufsdaten aus deiner Lage), nachweisbaren Referenzen, transparenten Kosten ohne Vorleistungen, klarem Maklervertrag mit konkreten Leistungen und kurzer Laufzeit. Warnsignale: überhöhte Preisversprechen, kein schriftlicher Vertrag, Druck beim Unterzeichnen.',
     excerpt: 'Wie findest du den besten Immobilienmakler in Frankfurt? Worauf du bei Bewertungen achten solltest und welche Fragen du beim Erstgespräch stellen musst.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3499,6 +3665,7 @@ Unsere Bewertungen auf Google sprechen für sich – aber noch lieber hören wir
     badge: 'Ratgeber',
     badgeColor: 'bg-brand-green text-white',
     title: 'Wann ist der richtige Zeitpunkt zum Immobilienverkauf?',
+    quickAnswer: 'Den "perfekten" Zeitpunkt gibt es nicht. Die aktivsten Marktphasen sind März–Mai und September–November. Wichtiger als die Saison: realistischer Preis, vollständige Unterlagen und die persönliche Situation. Wer die 10-Jahres-Spekulationsfrist kurz vor dem Ablauf steht, sollte lieber noch etwas warten – das kann Zehntausende Euro Steuer sparen.',
     excerpt: 'Frühling, Zinstief, persönliche Situation – was wirklich zählt, wenn du den richtigen Moment für deinen Immobilienverkauf finden willst.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3546,6 +3713,7 @@ Lass den Marktwert deiner Immobilie jetzt kostenlos ermitteln – dann weißt du
     badge: 'Ratgeber',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Wie ermittle ich den realistischen Marktwert meiner Immobilie?',
+    quickAnswer: 'Den realistischsten Marktwert liefert eine persönliche Bewertung durch einen lokalen Makler – kostenlos und vor Ort. Online-Rechner liefern nur Richtwerte, da sie Zustand, Mikrolage, Grundrissqualität und aktuelle Vergleichsverkäufe nicht berücksichtigen können. Für rechtssichere Zwecke (Erbschaft, Scheidung) ist ein Gutachter vom Gutachterausschuss nötig.',
     excerpt: 'Online-Rechner, Maklereinschätzung oder Gutachter – welche Methode liefert den verlässlichsten Wert für deine Immobilie?',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3592,6 +3760,7 @@ Wir ermitteln den Marktwert deiner Immobilie kostenlos und unverbindlich – mit
     slug: 'was-kostet-hausverkauf-wirklich',
     category: 'Verkaufen',
     badge: 'Ratgeber',
+    quickAnswer: 'Als Verkäufer plane ca. 2–4 % des Verkaufspreises als Nebenkosten ein: Maklerprovision (ca. 2,975 %), ggf. Vorfälligkeitsentschädigung der Bank, ggf. Spekulationssteuer und kleinere Kosten für Löschungen und Unterlagen. Energieausweis, Fotos und Exposé sind bei einem guten Makler inklusive. Die Grunderwerbsteuer (6 %) zahlt der Käufer.',
     badgeColor: 'bg-brand-green text-white',
     title: 'Was kostet mich ein Hausverkauf wirklich?',
     excerpt: 'Maklercourtage, Steuern, Notar, Energieausweis – alle Kosten beim Hausverkauf auf einen Blick erklärt.',
@@ -3652,6 +3821,7 @@ Als grobe Faustregel: Plane **2–4 % des Verkaufspreises** als Nebenkosten auf 
     category: 'Prozess',
     badge: 'Ratgeber',
     badgeColor: 'bg-blue-500 text-white',
+    quickAnswer: 'Beim Notartermin liest der Notar den Kaufvertrag vollständig vor (30–90 Min.), beide Parteien können Fragen stellen und unterzeichnen. Danach veranlasst der Notar die Auflassungsvormerkung. Das Geld kommt erst 4–8 Wochen später – nach Grunderwerbsteuerbescheid, Löschungsbewilligung der Bank und Genehmigung der Gemeinde (falls Vorkaufsrecht besteht).',
     title: 'Wie läuft ein Notartermin beim Immobilienverkauf ab?',
     excerpt: 'Was passiert beim Notartermin, welche Unterlagen braucht ihr und wie lange dauert es bis zur Eigentumsübertragung? Alles erklärt.',
     author: 'Niclas van der Straeten',
@@ -3715,6 +3885,7 @@ Wir begleiten dich durch den gesamten Prozess bis zur Schlüsselübergabe – tr
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Was muss ich beim Hausverkauf steuerlich beachten?',
+    quickAnswer: 'Beim Hausverkauf fallen Steuern an, wenn du die Immobilie weniger als 10 Jahre hältst UND sie nicht selbst bewohnt hast. Steuerfrei: nach 10 Jahren Haltedauer, oder wenn du im Verkaufsjahr und den beiden Vorjahren selbst darin gewohnt hast. Bei geerbten Häusern läuft die 10-Jahres-Frist ab dem Kauf durch den Erblasser. Steuerberater einbeziehen empfohlen.',
     excerpt: 'Spekulationssteuer, Eigennutzung, Erbschaft – wann ist der Hausverkauf steuerfrei und wann wird Einkommensteuer fällig?',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3764,6 +3935,7 @@ Steuerliche Fragen rund um den Immobilienverkauf sind komplex und hängen von de
     badge: 'Ratgeber',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Wie erkenne ich einen fairen Immobilienpreis?',
+    quickAnswer: 'Einen fairen Immobilienpreis erkennst du durch: (1) Vergleich mit ähnlichen Objekten in derselben Mikrolage (Achtung: Angebotspreis ≠ Kaufpreis), (2) Prüfung der Angebotsdauer (>3 Monate = oft überhöht), (3) Abgleich mit Bodenrichtwert, (4) Einbeziehung des Energiestands (schlechte Klasse = Preisabschlag), (5) unabhängige Einschätzung durch Makler oder Gutachter.',
     excerpt: 'Angebotspreis ist nicht Kaufpreis. So prüfst du, ob eine Immobilie wirklich das wert ist, was dafür verlangt wird.',
     author: 'Mazlum Selcuk',
     authorImg: '/mazlum.png',
@@ -3810,6 +3982,7 @@ Ein fairer Preis ist einer, den du langfristig nicht bereust.
     badge: 'Ratgeber',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Welche Unterlagen muss ich beim Immobilienkauf prüfen?',
+    quickAnswer: 'Als Käufer musst du prüfen: Grundbuchauszug (Belastungen, Eigentumsverhältnisse), Energieausweis (Pflicht), Baupläne & Baugenehmigungen (sind Anbauten genehmigt?). Bei ETW zusätzlich: Teilungserklärung, WEG-Protokolle, Hausgeldabrechnung und Instandhaltungsrücklage. Bei vermieteten Objekten: Mietvertrag, aktuelle Miete und etwaige Gerichtsverfahren.',
     excerpt: 'Grundbuch, Energieausweis, Teilungserklärung – welche Dokumente du vor dem Kauf unbedingt anfordern und prüfen musst.',
     author: 'Mazlum Selcuk',
     authorImg: '/mazlum.png',
@@ -3865,6 +4038,7 @@ Lass alle relevanten Unterlagen vor dem Kauf von einem erfahrenen Makler oder An
     badge: 'Ratgeber',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Wie schütze ich mich als Immobilienkäufer?',
+    quickAnswer: 'Als Käufer schützt du dich durch: (1) Grundbuchauszug prüfen (Eigentümer verifizieren, Belastungen kennen), (2) keine Vorauszahlungen vor Notartermin, (3) Kaufvertragsentwurf mind. 2 Wochen vorher anfordern und ggf. von Anwalt prüfen lassen, (4) Auflassungsvormerkung nach Notartermin abwarten, (5) Übergabeprotokoll mit Fotos und Zählerständen erstellen.',
     excerpt: 'Worauf du achten musst, um beim Immobilienkauf nicht in eine Falle zu tappen – von der Eigentümerprüfung bis zum Übergabeprotokoll.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -3914,6 +4088,7 @@ Wir begleiten dich als neutrale Partei durch den gesamten Kaufprozess und stelle
     badge: 'Ratgeber',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Wann sollte ich vor dem Immobilienkauf ein Gutachten beauftragen?',
+    quickAnswer: 'Ein Gutachten vor dem Immobilienkauf empfiehlt sich bei: älteren Gebäuden vor 1980 (Asbest, Elektrik, Statik), sichtbaren Mängeln (Feuchte, Risse, Schimmel), ungewöhnlich günstigen Preisen und bei Investitionen über 400.000 €. Kosten: 500–2.000 €. Ein Gutachter kann versteckte Mängel aufdecken, die sonst sechsstellige Sanierungskosten nach sich ziehen.',
     excerpt: 'Ein Sachverständigengutachten kann Tausende Euro sparen – aber wann ist es wirklich nötig? Die wichtigsten Kriterien im Überblick.',
     author: 'Mazlum Selcuk',
     authorImg: '/mazlum.png',
@@ -3959,6 +4134,7 @@ Achte auf öffentlich bestellte und vereidigte Sachverständige oder zertifizier
     badge: 'Ratgeber',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Wie verhandelt man den Kaufpreis bei einer Immobilie?',
+    quickAnswer: 'Preisverhandlungen beim Immobilienkauf sind normal und erwartet. Erfolgreiche Verhandlung basiert auf: Marktkenntnis (Vergleichswerte kennen), konkreten Argumenten (Sanierungsbedarf, Energieklasse, Lage), dem richtigen Zeitpunkt (nach Besichtigung, nicht vorher) und sachlichem Ton. Typischer Verhandlungsspielraum: 3–8 % bei marktgerecht bepreisten Objekten.',
     excerpt: 'Viele Käufer trauen sich nicht zu verhandeln – und zahlen deshalb zu viel. So führst du eine erfolgreiche Preisverhandlung.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -4006,6 +4182,7 @@ Wir begleiten dich als erfahrene Makler durch die Verhandlung und setzen uns fü
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Wie viel Immobilie kann ich mir realistisch leisten?',
+    quickAnswer: 'Die monatliche Kreditrate sollte max. 30–35 % des Netto-Haushaltseinkommens betragen. Eigenkapital: mind. 20 % des Kaufpreises + 10–11 % Kaufnebenkosten (Hessen). Faustregel: Bei 5.000 € Nettoeinkommen sind ca. 1.750 € Rate leistbar – entspricht einem Kredit von ca. 300.000 € (bei 3,8 % Zins, 2 % Tilgung).',
     excerpt: 'Einkommen, Eigenkapital, monatliche Rate – so berechnest du, wie viel Immobilie in dein Budget passt, ohne dich zu übernehmen.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -4058,6 +4235,7 @@ Rechne nicht bis ans Maximum. Plane immer einen Puffer für Reparaturen, Jobwech
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Welche Finanzierungsform passt zu mir? Annuität, KfW, Bausparer & Co. erklärt',
+    quickAnswer: 'Die häufigste Finanzierungsform ist das Annuitätendarlehen (feste Rate, Planungssicherheit). Für Energieeffizienz-Sanierungen oder Neubauten lohnen KfW-Darlehen mit günstigen Konditionen. Variables Darlehen nur für erfahrene Käufer mit kurzer Haltedauer. Bausparvertrag für Käufer mit langem Planungshorizont. Die meisten Käufer kombinieren Annuitätendarlehen + KfW-Förderung.',
     excerpt: 'Annuitätendarlehen, variables Darlehen, KfW-Kredit oder Bausparvertrag – welche Finanzierungsform für wen geeignet ist.',
     author: 'Mazlum Selcuk',
     authorImg: '/mazlum.png',
@@ -4115,6 +4293,7 @@ Wir vermitteln dich kostenlos an unabhängige Finanzierungsberater, die dir alle
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Wie vergleiche ich Bankangebote für eine Immobilienfinanzierung richtig?',
+    quickAnswer: 'Bankangebote für Immobilienkredite vergleichst du am besten anhand des effektiven Jahreszinses (nicht des Sollzinses – der ist immer niedriger). Weitere Kriterien: Zinsbindung, Sondertilgungsrecht, Bereitstellungszinsen und Tilgungssatz. Vergleiche mindestens 3–5 Angebote – nicht nur deine Hausbank. Unabhängige Finanzierungsberater haben Zugang zu hunderten Banken.',
     excerpt: 'Zinssatz allein reicht nicht – worauf du beim Vergleich von Immobilienkrediten wirklich achten musst.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -4168,6 +4347,7 @@ Vergleiche mindestens 3–5 Angebote – nicht nur bei deiner Hausbank. Wir verm
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Anschlussfinanzierung: Was du wissen musst – Prolongation, Umschuldung & Forward-Darlehen',
+    quickAnswer: 'Bei Ablauf der Zinsbindung hast du 3 Optionen: Prolongation (Verlängerung bei der gleichen Bank – bequem, aber oft nicht das günstigste Angebot), Umschuldung (Wechsel zu einer anderen Bank) oder Forward-Darlehen (Zinsen jetzt für die Zukunft sichern). Frühzeitig planen: Spätestens 12–18 Monate vor Ablauf Angebote einholen.',
     excerpt: 'Wenn die Zinsbindung ausläuft, hast du wichtige Entscheidungen zu treffen. So vermeidest du die häufigsten Fehler bei der Anschlussfinanzierung.',
     author: 'Mazlum Selcuk',
     authorImg: '/mazlum.png',
@@ -4212,6 +4392,7 @@ Wir helfen dir, deine Anschlussfinanzierung optimal zu gestalten – kostenlos u
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Welche Förderungen stehen mir beim Immobilienkauf zu?',
+    quickAnswer: 'Beim Immobilienkauf gibt es staatliche Förderungen: KfW "Wohneigentum für Familien" (Prog. 300, bis 270.000 € für Familien mit Kind), KfW "Klimafreundlicher Neubau" (Prog. 297/298 für Effizienzhäuser), BAFA-Zuschüsse für Sanierungen. Wichtig: Förderantrag muss VOR dem Baubeginn oder Kauf gestellt werden – nachträglich ist es zu spät.',
     excerpt: 'KfW, BAFA, Wohn-Riester, Hessische Wohnraumförderung – alle staatlichen Förderprogramme für Immobilienkäufer auf einen Blick.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -4262,6 +4443,7 @@ Wir helfen dir zu identifizieren, welche Förderungen für dich in Frage kommen 
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Wie viel Eigenkapital brauche ich wirklich für eine Immobilie?',
+    quickAnswer: 'Empfehlung: mindestens 20 % des Kaufpreises + alle Kaufnebenkosten (ca. 9–10 % in Hessen) aus Eigenkapital. Bei 400.000 € Kaufpreis: 80.000 € (20 %) + 40.000 € Nebenkosten = 120.000 € Eigenkapital. Vollfinanzierungen (0 % EK) sind möglich, aber teuer und riskant. Mit mehr Eigenkapital sinken Zinssatz und monatliche Rate.',
     excerpt: 'Die häufigste Frage beim Immobilienkauf – klar und ehrlich beantwortet. Mit konkreten Beispielrechnungen.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -4329,6 +4511,7 @@ Lass uns gemeinsam durchrechnen, wie viel Immobilie du dir leisten kannst – ko
     badge: 'Ratgeber',
     badgeColor: 'bg-brand-green text-white',
     title: 'Hausverkauf: Der vollständige Ratgeber – Zeitpunkt, Preis, Kosten und Steuern',
+    quickAnswer: 'Beim Hausverkauf gibt es 5 Schlüsselfaktoren: (1) Realistischer Preis (Vergleichswerte, nicht Wunschpreis), (2) vollständige Unterlagen vor dem Start, (3) professionelle Fotos und Exposé, (4) qualifizierte Käufer (Bonität prüfen), (5) steuerliche Situation klären (Spekulationssteuer?). Mit gutem Makler: 6–10 Wochen Vermarktung, 4–8 Wochen bis Geldeingang.',
     excerpt: 'Wann ist der richtige Zeitpunkt? Was kostet ein Verkauf wirklich? Makler oder privat? Alle wichtigen Fragen rund um den Hausverkauf – klar und verständlich erklärt.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',
@@ -4419,6 +4602,7 @@ Hast du konkrete Fragen zu deinem Hausverkauf? Wir beraten dich kostenlos und un
     badge: 'Ratgeber',
     badgeColor: 'bg-blue-500 text-white',
     title: 'Immobilienkauf: Fairer Preis, versteckte Kosten und wie du dich als Käufer schützt',
+    quickAnswer: 'Beim Immobilienkauf sind 4 Dinge entscheidend: (1) Fairen Preis prüfen (Vergleichswerte, Angebotsdauer, Bodenrichtwert), (2) Unterlagen prüfen (Grundbuch, Energieausweis, Baupläne), (3) Nebenkosten einplanen (10–15 % in Hessen), (4) Käuferschutz sichern (Auflassungsvormerkung, kein Bargeld vor Notar, Übergabeprotokoll). Bei älteren Gebäuden: Gutachter empfohlen.',
     excerpt: 'Wie erkennst du einen fairen Preis? Welche Unterlagen musst du prüfen? Wann brauchst du ein Gutachten? Alles Wichtige zum Immobilienkauf – kompakt erklärt.',
     author: 'Mazlum Selcuk',
     authorImg: '/mazlum.png',
@@ -4512,6 +4696,7 @@ Du interessierst dich für eine Immobilie im Rhein-Main-Gebiet? Wir schauen uns 
     badge: 'Ratgeber',
     badgeColor: 'bg-purple-600 text-white',
     title: 'Immobilienfinanzierung: Eigenkapital, Bankangebote, Förderungen und Anschlussfinanzierung erklärt',
+    quickAnswer: 'Für eine Immobilienfinanzierung brauchst du: mind. 20 % des Kaufpreises + 9–10 % Kaufnebenkosten als Eigenkapital, eine monatliche Rate von max. 30–35 % des Nettoeinkommens, und einen Vergleich von mind. 3–5 Bankangeboten (nach effektivem Jahreszins). KfW-Förderungen vorher prüfen – Antrag muss VOR dem Kauf gestellt werden.',
     excerpt: 'Wie viel kannst du dir leisten? Welche Finanzierungsform passt? Wie vergleichst du Bankangebote richtig? Der vollständige Ratgeber zur Immobilienfinanzierung.',
     author: 'Niclas van der Straeten',
     authorImg: '/hero-niclas-2.png',

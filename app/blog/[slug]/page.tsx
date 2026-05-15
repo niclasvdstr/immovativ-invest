@@ -160,7 +160,48 @@ function renderBody(lines: string[]) {
       continue
     }
 
-    // List
+    // Callout / info box (> prefix)
+    if (line.startsWith('> ')) {
+      const calloutLines: string[] = []
+      while (i < lines.length && lines[i].trim().startsWith('> ')) {
+        calloutLines.push(lines[i].trim().slice(2))
+        i++
+      }
+      elements.push(
+        <div key={`cb${i}`} className="my-5 bg-brand-green/8 border-l-4 border-brand-green rounded-r-2xl px-6 py-4">
+          {calloutLines.map((cl, j) => (
+            <p key={j} className="text-brand-anthrazit text-[15px] leading-relaxed font-medium"
+              dangerouslySetInnerHTML={{ __html: cl.replace(/\*\*(.*?)\*\*/g, '<strong class="text-brand-green font-bold">$1</strong>') }} />
+          ))}
+        </div>
+      )
+      continue
+    }
+
+    // Numbered list
+    if (/^\d+\.\s/.test(line)) {
+      const items: string[] = []
+      while (i < lines.length && /^\d+\.\s/.test(lines[i].trim())) {
+        items.push(lines[i].trim().replace(/^\d+\.\s/, ''))
+        i++
+      }
+      elements.push(
+        <ol key={`ol${i}`} className="space-y-3 my-5 counter-reset-none">
+          {items.map((item, j) => (
+            <li key={j} className="flex items-start gap-4">
+              <div className="w-7 h-7 rounded-full bg-brand-anthrazit text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                {j + 1}
+              </div>
+              <span className="text-brand-gray-warm leading-relaxed text-[15px] pt-0.5"
+                dangerouslySetInnerHTML={{ __html: item.replace(/\*\*(.*?)\*\*/g, '<strong class="text-brand-anthrazit font-semibold">$1</strong>') }} />
+            </li>
+          ))}
+        </ol>
+      )
+      continue
+    }
+
+    // Unordered list
     if (line.startsWith('- ')) {
       const items: string[] = []
       while (i < lines.length && lines[i].trim().startsWith('- ')) {
@@ -362,6 +403,23 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
           {/* Article content */}
           <div className="space-y-5">
+
+            {/* AEO Quick Answer Box */}
+            {article.quickAnswer && (
+              <div className="bg-brand-green/8 border border-brand-green/30 rounded-3xl p-6 md:p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-9 h-9 rounded-2xl bg-brand-green flex items-center justify-center shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-brand-green uppercase tracking-widest mb-2">Kurze Antwort</p>
+                    <p className="text-brand-anthrazit text-[15px] leading-relaxed font-medium">{article.quickAnswer}</p>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Intro (before first heading) */}
             {sections[0]?.heading === null && (
