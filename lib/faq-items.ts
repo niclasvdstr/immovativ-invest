@@ -29,15 +29,15 @@ export const sharedFaqItems = [
   },
   {
     question: 'Was kostet eine professionelle Immobilienbewertung?',
-    answer: 'Bei immovativInvest ist die Immobilienbewertung vollständig kostenlos und unverbindlich. Wir kommen persönlich zu dir und erstellen auf Basis aktueller Marktdaten, vergleichbarer Verkäufe in deiner Nachbarschaft und dem Zustand deiner Immobilie eine fundierte Werteinschätzung – ohne versteckte Kosten. Du gehst keine Verpflichtung ein.',
+    answer: 'Eine professionelle Immobilienbewertung durch einen lokalen Makler ist in der Regel kostenlos und unverbindlich. Der Makler kommt persönlich vorbei und erstellt auf Basis aktueller Marktdaten, vergleichbarer Verkäufe in der Nachbarschaft und dem Zustand der Immobilie eine fundierte Werteinschätzung. Online-Bewertungsrechner können das nicht leisten, da sie Lage, Zustand und individuelle Besonderheiten nicht berücksichtigen.',
   },
   {
     question: 'Was ist der Unterschied zwischen Direktankauf und Maklerverkauf?',
-    answer: 'Beim Direktankauf kauft immovativInvest deine Immobilie selbst – du erhältst ein Angebot innerhalb von Ø 21 Tagen, ohne Besichtigungstourismus und ohne Maklergebühren. Das ist ideal, wenn Schnelligkeit und Diskretion im Vordergrund stehen. Beim Maklerverkauf vermarkten wir deine Immobilie aktiv auf dem freien Markt und erzielen in der Regel den höchstmöglichen Verkaufspreis – ideal, wenn der maximale Erlös dein Hauptziel ist. Welcher Weg der richtige für dich ist, besprechen wir gerne kostenlos und unverbindlich.',
+    answer: 'Beim Direktankauf kauft ein Investor oder ein Immobilienunternehmen die Immobilie direkt – ohne öffentliche Vermarktung, meist innerhalb weniger Wochen und ohne Maklergebühren. Das ist ideal, wenn Schnelligkeit und Diskretion im Vordergrund stehen, führt jedoch häufig zu einem niedrigeren Preis als auf dem freien Markt. Beim Maklerverkauf wird die Immobilie aktiv vermarktet und an den Meistbietenden verkauft – das dauert länger, erzielt aber in der Regel den höchstmöglichen Preis.',
   },
   {
     question: 'Wie finde ich den richtigen Immobilienmakler in Frankfurt?',
-    answer: 'Den richtigen Makler erkennst du an drei Dingen: lokaler Marktkenntnis, nachweisbaren Erfolgen und transparenter Kommunikation. Ein guter Makler kennt aktuelle Verkaufspreise in deiner Straße, hat echte Referenzen vorzuweisen und spricht klar über Kosten und Vertragsbedingungen. Bei immovativInvest kombinieren wir tiefes Regionalknowhow im Rhein-Main-Gebiet mit über 125 erfolgreich vermittelten Immobilien und einer 4,9-Sterne-Bewertung.',
+    answer: 'Den richtigen Makler erkennst du an drei Dingen: lokaler Marktkenntnis, nachweisbaren Erfolgen und transparenter Kommunikation. Ein guter Makler kennt aktuelle Verkaufspreise in deiner Straße, hat echte Referenzen vorzuweisen und spricht klar über Kosten und Vertragsbedingungen. Wichtige Fragen beim Erstgespräch: Wie viele Immobilien wurden in der Region verkauft? Wie lange dauern Vermarktungen im Schnitt? Und wie ist der Maklervertrag gestaltet – gibt es automatische Verlängerungen?',
   },
   {
     question: 'Wie hoch ist die Grunderwerbsteuer in Hessen?',
