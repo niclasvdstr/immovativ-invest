@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Limburg?',
+    answer: 'Der Limburger Immobilienmarkt ist im Aufwärtstrend: Steigende Nachfrage durch Frankfurt-Pendler, die den ICE-Anschluss nutzen, verkürzt die Vermarktungszeiten kontinuierlich. Gut bewertete Objekte finden in der Regel innerhalb von 8 bis 12 Wochen Käufer. Besonders Einfamilienhäuser mit Garten in stadtnahen Lagen sind durch den Zuzug junger Familien stark nachgefragt.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Limburg?',
+    answer: 'In Limburg gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Lohnt sich der Kauf in Limburg für Frankfurt-Pendler wirklich?',
+    answer: 'Ja – Limburg bietet eines der attraktivsten Kosten-Nutzen-Verhältnisse für Frankfurt-Pendler: 20 Minuten ICE nach Frankfurt Hbf, aber Preise, die 50–60% unter vergleichbaren Frankfurt-Vororten liegen. Wer bereit ist, täglich die ICE-Verbindung zu nutzen, bekommt in Limburg für das gleiche Budget deutlich mehr Wohnfläche, mehr Grundstück und einen niedrigeren Kredit. Die Wertsteigerungsperspektive durch den wachsenden Pendlerzuzug ist ebenfalls positiv.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -293,6 +307,37 @@ export default function ImmobilienmaklerLimburgPage() {
                 <div className="text-2xl font-bold text-brand-green">+17%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Limburg – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Limburg: Günstigste Pendlerstadt der Region mit ICE-Direktanschluss nach Frankfurt
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Limburg an der Lahn ist eine der faszinierendsten Bischofsstädte Deutschlands: Der markante siebentürmige Dom auf einem Felsen über der Lahn gehört zu den bedeutendsten romanisch-gotischen Kirchenbauten des Landes und prägt das Stadtbild von rund 68.000 Einwohnern auf einzigartige Weise. Die historische Altstadt mit gut erhaltenen Fachwerkhäusern und die lebhafte Innenstadt machen Limburg zu einem Ort hoher Lebensqualität im Landkreis Limburg-Weilburg.</p>
+              <p>Der ICE-Bahnhof Limburg Süd ist das entscheidende Alleinstellungsmerkmal im Pendlermarkt: In gerade einmal 20 Minuten ICE-Fahrtzeit ist Frankfurt Hauptbahnhof erreichbar – eine Verbindung, die viele direkte Frankfurt-Vororte nicht bieten können. Die A3 erschließt das Straßennetz in alle Richtungen. Diese außergewöhnliche Bahnverbindung hat in den letzten Jahren zu einem spürbaren Zuzug von Frankfurt-Pendlern geführt, die in Limburg für deutlich weniger Geld mehr Wohnraum bekommen.</p>
+              <p>Die Immobilienpreise zählen zu den niedrigsten aller Städte mit direkter Frankfurt-Anbindung: Einfamilienhäuser kosten 320.000 bis 560.000 Euro, Eigentumswohnungen 2.200 bis 3.500 Euro pro Quadratmeter – mit steigender Tendenz. Für Käufer, die den Frankfurt-ICE nutzen und sich dennoch ein größeres Budget-freundlicheres Eigenheim leisten wollen, ist Limburg eine der cleversten Entscheidungen im gesamten Rhein-Main-Umfeld.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚄', label: 'ICE nach Frankfurt (20 min)' },
+                { icon: '⛪', label: 'Historischer Dom (UNESCO-Kandidat)' },
+                { icon: '💶', label: 'Günstigste Pendlerstadt der Region' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

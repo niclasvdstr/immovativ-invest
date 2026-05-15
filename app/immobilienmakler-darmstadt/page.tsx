@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Darmstadt?',
+    answer: 'In Darmstadt ist der Markt durch eine konstant hohe Nachfrage aus dem Wissenschafts- und Technologiebereich geprägt. Gut bewertete Objekte in begehrten Stadtteilen wie Bessungen, Eberstadt oder Wixhausen finden in der Regel innerhalb von 6 bis 10 Wochen einen Käufer. Die ausgeprägte Käuferstruktur – Akademiker, Ingenieure, Investoren – sorgt für zügige und unkomplizierte Kaufentscheidungen.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Darmstadt?',
+    answer: 'In Darmstadt gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Eignet sich Darmstadt für Immobilien als Kapitalanlage?',
+    answer: 'Darmstadt ist einer der attraktivsten Standorte für Kapitalanleger im Rhein-Main-Gebiet. Die rund 30.000 Studierenden der TU Darmstadt sorgen für eine dauerhaft hohe Mieternachfrage, insbesondere bei kleineren Wohnungen und WG-geeigneten Grundrissen. Die Mietrenditen liegen oft über dem Frankfurt-Niveau bei niedrigeren Kaufpreisen. Besonders Altbau-Eigentumswohnungen in Hochschulnähe entwickeln sich als Kapitalanlage sehr gut.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -299,6 +313,37 @@ export default function ImmobilienmaklerDarmstadtPage() {
                 <div className="text-2xl font-bold text-brand-green">+15%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Darmstadt – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Darmstadt: Wissenschaftsstadt mit stabilem Immobilienmarkt
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Darmstadt ist eine der bedeutendsten Wissenschafts- und Technologiestädte Deutschlands. Mit der Technischen Universität Darmstadt, dem Europäischen Raumfahrtzentrum ESA-ESOC und zahlreichen namhaften Unternehmen wie Merck, Software AG und Deutsche Telekom bietet die Stadt mit rund 160.000 Einwohnern eine breite wirtschaftliche Basis. Diese Diversifizierung macht den Immobilienmarkt besonders stabil und krisenresistent – eine attraktive Eigenschaft für Eigennutzer und Kapitalanleger gleichermaßen.</p>
+              <p>Die Verkehrsanbindung nach Frankfurt ist exzellent: Die S3 verbindet Darmstadt in rund 30 Minuten mit dem Frankfurter Hauptbahnhof, die A5 und A67 erschließen das Straßennetz. ICE-Fernverkehr macht Darmstadt auch national gut erreichbar. Besonders die Nähe zu den großen Industriezentren im Rhein-Main-Gebiet macht die Stadt zur bevorzugten Wohnlage für Ingenieure, Akademiker und Naturwissenschaftler, die hohe Lebensqualität zu attraktiveren Preisen als in Frankfurt suchen.</p>
+              <p>Der Immobilienmarkt wird von zwei Säulen getragen: Eigennutzer aus der Tech- und Wissenschaftsbranche einerseits, Investoren auf der Suche nach soliden Mietobjekten andererseits. Rund 30.000 Studierende der TU Darmstadt sorgen für eine konstant hohe Mietnachfrage. Einfamilienhäuser kosten 500.000 bis 900.000 Euro, Eigentumswohnungen 3.500 bis 5.500 Euro pro Quadratmeter. immovativInvest kennt beide Käufergruppen und positioniert Ihre Immobilie optimal.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🎓', label: 'TU Darmstadt & ESA-Zentrum' },
+                { icon: '🚆', label: 'S3 nach Frankfurt (30 min)' },
+                { icon: '🏠', label: 'Stabiler Mietermarkt' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

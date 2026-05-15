@@ -96,7 +96,21 @@ const stadtteilPreise = [
   { name: 'Zeppelinheim', preis: '4.000–5.500 €/m²', beschreibung: 'Ruhige Lage, Flughafen-Nähe' },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Neu-Isenburg?',
+    answer: 'Neu-Isenburg ist einer der am stärksten nachgefragten Frankfurt-Nachbarorte: Die S3-Anbindung in 15 Minuten und die günstigeren Preise gegenüber Frankfurt sorgen für eine hohe Kaufinteressenten-Zahl. Gut bewertete Objekte finden in der Regel innerhalb von 4 bis 7 Wochen Käufer – häufig noch bevor das Objekt auf den Portalen erscheint, da immovativInvest über einen umfangreichen Pool vorgemerkter Interessenten verfügt.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Neu-Isenburg?',
+    answer: 'In Neu-Isenburg gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Warum ist Neu-Isenburg günstiger als Frankfurt bei gleicher S-Bahn-Verbindung?',
+    answer: 'Obwohl Neu-Isenburg direkt an Frankfurt grenzt und per S3 schneller am Hauptbahnhof ist als manche Frankfurter Vororte, liegt das Preisniveau 20–30% unter vergleichbaren Frankfurter Lagen. Ursache ist das Offenbach-Landkreis-Stigma: Viele Käufer suchen gezielt nach Frankfurter Adressen. Wer pragmatisch denkt, profitiert von diesem Marktineffizienz erheblich – für gleichwertige Wohnqualität zahlt man in Neu-Isenburg deutlich weniger.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -329,6 +343,37 @@ export default function ImmobilienmaklerNeuIsenburgPage() {
                 <p className="text-brand-gray-warm text-sm">{stadtteil.beschreibung}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-brand-gray-light">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Neu-Isenburg – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Neu-Isenburg: Beste Preis-Leistung direkt an Frankfurts Stadtgrenze
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Neu-Isenburg ist einer der klügsten Wohnstandorte im gesamten Rhein-Main-Gebiet: Die Stadt mit rund 38.000 Einwohnern grenzt direkt an Frankfurt-Sachsenhausen – Stadtgrenze zu Stadtgrenze – und bietet dabei eine S-Bahn-Verbindung, die in nur 15 Minuten zum Frankfurter Hauptbahnhof führt. Das entspricht Fahrzeiten, die viele innerstädtische Frankfurter Stadtteile nicht erreichen. Dennoch liegen die Immobilienpreise 20 bis 30 Prozent unter dem vergleichbaren Frankfurter Niveau.</p>
+              <p>Die S3 erschließt Neu-Isenburg ideal, die A3 und A661 bieten direkte Autobahnanbindung. Die Stadt ist im Landkreis Offenbach stark wachstumsorientiert: Der Stadtrat verfolgt eine aktive Entwicklungspolitik mit mehreren Neubaugebieten, die insbesondere junge Familien aus Frankfurt ansprechen, die mehr Platz und einen eigenen Garten suchen, ohne auf Frankfurter Stadtleben verzichten zu wollen. Die Nähe zu Frankfurt macht Neu-Isenburg besonders attraktiv.</p>
+              <p>Die Immobilienpreise bieten Einstiegschancen: Einfamilienhäuser kosten 480.000 bis 850.000 Euro, Eigentumswohnungen 3.800 bis 5.800 Euro pro Quadratmeter. Für ein Objekt mit dieser Frankfurt-Nähe und -Anbindung sind diese Preise außerordentlich attraktiv. immovativInvest ist in Neu-Isenburg und dem gesamten Landkreis Offenbach aktiv und kennt die lokalen Besonderheiten genau.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S3 Frankfurt Hbf (15 min)' },
+                { icon: '🏙️', label: 'Direktnachbar Frankfurt' },
+                { icon: '💰', label: 'Beste Preis-Leistung Landkreis Offenbach' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

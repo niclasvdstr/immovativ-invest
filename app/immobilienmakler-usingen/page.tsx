@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Usingen?',
+    answer: 'In Usingen ist immovativInvest mit eigenem Büro direkt vor Ort – das verschafft uns bei der Vermarktung einen klaren Vorteil. Gut bewertete Objekte finden in der Regel innerhalb von 6 bis 10 Wochen Käufer. Die Nachfrage kommt vor allem von Familien, die den Hochtaunuskreis schätzen, aber die hohen Bad Homburger Preise umgehen wollen. Mit unserem lokalen Netzwerk sprechen wir diese Zielgruppe direkt und effizient an.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Usingen?',
+    answer: 'In Usingen gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welchen Vorteil hat ein Makler mit Büro in Usingen gegenüber auswärtigen Maklern?',
+    answer: 'Als Makler mit Bürositz in Usingen kennt immovativInvest den lokalen Markt aus erster Hand: Welche Lagen sind besonders gefragt? Welche Preise sind realistisch? Wer sind die aktiven Kaufinteressenten in der Region? Lokale Präsenz bedeutet auch persönliche Verfügbarkeit für Besichtigungstermine, direkte Kontakte zu Notaren, Banken und Behörden im Hochtaunuskreis und ein Netzwerk, das auswärtige Makler schlicht nicht aufbauen können.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const stadtteilPreise = [
   { name: 'Kernstadt', preis: '3.500–5.000 €/m²', beschreibung: 'Historische Altstadt, gute Infrastruktur' },
@@ -328,6 +342,37 @@ export default function ImmobilienmaklerUsingenPage() {
                 <div className="text-xs text-brand-gray-warm">{st.beschreibung}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Usingen – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Usingen: Kreisstadt mit persönlichem immovativInvest-Bürositz im Hochtaunus
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Usingen ist die Kreisstadt des Hochtaunuskreises und damit Verwaltungszentrum einer der wohlhabendsten Regionen Deutschlands. Mit rund 15.000 Einwohnern ist Usingen kompakt und überschaubar, bietet aber als Kreisstadt eine vollständige Infrastruktur: Amtsgericht, Finanzamt, Kreisverwaltung, weiterführende Schulen, medizinische Versorgung und eine lebhafte Innenstadt mit regionalen Einkaufsmöglichkeiten. Diese Vollständigkeit schätzen besonders Familien, die Wert auf kurze Wege legen.</p>
+              <p>Die Taunusbahn verbindet Usingen in rund 15 Minuten mit Bad Homburg, von wo aus die U-Bahn nach Frankfurt weiterführt. Über die B456 und B8 ist das regionale Straßennetz gut erschlossen. Für Pendler, die die Bad Homburger U-Bahn-Verbindung nutzen, ist Usingen eine attraktive und noch günstigere Alternative zu Bad Homburg selbst – bei gleichem Kreis, ähnlicher Lebensqualität und merklich niedrigeren Preisen. Das Preisersparnis kann erheblich sein.</p>
+              <p>immovativInvest hat seinen Bürositz in Usingen – damit verfügt das Unternehmen hier über die stärkste lokale Verwurzelung und Marktkenntnis von allen betreuten Standorten. Einfamilienhäuser kosten zwischen 390.000 und 680.000 Euro, deutlich günstiger als in Bad Homburg. Für Verkäufer bedeutet das: ein Makler mit echter Ortskenntnis, lokalem Netzwerk und persönlicher Präsenz vor Ort.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏛️', label: 'Kreisstadt Hochtaunuskreis' },
+                { icon: '🚂', label: 'Taunusbahn nach Bad Homburg' },
+                { icon: '🏠', label: 'Sitz von immovativInvest' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

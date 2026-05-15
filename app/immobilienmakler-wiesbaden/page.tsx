@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Wiesbaden?',
+    answer: 'Wiesbaden bietet einen stabilen, gut nachgefragten Markt: Hochwertige Objekte in Nerotal, Sonnenberg oder Biebrich finden in der Regel innerhalb von 6 bis 10 Wochen Käufer. Das breite Käuferspektrum – von Bundesbeamten über Akademiker bis hin zu kapitalkräftigen Privatpersonen – sorgt für solide Nachfrage quer durch alle Preissegmente. Die Landeshauptstadt-Lage stabilisiert den Markt nachhaltig.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Wiesbaden?',
+    answer: 'In Wiesbaden gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welche Wiesbadener Stadtteile sind für gehobenes Wohnen besonders gefragt?',
+    answer: 'Das Nerotal gilt als exklusivste Wiesbadener Adresse: Großzügige Villen in Parklage mit höchsten Preisen. Der Sonnenberg überzeugt durch ruhige Höhenlage, Weitblick und gehobene Einfamilienhäuser. Biebrich am Rhein bietet Schloss-Nähe und Rheinpromenade. Das Stadtgebiet um den Kurpark und die Wilhelmstraße ist durch Gründerzeit-Altbau geprägt. immovativInvest kennt die Wiesbadener Lagen im Detail und bewertet Ihre Immobilie standortgenau.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const stadtteilPreise = [
   { name: 'Nerotal', preis: '8.000–14.000 €/m²', beschreibung: 'Exklusivste Villenlage Wiesbadens' },
@@ -334,6 +348,37 @@ export default function ImmobilienmaklerWiesbadenPage() {
                 <div className="text-xs text-brand-gray-warm">{st.beschreibung}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Wiesbaden – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Wiesbaden: Landeshauptstadt mit Kurstadt-Flair und gehobenen Wohnlagen
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Wiesbaden ist die Landeshauptstadt Hessens und eine der elegantesten Städte Deutschlands. Mit über 20 Thermalquellen, dem prächtigen Kurhaus am Bowling Green, der großbürgerlichen Wilhelmstraße und zahlreichen Gründerzeit-Villen versprüht die Stadt mit rund 290.000 Einwohnern ein besonderes Flair – mondän, weltoffen und dabei typisch hessisch. Bekannte Wohnlagen wie das Nerotal, der Sonnenberg und Biebrich am Rhein gehören zu den begehrtesten Adressen weit über die Stadtgrenzen hinaus.</p>
+              <p>Die S1 verbindet Wiesbaden in rund 40 Minuten mit Frankfurt Hauptbahnhof, die A66 und A3 erschließen das Straßennetz Richtung Frankfurt, Mainz und Koblenz. Wiesbaden ist auch Sitz des Bundeskriminalamts, des Hessischen Statistischen Landesamts und weiterer Bundesbehörden – was eine stabile, kaufkräftige Beamtenschaft in die Stadt bringt. Der hohe Beamten- und Akademiker-Anteil sorgt für stabile Immobilienpreise und solide Mieternachfrage.</p>
+              <p>Der Immobilienmarkt ist breit aufgestellt: In Nerotal und Sonnenberg werden Villen für 1 bis 2 Millionen Euro und mehr gehandelt, während zentrumsnahe Eigentumswohnungen 4.000 bis 7.500 Euro pro Quadratmeter erzielen. Günstigere Lagen in Biebrich oder Amöneburg bieten Einstiegsmöglichkeiten bei guter Infrastruktur. immovativInvest ist auch in Wiesbaden aktiv und vermarktet Objekte in dieser vielseitigen Landeshauptstadt mit regionaler Fachkenntnis.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏛️', label: 'Landeshauptstadt Hessen' },
+                { icon: '🚆', label: 'S1 Frankfurt (40 min)' },
+                { icon: '♨️', label: '20+ Thermalquellen & Kurstadt' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

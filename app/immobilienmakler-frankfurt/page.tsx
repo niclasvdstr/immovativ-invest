@@ -101,7 +101,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Frankfurt?',
+    answer: 'In Frankfurt variiert die Vermarktungszeit stark je nach Stadtteil und Preissegment. Im Westend und in Sachsenhausen gehen gut bewertete Objekte oft innerhalb von 3 bis 6 Wochen weg – die Nachfrage ist enorm. In günstigeren Stadtteilen wie Höchst oder Bergen-Enkheim kann es 8 bis 12 Wochen dauern. Grundsätzlich gilt: Eine marktgerechte Preispositionierung ist der wichtigste Faktor für einen schnellen Verkauf.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Frankfurt?',
+    answer: 'In Frankfurt gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welche Frankfurter Stadtteile erzielen die höchsten Immobilienpreise?',
+    answer: 'Die teuersten Frankfurter Stadtteile sind das Westend (8.000–12.000 €/m²), Sachsenhausen-Nord, Nordend und Bornheim. Im Hochpreissegment folgen Sachsenhausen-Süd und Ginnheim. Das Ostend hat sich durch die EZB-Ansiedlung stark aufgewertet. Günstigere Lagen mit Wertsteigerungspotenzial finden sich in Fechenheim, Bergen-Enkheim und Rödelheim. immovativInvest berät Sie zur stadtteilspezifischen Preispositionierung.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const stadtteilPreise = [
   { name: 'Westend', preis: '9.000–12.000 €/m²', beschreibung: 'Exklusivste Wohnlage, Stadtvillen & Altbauten' },
@@ -339,6 +353,37 @@ export default function ImmobilienmaklerFrankfurt() {
                 <div className="text-xs text-brand-gray-warm">{st.beschreibung}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-brand-gray-light">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Frankfurt – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Frankfurt am Main: Europäischer Finanzplatz mit größter Preisspanne der Region
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Frankfurt am Main ist Deutschlands Finanzmetropole und mit rund 760.000 Einwohnern die fünftgrößte Stadt des Landes. Als Sitz der Europäischen Zentralbank, der Deutschen Bundesbank und zahlreicher internationaler Banken und Versicherungen zieht Frankfurt hochqualifizierte Fachkräfte und Kapital aus aller Welt an. Der Immobilienmarkt ist entsprechend vielfältig, komplex und in einigen Lagen zu den teuersten Deutschlands zählend.</p>
+              <p>Die Preisspanne innerhalb Frankfurts ist enorm: Im Westend und in Sachsenhausen-Nord zählen die Quadratmeterpreise mit 8.000 bis 12.000 Euro zu den höchsten bundesweit, während Stadtteile wie Höchst, Fechenheim oder Bergen-Enkheim deutlich günstigere Einstiegspreise bieten. Alle S-Bahn- und U-Bahn-Linien, Straßenbahnen und Busse erschließen das Stadtgebiet flächendeckend; der Frankfurter Flughafen ist in 15 Minuten erreichbar und bietet weltweite Direktverbindungen.</p>
+              <p>Frankfurt ist ein Markt, der tiefe lokale Kenntnis erfordert: Welcher Stadtteil ist gerade im Kommen? Wo liegen stille Reserven? Welche Käufergruppe ist für welches Objekt ideal? immovativInvest ist in Frankfurt und im gesamten Rhein-Main-Gebiet aktiv und verfügt über ein etabliertes Netzwerk aus Kaufinteressenten – von der kompakten Kapitalanlage-ETW bis zur exklusiven Villa in Sachsenhausen.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏦', label: 'Europäischer Finanzplatz' },
+                { icon: '🏙️', label: 'Alle Stadtteile vertreten' },
+                { icon: '📊', label: 'Höchste Preisspanne der Region' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

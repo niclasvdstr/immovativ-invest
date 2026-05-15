@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Gießen?',
+    answer: 'In Gießen ist die Käuferstruktur etwas anders als in direkten Frankfurt-Vororten: Neben Eigennutzern sind viele Kapitalanleger aktiv, die auf Mietrendite aus sind. Der Verkauf gut gelegener Objekte in Hochschulnähe dauert in der Regel 6 bis 10 Wochen. Für Eigennutzer-Immobilien in ruhigen Wohnlagen kann es etwas länger dauern. Eine realistische Preisgestaltung ist entscheidend für einen zügigen Abschluss.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Gießen?',
+    answer: 'In Gießen gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Eignet sich Gießen für Immobilien als Kapitalanlage?',
+    answer: 'Gießen ist einer der attraktivsten Kapitalanlage-Standorte im Großraum Frankfurt: Die Kaufpreise zählen zu den niedrigsten der Region, während die Mietrenditen durch rund 30.000 Studierende und eine breite Beschäftigungsbasis konstant hoch sind. Kleinere Wohnungen (1–3 Zimmer) in Hochschulnähe erzielen besonders hohe Renditen. immovativInvest analysiert für Sie das konkrete Renditepotenzial von Objekten in Gießen.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -293,6 +307,37 @@ export default function ImmobilienmaklerGiessenPage() {
                 <div className="text-2xl font-bold text-brand-green">+15%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Gießen – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Gießen: Universitätsstadt mit höchsten Mietrenditen der Region
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Gießen ist eine der bedeutendsten Universitätsstädte Mittelhessens: Die Justus-Liebig-Universität mit rund 30.000 Studierenden prägt das gesamte wirtschaftliche und soziale Leben der Stadt mit etwa 90.000 Einwohnern. Diese hohe Studierendenzahl ist für Immobilieninvestoren ein entscheidender Faktor – die Mietnachfrage ist konstant hoch, saisonale Schwankungen sind minimal, und die Leerstandsquote bei gut geschnittenen Mietobjekten ist außerordentlich niedrig.</p>
+              <p>Die Anbindung an Frankfurt ist mit rund 45 Minuten per Bahn solide, die A485 und A45 erschließen das überregionale Straßennetz. Gießen ist auch Verwaltungszentrum der Region mit vielen Behörden, Gerichten und mittelständischen Unternehmen – eine breite Beschäftigungsbasis, die auch jenseits der Universität für stabile Mieternachfrage sorgt. Die Preise zählen zu den günstigsten im gesamten Einzugsgebiet der Studie.</p>
+              <p>Einfamilienhäuser sind ab rund 280.000 Euro erhältlich, Eigentumswohnungen ab 2.000 Euro pro Quadratmeter – weit unter dem Rhein-Main-Niveau. Diese Kombination aus niedrigen Kaufpreisen und hoher Mietnachfrage ergibt Renditen, die in Frankfurt undenkbar wären. Für Kapitalanleger ist Gießen damit einer der attraktivsten Standorte im gesamten Großraum. immovativInvest berät Sie zu konkreten Renditeobjekten in Gießen.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🎓', label: 'JLU Gießen – 30.000 Studierende' },
+                { icon: '🚂', label: '45 min nach Frankfurt' },
+                { icon: '💹', label: 'Höchste Mietrenditen der Region' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -101,7 +101,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Bad Vilbel?',
+    answer: 'Bad Vilbel profitiert von einer sehr hohen Nachfrage durch Frankfurt-Pendler. Einfamilienhäuser und Neubau-Eigentumswohnungen finden in der Regel innerhalb von 5 bis 8 Wochen einen Käufer. Die kurze S6-Verbindung nach Frankfurt sorgt dafür, dass immer wieder neue Kaufinteressenten aus der Stadt zuwandern. Besonders Objekte in neuen Wohnquartieren gehen sehr zügig weg.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Bad Vilbel?',
+    answer: 'In Bad Vilbel gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welche Neubaugebiete in Bad Vilbel sind besonders gefragt?',
+    answer: 'In Bad Vilbel entstehen aktuell mehrere neue Wohnquartiere, darunter das Quellenpark-Areal und weitere Entwicklungsgebiete am Stadtrand. Diese Projekte ziehen vor allem junge Familien aus Frankfurt an, die Energieeffizienz, moderne Grundrisse und grüne Außenbereiche suchen. immovativInvest kennt die aktuelle Bautätigkeit und berät Sie, ob Neubau oder Bestandsobjekt für Ihre Situation besser geeignet ist.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const stadtteilPreise = [
   { name: 'Kernstadt', preis: '4.500–6.500 €/m²', beschreibung: 'Kurpark, Altstadt, direkte Bahnanbindung' },
@@ -336,6 +350,37 @@ export default function ImmobilienmaklerBadVilbel() {
                 <div className="text-xs text-brand-gray-warm">{st.beschreibung}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-brand-gray-light">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Bad Vilbel – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Bad Vilbel: Wachstumsstar mit schnellster S-Bahn nördlich Frankfurt
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Bad Vilbel ist eine der dynamischsten Städte im gesamten Rhein-Main-Gebiet. Mit rund 35.000 Einwohnern wächst die Mineralquellen-Stadt stetig – getrieben von einer der höchsten Bautätigkeiten der Region und einer hervorragenden Lage direkt nördlich von Frankfurt. Zahlreiche neue Wohnquartiere entstehen hier, die junge Familien aus Frankfurt anziehen, die mehr Platz für ihr Geld suchen, ohne auf urbane Anbindung verzichten zu wollen.</p>
+              <p>Die S6 verbindet Bad Vilbel in nur 15 Minuten mit dem Frankfurter Hauptbahnhof – schneller als viele innerstädtische Stadtteile Frankfurts. Die A661 erschließt das Straßennetz in alle Richtungen. Diese optimale Pendleranbindung macht Bad Vilbel zur ersten Wahl für Frankfurter Berufstätige, die im Umland kaufen möchten: Das Preisniveau liegt merklich unter dem der Innenstadt, die Lebensqualität ist hoch, und neue Stadtviertel bieten moderne Architektur mit Energieeffizienz-Standard.</p>
+              <p>Die Immobilienpreise haben sich in den letzten Jahren deutlich nach oben entwickelt: Einfamilienhäuser liegen zwischen 480.000 und 850.000 Euro, Neubauwohnungen zwischen 3.800 und 5.200 Euro pro Quadratmeter. Der Trend zeigt weiter nach oben – wer in Bad Vilbel kauft, investiert in einen Markt mit starker Nachfrageseite. immovativInvest kennt die Quartiere genau und vermittelt effizient an vorgemerkte Familien aus Frankfurt.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S6 nach Frankfurt (15 min)' },
+                { icon: '🏗️', label: 'Stärkste Bautätigkeit Region' },
+                { icon: '👨‍👩‍👧', label: 'Attraktiv für Familien Frankfurt-Nord' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

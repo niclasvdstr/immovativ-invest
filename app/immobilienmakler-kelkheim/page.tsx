@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Kelkheim?',
+    answer: 'In Kelkheim ist die Vermarktungszeit stark lagenabhängig: In Eppenhain und Münster mit dem Villensegment finden hochwertige Objekte in der Regel innerhalb von 6 bis 10 Wochen Käufer aus dem Premiumsegment. In Hornau und der Kernstadt Kelkheim sind die Vermarktungszeiten mit 6 bis 8 Wochen ähnlich. Die konstante Nachfrage durch Frankfurt-Familien sorgt für stabile Verkaufsdauer.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Kelkheim?',
+    answer: 'In Kelkheim gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welche Kelkheimer Stadtteile sind für Familien besonders empfehlenswert?',
+    answer: 'Für Familien mit Kindern sind Kelkheim-Kernstadt und Münster besonders attraktiv: Kurze Wege zu Schulen, Sportanlagen und Einkaufsmöglichkeiten bei ruhiger Wohnlage. Eppenhain empfiehlt sich für Käufer mit höherem Budget und Wunsch nach maximaler Exklusivität. Ruppertshain und Fischbach bieten dörflichen Charakter im Taunus für alle, die Abstand vom Stadtleben suchen.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -298,6 +312,37 @@ export default function ImmobilienmaklerKelkheimPage() {
                 <div className="text-2xl font-bold text-brand-green">+18%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Kelkheim – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Kelkheim: Ruhige Taunus-Familienlage mit hochwertigen Villenstadtteilen
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Kelkheim im Main-Taunus-Kreis ist eine der bevorzugten Taunus-Gemeinden für Familien, die Ruhe, Natur und gute Frankfurt-Erreichbarkeit verbinden wollen. Mit rund 28.000 Einwohnern verteilt auf sieben Stadtteile – Kelkheim, Hornau, Münster, Ruppertshain, Fischbach, Eppenhain und Westhausen – bietet die Stadt eine vielfältige Palette von Wohnlagen: Von der gehobenen Villenlage bis zum günstigeren Einstiegssegment.</p>
+              <p>Die S2 verbindet Kelkheim über Hofheim in rund 30 Minuten mit Frankfurt, die A66 erschließt die Metropole per Auto. Besonders die Stadtteile Eppenhain und Münster gelten als ausgesprochen hochwertige Lagen: Großzügige Villen mit Garten und Taunusblick in ruhiger Umgebung, fernab vom Stadtlärm, ziehen hier insbesondere Frankfurt-Familien an, die Premiumwohnen im Grünen suchen. Hornau bietet dagegen günstigere Einstiegspreise bei trotzdem guter Infrastruktur.</p>
+              <p>Die Immobilienpreise spiegeln die Vielfalt der Lagen wider: Einfamilienhäuser werden zwischen 550.000 und 1,2 Millionen Euro gehandelt, Eigentumswohnungen erzielen 4.000 bis 5.800 Euro pro Quadratmeter. immovativInvest kennt alle sieben Kelkheimer Stadtteile genau und bewertet Ihre Immobilie präzise nach Lage und Ausstattung – für den bestmöglichen Verkaufspreis.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S2 nach Frankfurt (30 min)' },
+                { icon: '🏡', label: 'Villen in Eppenhain & Münster' },
+                { icon: '🌿', label: 'Ruhige Taunus-Familienlage' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

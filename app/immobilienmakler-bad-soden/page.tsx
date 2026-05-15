@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Bad Soden?',
+    answer: 'Bad Soden gehört zu den gefragtesten Wohnlagen im gesamten Rhein-Main-Gebiet. Die Nachfrage von Banker-Familien und Führungskräften übersteigt das Angebot regelmäßig. Hochwertige Einfamilienhäuser in Hanglage werden oft innerhalb von 4 bis 8 Wochen verkauft – teilweise noch vor der Portals-Veröffentlichung über unser Käufernetzwerk. Im Preissegment über 1,5 Millionen Euro kann die Vermarktung etwas länger dauern, da der Käuferkreis selektiver ist.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Bad Soden?',
+    answer: 'In Bad Soden gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welche Stadtteile in Bad Soden sind besonders begehrt?',
+    answer: 'Die gefragtesten Lagen in Bad Soden befinden sich in den Hanglagen Richtung Taunus – vor allem in den höher gelegenen Bereichen mit Panoramablick. Neuenhain und Altenhain gelten als ruhige Premiumlagen, während die Kernstadt durch ihre kurze Bahnanbindung an die S3 überzeugt. Lagen mit direktem Taunusblick und großzügigen Grundstücken erzielen die höchsten Quadratmeterpreise im Main-Taunus-Kreis.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -320,6 +334,37 @@ export default function ImmobilienmaklerBadSodenPage() {
                 <div className="text-2xl font-bold text-brand-green">+18%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Bad Soden – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Bad Soden: Speckgürtel mit Taunus-Panorama und höchster Kaufkraft
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Bad Soden am Taunus ist die kleinste Stadt im Main-Taunus-Kreis – und zugleich eine der kaufkräftigsten Gemeinden in ganz Deutschland. Der Begriff „Speckgürtel" wurde für Orte wie diesen geprägt: Unmittelbare Nähe zu Frankfurt, hervorragende Infrastruktur und eine grüne, ruhige Wohnlage mit Taunusblick ziehen seit Jahrzehnten die Führungskräfte der Frankfurter Finanzinstitute an. Hanglagen mit freiem Blick auf den Taunus sind hier die begehrtesten Adressen.</p>
+              <p>Die S3 verbindet Bad Soden in rund 25 Minuten mit dem Frankfurter Hauptbahnhof, die A66 erschließt das überregionale Straßennetz direkt. Besonders Banker-Familien schätzen die Kombination aus kurzer Pendeldistanz und dem großzügigen Wohnraumangebot: Villen in Hanglage mit Garten und eigenem Pool sind hier keine Seltenheit, sondern ein etabliertes Segment des lokalen Marktes. Die Nachfrage ist dauerhaft hoch – Angebote gehen oft rasch weg.</p>
+              <p>Der Preis spiegelt die Attraktivität wider: Einfamilienhäuser kosten in der Regel zwischen 700.000 und 2 Millionen Euro, Eigentumswohnungen erzielen Quadratmeterpreise von 4.200 bis 6.500 Euro. Bad Soden ist damit einer der teuersten Wohnstandorte im Rhein-Main-Gebiet – und ein Markt, der höchste Fachkenntnis und ein qualifiziertes Käufernetzwerk erfordert. immovativInvest bringt beides mit.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S3 nach Frankfurt (25 min)' },
+                { icon: '🏔️', label: 'Hanglage mit Taunus-Panorama' },
+                { icon: '💎', label: 'Speckgürtel mit höchster Kaufkraft' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

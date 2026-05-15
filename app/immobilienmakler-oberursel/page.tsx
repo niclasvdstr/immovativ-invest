@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Oberursel?',
+    answer: 'Oberursel ist durch die direkte U3-Verbindung nach Frankfurt dauerhaft stark nachgefragt. Gut bewertete Einfamilienhäuser – besonders in Stierstadt und Weißkirchen – finden in der Regel innerhalb von 5 bis 9 Wochen Käufer. Eigentumswohnungen in U-Bahn-Nähe gehen oft noch schneller weg. Die stabile Nachfrage aus Frankfurt und dem gesamten Hochtaunuskreis macht Oberursel zu einem verlässlichen Verkäufermarkt.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Oberursel?',
+    answer: 'In Oberursel gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welche Oberurseler Stadtteile sind am begehrtesten?',
+    answer: 'Stierstadt ist der prestigeträchtigste und teuerste Oberurseler Stadtteil mit großzügigen Villenlagen. Weißkirchen gilt als besonders familienfreundlich mit guter Schulinfrastruktur. Bommersheim überzeugt durch Ruhe und Taunusnähe. Die Kernstadt bietet gute Infrastruktur bei mittlerem Preisniveau. immovativInvest bewertet Ihre Immobilie mit präzisen Lagedaten und ermittelt den optimalen Marktpreis für Ihren spezifischen Standort.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const stadtteilPreise = [
   { name: 'Kernstadt', preis: '5.500–7.500 €/m²', beschreibung: 'Zentrum, U-Bahn, sehr gute Infrastruktur' },
@@ -333,6 +347,37 @@ export default function ImmobilienmaklerOberurselPage() {
                 <div className="text-xs text-brand-gray-warm">{st.beschreibung}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Oberursel – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Oberursel: U-Bahn-Anschluss mit Waldnähe – Top-Ranking im Hochtaunus
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Oberursel im Taunus zählt zu den attraktivsten Wohnstandorten im Hochtaunuskreis. Mit rund 46.000 Einwohnern ist die Stadt deutlich größer als Nachbargemeinden wie Königstein oder Bad Homburg und bietet eine hervorragende Infrastruktur: Einkaufsmöglichkeiten, Schulen, Sport- und Freizeitanlagen sowie eine lebhafte Stadtmitte. Die direkte Waldnähe zum Taunus und ein hohes Maß an Ruhe machen Oberursel zu einer erstklassigen Familienlage.</p>
+              <p>Die U3 verbindet Oberursel direkt mit dem Frankfurter Stadtzentrum in rund 30 Minuten, die S5 über Bad Homburg ist eine weitere Option. Die A5 liegt ebenfalls nahe. Diese starke Anbindung kombiniert mit der grünen Taunus-Lage erklärt, warum Oberursel so begehrt ist: Stadtteile wie Stierstadt, Bommersheim und Weißkirchen bieten unterschiedliche Wohncharaktere, von der ruhigen Einfamilienhauslage bis zum gut angebundenen Stadtviertel.</p>
+              <p>Das Preisniveau ist entsprechend hoch: Einfamilienhäuser kosten zwischen 700.000 und 1,5 Millionen Euro, Eigentumswohnungen erzielen 4.500 bis 7.000 Euro pro Quadratmeter. Oberursel liegt damit im gehobenen Segment des Hochtaunuskreises – nicht so teuer wie Kronberg oder Königstein, aber deutlich über dem hessischen Schnitt. immovativInvest bewertet Oberurseler Objekte auf Basis präziser Standortdaten und vermittelt gezielt an passende Käufer.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚇', label: 'U3 nach Frankfurt (30 min)' },
+                { icon: '🌲', label: 'Waldnähe & Taunusblick' },
+                { icon: '🏆', label: 'Top-Ranking Hochtaunus-Wohnlagen' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

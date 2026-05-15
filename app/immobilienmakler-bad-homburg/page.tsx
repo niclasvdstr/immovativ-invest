@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Bad Homburg?',
+    answer: 'In Bad Homburg ist die Nachfrage nach Qualitätsobjekten dauerhaft hoch – insbesondere aus dem Frankfurter Finanz- und Unternehmensumfeld. Gut aufgestellte Immobilien in Kirdorf, Dornholzhausen oder am Kurpark finden häufig innerhalb von 4 bis 6 Wochen einen Käufer. Im absoluten Premiumsegment kann die Suche nach dem richtigen Käufer etwas länger dauern, da der Interessentenkreis selektiver ist – hier arbeiten wir gezielt mit unserem vorgemerkten Käufernetzwerk.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Bad Homburg?',
+    answer: 'In Bad Homburg gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Wie finde ich Käufer für Luxusimmobilien in Bad Homburg?',
+    answer: 'Luxusimmobilien in Bad Homburg erfordern eine zielgruppengerechte Vermarktung: Diskrete Off-Market-Ansprache vorgemerkter Käufer aus der Frankfurter Finanzbranche, internationale Reichweite über Premium-Portale sowie hochwertige Exposés und Präsentationen sind entscheidend. immovativInvest verfügt über ein etabliertes Netzwerk an kaufkräftigen Interessenten im Hochtaunuskreis und vermarktet Premiumobjekte mit dem nötigen Fingerspitzengefühl.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const stadtteilPreise = [
   { name: 'Innenstadt', preis: '6.500–9.000 €/m²', beschreibung: 'Kurpark, Kaiser-Wilhelms-Bad, Top-Infrastruktur' },
@@ -336,6 +350,37 @@ export default function ImmobilienmaklerBadHomburgPage() {
                 <div className="text-xs text-brand-gray-warm">{st.beschreibung}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Bad Homburg – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Bad Homburg: Kurstadt mit höchster Kaufkraft im Taunus
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Bad Homburg vor der Höhe zählt zu den exklusivsten Wohnlagen im gesamten Rhein-Main-Gebiet. Als ehemalige Kaiserresidenz mit prächtigem Kurpark, dem Kaiser-Wilhelm-Bad und der weltberühmten Spielbank genießt die Stadt von rund 55.000 Einwohnern einen Ruf, der weit über die Region hinaus strahlt. Der Immobilienmarkt reflektiert diesen Status: Elegante Villen in Stadtteil Kirdorf und Dornholzhausen, hochwertiger Altbau rund um den Kurpark sowie moderne Eigentumswohnungen in zentraler Lage prägen das Angebot. Wer hier kauft, investiert nicht nur in Wohnraum – sondern in einen Lebensstil.</p>
+              <p>Die Anbindung an Frankfurt ist ein wesentlicher Treiber der Nachfrage: Über die U-Bahnlinien U2 und U9 erreicht man das Frankfurter Bankenviertel in rund 30 Minuten, die A5 erschließt das überregionale Straßennetz. Diese Kombination aus Erreichbarkeit und grüner Wohnqualität macht Bad Homburg zur ersten Wahl für Führungskräfte der Frankfurter Finanzbranche, internationale Manager von EZB und Deutschen Bank sowie kaufkräftige Ruheständler. Die Nachfrage übersteigt das Angebot chronisch – Qualitätsobjekte finden oft noch vor der offiziellen Vermarktung einen Käufer.</p>
+              <p>Die Preisniveaus liegen entsprechend weit oben: Einfamilienhäuser werden je nach Lage und Ausstattung zwischen 800.000 und 2,5 Millionen Euro gehandelt, Eigentumswohnungen erzielen Quadratmeterpreise ab 4.500 Euro – in Toplagen deutlich darüber. Als Immobilienmakler mit tiefer Verwurzelung im Hochtaunuskreis verfügt immovativInvest über ein weitreichendes Netzwerk aus vorgemerkten Kaufinteressenten und versteht die besondere Dynamik des Bad Homburger Premiummarktes genau.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚇', label: 'U-Bahn nach Frankfurt (30 min)' },
+                { icon: '🎰', label: 'Kaiser-Kurpark & Spielbank' },
+                { icon: '💰', label: 'Höchste Kaufkraft im Taunus' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

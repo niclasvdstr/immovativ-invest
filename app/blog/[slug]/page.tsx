@@ -9,6 +9,7 @@ import FAQ from '@/components/FAQ'
 import { sharedFaqItems } from '@/lib/faq-items'
 import CTAButton from '@/components/CTAButton'
 import TippgeberSection from '@/components/TippgeberSection'
+import RelatedLinks from '@/components/RelatedLinks'
 
 export async function generateStaticParams() {
   return articles.map(a => ({ slug: a.slug }))
@@ -255,6 +256,46 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
   const related = articles.filter(a => a.slug !== article.slug && a.category === article.category).slice(0, 2)
   const sections = parseIntoSections(article.content)
+
+  const categoryRelatedLinks: Record<string, { href: string; title: string; desc: string; icon: string }[]> = {
+    'Verkaufen': [
+      { href: '/verkaufen', title: 'Immobilie verkaufen', desc: 'Professionell zum besten Preis', icon: '🏠' },
+      { href: '/immobilienbewertung', title: 'Kostenlose Bewertung', desc: 'Marktwert jetzt ermitteln', icon: '📊' },
+      { href: '/maklerprovision', title: 'Maklerprovision', desc: 'Was kostet ein Makler?', icon: '💶' },
+    ],
+    'Bewertung': [
+      { href: '/immobilienbewertung', title: 'Kostenlose Bewertung', desc: 'Marktwert jetzt ermitteln', icon: '📊' },
+      { href: '/verkaufen', title: 'Immobilie verkaufen', desc: 'Professionell zum besten Preis', icon: '🏠' },
+      { href: '/maklerprovision', title: 'Maklerprovision', desc: 'Was kostet ein Makler?', icon: '💶' },
+    ],
+    'Markt': [
+      { href: '/immobilienbewertung', title: 'Kostenlose Bewertung', desc: 'Aktuellen Marktwert ermitteln', icon: '📊' },
+      { href: '/immobilienmakler-frankfurt', title: 'Makler Frankfurt', desc: 'Ihr Experte vor Ort', icon: '📍' },
+      { href: '/verkaufen', title: 'Jetzt verkaufen', desc: 'Den richtigen Zeitpunkt nutzen', icon: '🏠' },
+    ],
+    'Recht & Steuern': [
+      { href: '/erbschaft', title: 'Erbschaftsimmobilie', desc: 'Einfühlsame Begleitung', icon: '⚖️' },
+      { href: '/scheidung', title: 'Scheidungsimmobilie', desc: 'Diskret und professionell', icon: '🤝' },
+      { href: '/immobilienbewertung', title: 'Kostenlose Bewertung', desc: 'Marktwert jetzt ermitteln', icon: '📊' },
+    ],
+    'Finanzierung': [
+      { href: '/finanzierung', title: 'Finanzierungsberatung', desc: 'Kostenlos & unverbindlich', icon: '🏦' },
+      { href: '/ankauf', title: 'Direktankauf', desc: 'Ohne Makler & schnell', icon: '⚡' },
+      { href: '/immobilienbewertung', title: 'Kostenlose Bewertung', desc: 'Marktwert jetzt ermitteln', icon: '📊' },
+    ],
+    'Prozess': [
+      { href: '/verkaufen', title: 'Immobilie verkaufen', desc: 'So läuft der Prozess ab', icon: '🏠' },
+      { href: '/immobilienbewertung', title: 'Bewertung anfragen', desc: 'Kostenlos & unverbindlich', icon: '📊' },
+      { href: '/kontakt', title: 'Jetzt Kontakt aufnehmen', desc: 'Rückmeldung in 24h', icon: '📞' },
+    ],
+    'Spezialfälle': [
+      { href: '/erbschaft', title: 'Erbschaftsimmobilie', desc: 'Einfühlsame Begleitung', icon: '⚖️' },
+      { href: '/scheidung', title: 'Scheidungsimmobilie', desc: 'Diskret und professionell', icon: '🤝' },
+      { href: '/ankauf', title: 'Direktankauf', desc: 'Schnell & ohne Stress', icon: '⚡' },
+    ],
+  }
+
+  const relatedLinks = categoryRelatedLinks[article.category] ?? categoryRelatedLinks['Verkaufen']
   const headingSections = sections.filter(s => s.heading)
 
   const blogSchema = {
@@ -450,6 +491,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 </div>
               </div>
             ))}
+
+            <RelatedLinks links={relatedLinks} />
 
             {/* Article-specific FAQ section */}
             {article.faqItems && article.faqItems.length > 0 && (

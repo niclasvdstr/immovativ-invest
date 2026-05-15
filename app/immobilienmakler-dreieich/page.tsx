@@ -98,7 +98,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Dreieich?',
+    answer: 'Dreieich zählt zu den begehrtesten Familienlagen südlich von Frankfurt. Einfamilienhäuser mit Garten – besonders in Dreieichenhain, Offenthal und Götzenhain – finden in der Regel innerhalb von 5 bis 8 Wochen einen Käufer. Die hohe Nachfrage von Frankfurt-Familien, die Platz und Ruhe suchen, sorgt für kurze Vermarktungszeiten bei richtig bepreisten Objekten.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Dreieich?',
+    answer: 'In Dreieich gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welcher Dreieich-Stadtteil erzielt die höchsten Immobilienpreise?',
+    answer: 'Dreieichenhain erzielt durch seine historische Burganlage, die waldnahe Lage und den hohen Wohnwert in der Regel die höchsten Preise innerhalb Dreieichs. Auch Offenthal mit seinen ruhigen Wohngebieten und Waldnähe ist sehr begehrt. Sprendlingen als Verwaltungszentrum bietet gute Infrastruktur bei mittlerem Preisniveau. immovativInvest berät Sie zur optimalen Preispositionierung je nach Stadtteil.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -331,6 +345,37 @@ export default function ImmobilienmaklerDreieichPage() {
                 <p className="text-brand-gray-warm text-sm">{stadtteil.beschreibung}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-brand-gray-light">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Dreieich – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Dreieich: Top-Familienlage mit Burgencharme südlich Frankfurt
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Dreieich vereint das Beste aus Geschichte und moderner Wohnqualität: Die Stadt gliedert sich in fünf charakterstarke Stadtteile – Dreieichenhain mit seiner eindrucksvollen mittelalterlichen Burg, das ruhige Götzenhain, das waldnahe Offenthal, das Verwaltungszentrum Sprendlingen und das gemütliche Urberach. Diese Vielfalt macht Dreieich zu einem der beliebtesten Wohnstandorte südlich von Frankfurt. Wälder, Kulturdenkmäler und eine exzellente Infrastruktur bilden hier eine harmonische Einheit.</p>
+              <p>Die S3 verbindet Dreieich in rund 20 Minuten mit dem Frankfurter Hauptbahnhof, die A661 erschließt das Straßennetz Richtung Darmstadt und Frankfurt schnell und direkt. Diese kurze Pendeldistanz macht Dreieich zur ersten Wahl für Frankfurter Familien, die mehr Platz, einen eigenen Garten und ruhige Wohnlagen suchen – ohne auf gute Erreichbarkeit zu verzichten. Die Nachfrage nach Einfamilienhäusern ist hier besonders stark.</p>
+              <p>Die Immobilienpreise spiegeln die Beliebtheit wider: Einfamilienhäuser kosten zwischen 520.000 und 950.000 Euro, Eigentumswohnungen erzielen 3.800 bis 5.200 Euro pro Quadratmeter. Besonders gefragt sind Objekte in Dreieichenhain und Offenthal mit Waldnähe und großem Grundstück. immovativInvest kennt alle fünf Stadtteile genau und bringt Ihre Immobilie gezielt zu den richtigen Käufern.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S3 nach Frankfurt (20 min)' },
+                { icon: '🏰', label: 'Burg Dreieichenhain & Waldnähe' },
+                { icon: '👨‍👩‍👧', label: 'Top-Familienlage südlich Frankfurt' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

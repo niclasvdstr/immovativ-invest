@@ -99,7 +99,21 @@ const stadtteilPreise = [
   { name: 'Finthen', preis: '4.000–5.500 €/m²', beschreibung: 'Grüne Randlage, familienbeliebt' },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Mainz?',
+    answer: 'Mainz bietet einen stabilen, gut nachgefragten Markt: Hochwertige Eigentumswohnungen in der Altstadt oder Gonsenheim finden in der Regel innerhalb von 5 bis 9 Wochen Käufer. Einfamilienhäuser in guten Lagen dauern 6 bis 10 Wochen. Die JGU Mainz sorgt zudem für eine konstante Investoren-Nachfrage nach Renditeobjekten, die Vermarktungszeiten bei Kapitalanlage-Objekten vergleichsweise kurz hält.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Mainz?',
+    answer: 'In Mainz gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Wie hat BioNTech den Mainzer Immobilienmarkt beeinflusst?',
+    answer: 'BioNTechs weltweiter Durchbruch mit dem COVID-19-Impfstoff hat Mainz international bekannt gemacht und das Standing als Wissenschaftsstadt nachhaltig gestärkt. Hochqualifizierte Mitarbeiter aus aller Welt sind nach Mainz gezogen, was die Nachfrage nach hochwertigen Eigentumswohnungen und Mietobjekten deutlich erhöht hat. Dieser Effekt strahlt auf den gesamten Wohnungsmarkt aus und stützt das Preisniveau langfristig.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -332,6 +346,37 @@ export default function ImmobilienmaklerMainzPage() {
                 <p className="text-brand-gray-warm text-sm">{stadtteil.beschreibung}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-brand-gray-light">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Mainz – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Mainz: Landeshauptstadt mit BioNTech-Heimvorteil und vielfältigem Immobilienmarkt
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Mainz ist die Landeshauptstadt von Rheinland-Pfalz und mit rund 220.000 Einwohnern eine der bedeutendsten Städte am Rhein. Die Johannes-Gutenberg-Universität, der Sitz des ZDF sowie eine lebhafte Medien- und Kreativwirtschaft geben der Stadt ihren unverwechselbaren Charakter. International bekannt wurde Mainz durch BioNTech, das hier seinen Hauptsitz hat und den COVID-19-Impfstoff entwickelte – ein Meilenstein, der die Stadt als Technologie- und Wissenschaftsstandort weltweit ins Rampenlicht rückte.</p>
+              <p>Die S-Bahn verbindet Mainz in rund 35 Minuten mit Frankfurt, die A60, A63 und A671 erschließen das Straßennetz. Mainz liegt zudem an einem der bedeutendsten Verkehrskreuze der Region – mit Anbindung nach Wiesbaden, Darmstadt, Mannheim und Koblenz. Diese zentrale Lage macht die Stadt nicht nur für Pendler attraktiv, sondern auch für Investoren, die von der Nähe zu mehreren Wirtschaftszentren profitieren wollen.</p>
+              <p>Der Immobilienmarkt ist vielseitig: Die historische Altstadt, das großbürgerliche Gonsenheim, das aufstrebende Oberstadt und die Rheinnähe in Mombach und Hechtsheim bieten unterschiedlichste Wohnlagen. Einfamilienhäuser werden zwischen 500.000 und 1 Million Euro gehandelt, Eigentumswohnungen erzielen 3.800 bis 6.000 Euro pro Quadratmeter. immovativInvest ist auch auf der linken Rheinseite aktiv und vermarktet Mainzer Objekte mit regionaler Fachkenntnis.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🧬', label: 'BioNTech-Heimatstadt' },
+                { icon: '🚆', label: 'S-Bahn Frankfurt (35 min)' },
+                { icon: '🏛️', label: 'Landeshauptstadt RLP' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

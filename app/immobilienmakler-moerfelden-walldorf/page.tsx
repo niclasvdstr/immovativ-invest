@@ -81,7 +81,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Mörfelden-Walldorf?',
+    answer: 'In Mörfelden-Walldorf ist der Käuferkreis klar definiert: Vor allem Flughafenmitarbeiter, Logistikfachkräfte und Pendler suchen hier aktiv. Gut positionierte Objekte ohne schwere Fluglärm-Beeinträchtigung finden in der Regel innerhalb von 6 bis 10 Wochen Käufer. Objekte in stärker lärmbelasteten Lagen erfordern eine realistische Preisgestaltung und gezielte Käuferansprache.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Mörfelden-Walldorf?',
+    answer: 'In Mörfelden-Walldorf gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Wie stark beeinträchtigt Fluglärm den Immobilienwert in Mörfelden-Walldorf?',
+    answer: 'Der Fluglärm hat einen messbaren Einfluss auf Immobilienpreise in bestimmten Teilen von Mörfelden-Walldorf: Lagen unter der Einflugschneise oder in Nachtflugrouten sind deutlich günstiger als ruhigere Bereiche der Stadt. Als Verkäufer ist eine ehrliche Einschätzung dieser Faktoren wichtig – als Käufer eröffnet der Fluglärm-Abschlag die Möglichkeit, zu günstigen Preisen einzusteigen. immovativInvest bewertet den genauen Lärm-Einfluss auf Ihren Objektstandort objektiv.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 export default function ImmobilienmaklerMoerfeldenWalldorf() {
   return (
@@ -167,7 +181,7 @@ export default function ImmobilienmaklerMoerfeldenWalldorf() {
             </CTAButton>
           </div>
           <div className="flex justify-center">
-            <Image src="/hero-niclas-2.png" alt="Niclas van der Straeten – Immobilienmakler Mörfelden-Walldorf" className="rounded-2xl shadow-lg max-h-96 object-cover" width={600} height={384} />
+            <Image src="/hero-niclas-2.png" alt="Niclas van der Straeten – Immobilienmakler Mörfelden-Walldorf" className="rounded-2xl shadow-lg max-h-96 object-cover" width={600} height={384} priority />
           </div>
         </div>
       </section>
@@ -227,6 +241,37 @@ export default function ImmobilienmaklerMoerfeldenWalldorf() {
             </div>
             <div className="flex justify-center">
               <Image src="/moerfelden-markt.jpg" alt="Immobilienmarkt Mörfelden-Walldorf" className="rounded-xl shadow-md max-h-72 object-cover w-full" width={800} height={288} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Mörfelden-Walldorf – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Mörfelden-Walldorf: Flughafen-Nähe mit günstigem Preis-Leistungs-Verhältnis
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Mörfelden-Walldorf ist eine Doppelstadt im Landkreis Groß-Gerau, die durch ihre unmittelbare Nähe zum Frankfurter Flughafen eine besondere Stellung im Rhein-Main-Immobilienmarkt einnimmt. Für das Flughafenpersonal – Piloten, Lufthansa-Mitarbeiter, Flugbegleiter und Logistikfachkräfte – ist die Stadt die praktischste Wohnadresse weit und breit: Kurze Wege zum Arbeitsplatz, gute Anbindung und eine lebhafte Stadtgemeinschaft mit einer ausgeprägten Flugbranchenkultur.</p>
+              <p>Die S7 verbindet Mörfelden-Walldorf in rund 20 Minuten mit dem Frankfurter Hauptbahnhof, die A5 und A661 erschließen das Straßennetz. Die Nähe zum Flughafen ist ein zweischneidiges Schwert: Einerseits entstehen dadurch Fluglärm-Einschränkungen in bestimmten Lagen, andererseits ermöglicht genau dieser Standortfaktor günstigere Immobilienpreise als in vergleichbar gut angebundenen Frankfurt-Vororten ohne Fluglärmbelastung. Wer damit leben kann, bekommt ein attraktives Angebot.</p>
+              <p>Die Immobilienpreise sind entsprechend attraktiv kalkuliert: Einfamilienhäuser werden zwischen 420.000 und 720.000 Euro gehandelt, Eigentumswohnungen erzielen 3.200 bis 4.800 Euro pro Quadratmeter. Für Flughafenmitarbeiter und Pendler mit Frühschicht ist dies eine der praktischsten und kosteneffizientesten Wohnentscheidungen im Rhein-Main-Gebiet. immovativInvest kennt die Besonderheiten des lokalen Marktes genau.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S7 nach Frankfurt (20 min)' },
+                { icon: '✈️', label: 'Flughafen-Mitarbeiter-Hotspot' },
+                { icon: '💶', label: 'Günstig mit guter Anbindung' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

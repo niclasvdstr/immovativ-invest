@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Eltville?',
+    answer: 'Eltville ist ein Markt für einen selektiven, kaufkräftigen Käuferkreis – Verkäufe können entsprechend 8 bis 16 Wochen dauern. Die Nachfrage kommt überwiegend von Wohlhabenden aus dem Rhein-Main-Raum, die ein exklusives Ruheobjekt im Rheingau suchen. Eine professionelle Präsentation und die gezielte Ansprache dieser spezifischen Käufergruppe sind entscheidend. immovativInvest verfügt über das richtige Netzwerk für diesen Premiummarkt.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Eltville?',
+    answer: 'In Eltville gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Was sollte ich beim Kauf eines Weinguts oder Weinberggrundstücks in Eltville beachten?',
+    answer: 'Weingüter und Weinberggrundstücke in Eltville unterliegen besonderen rechtlichen Rahmenbedingungen: Weinbaurecht, Nutzungsbeschränkungen und spezifische Bebauungspläne müssen sorgfältig geprüft werden. Zudem spielen Bodenklassifizierungen und Rebsortenrechte eine wichtige Rolle für den Wert. immovativInvest arbeitet mit auf Weinbauimmobilien spezialisierten Juristen zusammen und begleitet Sie durch den gesamten Kaufprozess.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -320,6 +334,37 @@ export default function ImmobilienmaklerEltvillePage() {
                 <div className="text-2xl font-bold text-brand-green">+18%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Eltville – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Eltville: Weinstadt am Rhein mit exklusivem Charakter
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Eltville am Rhein ist die größte Stadt im Rheingau und eine der schönsten Weinregionen Deutschlands. Mit ihrer historischen Altstadt, dem mittelalterlichen Kurfürstlichen Burg, dem bekannten Kloster Eberbach in unmittelbarer Nachbarschaft und den weitläufigen Weinbergen am Rheinufer bietet Eltville ein Ambiente, das Wohlhabende aus ganz Deutschland anzieht. Die rund 18.000 Einwohner schätzen das ruhige, naturnahe Leben mit dem besonderen Flair eines Weinortes.</p>
+              <p>Die Rheingau-Linie verbindet Eltville in rund 60 Minuten mit Frankfurt Hauptbahnhof, die B42 erschließt die Rheinregion entlang der malerischen Rheinuferstraße. Eltville ist damit eine bevorzugte Wohnlage für Wohlhabende, die Ruhe und Naturschönheit höher bewerten als kurze Pendeldistanzen – Weingutsbesitzer, Ruhesitz-Suchende und frankfurter Vermögende schätzen diese Exklusivität. Das Kloster Eberbach, ein weltweit bekanntes Kulturdenkmal, verleiht der Region internationale Strahlkraft.</p>
+              <p>Die Immobilienpreise spiegeln den exklusiven Charakter wider: Einfamilienhäuser werden zwischen 600.000 und 1,5 Millionen Euro gehandelt, Weinberggrundstücke und Weingüter erzielen noch höhere Preise. Die Nachfrage ist selektiv und kommt überwiegend von kaufkräftigen Käufern mit langfristiger Perspektive. immovativInvest vermarktet Eltville-Immobilien mit dem Fingerspitzengefühl, das dieser besondere Markt erfordert.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🍷', label: 'Rheingau-Weinregion' },
+                { icon: '⛪', label: 'Kloster Eberbach (UNESCO)' },
+                { icon: '🌊', label: 'Exklusive Lage am Rhein' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Idstein?',
+    answer: 'Idstein spricht einen spezifischen Käufertyp an: Menschen, die historischen Charme, Naturverbundenheit und Taunus-Lage suchen und dabei bereit sind, eine etwas längere Pendelzeit nach Frankfurt in Kauf zu nehmen. Die Vermarktungszeit liegt typischerweise bei 8 bis 14 Wochen. Eine zielgruppengerechte Ansprache über die richtigen Kanäle ist entscheidend – immovativInvest kennt diesen Käufertyp genau.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Idstein?',
+    answer: 'In Idstein gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Was sind die Vorteile von Idstein gegenüber teureren Taunus-Städten?',
+    answer: 'Idstein bietet Taunus-Qualität – Natur, Ruhe, historisches Ambiente – zu deutlich günstigeren Preisen als Bad Homburg, Kronberg oder Königstein. Die A3-Anbindung macht Frankfurt trotzdem gut erreichbar. Für Käufer, die nicht auf die Frankfurter Superlage angewiesen sind, ist Idstein eine der smartesten Entscheidungen im Rheingau-Taunus-Kreis: mehr Wohnfläche, mehr Grundstück, niedrigerer Preis bei vergleichbarer Naturlage.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -298,6 +312,37 @@ export default function ImmobilienmaklerIdsteinPage() {
                 <div className="text-2xl font-bold text-brand-green">+18%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Idstein – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Idstein: Historische Fachwerkstadt im Taunus mit günstigen Preisen
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Idstein im Rheingau-Taunus-Kreis gehört zu den am besten erhaltenen Fachwerkstädten in ganz Hessen. Das mittelalterliche Stadtbild mit Häusern aus dem 16. bis 18. Jahrhundert, dem markanten Hexenturm und dem Schloss Idstein prägen eine Altstadt von außerordentlicher Qualität. Mit rund 24.000 Einwohnern ist Idstein kompakt genug für nachbarschaftliches Leben, aber groß genug für eine vollständige Infrastruktur – inklusive Hochschule Fresenius, die dem Ort akademisches Flair verleiht.</p>
+              <p>Der direkte A3-Anschluss bringt Frankfurt in rund 30 Minuten Fahrtzeit erreichbar, per Bahn sind es rund 60 Minuten. Diese Anbindung macht Idstein attraktiv für Ruhesuchende, die den Frankfurter Arbeitsmarkt noch nutzen, aber in einer ruhigeren, naturnahen Umgebung mit historischem Charakter leben möchten. Der Taunus als Naturraum ist direkt zugänglich – Wanderwege und Waldgebiete beginnen direkt an der Stadtgrenze.</p>
+              <p>Für Taunus-Verhältnisse sind die Immobilienpreise in Idstein noch vergleichsweise moderat: Einfamilienhäuser werden zwischen 380.000 und 680.000 Euro gehandelt – deutlich günstiger als in Bad Homburg oder Kronberg. Diese Diskrepanz ist eine Chance für Käufer, die Taunus-Qualität zu erschwinglicheren Preisen suchen. immovativInvest kennt den Idsteiner Markt und berät Sie zu Kauf- und Verkaufsstrategien in dieser besonderen Stadt.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏘️', label: 'Historische Fachwerkstadt' },
+                { icon: '🛣️', label: 'A3-Anschluss Frankfurt 30 min' },
+                { icon: '🎓', label: 'Hochschule Fresenius' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

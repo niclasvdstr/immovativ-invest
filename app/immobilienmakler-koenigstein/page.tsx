@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Königstein?',
+    answer: 'Königstein bedient ein sehr selektives Käufersegment – Top-Manager, Unternehmer und Diplomaten mit entsprechendem Kaufbudget. Die Vermarktungszeit liegt typischerweise bei 8 bis 16 Wochen, da der Käuferkreis für Objekte ab 1,5 Millionen Euro begrenzt ist. Diskretion und ein etabliertes Netzwerk in der Zielgruppe sind entscheidend. immovativInvest verfügt über exakte Marktkenntnis und Kontakte im Hochtaunus-Premiumsegment.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Königstein?',
+    answer: 'In Königstein gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Wie unterscheidet sich Königstein von Kronberg als Wohnlage?',
+    answer: 'Beide Städte zählen zur absoluten Premiumklasse im Hochtaunuskreis, haben aber unterschiedliche Charaktere: Kronberg ist bekannter, internationaler und beherbergt viele Expat-Familien rund um die Taunus International School. Königstein ist etwas ruhiger, naturverbundener und diskreter – bevorzugt von deutschen Unternehmern und Managern. Die Preise in Kronberg tendieren etwas höher, Königstein bietet dafür mehr Naturidylle und Ruhe.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -298,6 +312,37 @@ export default function ImmobilienmaklerKoenigsteinPage() {
                 <div className="text-2xl font-bold text-brand-green">+25%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Königstein – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Königstein: Premiumlage im Hochtaunus mit Burgruine und exklusiven Anwesen
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Königstein im Taunus ist eine der exklusivsten Wohnadressen im gesamten Rhein-Main-Gebiet. Mit rund 16.000 Einwohnern ist die Stadt überschaubar – aber die Dichte an Topmanagern, Unternehmern, Diplomaten und vermögenden Familien ist außergewöhnlich hoch. Das markante Wahrzeichen der Stadt, die weitläufige Burgruine Königstein, überragt die naturnahe Wohnlage inmitten des Taunusgebirges. Königstein steht für Diskretion, Exklusivität und höchsten Wohnkomfort.</p>
+              <p>Die S45 verbindet Königstein in rund 30 Minuten mit Frankfurt – eine Verbindung, die für die Bewohner von großer Bedeutung ist. Die Lage im Taunus bietet unmittelbaren Zugang zu Wander- und Erholungsgebieten, Reitanlagen und dem gehobenen Gastronomie-Angebot der Region. Königstein positioniert sich – neben Kronberg – als zweite Premiumadresse im Hochtaunuskreis, mit einer etwas ruhigeren, naturverbundeneren Atmosphäre.</p>
+              <p>Die Immobilienpreise zählen zu den höchsten in ganz Hessen: Einfamilienhäuser beginnen bei rund 900.000 Euro, viele Objekte überschreiten die 2-Millionen-Euro-Marke deutlich. Eigentumswohnungen erzielen 5.000 bis 8.000 Euro pro Quadratmeter. immovativInvest vermarktet Königsteiner Premiumobjekte mit dem Fingerspitzengefühl und dem Käufernetzwerk, das dieser exklusive Markt erfordert.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏯', label: 'Burgruine Königstein' },
+                { icon: '🚆', label: 'S45 Frankfurt (30 min)' },
+                { icon: '💎', label: 'Premiumlage Hochtaunus' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Butzbach?',
+    answer: 'In Butzbach ist der Markt ruhiger als in direkten Frankfurt-Vororten – Verkäufe dauern in der Regel 8 bis 14 Wochen. Die steigende Nachfrage von Frankfurt-Pendlern verkürzt die Vermarktungszeiten jedoch kontinuierlich, besonders bei Einfamilienhäusern mit Garten. Eine realistische Preisgestaltung und professionelle Vermarktung sind der Schlüssel zum Erfolg in diesem Markt.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Butzbach?',
+    answer: 'In Butzbach gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Eignet sich Butzbach für Kapitalanleger?',
+    answer: 'Butzbach bietet für Kapitalanleger interessante Einstiegsmöglichkeiten: Die Kaufpreise zählen zu den günstigsten im Wetteraukreis, während die Mietrenditen durch stabile lokale Nachfrage attraktiv sind. Besonders Mehrfamilienhäuser und gut geschnittene Eigentumswohnungen in Zentrumsnähe eignen sich als renditestarke Kapitalanlage. immovativInvest analysiert für Sie das Renditepotenzial konkreter Objekte in Butzbach.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -315,6 +329,37 @@ export default function ImmobilienmaklerButzbachPage() {
                 <div className="text-2xl font-bold text-brand-green">+18%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Butzbach – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Butzbach: Historische Fachwerkstadt mit günstigstem Preisniveau im Wetteraukreis
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Butzbach ist eine der schönsten mittelalterlichen Kleinstädte in der Wetterau: Mit gut erhaltener Stadtmauer, einem dichten Fachwerkensemble und einer lebendigen Altstadt bietet die rund 27.000 Einwohner zählende Stadt ein authentisches historisches Stadtbild. Der Marktplatz und die Langgasse gehören zu den eindrucksvollsten Altstadt-Ensembles in Hessen. Diese Qualität – kombiniert mit noch moderaten Immobilienpreisen – macht Butzbach zunehmend interessant für Käufer, die dem Rhein-Main-Preisniveau ausweichen wollen.</p>
+              <p>Butzbach liegt verkehrstechnisch günstig an der A5, die sowohl Frankfurt in rund 40 Kilometern als auch Gießen in rund 20 Kilometern erschließt. Der regionale Knotenpunkt-Status sichert eine gute Infrastruktur: Schulen, Ärzte, Einkaufsmöglichkeiten und Behörden sind vollständig vorhanden. Für Pendler zur Universität Gießen oder zum Wissenschaftscampus der Region ist Butzbach eine attraktive und erschwingliche Wohnoption.</p>
+              <p>Die Immobilienpreise gehören zu den günstigsten im gesamten Wetteraukreis: Einfamilienhäuser sind ab rund 320.000 Euro erhältlich, mit steigender Tendenz durch zunehmende Nachfrage von Frankfurt-Pendlern. Wer frühzeitig in diesen Markt einsteigt, profitiert von attraktiven Einstiegspreisen und einem stabilen Wertsteigerungspotenzial. immovativInvest begleitet Verkäufer und Käufer in Butzbach mit regionaler Expertise.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏰', label: 'Historische Altstadt & Stadtmauer' },
+                { icon: '🛣️', label: 'A5-Anbindung Richtung Frankfurt' },
+                { icon: '💶', label: 'Günstigstes Preisniveau Wetteraukreis' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -61,6 +61,7 @@ export default function UeberUnsPage() {
                 },
                 knowsAbout: ['Immobilienverkauf', 'Immobilienbewertung', 'Rhein-Main-Immobilienmarkt', 'Off-Market-Verkauf'],
                 areaServed: 'Frankfurt am Main und Rhein-Main-Gebiet',
+                sameAs: ['https://www.instagram.com/immovativ.de', 'https://www.immovativ-invest.de/ueber-uns'],
               },
               {
                 '@type': 'Person',
@@ -85,6 +86,7 @@ export default function UeberUnsPage() {
                 },
                 knowsAbout: ['Immobilienverkauf', 'Besichtigungsmanagement', 'Kundenbetreuung', 'Rhein-Main-Immobilienmarkt'],
                 areaServed: 'Frankfurt am Main und Rhein-Main-Gebiet',
+                sameAs: ['https://www.instagram.com/immovativ.de', 'https://www.immovativ-invest.de/ueber-uns'],
               },
               {
                 '@type': 'AboutPage',

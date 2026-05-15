@@ -81,7 +81,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Hanau?',
+    answer: 'Hanau entwickelt sich zunehmend zum gefragten Wachstumsmarkt: Gut positionierte Objekte in begehrten Lagen wie Steinheim, Kesselstadt oder Wolfgang finden in der Regel innerhalb von 6 bis 10 Wochen Käufer. Die steigende Nachfrage von Frankfurt-Pendlern, die günstigere Preise bei guter Bahnverbindung suchen, verkürzt die Vermarktungszeiten deutlich.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Hanau?',
+    answer: 'In Hanau gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Ist Hanau ein guter Standort für Immobilien als Kapitalanlage?',
+    answer: 'Hanau bietet für Kapitalanleger ein attraktives Chance-Risiko-Profil: Die Kaufpreise liegen noch deutlich unter Frankfurt-Niveau, während die Mietrenditen durch stabile Nachfrage solide sind. Die laufenden Stadtentwicklungsprojekte – Philipp-Reis-Quartier, Neustädter Markt – stärken die Attraktivität mittelfristig. Wer frühzeitig in aufgewerteten Stadtteilen investiert, kann von Wertsteigerungen profitieren.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 export default function ImmobilienmaklerHanau() {
   return (
@@ -167,7 +181,7 @@ export default function ImmobilienmaklerHanau() {
             </CTAButton>
           </div>
           <div className="flex justify-center">
-            <Image src="/hero-niclas-2.png" alt="Niclas van der Straeten – Immobilienmakler Hanau" className="rounded-2xl shadow-lg max-h-96 object-cover" width={600} height={384} />
+            <Image src="/hero-niclas-2.png" alt="Niclas van der Straeten – Immobilienmakler Hanau" className="rounded-2xl shadow-lg max-h-96 object-cover" width={600} height={384} priority />
           </div>
         </div>
       </section>
@@ -227,6 +241,37 @@ export default function ImmobilienmaklerHanau() {
             </div>
             <div className="flex justify-center">
               <Image src="/hanau-markt.jpg" alt="Immobilienmarkt Hanau" className="rounded-xl shadow-md max-h-72 object-cover w-full" width={800} height={288} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Hanau – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Hanau: Brüder-Grimm-Stadt mit unterbewerteten Immobilien
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Hanau ist die Geburtsstadt der Brüder Grimm und mit rund 100.000 Einwohnern eine der größten Städte im Main-Kinzig-Kreis. Die Stadt bietet eine bemerkenswerte Kombination: Direkte Bahnanbindung nach Frankfurt in nur 25 Minuten über die S8 und S9, dennoch deutlich günstigere Immobilienpreise als vergleichbare Frankfurt-Vororte. Diese Diskrepanz macht Hanau zu einem der interessantesten Wachstumsmärkte im gesamten Rhein-Main-Gebiet.</p>
+              <p>Die Stadtentwicklung hat in den letzten Jahren erheblich an Fahrt aufgenommen: Das Philipp-Reis-Quartier und der Neustädter Markt werden umfangreich modernisiert, neue Wohnquartiere entstehen an verschiedenen Standorten. Diese Investitionen in die Stadtstruktur ziehen zunehmend jüngere Käuferschichten aus Frankfurt an, die mehr Platz für ihr Budget suchen. Die direkte A66-Anbindung und der starke ÖPNV machen Hanau zu einem echten Pendler-Hotspot.</p>
+              <p>Die Immobilienpreise liegen noch deutlich unter Frankfurt-Niveau: Einfamilienhäuser werden zwischen 380.000 und 650.000 Euro gehandelt, Eigentumswohnungen erzielen 2.800 bis 4.200 Euro pro Quadratmeter. Für Investoren und Eigennutzer bietet Hanau damit ein attraktives Einstiegspreisniveau mit klarem Aufwärtspotenzial. immovativInvest kennt die Hanauer Stadtteile – von Steinheim bis Großauheim – genau.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '📖', label: 'Brüder-Grimm-Heimatstadt' },
+                { icon: '🚆', label: 'S8/S9 nach Frankfurt (25 min)' },
+                { icon: '📉', label: 'Unterbewerteter Markt' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

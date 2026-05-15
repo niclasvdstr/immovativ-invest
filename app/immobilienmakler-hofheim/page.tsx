@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Hofheim?',
+    answer: 'Hofheim zählt zu den gefragtesten Familienlagen im Main-Taunus-Kreis. Gut positionierte Einfamilienhäuser – besonders in Diedenbergen, Lorsbach und der Kernstadt – finden in der Regel innerhalb von 5 bis 8 Wochen einen Käufer. Die hohe Nachfrage aus Frankfurt und die begrenzte Baufläche sorgen dafür, dass Bestandsobjekte in Hofheim schnell und zu guten Preisen verkauft werden.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Hofheim?',
+    answer: 'In Hofheim gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welcher Hofheimer Stadtteil ist am begehrtesten?',
+    answer: 'Die Kernstadt Hofheim bietet die beste Infrastruktur und ist besonders bei Familien beliebt. Lorsbach und Diedenbergen punkten mit ruhiger Taunusnähe und Dorfcharakter bei guter Anbindung. Langenhain und Ruppertshain sind für Naturliebhaber ideal. Wallau und Marxheim liegen günstiger in der Preisgestaltung. immovativInvest berät Sie zur optimalen Preisstrategie in Ihrem konkreten Stadtteil.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -298,6 +312,37 @@ export default function ImmobilienmaklerHofheimPage() {
                 <div className="text-2xl font-bold text-brand-green">+17%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Hofheim – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Hofheim: Kreisstadt mit exzellenter Infrastruktur und sehr beliebter Familienlage
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Hofheim am Taunus ist die Kreisstadt des Main-Taunus-Kreises und zählt mit rund 40.000 Einwohnern zu den begehrtesten Wohnstandorten westlich von Frankfurt. Als Verwaltungssitz des Kreises bietet Hofheim eine vollständige Infrastruktur: Exzellente Schulen, moderne Sportanlagen, ein lebendiges Stadtleben und eine hervorragende medizinische Versorgung. Für Familien ist Hofheim seit Jahrzehnten eine der ersten Adressen im gesamten Main-Taunus-Kreis.</p>
+              <p>Die S2 verbindet Hofheim in rund 25 Minuten mit dem Frankfurter Hauptbahnhof, die A66 bietet direkte Autobahnanbindung. Die sieben Stadtteile – Hofheim, Diedenbergen, Langenhain, Lorsbach, Marxheim, Wallau und Wildsachsen – bieten für jeden Lebensstil das passende Wohnumfeld: Vom urbanen Kernstadtbereich bis zur dörflichen Ruhe im Taunusvorland. Niedrige Kriminalität und gut benotete Schulen machen Hofheim zur ersten Wahl für Familien mit Kindern.</p>
+              <p>Die Immobilienpreise reflektieren diese hohe Beliebtheit: Einfamilienhäuser werden zwischen 550.000 und 950.000 Euro gehandelt, Eigentumswohnungen erzielen 4.000 bis 5.800 Euro pro Quadratmeter. Die Nachfrage übersteigt regelmäßig das Angebot – gute Objekte werden selten öffentlich ausgeschrieben. immovativInvest kennt alle Hofheimer Stadtteile und verfügt über vorgemerkte Kaufinteressenten im Main-Taunus-Kreis.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S2 nach Frankfurt (25 min)' },
+                { icon: '🏛️', label: 'Kreisstadt mit exzellenter Infrastruktur' },
+                { icon: '👨‍👩‍👧', label: 'Sehr beliebte Familienlage' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

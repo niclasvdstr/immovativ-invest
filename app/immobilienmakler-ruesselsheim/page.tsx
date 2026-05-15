@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Rüsselsheim?',
+    answer: 'Rüsselsheim ist ein Käufermarkt mit moderater Nachfrage: Gut bewertete Objekte in attraktiven Lagen finden in der Regel innerhalb von 8 bis 14 Wochen Käufer. Die günstigsten Preise der Region ziehen zwar Schnäppchenjäger an, aber eine professionelle Vermarktung und realistische Preisgestaltung sind entscheidend. immovativInvest kennt die lokalen Käufergruppen – vor allem Flughafenmitarbeiter und Frankfurt-Pendler – und spricht sie gezielt an.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Rüsselsheim?',
+    answer: 'In Rüsselsheim gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Bietet Rüsselsheim Chancen für Immobilien-Investoren trotz des Opel-Wandels?',
+    answer: 'Der Strukturwandel nach dem Opel-Stellenabbau hat Rüsselsheim herausgefordert, aber auch Chancen eröffnet: Die Immobilienpreise sind auf ein günstiges Einstiegsniveau gesunken, während die Infrastruktur und die S-Bahn-Anbindung nach Frankfurt intakt geblieben sind. Investoren, die auf Recovery-Potenzial setzen und eine längere Haltedauer einplanen, finden hier interessante Renditeobjekte. Die Flughafen-Nähe sichert außerdem eine stabile Mietnachfrage.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -297,6 +311,37 @@ export default function ImmobilienmaklerRuesselsheimPage() {
                 <div className="text-2xl font-bold text-brand-green">+18%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Rüsselsheim – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Rüsselsheim: Automobilstadt im Wandel mit günstigstem Preisniveau Groß-Gerau
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Rüsselsheim am Main ist untrennbar mit der Geschichte der Automobilmarke Opel verbunden: Die Stadt von rund 66.000 Einwohnern im Landkreis Groß-Gerau war über Jahrzehnte einer der bedeutendsten Automobil-Produktionsstandorte Deutschlands. Dieser industrielle Kern prägt den Charakter der Stadt bis heute – aber Rüsselsheim befindet sich in einem tiefgreifenden Strukturwandel, der neue Chancen für den Immobilienmarkt schafft.</p>
+              <p>Die S-Bahnlinien S8 und S9 verbinden Rüsselsheim in rund 25 Minuten mit Frankfurt, der Frankfurter Flughafen liegt nur 10 Kilometer entfernt. Für Flughafenmitarbeiter und Frankfurt-Pendler, die große Wohnfläche zu niedrigen Preisen suchen, ist Rüsselsheim eine der günstigsten verfügbaren Optionen in der gesamten Region. Die Stadtplanung investiert aktiv in die Aufwertung von Stadtquartieren und die Schaffung neuer Wohngebiete.</p>
+              <p>Die Immobilienpreise gehören zu den niedrigsten aller Frankfurt-nahen Städte: Einfamilienhäuser kosten 320.000 bis 560.000 Euro, Eigentumswohnungen 2.400 bis 3.800 Euro pro Quadratmeter. Wer bereit ist, auf die aktuell noch niedrigen Preise zu setzen und einen mittelfristigen Recovery-Trend einzupreisen, findet hier attraktive Einstiegsmöglichkeiten. immovativInvest begleitet Sie mit nüchterner Marktanalyse und ehrlicher Beratung.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚗', label: 'Opel-Automobilstadt' },
+                { icon: '🚆', label: 'S8/S9 Frankfurt (25 min)' },
+                { icon: '💶', label: 'Günstigste Preise Groß-Gerau' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

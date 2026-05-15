@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Kronberg?',
+    answer: 'Kronberg bedient das absolut höchste Preissegment im Rhein-Main-Gebiet. Die Vermarktungszeit beträgt typischerweise 10 bis 20 Wochen, da der Käuferkreis für Objekte über 2 Millionen Euro sehr selektiv ist. Diskretion, internationale Vermarktung und ein etabliertes Netzwerk in der Expat- und Premium-Community sind hier entscheidend. immovativInvest kennt diesen Markt genau und positioniert Ihre Immobilie zielgenau.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Kronberg?',
+    answer: 'In Kronberg gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Wie wichtig ist die Taunus International School für den Kronberger Immobilienmarkt?',
+    answer: 'Die Taunus International School (TIS) ist ein wesentlicher Treiber der internationalen Nachfrage in Kronberg. Expat-Familien von EZB, Deutschen Bank, Lufthansa und internationalen Konzernen bevorzugen Kronberg explizit wegen der TIS – englischsprachige Bildung auf höchstem Niveau direkt vor der Haustür. Dies erzeugt eine konstante Nachfrage aus dem internationalen Käufermarkt, die Kronberger Preise stabilisiert und Leerstandsrisiken minimiert.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const stadtteilPreise = [
   { name: 'Kernstadt', preis: '8.000–15.000 €/m²', beschreibung: 'Eine der teuersten Lagen Deutschlands' },
@@ -333,6 +347,37 @@ export default function ImmobilienmaklerKronbergPage() {
                 <div className="text-xs text-brand-gray-warm">{st.beschreibung}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Kronberg – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Kronberg: Teuerste Adresse im Rhein-Main-Gebiet mit internationalem Flair
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Kronberg im Taunus ist die exklusivste Wohnadresse im gesamten Rhein-Main-Gebiet. Das malerische Schloss Kronberg, historische Altstadt und ein dichtes Netz an Luxusvillen in herrlicher Taunus-Natur machen die Stadt mit rund 18.000 Einwohnern zu einem der begehrtesten Standorte Deutschlands. Die historische Malerkolonie, die im 19. Jahrhundert hier entstand, verleiht Kronberg kulturellen Tiefgang und überregionale Strahlkraft weit über den Immobilienmarkt hinaus.</p>
+              <p>Die S4 verbindet Kronberg in rund 25 Minuten mit Frankfurt, die A661 erschließt das Straßennetz. Internationale Familien schätzen insbesondere die Taunus International School – eine der renommiertesten Privatschulen Deutschlands mit englischsprachigem Unterricht, die Kronberg zur bevorzugten Wohnlage für Expat-Familien großer Konzerne und internationaler Institutionen macht. Der Anteil an internationalen Kaufinteressenten ist in keiner anderen Rhein-Main-Stadt höher.</p>
+              <p>Die Immobilienpreise sind die höchsten in der gesamten Region: Einfamilienhäuser beginnen bei 1,5 Millionen Euro, Toplagen und Villen überschreiten 5 Millionen Euro. Eigentumswohnungen werden für 6.000 bis 12.000 Euro pro Quadratmeter gehandelt. Dieser Markt erfordert höchste Professionalität, diskrete Vermarktung und internationale Reichweite. immovativInvest vermarktet Kronberger Premiumobjekte mit dem erforderlichen Anspruch.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏰', label: 'Schloss Kronberg (Wittelsbacher)' },
+                { icon: '🚆', label: 'S4 Frankfurt (25 min)' },
+                { icon: '💰', label: 'Teuerste Lage im Rhein-Main' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

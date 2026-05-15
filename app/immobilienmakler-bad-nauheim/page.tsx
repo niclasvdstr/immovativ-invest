@@ -90,7 +90,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Bad Nauheim?',
+    answer: 'In Bad Nauheim ist der Markt durch steigende Nachfrage aus dem Großraum Frankfurt geprägt. Gut bewertete Objekte – vor allem Einfamilienhäuser in ruhiger Lage und Neubau-Eigentumswohnungen – finden in der Regel innerhalb von 6 bis 10 Wochen einen Käufer. Die wachsende Beliebtheit als Pendlerstandort durch die gute Bahnanbindung nach Frankfurt verkürzt die Vermarktungszeiten kontinuierlich.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Bad Nauheim?',
+    answer: 'In Bad Nauheim gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Lohnt sich der Kauf einer Immobilie in Bad Nauheim als Kapitalanlage?',
+    answer: 'Bad Nauheim bietet interessantes Potenzial für Kapitalanleger: Die Preise liegen noch unter dem Niveau der direkten Frankfurt-Vororte, während die Nachfrage – angetrieben durch die Bahnanbindung und die geplante S-Bahn-Erweiterung – stetig wächst. Wer frühzeitig investiert, kann von Wertsteigerungen profitieren. Mietrenditen sind im Vergleich zu teureren Rhein-Main-Standorten attraktiver. immovativInvest berät Sie zur aktuellen Marktentwicklung im Wetteraukreis.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const navItems = [
   { label: 'Immobilienmakler', href: '/' },
@@ -315,6 +329,37 @@ export default function ImmobilienmaklerBadNauheimPage() {
                 <div className="text-2xl font-bold text-brand-green">+20%</div>
                 <div className="text-xs text-brand-gray-warm">Ø Wertsteigerung<br />der letzten 10 Jahre</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Bad Nauheim – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Bad Nauheim: Jugendstil-Kurstadt mit wachsendem Immobilienmarkt
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Bad Nauheim ist eine der architektonisch bedeutendsten Kurstädte in ganz Deutschland. Das einzigartige Jugendstil-Ensemble aus Kurhaus, Sprudelhof und Badegebäuden – als möglicher UNESCO-Welterbe-Kandidat gehandelt – verleiht der Stadt mit rund 32.000 Einwohnern eine kulturelle Strahlkraft, die weit über den Wetteraukreis hinausreicht. Die Verbindung von historischem Charme, Kurpark-Idylle und moderner Infrastruktur macht Bad Nauheim zunehmend attraktiv für Käufer aus dem Großraum Frankfurt.</p>
+              <p>Die Verkehrsanbindung ist ein zentraler Pluspunkt: Per Bahn ist Bad Nauheim in rund 30 Minuten vom Frankfurter Hauptbahnhof aus erreichbar, und ein weiterer Ausbau der S-Bahn-Anbindung in den kommenden Jahren ist geplant. Diese Entwicklung treibt die Nachfrage merklich an – insbesondere im Bereich Neubau, wo nördlich der Innenstadt neue Wohngebiete entstehen. Bad Nauheim hat sich damit als attraktive Alternative zu teureren Frankfurt-Vororten etabliert.</p>
+              <p>Die Immobilienpreise spiegeln dieses Wachstumspotenzial wider: Einfamilienhäuser werden derzeit zwischen 380.000 und 650.000 Euro gehandelt, Eigentumswohnungen erzielen Quadratmeterpreise von 2.800 bis 4.000 Euro. Wer jetzt kauft, profitiert von noch moderaten Preisen und dem Aufwertungstrend einer Kurstadt im Aufbruch. immovativInvest begleitet Verkäufer in Bad Nauheim mit fundierter Marktkenntnis und gezielter Käuferansprache.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏛️', label: 'Jugendstil-Kurhaus' },
+                { icon: '🚂', label: '30 min nach Frankfurt' },
+                { icon: '📈', label: 'Wachsende Nachfrage Wetteraukreis' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

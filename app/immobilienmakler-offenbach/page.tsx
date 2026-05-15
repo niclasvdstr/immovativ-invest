@@ -101,7 +101,21 @@ const processSteps = [
   },
 ]
 
-const faqItems = sharedFaqItems
+const cityFaqItems = [
+  {
+    question: 'Wie lange dauert der Verkauf einer Immobilie in Offenbach?',
+    answer: 'Offenbach erlebt durch den Stadtentwicklungsboom der letzten Jahre eine spürbar steigende Nachfrage. Objekte in aufgewerteten Lagen – Hafen, Innenstadt, Nordend – finden zunehmend schneller Käufer, oft innerhalb von 6 bis 10 Wochen. In traditionell schwächeren Stadtteilen kann die Vermarktung länger dauern. Eine professionelle Lagebewertung und gezielte Ansprache der richtigen Käufergruppe sind hier besonders wichtig.',
+  },
+  {
+    question: 'Was kostet ein Immobilienmakler in Offenbach?',
+    answer: 'In Offenbach gilt das Halbteilungsprinzip: Käufer und Verkäufer teilen sich die Maklerprovision. Bei immovativInvest sind alle Leistungen inklusive – Energieausweis, Grundbuchauszug, professionelle Fotografie und vollständige Notarkoordination. Es entstehen keine versteckten Kosten.',
+  },
+  {
+    question: 'Welche Offenbacher Stadtteile haben das größte Wertsteigerungspotenzial?',
+    answer: 'Das Hafengebiet und die angrenzenden innerstadtnahen Quartiere zählen zu den Bereichen mit dem höchsten Aufwertungspotenzial in Offenbach. Die geplante U-Bahn-Verlängerung von Frankfurt nach Offenbach wird einen weiteren Qualitätsschub für gut angebundene Stadtteile bringen. Das Nordend und Bereiche rund um das Ledermuseum-Viertel haben sich in den letzten Jahren bereits deutlich entwickelt. immovativInvest berät Sie zur lagenspezifischen Investitionsstrategie in Offenbach.',
+  },
+]
+const faqItems = [...cityFaqItems, ...sharedFaqItems.slice(0, 4)]
 
 const stadtteilPreise = [
   { name: 'Nordend', preis: '4.500–6.500 €/m²', beschreibung: 'Beliebte Wohnlage nahe Frankfurt' },
@@ -334,6 +348,37 @@ export default function ImmobilienmaklerOffenbach() {
                 <div className="text-xs text-brand-gray-warm">{st.beschreibung}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-brand-gray-light">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Offenbach – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Offenbach: Günstigste Frankfurt-Nachbarstadt im Strukturwandel
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Offenbach am Main ist Frankfurts direkter Nachbar im Osten – mit rund 135.000 Einwohnern die zweitgrößte Stadt im Rhein-Main-Kern. Was Offenbach von anderen Frankfurt-Satellitenstädten unterscheidet: Es ist nicht Umland, es ist Stadtgebiet in direkter Fortsetzung. Die S-Bahn-Linien S1, S2, S8 und S9 verbinden Offenbach in rund 10 Minuten mit Frankfurt Hbf – keine andere Stadt der Region liegt so nah an Frankfurts Bahnhof.</p>
+              <p>Die letzten zehn Jahre haben Offenbach erheblich verändert: Das Hafengebiet am Main wurde zu einem modernen Stadtquartier mit Restaurants, Büros und Eigentumswohnungen aufgewertet. Das Ledermuseum-Viertel und der innenstadtnahe Bereich haben sich qualitativ stark entwickelt. Eine U-Bahn-Verlängerung von Frankfurt nach Offenbach ist in der Planung – ein weiterer Katalysator für die Stadtentwicklung. Wer frühzeitig investiert, profitiert von Strukturwandel-Renditen.</p>
+              <p>Offenbach bietet das günstigste Preisniveau unter den direkten Frankfurt-Nachbarstädten: Einfamilienhäuser kosten 380.000 bis 680.000 Euro, Eigentumswohnungen 3.000 bis 4.800 Euro pro Quadratmeter. Diese Preise bei 10-minütiger S-Bahn-Verbindung nach Frankfurt sind in keiner anderen vergleichbaren Lage erreichbar. immovativInvest ist in Offenbach aktiv und kennt die besten Stadtlagen für Eigennutzer und Investoren.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S-Bahn nach Frankfurt (10 min)' },
+                { icon: '💶', label: 'Günstigste Frankfurt-Nachbarstadt' },
+                { icon: '🏗️', label: 'Starkes Stadtentwicklungsprogramm' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
