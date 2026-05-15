@@ -143,7 +143,7 @@ export default function UeberUnsPage() {
             <div className="relative rounded-t-3xl overflow-hidden group">
               <Image
                 src="/niclas-hochhaus.png"
-                alt="Niclas van der Straeten"
+                alt="Niclas van der Straeten, Gründer & Geschäftsführer immovativInvest Frankfurt"
                 className="w-full h-64 md:h-[400px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 width={800}
                 height={400}
@@ -163,7 +163,7 @@ export default function UeberUnsPage() {
             <div className="relative rounded-t-3xl overflow-hidden group">
               <Image
                 src="/mazlum-hochhaus.png"
-                alt="Mazlum Selcuk"
+                alt="Mazlum Selcuk, Gründer & Geschäftsführer immovativInvest Frankfurt"
                 className="w-full h-64 md:h-[400px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 width={800}
                 height={400}
@@ -209,7 +209,7 @@ export default function UeberUnsPage() {
               <div className="relative">
                 <Image
                   src="/NiclasAlleine 2.png"
-                  alt="Niclas van der Straeten"
+                  alt="Niclas van der Straeten, Immobilienmakler Frankfurt – Vermarktungsstrategie & Preisgestaltung"
                   className="w-full h-72 md:h-[580px] object-cover rounded-3xl shadow-large"
                   style={{ objectPosition: 'center top' }}
                   width={800}
@@ -300,7 +300,7 @@ export default function UeberUnsPage() {
               <div className="relative">
                 <Image
                   src="/mazlum.png"
-                  alt="Mazlum Selcuk"
+                  alt="Mazlum Selcuk, Immobilienmakler Frankfurt – Netzwerk & Abwicklung bis zur Schlüsselübergabe"
                   className="w-full h-72 md:h-[580px] object-cover rounded-3xl shadow-large"
                   style={{ objectPosition: 'center top' }}
                   width={800}
@@ -326,7 +326,7 @@ export default function UeberUnsPage() {
                 <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
                 <Image
                   src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop"
-                  alt="Meeting"
+                  alt="Persönliches Erstgespräch mit Immobilienmakler Frankfurt – immovativInvest"
                   className="relative w-full h-64 md:h-[480px] object-cover rounded-3xl shadow-large"
                   width={800}
                   height={480}
@@ -405,7 +405,7 @@ export default function UeberUnsPage() {
                 <div className="absolute inset-0 bg-brand-green-50 rounded-3xl -translate-x-3 translate-y-3" />
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop"
-                  alt="Team immovativInvest"
+                  alt="Niclas und Mazlum – Gründer von immovativInvest, Ihr Makler-Duo in Frankfurt"
                   className="relative w-full h-64 md:h-[480px] object-cover rounded-3xl shadow-large"
                   width={800}
                   height={480}
@@ -425,7 +425,7 @@ export default function UeberUnsPage() {
                 <div className="absolute inset-0 bg-brand-green-50 rounded-3xl translate-x-3 translate-y-3" />
                 <Image
                   src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop"
-                  alt="Kommunikation"
+                  alt="Direkte Kommunikation mit dem Immobilienmakler – immovativInvest Frankfurt erreichbar per Anruf, WhatsApp & E-Mail"
                   className="relative w-full h-64 md:h-[480px] object-cover rounded-3xl shadow-large"
                   width={800}
                   height={480}
@@ -567,8 +567,8 @@ export default function UeberUnsPage() {
             <div className="text-white">
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex -space-x-3">
-                  <Image src="/niclas-portrait.png" alt="Niclas" className="w-14 h-14 rounded-full object-cover border-2 border-white shrink-0" style={{ objectPosition: 'center 15%' }} width={56} height={56} />
-                  <Image src="/mazlum-portrait.png" alt="Mazlum" className="w-14 h-14 rounded-full object-cover border-2 border-white shrink-0" style={{ objectPosition: 'center 20%' }} width={56} height={56} />
+                  <Image src="/niclas-portrait.png" alt="Niclas van der Straeten, Geschäftsführer immovativInvest" className="w-14 h-14 rounded-full object-cover border-2 border-white shrink-0" style={{ objectPosition: 'center 15%' }} width={56} height={56} />
+                  <Image src="/mazlum-portrait.png" alt="Mazlum Selcuk, Geschäftsführer immovativInvest" className="w-14 h-14 rounded-full object-cover border-2 border-white shrink-0" style={{ objectPosition: 'center 20%' }} width={56} height={56} />
                 </div>
                 <div>
                   <div className="font-bold text-white">Niclas & Mazlum</div>

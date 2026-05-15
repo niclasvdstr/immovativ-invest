@@ -214,7 +214,7 @@ export default function HomePage() {
                     <Image
                       key={i}
                       src={src}
-                      alt="Kunde"
+                      alt="Zufriedener Immobilienverkäufer aus Frankfurt – Kundenbewertung immovativInvest"
                       className="w-7 h-7 rounded-full border-2 border-white object-cover shrink-0"
                       width={28}
                       height={28}
@@ -400,7 +400,7 @@ export default function HomePage() {
             <div className="relative">
               <Image
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
-                alt="Immobilie verkaufen"
+                alt="Immobilie verkaufen Frankfurt – Einfamilienhaus erfolgreich vermarkten mit immovativInvest"
                 className="w-full h-auto rounded-3xl shadow-large object-cover"
                 width={800}
                 height={600}
@@ -454,7 +454,7 @@ export default function HomePage() {
               </p>
               <Image
                 src="/team-photo.png"
-                alt="immovativInvest Team"
+                alt="Team immovativInvest – Niclas van der Straeten und Mazlum Selcuk, Immobilienmakler Frankfurt"
                 className="w-full h-96 object-cover rounded-2xl shadow-medium"
                 style={{ objectPosition: 'center 30%' }}
                 width={800}
@@ -558,7 +558,7 @@ export default function HomePage() {
               <div className="relative">
                 <Image
                   src="/mazlum.png"
-                  alt="Mazlum Selcuk – immovativInvest"
+                  alt="Mazlum Selcuk, Geschäftsführer immovativInvest – Ihr Immobilienmakler in Frankfurt"
                   className="w-full h-72 md:h-[580px] object-cover rounded-3xl shadow-large"
                   style={{ objectPosition: 'center top' }}
                   width={800}
@@ -653,7 +653,7 @@ export default function HomePage() {
               <div className="relative">
                 <Image
                   src="/NiclasAlleine 2.png"
-                  alt="Niclas van der Straeten"
+                  alt="Niclas van der Straeten, Geschäftsführer immovativInvest – Immobilienmakler Frankfurt Rhein-Main"
                   className="w-full h-64 md:h-[480px] object-cover rounded-3xl shadow-large"
                   style={{ objectPosition: 'center top' }}
                   width={800}

@@ -141,7 +141,7 @@ export default function VerkaufenPage() {
               <div className="rounded-3xl overflow-hidden h-[420px] shadow-large">
                 <Image
                   src="/Niclas Schreibtisch.png"
-                  alt="Immobilienberatung bei immovativInvest"
+                  alt="Niclas van der Straeten beim Immobilienberatungsgespräch – Immobilienmakler Frankfurt immovativInvest"
                   className="w-full h-full object-cover"
                   width={800}
                   height={420}
@@ -194,7 +194,7 @@ export default function VerkaufenPage() {
               <div className="rounded-3xl overflow-hidden h-[460px] shadow-large">
                 <Image
                   src="/mazlum-hochhaus.png"
-                  alt="Immobilienexperte Rhein-Main"
+                  alt="Mazlum Selcuk, Immobilienexperte Rhein-Main-Region – immovativInvest Frankfurt"
                   className="w-full h-full object-cover"
                   width={800}
                   height={460}
@@ -304,7 +304,7 @@ export default function VerkaufenPage() {
                   <div className="w-40 h-40 md:w-52 md:h-52 rounded-3xl overflow-hidden ring-4 ring-brand-green/30">
                     <Image
                       src="/niclas-hochhaus.png"
-                      alt="Niclas van der Straeten"
+                      alt="Niclas van der Straeten, Immobilienmakler Frankfurt – Ihr persönlicher Ansprechpartner bei immovativInvest"
                       className="w-full h-full object-cover"
                       style={{ objectPosition: 'center 12%' }}
                       width={208}
