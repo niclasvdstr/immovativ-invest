@@ -259,13 +259,7 @@ export default function KontaktPage() {
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-            {/* Links – Formular */}
-            <div className="bg-brand-gray-light rounded-3xl p-8 border border-brand-gray-border">
-              <h3 className="text-xl font-bold text-brand-anthrazit mb-6">Tipp einreichen</h3>
-              <TippgeberKontaktForm />
-            </div>
-
-            {/* Rechts – Info */}
+            {/* Links – Info */}
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex -space-x-3">
@@ -313,6 +307,12 @@ export default function KontaktPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Rechts – Formular */}
+            <div className="bg-brand-gray-light rounded-3xl p-8 border border-brand-gray-border">
+              <h3 className="text-xl font-bold text-brand-anthrazit mb-6">Tipp einreichen</h3>
+              <TippgeberKontaktForm />
             </div>
 
           </div>

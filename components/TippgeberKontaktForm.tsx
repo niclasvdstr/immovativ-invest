@@ -121,7 +121,7 @@ export default function TippgeberKontaktForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full btn-gradient text-white font-semibold rounded-xl px-6 py-4 text-sm transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-75 disabled:cursor-not-allowed"
+        className="w-full bg-[#16a34a] hover:bg-[#15803d] text-white font-semibold rounded-xl px-6 py-4 text-sm transition-all duration-200 flex items-center justify-center gap-2 whitespace-nowrap disabled:opacity-75 disabled:cursor-not-allowed"
       >
         {loading ? (
           <>

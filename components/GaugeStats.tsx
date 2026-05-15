@@ -72,7 +72,7 @@ function GaugeCard({ value, label, description, wide, active }: {
 
   if (wide) {
     return (
-      <div className="col-span-1 sm:col-span-2 bg-brand-anthrazit rounded-2xl p-6 text-white flex flex-col sm:flex-row items-center gap-5 sm:gap-8">
+      <div className="col-span-1 sm:col-span-2 bg-brand-anthrazit rounded-2xl p-6 text-white flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-8">
         <div className="w-36 sm:w-44 shrink-0">{gauge}</div>
         <div className="text-left">
           <div className="font-bold text-xl mb-2">{label}</div>

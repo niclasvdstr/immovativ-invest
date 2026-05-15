@@ -75,9 +75,9 @@ export default function ContactForm({
                 { icon: '🤝', text: 'Keine Verpflichtung, nur ein Gespräch' },
                 { icon: '📍', text: 'Persönliche Betreuung vor Ort' },
               ].map(item => (
-                <li key={item.text} className="flex items-center gap-3">
-                  <span className="text-2xl">{item.icon}</span>
-                  <span className="text-brand-anthrazit font-medium">{item.text}</span>
+                <li key={item.text} className="flex items-center gap-2.5">
+                  <span className="text-lg">{item.icon}</span>
+                  <span className="text-brand-anthrazit font-medium text-sm">{item.text}</span>
                 </li>
               ))}
             </ul>
@@ -143,7 +143,7 @@ export default function ContactForm({
                       <input type="number" name="livingArea" value={formData.livingArea} onChange={handleChange} placeholder="z.B. 120" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm" />
                     </div>
                     <div>
-                      <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide">Grundstücksfläche (m²)</label>
+                      <label className="block text-xs font-semibold text-brand-anthrazit mb-1.5 uppercase tracking-wide whitespace-nowrap">Grundstück (m²)</label>
                       <input type="number" name="plotArea" value={formData.plotArea} onChange={handleChange} placeholder="z.B. 500" className="w-full px-4 py-3 border border-brand-gray-border rounded-xl text-brand-anthrazit placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all text-sm" />
                     </div>
                   </div>

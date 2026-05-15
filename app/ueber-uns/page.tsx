@@ -250,7 +250,7 @@ export default function UeberUnsPage() {
                 ))}
               </div>
 
-              <CTAButton href="/verkaufen" variant="primary" size="sm">
+              <CTAButton href="/verkaufen" variant="primary" size="md" fullWidth>
                 Immobilienbewertung starten →
               </CTAButton>
             </AnimateIn>
@@ -290,7 +290,7 @@ export default function UeberUnsPage() {
                 ))}
               </div>
 
-              <CTAButton href="/verkaufen" variant="primary" size="sm">
+              <CTAButton href="/verkaufen" variant="primary" size="md" fullWidth>
                 Immobilienbewertung starten →
               </CTAButton>
             </AnimateIn>
@@ -470,54 +470,7 @@ export default function UeberUnsPage() {
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
 
-            {/* Links – Formular */}
-            <div className="bg-white rounded-3xl p-8 shadow-large">
-              <h3 className="text-xl font-bold text-brand-anthrazit mb-6">Tipp einreichen</h3>
-              <form className="space-y-5" action="#">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Vorname</label>
-                    <input type="text" placeholder="Johannes" className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Nachname</label>
-                    <input type="text" placeholder="Müller" className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">E-Mail</label>
-                  <input type="email" placeholder="beispiel@gmail.com" className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Telefon</label>
-                  <div className="flex items-center border border-brand-gray-border rounded-xl overflow-hidden focus-within:border-brand-green focus-within:ring-1 focus-within:ring-brand-green transition-colors">
-                    <span className="px-3 py-3 text-lg border-r border-brand-gray-border bg-brand-gray-light">🇩🇪</span>
-                    <input type="tel" placeholder="Gib deine Telefonnummer ein" className="flex-1 px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none bg-transparent" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-anthrazit mb-3">Welcher Immobilientyp wird verkauft?</label>
-                  <div className="space-y-2.5">
-                    {['Wohnung', 'Haus', 'Mehrfamilienhaus', 'Andere'].map((type) => (
-                      <label key={type} className="flex items-center gap-3 cursor-pointer group">
-                        <div className="w-5 h-5 rounded-full border-2 border-brand-gray-border group-hover:border-brand-green transition-colors shrink-0 flex items-center justify-center">
-                          <div className="w-2.5 h-2.5 rounded-full bg-brand-green opacity-0 group-hover:opacity-30 transition-opacity" />
-                        </div>
-                        <span className="text-sm text-brand-anthrazit">{type}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-                <button type="submit" className="w-full text-white font-semibold rounded-xl px-6 py-4 text-sm transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 flex items-center justify-center gap-2 whitespace-nowrap" style={{ background: '#16a34a' }}>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Tippgeber-Provision sichern →
-                </button>
-              </form>
-            </div>
-
-            {/* Rechts – Info */}
+            {/* Links – Info */}
             <div className="text-white">
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex -space-x-3">
@@ -562,6 +515,53 @@ export default function UeberUnsPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Rechts – Formular */}
+            <div className="bg-white rounded-3xl p-8 shadow-large">
+              <h3 className="text-xl font-bold text-brand-anthrazit mb-6">Tipp einreichen</h3>
+              <form className="space-y-5" action="#">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Vorname</label>
+                    <input type="text" placeholder="Johannes" className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Nachname</label>
+                    <input type="text" placeholder="Müller" className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">E-Mail</label>
+                  <input type="email" placeholder="beispiel@gmail.com" className="w-full border border-brand-gray-border rounded-xl px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-brand-anthrazit mb-1.5">Telefon</label>
+                  <div className="flex items-center border border-brand-gray-border rounded-xl overflow-hidden focus-within:border-brand-green focus-within:ring-1 focus-within:ring-brand-green transition-colors">
+                    <span className="px-3 py-3 text-lg border-r border-brand-gray-border bg-brand-gray-light">🇩🇪</span>
+                    <input type="tel" placeholder="Gib deine Telefonnummer ein" className="flex-1 px-4 py-3 text-sm text-brand-anthrazit placeholder-brand-gray-warm focus:outline-none bg-transparent" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-brand-anthrazit mb-3">Welcher Immobilientyp wird verkauft?</label>
+                  <div className="space-y-2.5">
+                    {['Wohnung', 'Haus', 'Mehrfamilienhaus', 'Andere'].map((type) => (
+                      <label key={type} className="flex items-center gap-3 cursor-pointer group">
+                        <div className="w-5 h-5 rounded-full border-2 border-brand-gray-border group-hover:border-brand-green transition-colors shrink-0 flex items-center justify-center">
+                          <div className="w-2.5 h-2.5 rounded-full bg-brand-green opacity-0 group-hover:opacity-30 transition-opacity" />
+                        </div>
+                        <span className="text-sm text-brand-anthrazit">{type}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+                <button type="submit" className="w-full text-white font-semibold rounded-xl px-6 py-4 text-sm transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 flex items-center justify-center gap-2 whitespace-nowrap" style={{ background: '#16a34a' }}>
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Tippgeber-Provision sichern →
+                </button>
+              </form>
             </div>
 
           </div>

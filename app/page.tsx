@@ -544,7 +544,7 @@ export default function HomePage() {
               </div>
 
               <div className="mt-10 flex justify-start">
-                <CTAButton href="/verkaufen" variant="primary" size="sm">
+                <CTAButton href="/verkaufen" variant="primary" size="md" className="w-full sm:w-auto">
                   Immobilienbewertung starten →
                 </CTAButton>
               </div>
@@ -687,7 +687,7 @@ export default function HomePage() {
             })}
           </div>
 
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 bg-white rounded-2xl px-6 py-4 border border-brand-gray-border shadow-soft">
+          <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-white rounded-2xl px-6 py-4 border border-brand-gray-border shadow-soft">
             <p className="text-brand-gray-warm text-sm">Deine Stadt nicht dabei? Wir sind auch darüber hinaus für dich tätig.</p>
             <a
               href="#kontakt"

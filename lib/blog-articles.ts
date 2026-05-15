@@ -3493,6 +3493,1116 @@ Was uns von größeren Maklerhäusern unterscheidet: Du arbeitest direkt mit dem
 Unsere Bewertungen auf Google sprechen für sich – aber noch lieber hören wir von dir direkt. Vereinbare ein kostenloses Erstgespräch, lern uns kennen, und dann entscheide, ob wir der richtige Partner für deinen Verkauf in Frankfurt sind.
     `,
   },
+  {
+    slug: 'zeitpunkt-immobilie-verkaufen',
+    category: 'Verkaufen',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-brand-green text-white',
+    title: 'Wann ist der richtige Zeitpunkt zum Immobilienverkauf?',
+    excerpt: 'Frühling, Zinstief, persönliche Situation – was wirklich zählt, wenn du den richtigen Moment für deinen Immobilienverkauf finden willst.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&h=600&fit=crop',
+    content: `
+## Den perfekten Moment gibt es nicht – aber sehr gute Momente
+
+Viele Eigentümer warten auf „den richtigen Zeitpunkt" und verpassen dabei Jahre, in denen gute Preise erzielbar gewesen wären. Die Wahrheit ist: Es gibt keinen universell perfekten Zeitpunkt – aber es gibt Faktoren, die einen Verkauf klug oder weniger klug machen.
+
+## Marktlage 2025: Stabile Nachfrage im Rhein-Main-Gebiet
+
+Der Immobilienmarkt im Rhein-Main-Gebiet hat sich 2025 spürbar stabilisiert. Nach den Zinsanstiegen 2022–2023 und dem damit verbundenen Nachfragerückgang kehren Käufer zurück. Besonders gepflegte Bestandsimmobilien und energetisch sanierte Objekte erzielen wieder sehr gute Preise.
+
+Wer 2025 oder 2026 verkaufen möchte, trifft auf einen Markt mit aktiven Käufern, aber auch mit gestiegenen Ansprüchen an Preis-Leistung.
+
+## Saisonale Effekte: Frühling und Herbst sind am stärksten
+
+Statistisch gesehen sind die aktivsten Marktphasen:
+- **März bis Mai:** Käufer sind aktiv, Licht ist gut für Fotos, Gärten wirken einladend
+- **September bis November:** Zweiter Höhepunkt vor dem Jahresende
+
+Der Sommer und die Zeit zwischen Weihnachten und Neujahr sind schwächer. Das bedeutet aber nicht, dass ein Winterverkauf unmöglich ist – in angespannten Lagen wie Frankfurt wird das ganze Jahr gesucht.
+
+## Persönliche Situation hat Vorrang vor dem Markt
+
+Ob du wegen eines Umzugs, einer Erbschaft, einer Scheidung oder einer veränderten Lebenssituation verkaufst – deine persönlichen Umstände sind oft der entscheidende Faktor. Ein Verkauf in einer „schlechten" Marktphase ist besser als gar kein Verkauf, wenn der persönliche Handlungsbedarf besteht.
+
+## Wann du besser wartest
+
+- Wenn du noch unter 10 Jahre Haltedauer hast und Spekulationssteuer fällig werden würde
+- Wenn die Immobilie sanierungsbedürftig ist und eine Renovierung den Preis deutlich steigern würde
+- Wenn du aktuell unter Druck stehst und keine Zeit für eine sorgfältige Vorbereitung hast
+
+## Unser Tipp
+
+Lass den Marktwert deiner Immobilie jetzt kostenlos ermitteln – dann weißt du, woran du bist, und kannst den Verkauf in deinem Tempo planen. Kein Druck, keine Verpflichtung.
+    `,
+  },
+  {
+    slug: 'realistischen-marktwert-ermitteln',
+    category: 'Bewertung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-blue-500 text-white',
+    title: 'Wie ermittle ich den realistischen Marktwert meiner Immobilie?',
+    excerpt: 'Online-Rechner, Maklereinschätzung oder Gutachter – welche Methode liefert den verlässlichsten Wert für deine Immobilie?',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&h=600&fit=crop',
+    content: `
+## Der häufigste Fehler beim Hausverkauf: Falscher Preis
+
+Zu teuer inseriert – monatelang kein Käufer. Zu günstig verkauft – Geld verschenkt. Beides passiert regelmäßig, wenn Eigentümer den Marktwert nicht kennen oder falsch einschätzen.
+
+## Methode 1: Online-Rechner
+
+Kostenlos, schnell, anonym – aber nur als grober Richtwert geeignet. Online-Tools berücksichtigen keine individuellen Faktoren wie Sanierungsstand, Grundrissqualität, Ausrichtung oder besondere Lagen innerhalb einer Stadt.
+
+**Geeignet für:** erste Orientierung
+**Nicht geeignet für:** Preisfestlegung
+
+## Methode 2: Vergleichswertmethode
+
+Professionelle Makler nutzen Vergleichspreise ähnlicher Objekte – mit ähnlicher Lage, Größe, Baujahr und Zustand. Entscheidend sind dabei **tatsächliche Kaufpreise**, nicht Angebotspreise. In Hessen sind diese über die Gutachterausschüsse öffentlich zugänglich.
+
+## Methode 3: Sachwertmethode
+
+Vor allem bei Ein- und Zweifamilienhäusern angewendet. Sie ermittelt den Wert anhand des Bodenwertes und des Gebäudewertes (Baukosten minus Altersabschlag). Wird häufig von Banken bei der Finanzierungsprüfung genutzt.
+
+## Methode 4: Ertragswertmethode
+
+Bei vermieteten Immobilien relevant. Der Wert leitet sich aus den erzielten oder erzielbaren Mieteinnahmen ab.
+
+## Methode 5: Professionelle Bewertung durch Makler oder Gutachter
+
+Der verlässlichste Weg. Ein erfahrener Makler kennt den lokalen Markt, aktuelle Transaktionspreise und Käuferpräferenzen. Er bewertet das Objekt vor Ort – kostenlos, wenn du mit ihm verkaufst.
+
+Ein öffentlich bestellter Gutachter erstellt ein rechtssicheres Wertgutachten – sinnvoll bei Erbschaftsangelegenheiten, Scheidungen oder gerichtlichen Verfahren.
+
+## Unser Tipp
+
+Wir ermitteln den Marktwert deiner Immobilie kostenlos und unverbindlich – mit lokaler Marktkenntnis und echter Expertise, nicht mit einem Online-Algorithmus.
+    `,
+  },
+  {
+    slug: 'was-kostet-hausverkauf-wirklich',
+    category: 'Verkaufen',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-brand-green text-white',
+    title: 'Was kostet mich ein Hausverkauf wirklich?',
+    excerpt: 'Maklercourtage, Steuern, Notar, Energieausweis – alle Kosten beim Hausverkauf auf einen Blick erklärt.',
+    author: 'Mazlum Selcuk',
+    authorImg: '/mazlum.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&h=600&fit=crop',
+    content: `
+## Viele Verkäufer unterschätzen die Kosten
+
+Wer eine Immobilie verkauft, denkt oft nur an den Erlös. Dabei gibt es mehrere Kostenpositionen, die den tatsächlichen Nettoertrag spürbar reduzieren können. Hier alles auf einen Blick.
+
+## Maklercourtage
+
+In Hessen beträgt die übliche Maklercourtage **3,57 % inkl. MwSt.** des Kaufpreises – seit der Gesetzesreform 2020 hälftig zwischen Käufer und Verkäufer aufgeteilt. Als Verkäufer zahlst du also ca. **1,785 %**.
+
+Bei einem Verkaufspreis von 400.000 € entspricht das ca. **7.140 €**.
+
+Ein guter Makler erwirtschaftet diese Kosten durch höhere Verkaufspreise und kürzere Vermarktungszeiten in der Regel mehrfach ein.
+
+## Energieausweis
+
+Seit 2014 ist der Energieausweis bei jedem Immobilienverkauf Pflicht. Liegt keiner vor, kostet die Erstellung:
+- Verbrauchsausweis: ca. 100–150 €
+- Bedarfsausweis: ca. 300–500 €
+
+## Notarkosten
+
+Beim Verkauf trägt in der Regel der Käufer die Notarkosten. Ausnahmen: Löschungskosten für alte Grundschulden oder Dienstbarkeiten gehen auf den Verkäufer – ca. 0,2–0,5 % des Betrages.
+
+## Vorfälligkeitsentschädigung
+
+Wer noch eine laufende Baufinanzierung hat und vorzeitig ablöst, muss ggf. eine Vorfälligkeitsentschädigung an die Bank zahlen. Die Höhe hängt von Restlaufzeit, Restschuld und aktuellem Zinsniveau ab – kann aber schnell mehrere Tausend Euro betragen.
+
+Tipp: Banken müssen auf Anfrage eine Berechnung erstellen. Lass dies vor dem Verkauf klären.
+
+## Spekulationssteuer
+
+Wenn du die Immobilie weniger als 10 Jahre gehalten hast und sie nicht selbst bewohnt hast, fällt auf den Gewinn Spekulationssteuer an. Die Höhe richtet sich nach deinem persönlichen Einkommensteuersatz.
+
+**Ausnahme:** Eigennutzung in den letzten 2 Jahren vor dem Verkauf macht den Erlös steuerfrei.
+
+## Sonstige Kosten
+
+- Schönheitsreparaturen oder kleine Renovierungen vor dem Verkauf
+- Professionelle Fotos und ggf. Homestaging
+- Ggf. Grundbuchauszug und andere Unterlagen (meist unter 100 €)
+
+## Fazit
+
+Als grobe Faustregel: Plane **2–4 % des Verkaufspreises** als Nebenkosten auf Verkäuferseite ein. Wir beraten dich kostenlos zu allen Kostenpositionen in deiner konkreten Situation.
+    `,
+  },
+  {
+    slug: 'notartermin-immobilien-ablauf',
+    category: 'Prozess',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-blue-500 text-white',
+    title: 'Wie läuft ein Notartermin beim Immobilienverkauf ab?',
+    excerpt: 'Was passiert beim Notartermin, welche Unterlagen braucht ihr und wie lange dauert es bis zur Eigentumsübertragung? Alles erklärt.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1521791055366-0d553872952f?w=1200&h=600&fit=crop',
+    content: `
+## Der Notartermin ist der Abschluss – nicht der Anfang
+
+Viele Käufer und Verkäufer sind beim Notartermin nervös. Dabei ist er eher eine Formsache: Die eigentliche Arbeit – Preisfindung, Verhandlung, Finanzierungssicherung – ist zu diesem Zeitpunkt längst erledigt.
+
+## Vorbereitung: Das braucht ihr zum Notartermin
+
+**Verkäufer:**
+- Personalausweis/Reisepass
+- Grundbuchauszug (aktuell, nicht älter als 3 Monate)
+- Energieausweis
+- Bei ETW: Teilungserklärung, Gemeinschaftsordnung, aktuelle Hausgeldabrechnung
+- Angaben zur bestehenden Finanzierung (Grundschulden)
+
+**Käufer:**
+- Personalausweis/Reisepass
+- Finanzierungsbestätigung der Bank
+- Ggf. Vollmacht bei Abwesenheit
+
+## Ablauf des Termins
+
+Der Notartermin dauert je nach Komplexität 30–90 Minuten. Der Ablauf:
+
+1. **Identitätsprüfung:** Der Notar prüft die Ausweise beider Parteien
+2. **Vorlesen des Kaufvertrags:** Der Notar liest den Vertrag vollständig und laut vor – das ist gesetzlich vorgeschrieben
+3. **Fragen und Erläuterungen:** Beide Parteien können Fragen stellen
+4. **Unterzeichnung:** Alle Beteiligten unterzeichnen den Kaufvertrag
+5. **Auflassungsvormerkung:** Der Notar veranlasst sofort die Eintragung einer Vormerkung im Grundbuch – der Käufer ist damit geschützt
+
+## Was danach passiert
+
+Nach dem Notartermin läuft die Zahlungsabwicklung:
+- Notar schickt die Zahlungsaufforderung an den Käufer
+- Käufer überweist den Kaufpreis (oft 4–6 Wochen nach Beurkundung)
+- Notar bestätigt dem Verkäufer den Eingang
+- Schlüsselübergabe findet statt
+- Grundbuchumschreibung auf den Käufer (dauert weitere 4–12 Wochen)
+
+## Wichtig: Kaufpreis kommt nicht sofort
+
+Viele Verkäufer erwarten, dass das Geld direkt nach dem Notartermin überwiesen wird. Das ist nicht der Fall. Zwischen Beurkundung und Kaufpreiszahlung vergehen typischerweise 4–8 Wochen.
+
+## Kann ich vom Notartermin zurücktreten?
+
+Nach Unterzeichnung des Kaufvertrags ist ein Rücktritt nur unter bestimmten Umständen möglich – und in der Regel mit erheblichen Kosten verbunden. Deshalb: Alle Fragen vorher klären.
+
+Wir begleiten dich durch den gesamten Prozess bis zur Schlüsselübergabe – transparent und persönlich.
+    `,
+  },
+  {
+    slug: 'steuerliche-aspekte-hausverkauf',
+    category: 'Recht & Steuern',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Was muss ich beim Hausverkauf steuerlich beachten?',
+    excerpt: 'Spekulationssteuer, Eigennutzung, Erbschaft – wann ist der Hausverkauf steuerfrei und wann wird Einkommensteuer fällig?',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=600&fit=crop',
+    content: `
+## Der Immobilienverkauf kann steuerpflichtig sein – muss es aber nicht
+
+Ob du beim Hausverkauf Steuern zahlst, hängt von drei Faktoren ab: Haltedauer, Eigennutzung und ob du gewerblich handelst.
+
+## Die Spekulationssteuer
+
+Wer eine Immobilie verkauft, die er **weniger als 10 Jahre** gehalten hat und **nicht selbst bewohnt** hat, muss den erzielten Gewinn als Einkommen versteuern. Die Steuer wird daher umgangssprachlich als „Spekulationssteuer" bezeichnet – offiziell handelt es sich um normale Einkommensteuer auf private Veräußerungsgewinne.
+
+Der Steuersatz entspricht deinem persönlichen Einkommensteuersatz (14–45 %).
+
+**Gewinn = Verkaufspreis – Anschaffungskosten – Werbungskosten**
+
+Werbungskosten sind z.B. Maklergebühren, Notarkosten beim Kauf, Renovierungskosten.
+
+## Wann ist der Verkauf steuerfrei?
+
+**Fall 1: 10-Jahres-Frist abgelaufen**
+Wenn zwischen Kauf und Verkauf mehr als 10 Jahre liegen, ist der Gewinn steuerfrei.
+
+**Fall 2: Eigennutzung**
+Wenn du die Immobilie in den letzten **3 Jahren vor dem Verkauf selbst bewohnt** hast (das Verkaufsjahr zählt mit), ist der Gewinn steuerfrei – unabhängig von der Haltedauer. Dies gilt bereits bei Nutzung im Jahr des Verkaufs.
+
+## Besonderheiten bei Erbschaft
+
+Bei geerbten Immobilien beginnt die 10-Jahres-Frist mit dem ursprünglichen Kauf durch den Erblasser – nicht mit dem Erbfall. Das ist oft ein Vorteil, da viele geerbte Immobilien schon länger im Besitz der Familie sind.
+
+## Grunderwerbsteuer beim Verkauf?
+
+Nein – die Grunderwerbsteuer zahlt der Käufer, nicht der Verkäufer.
+
+## Was tun bei Unsicherheit?
+
+Steuerliche Fragen rund um den Immobilienverkauf sind komplex und hängen von deiner individuellen Situation ab. Wir empfehlen dringend, einen Steuerberater hinzuzuziehen – besonders bei kurzen Haltedauern, vermieteten Objekten oder Erbfällen. Wir stellen gerne den Kontakt her.
+    `,
+  },
+  {
+    slug: 'fairer-immobilienpreis-erkennen',
+    category: 'Bewertung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-blue-500 text-white',
+    title: 'Wie erkenne ich einen fairen Immobilienpreis?',
+    excerpt: 'Angebotspreis ist nicht Kaufpreis. So prüfst du, ob eine Immobilie wirklich das wert ist, was dafür verlangt wird.',
+    author: 'Mazlum Selcuk',
+    authorImg: '/mazlum.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?w=1200&h=600&fit=crop',
+    content: `
+## Angebotspreis ≠ Marktwert
+
+Der Preis, den ein Verkäufer fordert, ist ein Ausgangspunkt – kein Fakt. Ob dieser Preis fair ist, lässt sich nur durch Vergleich und Analyse beurteilen.
+
+## Schritt 1: Vergleichspreise recherchieren
+
+Suche auf Immobilienportalen (Immobilienscout24, Immowelt, Kleinanzeigen) nach ähnlichen Objekten in derselben Lage – ähnliche Größe, Baujahr, Zustand. Achte dabei auf:
+- **Wohnfläche pro m²**: teile den Preis durch die Quadratmeter
+- **Baujahr und Sanierungsstand**: Unsanierte Altbauten haben andere Werte als modernisierte Bestände
+- **Lage innerhalb der Stadt**: 2 Straßen Unterschied können 500 €/m² Unterschied bedeuten
+
+## Schritt 2: Angebotsdauer prüfen
+
+Steht eine Immobilie seit 3–6 Monaten zum Verkauf, ohne dass sich etwas bewegt? Das ist ein starkes Signal für einen überhöhten Preis. Käufer meiden Objekte mit langer Vermarktungszeit – zu Unrecht, denn oft ist hier Verhandlungsspielraum.
+
+## Schritt 3: Bodenrichtwert abgleichen
+
+Bodenrichtwerte sind öffentlich zugängliche Referenzwerte für Grundstücke in einer bestimmten Lage. Sie werden von Gutachterausschüssen festgelegt und geben eine gute Grundlage, um den Grundstücksanteil am Gesamtpreis einzuschätzen.
+
+In Hessen sind die Bodenrichtwerte über das **BORIS-Portal** kostenlos abrufbar.
+
+## Schritt 4: Energiekosten einkalkulieren
+
+Eine Immobilie mit Energieausweis Klasse G oder H verursacht hohe Heizkosten und erfordert oft kostspielige Sanierungen (Heizung, Dämmung, Fenster). Käufer sollten diese Kosten beim Preis einkalkulieren – und dementsprechend verhandeln.
+
+## Schritt 5: Unabhängige Einschätzung einholen
+
+Der sicherste Weg: Lass die Immobilie von einem unabhängigen Makler oder Sachverständigen bewerten, bevor du kaufst. Wir geben dir gerne eine ehrliche Markteinschätzung – ohne Interessenkonflikt.
+
+Ein fairer Preis ist einer, den du langfristig nicht bereust.
+    `,
+  },
+  {
+    slug: 'unterlagen-immobilienkauf-pruefen',
+    category: 'Prozess',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-blue-500 text-white',
+    title: 'Welche Unterlagen muss ich beim Immobilienkauf prüfen?',
+    excerpt: 'Grundbuch, Energieausweis, Teilungserklärung – welche Dokumente du vor dem Kauf unbedingt anfordern und prüfen musst.',
+    author: 'Mazlum Selcuk',
+    authorImg: '/mazlum.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&h=600&fit=crop',
+    content: `
+## Unterlagen anfordern – vor dem Kaufvertrag, nicht danach
+
+Viele Käufer sehen bestimmte Unterlagen erst beim Notartermin. Das ist zu spät. Wer sicher kaufen will, prüft alle relevanten Dokumente, bevor er sich verbindlich verpflichtet.
+
+## Das Grundbuch
+
+Das Grundbuch ist das wichtigste Dokument beim Immobilienkauf. Es enthält:
+- **Eigentümer:** Wer ist aktuell eingetragen? Stimmt das mit dem Verkäufer überein?
+- **Grundschulden:** Welche Banken haben noch Sicherheiten eingetragen?
+- **Dienstbarkeiten:** Gibt es Wegerechte, Leitungsrechte oder andere Einschränkungen?
+- **Nießbrauch oder Wohnrechte:** Darf jemand die Immobilie lebenslang bewohnen?
+
+Den Grundbuchauszug kann der Verkäufer beim Grundbuchamt beantragen oder – mit Zustimmung – auch der Käufer.
+
+## Energieausweis
+
+Beim Verkauf ist der Energieausweis Pflicht. Er zeigt den energetischen Zustand des Gebäudes und gibt Hinweise auf künftige Heizkosten und Sanierungsbedarf. Energieklassen H und G bedeuten: erheblicher Sanierungsbedarf.
+
+## Baupläne und Baugenehmigungen
+
+Stimmt die tatsächliche Wohnfläche mit dem Grundbuch und dem Exposé überein? Sind Anbauten, Dachausbauten oder Umbauten ordnungsgemäß genehmigt? Nicht genehmigte Bauten können zum Problem werden – der neue Eigentümer haftet.
+
+## Bei Eigentumswohnungen zusätzlich
+
+- **Teilungserklärung:** Definiert, welcher Anteil am Gemeinschaftseigentum dir gehört
+- **Gemeinschaftsordnung:** Regelt das Zusammenleben und Stimmrechte
+- **Protokolle der letzten 3 Eigentümerversammlungen:** Zeigen, welche Themen beschlossen oder noch offen sind
+- **Höhe der Instandhaltungsrücklage:** Ist genug Geld für künftige Sanierungen vorhanden?
+- **Aktuelle Hausgeldabrechnung:** Wie hoch sind die monatlichen Nebenkosten wirklich?
+
+## Bei vermieteten Objekten
+
+- Mietvertrag und aktuelle Miete
+- Nebenkostenabrechnung
+- Etwaige laufende Gerichtsverfahren mit Mietern
+
+## Unser Tipp
+
+Lass alle relevanten Unterlagen vor dem Kauf von einem erfahrenen Makler oder Anwalt prüfen. Wir helfen dir dabei gerne – kostenlos und ohne Verpflichtung.
+    `,
+  },
+  {
+    slug: 'kaeufer-schutz-immobilienkauf',
+    category: 'Prozess',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-blue-500 text-white',
+    title: 'Wie schütze ich mich als Immobilienkäufer?',
+    excerpt: 'Worauf du achten musst, um beim Immobilienkauf nicht in eine Falle zu tappen – von der Eigentümerprüfung bis zum Übergabeprotokoll.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=600&fit=crop',
+    content: `
+## Immobilienkauf ist kein Alltagsgeschäft – Sorgfalt lohnt sich
+
+Der Kauf einer Immobilie ist für die meisten Menschen die größte finanzielle Entscheidung ihres Lebens. Umso wichtiger ist es, sich gut abzusichern. Hier die wichtigsten Schutzmaßnahmen im Überblick.
+
+## Eigentümer verifizieren
+
+Lass dir den aktuellen Grundbuchauszug zeigen und prüfe, ob der Verkäufer auch wirklich als Eigentümer eingetragen ist. Bei Erbengemeinschaften, Scheidungen oder Vollmachten ist besondere Vorsicht geboten.
+
+Nie Anzahlungen leisten, bevor die Eigentümerschaft zweifelsfrei geklärt ist.
+
+## Keine direkten Zahlungen vor Notartermin
+
+Seriöse Verkäufer verlangen keine Vorauszahlungen außerhalb des notariellen Verfahrens. Der gesamte Kaufpreis wird nach Beurkundung und Kaufpreisfälligkeit direkt auf das Konto des Verkäufers überwiesen – nie in bar, nie vorab.
+
+## Den Kaufvertragsentwurf prüfen lassen
+
+Der Notar ist neutral – er prüft nicht, ob der Vertrag in deinem Interesse ist. Du hast das Recht, den Vertragsentwurf vor dem Termin zu erhalten (mindestens 2 Wochen vorher ist empfehlenswert) und ihn von einem Anwalt prüfen zu lassen.
+
+## Gewährleistungsausschluss verstehen
+
+Bei privaten Immobilienverkäufen ist die Gewährleistung in der Regel ausgeschlossen. Das bedeutet: Du kaufst die Immobilie mit allen bekannten Mängeln. Arglistig verschwiegene Mängel (z.B. bekannte Feuchtigkeitsschäden) können aber dennoch geltend gemacht werden.
+
+Lass die Immobilie vor dem Kauf besichtigen – am besten mit einem Sachverständigen.
+
+## Übergabeprotokoll anfertigen
+
+Bei der Schlüsselübergabe: Dokumentiere den Zustand der Immobilie schriftlich und mit Fotos. Notiere alle mitgegebenen Schlüssel, den Zählerstand und eventuelle Mängel. Beide Parteien unterschreiben das Protokoll.
+
+## Auflassungsvormerkung sichert dich ab
+
+Nach dem Notartermin veranlasst der Notar die Eintragung einer Auflassungsvormerkung im Grundbuch. Damit ist die Immobilie für dich reserviert – der Verkäufer kann sie nicht mehr an jemand anderen verkaufen oder zusätzlich belasten.
+
+Wir begleiten dich als neutrale Partei durch den gesamten Kaufprozess und stellen sicher, dass du gut geschützt bist.
+    `,
+  },
+  {
+    slug: 'gutachten-immobilienkauf',
+    category: 'Bewertung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-blue-500 text-white',
+    title: 'Wann sollte ich vor dem Immobilienkauf ein Gutachten beauftragen?',
+    excerpt: 'Ein Sachverständigengutachten kann Tausende Euro sparen – aber wann ist es wirklich nötig? Die wichtigsten Kriterien im Überblick.',
+    author: 'Mazlum Selcuk',
+    authorImg: '/mazlum.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '4 Min.',
+    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=600&fit=crop',
+    content: `
+## Gutachten klingt teuer – ist aber oft günstig
+
+Ein Sachverständigengutachten kostet je nach Umfang zwischen 500 und 2.000 €. Verglichen mit einem Kaufpreis von 300.000–600.000 € ist das ein kleiner Betrag – wenn es verhindert, dass du eine Immobilie mit versteckten Mängeln kaufst, die eine sechsstellige Sanierung erfordern.
+
+## Wann ist ein Gutachten empfehlenswert?
+
+**1. Ältere Gebäude ohne klare Sanierungshistorie**
+Baujahre vor 1980 können Asbest, schadstoffbelastete Dämmmaterialien (z.B. PAK in Teerpappe), mangelhafte Elektrik oder strukturelle Probleme aufweisen. Ohne Sachverständigen sind diese Risiken schwer einzuschätzen.
+
+**2. Sichtbare oder vermutete Mängel**
+Feuchtigkeitsflecken, Risse im Mauerwerk, schimmelige Gerüche, unebene Böden – all das können Hinweise auf tiefer liegende Probleme sein, die ein Laie nicht einschätzen kann.
+
+**3. Ungewöhnlich günstiger Preis**
+Wenn ein Angebot deutlich unter dem Marktpreis liegt, gibt es einen Grund. Oft sind es versteckte Mängel. Ein Gutachten gibt Klarheit.
+
+**4. Fehlende oder widersprüchliche Unterlagen**
+Wenn Baupläne fehlen, Genehmigungen unvollständig sind oder die angegebene Wohnfläche nicht stimmt, ist professionelle Prüfung Pflicht.
+
+**5. Erste Immobilie ohne eigene Erfahrung**
+Wer zum ersten Mal kauft, hat kein geschultes Auge für Baumängel. Ein Gutachter gibt Sicherheit.
+
+## Welche Art von Gutachten?
+
+- **Kurzgutachten / Zustandsbericht:** 500–800 €, Überblick über den baulichen Zustand ohne Wertermittlung – ausreichend für die meisten Käufer
+- **Vollgutachten mit Wertermittlung:** 1.000–2.000 €, rechtssicher, wichtig bei Erbschaft, Scheidung oder Finanzierungsstreitigkeiten
+
+## Wer erstellt ein Gutachten?
+
+Achte auf öffentlich bestellte und vereidigte Sachverständige oder zertifizierte Bausachverständige (z.B. nach DIN EN ISO/IEC 17024). Wir empfehlen dir gerne einen qualifizierten Experten in der Rhein-Main-Region.
+    `,
+  },
+  {
+    slug: 'kaufpreis-verhandeln-immobilien',
+    category: 'Prozess',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-blue-500 text-white',
+    title: 'Wie verhandelt man den Kaufpreis bei einer Immobilie?',
+    excerpt: 'Viele Käufer trauen sich nicht zu verhandeln – und zahlen deshalb zu viel. So führst du eine erfolgreiche Preisverhandlung.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=600&fit=crop',
+    content: `
+## Verhandeln ist kein Angriff – es ist Standard
+
+Viele Käufer denken, Preisverhandlungen seien unhöflich oder würden die Chance auf die Immobilie gefährden. Das ist ein Missverständnis. Verhandlungen gehören zum normalen Immobilienverkauf – solange sie sachlich und respektvoll geführt werden.
+
+## Schritt 1: Gut vorbereiten
+
+Bevor du verhandelst, musst du den Markt kennen. Recherchiere vergleichbare Objekte in der Umgebung und ermittle, was ein fairer Preis für diese Immobilie wäre. Nur wer den Wert kennt, kann sachlich argumentieren.
+
+## Schritt 2: Argumente sammeln
+
+Verhandlungsspielraum entsteht durch konkrete Argumente:
+- **Sanierungsbedarf:** Dach, Heizung, Elektrik, Fenster – schätze Kosten realistisch ein
+- **Energieeffizienz:** Schlechte Energieklassen bedeuten höhere laufende Kosten
+- **Lage-Nachteile:** Verkehrsbelastung, fehlende Infrastruktur
+- **Lange Vermarktungsdauer:** Spricht für mangelndes Interesse anderer Käufer
+
+Keine persönlichen Kommentare zum Geschmack des Verkäufers – das ist kein Argument.
+
+## Schritt 3: Realistisches Angebot machen
+
+Ein zu niedriges Angebot wird oft nicht ernst genommen und kann das Vertrauen beschädigen. Als Faustregel: In einem normalen Markt sind **3–8 % unter dem Angebotspreis** ein realistischer Einstieg. Bei überteuerten oder lang insertierten Objekten auch mehr.
+
+## Schritt 4: Finanzierungsstärke zeigen
+
+Verkäufer bevorzugen einen sicheren Käufer gegenüber einem Höchstbieter mit unsicherer Finanzierung. Wer eine Finanzierungsbestätigung vorlegen kann, hat deutlich mehr Verhandlungsgewicht.
+
+## Schritt 5: Geduld und Flexibilität
+
+Manchmal ist der Preis nicht verhandelbar, dafür aber andere Punkte – Übergabetermin, Inventar, kleinere Reparaturen. Denke auch außerhalb des Kaufpreises.
+
+Wir begleiten dich als erfahrene Makler durch die Verhandlung und setzen uns für deine Interessen ein – egal ob auf Käufer- oder Verkäuferseite.
+    `,
+  },
+  {
+    slug: 'immobilienfinanzierung-budget',
+    category: 'Finanzierung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Wie viel Immobilie kann ich mir realistisch leisten?',
+    excerpt: 'Einkommen, Eigenkapital, monatliche Rate – so berechnest du, wie viel Immobilie in dein Budget passt, ohne dich zu übernehmen.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&h=600&fit=crop',
+    content: `
+## Die ehrliche Frage zuerst
+
+Banken zeigen dir gerne, wie viel sie maximal finanzieren würden. Die relevantere Frage ist: Wie viel kannst du **dauerhaft** stemmen, ohne auf alles andere verzichten zu müssen?
+
+## Die 30-35 %-Regel
+
+Als bewährte Faustregel gilt: Die monatliche Kreditrate sollte maximal **30–35 % deines Netto-Haushaltseinkommens** betragen – nicht mehr. Alles darüber hinaus erzeugt finanziellen Stress, besonders wenn unvorhergesehene Ausgaben dazukommen.
+
+**Beispiel:**
+Nettoeinkommen Haushalt: 5.000 €/Monat
+Max. monatliche Rate (35 %): 1.750 €
+Bei 3,8 % Zins und 2 % Tilgung: Kreditsumme ca. 300.000 €
+
+## Eigenkapital – je mehr, desto besser
+
+Mit mehr Eigenkapital bekommst du bessere Zinsen und eine niedrigere Rate. Die Mindestempfehlung:
+- **20 % des Kaufpreises** als Eigenkapital
+- **Plus** alle Kaufnebenkosten (Grunderwerbsteuer 6 %, Notar ca. 1,5 %, Grundbuch ca. 0,5 %, ggf. Makler ca. 1,78 %) – das sind in Hessen ca. **10–11 % zusätzlich**
+
+Bei einem Kaufpreis von 400.000 € brauchst du also ca. **120.000–130.000 €** an Eigenkapital.
+
+## Was Banken prüfen
+
+- Nettoeinkommen (nachgewiesen durch Gehaltsabrechnungen)
+- Beschäftigungsart und -dauer (unbefristete Anstellung bevorzugt)
+- Bestehende Verbindlichkeiten (Ratenkredite, Unterhalt, Leasingverträge)
+- Schufa-Score
+- Eigenkapital und Vermögen
+
+## Vollfinanzierung: möglich, aber riskant
+
+Es gibt Banken, die 100 % oder sogar 110 % finanzieren. Das ist nur bei sehr sicherem, hohem Einkommen und exzellenter Bonität empfehlenswert – und deutlich teurer in den Zinsen.
+
+## Unser Tipp
+
+Rechne nicht bis ans Maximum. Plane immer einen Puffer für Reparaturen, Jobwechsel oder Lebensereignisse ein. Wir vermitteln dich kostenlos an erfahrene Finanzierungsberater, die deine Situation realistisch einschätzen.
+    `,
+  },
+  {
+    slug: 'finanzierungsformen-immobilien',
+    category: 'Finanzierung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Welche Finanzierungsform passt zu mir? Annuität, KfW, Bausparer & Co. erklärt',
+    excerpt: 'Annuitätendarlehen, variables Darlehen, KfW-Kredit oder Bausparvertrag – welche Finanzierungsform für wen geeignet ist.',
+    author: 'Mazlum Selcuk',
+    authorImg: '/mazlum.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1200&h=600&fit=crop',
+    content: `
+## Nicht jede Finanzierung passt zu jeder Lebenssituation
+
+Die Wahl der richtigen Finanzierungsform kann über viele Jahre hinweg Tausende von Euro ausmachen. Hier die wichtigsten Modelle im Überblick.
+
+## Annuitätendarlehen – der Klassiker
+
+Das Annuitätendarlehen ist die am häufigsten genutzte Form der Immobilienfinanzierung und für die meisten Käufer die richtige Wahl.
+
+**So funktioniert es:** Du zahlst eine gleichbleibende monatliche Rate (Annuität), die aus Zins und Tilgung besteht. Mit jeder Rate steigt der Tilgungsanteil, der Zinsanteil sinkt. Das Darlehen ist nach Ablauf der Laufzeit vollständig getilgt.
+
+**Vorteile:** Planungssicherheit, transparente Kosten, weite Verbreitung
+**Für wen:** Käufer, die langfristig planen und Sicherheit schätzen
+
+## Variables Darlehen
+
+Beim variablen Darlehen wird der Zinssatz regelmäßig an den aktuellen Marktzins (meist EURIBOR) angepasst.
+
+**Vorteile:** Profitiert von sinkenden Zinsen, flexible Sondertilgungen
+**Nachteile:** Unkalkulierbares Risiko bei steigenden Zinsen
+**Für wen:** Erfahrene Käufer mit kurzer Haltedauer oder starker Eigenkapitalbasis
+
+## KfW-Darlehen
+
+Die Kreditanstalt für Wiederaufbau (KfW) bietet staatlich geförderte Darlehen für energieeffizientes Bauen und Sanieren. Besonders attraktiv: Das Programm „Wohneigentum für Familien" (WEF) mit besonders günstigen Konditionen für Familien mit Kindern.
+
+**Vorteile:** Günstige Zinsen, oft mit Tilgungszuschüssen kombiniert
+**Für wen:** Käufer energieeffizienter Immobilien, Familien mit Kindern, Sanierer
+
+## Bausparvertrag
+
+Beim Bausparvertrag sparst du über Jahre an und erhältst dann ein zinsgünstiges Darlehen für den Immobilienerwerb oder eine Sanierung.
+
+**Vorteile:** Planungssicherheit für die Zukunft, staatliche Förderung möglich
+**Nachteile:** Träge, lange Vorlaufzeit, aktuell oft weniger attraktiv als Direktdarlehen
+**Für wen:** Langfristige Planer, die noch 5–10 Jahre vom Kauf entfernt sind
+
+## Kombination mehrerer Modelle
+
+In der Praxis werden oft mehrere Modelle kombiniert: z.B. ein klassisches Annuitätendarlehen mit einem KfW-Kredit obendrauf. Das senkt die Gesamtkosten und maximiert Förderungen.
+
+Wir vermitteln dich kostenlos an unabhängige Finanzierungsberater, die dir alle Optionen transparent vergleichen.
+    `,
+  },
+  {
+    slug: 'bankangebote-immobilienkredit-vergleichen',
+    category: 'Finanzierung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Wie vergleiche ich Bankangebote für eine Immobilienfinanzierung richtig?',
+    excerpt: 'Zinssatz allein reicht nicht – worauf du beim Vergleich von Immobilienkrediten wirklich achten musst.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=600&fit=crop',
+    content: `
+## Der günstigste Zinssatz ist nicht immer das beste Angebot
+
+Banken konkurrieren um dich – und nutzen dabei gerne einen attraktiven Sollzins als Marketing. Was die Kosten wirklich ausmacht, steckt im Kleingedruckten.
+
+## 1. Effektiver Jahreszins – die einzige vergleichbare Zahl
+
+Der effektive Jahreszins enthält alle Kosten des Darlehens (Zinsen, Bearbeitungsgebühren, Nebenkosten) und ist die einzige seriöse Grundlage für einen Vergleich zwischen verschiedenen Angeboten.
+
+**Sollzins vs. Effektivzins:** Der Sollzins ist immer niedriger – er enthält nicht alle Kosten. Bestehe darauf, den effektiven Jahreszins zu sehen.
+
+## 2. Zinsbindung – Planungssicherheit hat einen Preis
+
+Je länger die Zinsbindung, desto höher der Zinssatz – und desto mehr Planungssicherheit. In einem Niedrigzinsumfeld lohnt sich lange Bindung (15–20 Jahre). In einem Hochzinsumfeld lieber kürzer binden und auf sinkende Zinsen bei der Anschlussfinanzierung spekulieren.
+
+**Faustregel 2025:** Bei aktuellen Zinsen von ca. 3,5–4,5 % ist eine 15-jährige Bindung für die meisten Käufer sinnvoll.
+
+## 3. Tilgungssatz – entscheidet die Gesamtkosten
+
+Mindestens **2 % Anfangstilgung** empfehlen wir. Wer nur 1 % tilgt, zahlt das Darlehen über 40+ Jahre ab – und zahlt enorme Zinssummen.
+
+Bei 3 % Tilgung ist man nach ca. 25 Jahren schuldenfrei. Das ist der Sweetspot für viele Käufer.
+
+## 4. Sondertilgungsrecht
+
+Gute Angebote erlauben jährliche Sondertilgungen von mindestens 5–10 % der Restschuld ohne Strafgebühr. Das gibt dir die Möglichkeit, bei Gehaltserhöhungen oder Erbschaften schneller zu tilgen.
+
+## 5. Bereitstellungszinsen
+
+Wenn du das Darlehen nicht sofort abrufst (z.B. bei Neubauten oder längeren Kaufprozessen), fallen Bereitstellungszinsen an. Prüfe, ab wann und in welcher Höhe diese entstehen.
+
+## 6. Vorfälligkeitsentschädigung
+
+Was kostet es, das Darlehen vorzeitig abzulösen? Bei Lebensveränderungen (Umzug, Scheidung, Erbschaft) kann das relevant werden.
+
+## Unser Tipp
+
+Vergleiche mindestens 3–5 Angebote – nicht nur bei deiner Hausbank. Wir vermitteln kostenlos zu unabhängigen Finanzierungsberatern, die Zugang zu Hunderten von Banken haben.
+    `,
+  },
+  {
+    slug: 'anschlussfinanzierung-tipps',
+    category: 'Finanzierung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Anschlussfinanzierung: Was du wissen musst – Prolongation, Umschuldung & Forward-Darlehen',
+    excerpt: 'Wenn die Zinsbindung ausläuft, hast du wichtige Entscheidungen zu treffen. So vermeidest du die häufigsten Fehler bei der Anschlussfinanzierung.',
+    author: 'Mazlum Selcuk',
+    authorImg: '/mazlum.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=1200&h=600&fit=crop',
+    content: `
+## Was ist eine Anschlussfinanzierung?
+
+Wer eine Immobilie mit einem Annuitätendarlehen finanziert, hat nach Ablauf der Zinsbindung (meist 10–15 Jahre) noch eine Restschuld. Diese muss neu finanziert werden – das nennt sich Anschlussfinanzierung.
+
+Typisches Beispiel: Du hast 2015 ein Darlehen über 300.000 € mit 10-jähriger Zinsbindung aufgenommen. 2025 läuft die Bindung aus – du hast noch ca. 220.000 € Restschuld.
+
+## Die drei Optionen
+
+**Option 1: Prolongation (Verlängerung beim gleichen Institut)**
+Die einfachste Option: Deine Hausbank macht dir ein Angebot, du nimmst es an. Vorteil: kein Aufwand, keine neue Bonitätsprüfung. Nachteil: Die Hausbank hat kein Interesse daran, dir das günstigste Angebot zu machen.
+
+**Option 2: Umschuldung zu einer anderen Bank**
+Du wechselst zu einer anderen Bank mit besserem Zinssatz. Das erfordert etwas Aufwand (neue Bonitätsprüfung, Grundbucheintrag), kann aber über die Restlaufzeit Tausende Euro sparen.
+
+**Option 3: Forward-Darlehen**
+Du sicherst dir bereits 1–5 Jahre vor Ablauf der Zinsbindung die aktuellen Konditionen für die Zukunft. Bei drohend steigenden Zinsen sinnvoll, bei sinkenden Zinsen ein Nachteil.
+
+## Der häufigste Fehler: Zu spät handeln
+
+Wer erst kurz vor Ablauf der Zinsbindung handelt, muss das Angebot der Hausbank nehmen – egal wie schlecht es ist. Banken wissen das und nutzen es.
+
+**Unsere Empfehlung:** Beginne spätestens **12–18 Monate vor Ablauf** mit der Vergleichsrecherche.
+
+## Wann lohnt sich die Umschuldung?
+
+Schon ein halber Prozentpunkt Zinsunterschied macht bei 200.000 € Restschuld und 15 Jahren Laufzeit einen Unterschied von mehreren Tausend Euro aus. Dazu kommen ggf. Notarkosten für die Grundbuchänderung – die sich aber meist schnell amortisieren.
+
+Wir helfen dir, deine Anschlussfinanzierung optimal zu gestalten – kostenlos und ohne Interessenkonflikt.
+    `,
+  },
+  {
+    slug: 'foerderungen-immobilienkauf-kfw',
+    category: 'Finanzierung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Welche Förderungen stehen mir beim Immobilienkauf zu?',
+    excerpt: 'KfW, BAFA, Wohn-Riester, Hessische Wohnraumförderung – alle staatlichen Förderprogramme für Immobilienkäufer auf einen Blick.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=1200&h=600&fit=crop',
+    content: `
+## Viele Käufer lassen Fördergelder liegen
+
+Staatliche Förderungen für den Immobilienkauf sind real – aber kompliziert. Viele Käufer kennen die Programme nicht oder beantragen sie zu spät. Dabei können Förderungen die effektiven Kreditkosten erheblich senken.
+
+## KfW – die wichtigste Förderstelle
+
+Die Kreditanstalt für Wiederaufbau (KfW) bietet mehrere Programme für Immobilienkäufer:
+
+**Wohneigentum für Familien (WEF) – Programm 300:**
+Für Familien mit mindestens einem Kind, die erstmals Wohneigentum erwerben und dabei energieeffiziente Gebäude kaufen oder bauen. Günstige Zinsen und hohe Kreditbeträge (bis zu 270.000 €). Die Einkommensgrenzen wurden 2024 angehoben.
+
+**Klimafreundlicher Neubau – Programm 297/298:**
+Für den Kauf oder Bau von Gebäuden im KfW-Effizienzhaus-40-Standard. Subventionierte Zinssätze.
+
+**Bundesförderung effiziente Gebäude (BEG) – Einzelmaßnahmen:**
+Für energetische Sanierungsmaßnahmen am Bestand: Wärmedämmung, neue Fenster, Wärmepumpe. Tilgungszuschüsse von bis zu 15 % möglich.
+
+## BAFA – für Einzelmaßnahmen bei Sanierungen
+
+Das Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) fördert den Einbau effizienter Heizungsanlagen (v.a. Wärmepumpen) mit Zuschüssen bis zu 70 % der Kosten in bestimmten Konstellationen.
+
+## Hessische Wohnraumförderung
+
+Das Land Hessen bietet zinsgünstige Darlehen und Zuschüsse für Haushalte mit mittlerem und niedrigem Einkommen – sowohl für den Kauf als auch für den Bau oder die Sanierung von selbst genutztem Wohnraum.
+
+## Wohn-Riester
+
+Wer schon einen Riester-Vertrag bespart, kann das angesparte Kapital für den Kauf einer selbst genutzten Immobilie nutzen. Der geförderte Betrag muss im Rentenalter versteuert werden, bietet aber bis dahin Steuervorteile.
+
+## Wichtig: Vor dem Kauf beantragen
+
+Fast alle Förderprogramme müssen **vor Beginn des Vorhabens** beantragt werden. Nachträgliche Anträge werden in der Regel abgelehnt.
+
+Wir helfen dir zu identifizieren, welche Förderungen für dich in Frage kommen – bevor du kaufst.
+    `,
+  },
+  {
+    slug: 'eigenkapital-immobilienkauf',
+    category: 'Finanzierung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Wie viel Eigenkapital brauche ich wirklich für eine Immobilie?',
+    excerpt: 'Die häufigste Frage beim Immobilienkauf – klar und ehrlich beantwortet. Mit konkreten Beispielrechnungen.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '5 Min.',
+    img: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=600&fit=crop',
+    content: `
+## Die kurze Antwort: Mindestens 20 % + Kaufnebenkosten
+
+Wer eine Immobilie kauft, braucht Eigenkapital für zwei Dinge: einen Teil des Kaufpreises selbst finanzieren und die Kaufnebenkosten bezahlen. Letztere werden fast nie durch Banken finanziert.
+
+## Kaufnebenkosten in Hessen
+
+Die Kaufnebenkosten setzen sich zusammen aus:
+- **Grunderwerbsteuer:** 6,0 % des Kaufpreises
+- **Notarkosten:** ca. 1,0–1,5 %
+- **Grundbuchkosten:** ca. 0,5 %
+- **Maklercourtage (Käuferanteil):** ca. 1,785 % (wenn Makler beteiligt)
+
+**Gesamt:** ca. 9–10 % des Kaufpreises, die du komplett aus eigener Tasche zahlen musst.
+
+## Eigenkapital für den Kaufpreis
+
+**Empfehlung:** Mindestens 20 % des Kaufpreises als Eigenkapital.
+
+Warum? Mit höherem Eigenkapital:
+- Bekommst du bessere Zinsen (Banken stufen dich als weniger riskant ein)
+- Ist die monatliche Rate niedriger
+- Ist dein Finanzierungsrisiko geringer
+
+**Konkrete Beispiele:**
+
+| Kaufpreis | Empf. Eigenkapital (20 %) | Kaufnebenkosten (ca. 10 %) | Gesamt benötigt |
+|-----------|--------------------------|---------------------------|-----------------|
+| 300.000 € | 60.000 € | 30.000 € | 90.000 € |
+| 400.000 € | 80.000 € | 40.000 € | 120.000 € |
+| 500.000 € | 100.000 € | 50.000 € | 150.000 € |
+
+## Geht es auch mit weniger?
+
+Ja – Vollfinanzierungen (100 % oder 110 %) sind möglich, aber:
+- Deutlich höhere Zinsen (0,5–1,5 % Aufschlag)
+- Höheres Risiko bei Wertverlusten
+- Strengere Bonitätsprüfung
+
+Empfehlenswert nur bei sehr sicherem, deutlich überdurchschnittlichem Einkommen.
+
+## Was zählt als Eigenkapital?
+
+- Bankguthaben, Tagesgeld, Festgeld
+- Bausparvertragen (Guthaben)
+- Wertpapiere (Aktien, ETFs) – Banken bewerten diese oft nur zu 60–80 % ihres Wertes
+- Lebensversicherungen (Rückkaufwert)
+- Schenkungen von Eltern oder Verwandten (mit Schenkungsvertrag)
+
+Immobilien, die du bereits besitzt, können als Sicherheit dienen – erhöhen aber nicht direkt das Eigenkapital.
+
+Lass uns gemeinsam durchrechnen, wie viel Immobilie du dir leisten kannst – kostenlos und ohne Verpflichtung.
+    `,
+  },
+  {
+    slug: 'hausverkauf-ratgeber',
+    category: 'Verkaufen',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-brand-green text-white',
+    title: 'Hausverkauf: Der vollständige Ratgeber – Zeitpunkt, Preis, Kosten und Steuern',
+    excerpt: 'Wann ist der richtige Zeitpunkt? Was kostet ein Verkauf wirklich? Makler oder privat? Alle wichtigen Fragen rund um den Hausverkauf – klar und verständlich erklärt.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '8 Min.',
+    img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop',
+    content: `
+## Wann ist der richtige Zeitpunkt zum Verkauf?
+
+Den „perfekten" Zeitpunkt gibt es nicht – aber es gibt sehr gute und weniger gute Zeitpunkte. Entscheidend sind drei Faktoren: der Markt, deine persönliche Situation und der Zustand der Immobilie.
+
+**Marktlage:** 2025 zeigt sich der Immobilienmarkt im Rhein-Main-Gebiet wieder stabiler. Die Nachfrage nach gut gepflegten Immobilien ist hoch, die Zinsen haben sich auf einem Niveau eingependelt, das viele Käufer wieder zur Finanzierung bewegt. Das sind gute Vorzeichen für Verkäufer.
+
+**Persönliche Situation:** Ein Verkauf durch äußere Umstände – Erbschaft, Scheidung, beruflicher Umzug – hat seinen eigenen Rhythmus. Hier zählt vor allem Klarheit über die eigene Ausgangslage.
+
+**Saisonal** gesehen sind Frühjahr und Herbst die aktivsten Phasen auf dem Markt. Exposés werden häufiger geklickt, Besichtigungen finden mehr statt.
+
+## Wie ermittle ich den realistischen Marktwert?
+
+Der häufigste Fehler beim Hausverkauf: ein zu hoher Angebotspreis. Immobilien, die zu teuer inseriert werden, bleiben monatelang auf dem Markt – und verlieren dadurch in der Wahrnehmung der Käufer an Wert.
+
+Eine realistische Wertermittlung basiert auf mehreren Faktoren:
+
+- **Vergleichspreise:** Was wurden ähnliche Objekte in derselben Lage kürzlich verkauft?
+- **Zustand und Ausstattung:** Sanierungsstand, Energieeffizienz, Grundriss, Außenanlagen
+- **Lage im Detail:** Nicht nur die Stadt, sondern die Mikrolage – Straße, Sonne, Nachbarschaft, Infrastruktur
+- **Marktanpassung:** Aktuelles Angebot und Nachfrage im Teilmarkt
+
+Ein professioneller Makler oder Gutachter kennt die lokalen Transaktionen und kann eine fundierte Einschätzung geben. Online-Rechner sind nur ein grober Anhaltspunkt.
+
+## Was kostet mich ein Verkauf wirklich?
+
+Viele Verkäufer unterschätzen die tatsächlichen Kosten eines Immobilienverkaufs. Hier die wichtigsten Posten:
+
+- **Maklercourtage:** In Hessen typischerweise 3,57 % inkl. MwSt. auf den Verkaufspreis – je zur Hälfte von Käufer und Verkäufer getragen (also ca. 1,78 % für den Verkäufer)
+- **Notarkosten:** Werden in der Regel vom Käufer getragen
+- **Energieausweis:** Falls noch nicht vorhanden, ca. 100–500 € je nach Art
+- **Grundbuchauszug und Unterlagen:** Gering, aber einzuplanen (meist unter 100 €)
+- **Eventuelle Vorfälligkeitsentschädigung:** Wer eine laufende Finanzierung hat, zahlt bei vorzeitiger Ablösung ggf. eine Entschädigung an die Bank
+- **Spekulationssteuer:** Falls die Immobilie weniger als 10 Jahre gehalten wurde und nicht selbst bewohnt war (mehr dazu weiter unten)
+
+## Makler oder Privatverkauf – was ist besser?
+
+Ein Privatverkauf klingt verlockend: keine Provision, volle Kontrolle. In der Praxis scheitert er jedoch häufig – oder erzielt deutlich niedrigere Preise als ein professionell begleiteter Verkauf.
+
+**Warum?**
+
+- Professionelle Makler kennen den lokalen Markt und ermitteln den optimalen Preis
+- Profis fotografieren, texten und präsentieren das Objekt so, dass es Käufer emotional anspricht
+- Makler filtern Interessenten vor und ersparen dir viele unnötige Besichtigungen
+- Erfahrene Makler verhandeln auf Augenhöhe – und erzielen in der Regel höhere Endpreise
+- Rechtliche und organisatorische Aspekte werden professionell begleitet
+
+Ein guter Makler kostet nicht – er verdient sich seine Provision mehrfach ein.
+
+## Wie läuft ein Notartermin ab?
+
+Der Notartermin ist der finale Schritt beim Immobilienverkauf. Er findet meist 4–8 Wochen nach Unterzeichnung des Kaufvertrags statt, wenn die Käufer die Finanzierung gesichert haben.
+
+**Ablauf:**
+1. Beide Parteien erscheinen beim Notar (oder geben eine Vollmacht)
+2. Der Notar liest den Kaufvertrag vollständig vor
+3. Beide Parteien unterschreiben
+4. Der Notar veranlasst die Auflassungsvormerkung im Grundbuch
+5. Nach Kaufpreiszahlung (meist 4–6 Wochen später) erfolgt die Eigentumsumschreibung
+
+Als Verkäufer solltest du rechtzeitig alle Unterlagen bereithalten: Grundbuchauszug, Energieausweis, Baupläne, Teilungserklärung (bei ETW) und ggf. Mietverträge.
+
+## Was muss ich steuerlich beachten?
+
+**Spekulationssteuer:** Wer eine Immobilie verkauft, die er weniger als 10 Jahre gehalten hat und nicht selbst bewohnte, muss den Gewinn versteuern. Die Steuer gilt nicht, wenn du in den letzten zwei Jahren selbst darin gewohnt hast.
+
+**Ausnahme:** Eigengenutzte Immobilien sind grundsätzlich steuerfrei – unabhängig von der Haltedauer.
+
+**Erbschaft:** Bei geerbten Immobilien beginnt die Spekulationsfrist mit dem ursprünglichen Kauf des Erblassers, nicht mit dem Erbfall.
+
+Wir empfehlen, steuerliche Fragen immer mit einem Steuerberater zu klären – die Regelungen sind im Einzelfall komplex. Wir stellen gerne den Kontakt zu einem auf Immobilien spezialisierten Steuerberater her.
+
+---
+
+Hast du konkrete Fragen zu deinem Hausverkauf? Wir beraten dich kostenlos und unverbindlich – persönlich, telefonisch oder per WhatsApp.
+    `,
+  },
+  {
+    slug: 'immobilienkauf-ratgeber',
+    category: 'Bewertung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-blue-500 text-white',
+    title: 'Immobilienkauf: Fairer Preis, versteckte Kosten und wie du dich als Käufer schützt',
+    excerpt: 'Wie erkennst du einen fairen Preis? Welche Unterlagen musst du prüfen? Wann brauchst du ein Gutachten? Alles Wichtige zum Immobilienkauf – kompakt erklärt.',
+    author: 'Mazlum Selcuk',
+    authorImg: '/mazlum.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '7 Min.',
+    img: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=600&fit=crop',
+    content: `
+## Wie erkenne ich einen fairen Preis?
+
+Der Angebotspreis ist kein Kaufpreis – er ist ein Verhandlungsstart. Ob ein Preis fair ist, lässt sich nur im Vergleich beurteilen.
+
+**So prüfst du den Preis:**
+
+- Vergleiche ähnliche Objekte auf Immobilienportalen in derselben Lage
+- Achte auf Wohnfläche, Baujahr, Zustand und Ausstattung – diese Faktoren rechtfertigen Preisunterschiede
+- Prüfe, wie lange das Objekt schon inseriert ist: Objekte, die monatelang auf dem Markt sind, deuten auf einen überhöhten Preis hin
+- Nutze Bodenrichtwerte (öffentlich zugänglich über das jeweilige Gutachterkomitee) als Ankerpunkt
+- Frage einen unabhängigen Makler oder Gutachter nach einer Einschätzung
+
+Ein fairer Preis bedeutet nicht zwangsläufig ein günstiger Preis – er bedeutet, dass die Immobilie das wert ist, was sie kostet.
+
+## Welche Unterlagen muss ich prüfen?
+
+Vor dem Kauf solltest du folgende Dokumente sorgfältig prüfen oder prüfen lassen:
+
+- **Grundbuchauszug:** Gibt Auskunft über Eigentümer, Grundschulden, Dienstbarkeiten (z.B. Wegerechte, Leitungsrechte)
+- **Energieausweis:** Pflichtdokument beim Verkauf – zeigt den energetischen Zustand des Gebäudes
+- **Baupläne und Baugenehmigungen:** Stimmt die Realität mit den eingetragenen Maßen überein? Sind Anbauten genehmigt?
+- **Bei Eigentumswohnungen:** Teilungserklärung, Gemeinschaftsordnung, Protokolle der letzten Eigentümerversammlungen, Höhe der Instandhaltungsrücklage, aktuelle Hausgeldabrechnung
+- **Bei vermieteten Objekten:** Mietvertrag, aktuelle Miete, Nebenkostenabrechnung, laufende Mietverhältnisse
+- **Altlastenauskunft:** Bei Gewerbegrundstücken oder älteren Liegenschaften wichtig
+
+## Was sind versteckte Kosten beim Kauf?
+
+Viele Käufer planen nur den Kaufpreis – und erleben beim Abschluss eine böse Überraschung. Diese Kosten kommen zusätzlich:
+
+- **Grunderwerbsteuer Hessen:** 6 % des Kaufpreises
+- **Notarkosten:** ca. 1–1,5 % des Kaufpreises
+- **Grundbuchkosten:** ca. 0,5 % des Kaufpreises
+- **Maklercourtage:** In Hessen typischerweise 3,57 % inkl. MwSt. (hälftig mit Verkäufer geteilt = ca. 1,78 % für den Käufer)
+- **Finanzierungskosten:** Bankgebühren, ggf. Gutachterkosten der Bank
+- **Renovierung/Sanierung:** Falls nötig – unbedingt vor dem Kauf kalkulieren
+
+**Faustregel:** Plane 10–15 % des Kaufpreises als Kaufnebenkosten ein.
+
+## Wie schütze ich mich als Käufer?
+
+Der Immobilienkauf ist die größte finanzielle Entscheidung für die meisten Menschen. Hier sind die wichtigsten Schutzmaßnahmen:
+
+- **Eigentümer prüfen:** Lass dir den Grundbuchauszug zeigen und stelle sicher, dass der Verkäufer auch wirklich Eigentümer ist
+- **Keine Barzahlungen:** Alle Zahlungen laufen über den Notar – nie direkt an den Verkäufer
+- **Kaufvertrag prüfen lassen:** Lies den Entwurf sorgfältig durch – oder lass ihn von einem Anwalt prüfen
+- **Übergabeprotokoll:** Dokumentiere bei der Schlüsselübergabe den Zustand der Immobilie schriftlich und mit Fotos
+- **Gewährleistungsausschluss verstehen:** Bei privaten Verkäufen ist die Gewährleistung in der Regel ausgeschlossen – was du kaufst, kaufst du mit allen bekannten Mängeln
+
+## Wann sollte ich ein Gutachten beauftragen?
+
+Ein professionelles Gutachten lohnt sich vor allem dann:
+
+- Bei älteren Gebäuden (Baujahr vor 1980) mit unbekannter Sanierungshistorie
+- Wenn der Zustand schwer einzuschätzen ist (z.B. verdeckte Mängel vermutet werden)
+- Bei ungewöhnlich niedrigem Preis – oft ein Zeichen für versteckte Probleme
+- Bei gewerblichen Immobilien oder komplexen Nutzungsarten
+- Wenn du als Käufer keine Immobilienerfahrung hast und auf der sicheren Seite sein möchtest
+
+Ein Sachverständigengutachten kostet je nach Umfang zwischen 500 und 2.000 € – und kann dir im Zweifelsfall Zehntausende sparen.
+
+## Wie verhandelt man den Kaufpreis?
+
+Viele Käufer trauen sich nicht zu verhandeln – und zahlen deshalb mehr als nötig.
+
+**Tipps für die Verhandlung:**
+
+- Informiere dich gründlich über den Marktwert, bevor du verhandelst
+- Weise sachlich auf Mängel oder Sanierungsbedarf hin – das sind legitime Argumente
+- Mache ein konkretes, realistisches Angebot – Fantasiepreise weit unter dem Angebotspreis werden meist nicht ernst genommen
+- Zeige echtes Interesse und Finanzierungsstärke – Verkäufer bevorzugen sichere Käufer über Höchstbieter
+- Sei geduldig: Manchmal gibt es nach einigen Wochen mehr Spielraum
+
+In einem guten Markt sind 3–8 % Verhandlungsspielraum realistisch – bei überteuerten Objekten auch mehr.
+
+---
+
+Du interessierst dich für eine Immobilie im Rhein-Main-Gebiet? Wir schauen uns das Objekt gemeinsam an und geben dir eine ehrliche Einschätzung – kostenlos und ohne Verpflichtung.
+    `,
+  },
+  {
+    slug: 'finanzierung-ratgeber',
+    category: 'Finanzierung',
+    badge: 'Ratgeber',
+    badgeColor: 'bg-purple-600 text-white',
+    title: 'Immobilienfinanzierung: Eigenkapital, Bankangebote, Förderungen und Anschlussfinanzierung erklärt',
+    excerpt: 'Wie viel kannst du dir leisten? Welche Finanzierungsform passt? Wie vergleichst du Bankangebote richtig? Der vollständige Ratgeber zur Immobilienfinanzierung.',
+    author: 'Niclas van der Straeten',
+    authorImg: '/hero-niclas-2.png',
+    authorRole: 'Immobilienmakler · immovativInvest',
+    date: '10. Mai 2025',
+    readTime: '7 Min.',
+    img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=600&fit=crop',
+    content: `
+## Wie viel kann ich mir realistisch leisten?
+
+Die wichtigste Frage zuerst – und sie ist ehrlicher zu beantworten, als viele Banken es tun.
+
+**Die Faustregel:**
+- Die monatliche Kreditrate sollte nicht mehr als 30–35 % des Netto-Haushaltseinkommens betragen
+- Beim aktuellen Zinsniveau (ca. 3,5–4,5 % p.a.) entspricht das bei einem Kredit von 300.000 € einer monatlichen Rate von ca. 1.500–1.700 €
+
+**Was Banken prüfen:**
+- Nettoeinkommen beider Personen
+- Bestehende Verbindlichkeiten (Ratenkredite, Unterhalt)
+- Eigenkapital
+- Beschäftigungsart und -dauer
+- Schufa-Score
+
+Wichtig: Die maximale Kreditsumme, die eine Bank bewilligt, ist nicht zwangsläufig das, was du dir leisten solltest. Rechne immer mit einem Puffer für unvorhergesehene Ausgaben.
+
+## Welche Finanzierungsform passt zu mir?
+
+Es gibt verschiedene Modelle – hier die wichtigsten:
+
+**Annuitätendarlehen:** Die klassische Form. Gleichbleibende Monatsrate, die sich aus Zins und Tilgung zusammensetzt. Mit jeder Rate steigt der Tilgungsanteil, der Zinsanteil sinkt. Planungssicher, empfehlenswert für die meisten Käufer.
+
+**Variables Darlehen:** Der Zinssatz wird regelmäßig angepasst. Günstig bei fallenden Zinsen, riskant bei steigenden. Nur für erfahrene Käufer mit kurzem Zeithorizont geeignet.
+
+**KfW-Darlehen:** Staatlich geförderter Kredit für energieeffiziente Immobilien. Oft mit niedrigeren Zinsen und Tilgungszuschüssen kombiniert – eine gute Ergänzung zum Hauptkredit.
+
+**Bausparvertrag:** Langfristige Ansparstrategie, die sich mit einer Eigenheimfinanzierung kombinieren lässt. Sinnvoll zur Planungssicherheit, aber oft träge im Aufbau.
+
+## Wie vergleiche ich Bankangebote richtig?
+
+Der Zinssatz allein sagt wenig. Diese Faktoren entscheiden:
+
+- **Effektiver Jahreszins:** Enthält alle Kosten – Grundlage des Vergleichs
+- **Zinsbindung:** Wie lange ist der Zins garantiert? 10, 15 oder 20 Jahre? Längere Bindung gibt mehr Planungssicherheit
+- **Tilgungssatz:** Je höher, desto schneller bist du schuldenfrei – und desto weniger zahlst du insgesamt
+- **Sondertilgungsrecht:** Kannst du jährlich einen Extra-Betrag tilgen? Wie viel Prozent?
+- **Bereitstellungszinsen:** Fallen Kosten an, wenn du den Kredit nicht sofort abrufst?
+- **Vorfälligkeitsentschädigung:** Was kostet ein vorzeitiger Ausstieg?
+
+Tipp: Nutze Vergleichsportale als Einstieg, aber lass dich anschließend von einem unabhängigen Finanzierungsberater begleiten. Wir arbeiten mit erfahrenen Finanzierungspartnern zusammen und vermitteln kostenlos.
+
+## Was ist bei der Anschlussfinanzierung zu beachten?
+
+Nach Ablauf der Zinsbindung (meist 10–15 Jahre) läuft das Darlehen weiter – zu dann aktuellen Konditionen. Das ist die Anschlussfinanzierung.
+
+**Optionen:**
+- **Prolongation:** Du verlängerst beim gleichen Institut – einfach, aber oft nicht das günstigste Angebot
+- **Umschuldung:** Du wechselst zu einer anderen Bank mit besserem Zinssatz
+- **Forward-Darlehen:** Schon 1–5 Jahre vor Ablauf kannst du dir heutige Konditionen für die Zukunft sichern
+
+**Wann handeln?** Spätestens 12–18 Monate vor Ablauf der Zinsbindung solltest du Angebote einholen. Wer zu spät agiert, muss das Angebot der Hausbank nehmen.
+
+## Welche Förderungen stehen mir zu?
+
+Der Staat fördert den Immobilienerwerb auf verschiedenen Wegen:
+
+- **KfW-Programm „Wohneigentum für Familien" (WEF):** Familien mit Kindern erhalten besonders günstige Konditionen beim Erstwerb
+- **KfW-Energieeffizienz-Programme:** Tilgungszuschüsse von bis zu 15 % bei energieeffizienten Neubauten oder Sanierungen
+- **BAFA-Förderung:** Für energetische Sanierungsmaßnahmen (Heizung, Dämmung, Fenster)
+- **Hessische Wohnraumförderung:** Landeseigene Programme für Familien und Geringverdiener
+- **Wohn-Riester:** Steuerlich gefördertes Sparen für die eigene Immobilie
+
+Wichtig: Förderprogramme müssen in der Regel vor Baubeginn oder Kauf beantragt werden – nachträglich ist eine Förderung meist nicht möglich.
+
+## Wie viel Eigenkapital brauche ich wirklich?
+
+Die Mindestempfehlung: **20 % des Kaufpreises** plus alle Kaufnebenkosten (ca. 10–15 %) aus eigenen Mitteln.
+
+**Beispiel bei einem Kaufpreis von 400.000 €:**
+- 20 % Eigenkapital = 80.000 €
+- Kaufnebenkosten (12 %) = 48.000 €
+- Gesamteigenkapitalbedarf = ca. 128.000 €
+
+**Warum so viel?** Mit mehr Eigenkapital bekommst du bessere Zinsen, eine niedrigere Rate und mehr Sicherheit. Banken belohnen hohe Eigenkapitalquoten mit deutlich günstigeren Konditionen.
+
+**Geht es auch mit weniger?** Ja – Vollfinanzierungen (100 % oder sogar 110 %) sind möglich, aber teuer und risikoreicher. Empfehlenswert nur bei sehr sicherem, hohem Einkommen.
+
+---
+
+Du planst eine Immobilienfinanzierung und weißt nicht, wo du anfangen sollst? Wir vermitteln dich kostenlos an erfahrene Finanzierungspartner und begleiten dich durch den gesamten Prozess.
+    `,
+  },
 ]
 
 export function getArticleBySlug(slug: string): Article | undefined {

@@ -521,7 +521,7 @@ export default function Wertrechner() {
         {step < 4 ? (
           <button
             onClick={next}
-            className="ml-auto flex items-center gap-2 btn-gradient text-white font-semibold rounded-xl px-8 py-3.5 text-sm transition-colors"
+            className="flex-1 flex items-center justify-center gap-2 btn-gradient text-white font-semibold rounded-xl px-8 py-3.5 text-sm transition-colors"
           >
             Weiter
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -532,7 +532,7 @@ export default function Wertrechner() {
           <button
             onClick={submit}
             disabled={loading}
-            className="ml-auto flex items-center gap-2 btn-gradient disabled:opacity-60 text-white font-semibold rounded-xl px-8 py-3.5 text-sm transition-colors"
+            className="flex-1 flex items-center justify-center gap-2 btn-gradient disabled:opacity-60 text-white font-semibold rounded-xl px-8 py-3.5 text-sm transition-colors"
           >
             {loading ? (
               <>

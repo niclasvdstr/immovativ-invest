@@ -61,7 +61,7 @@ export default function BeratungPage() {
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💬 Kostenlose Beratung
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
             <span className="text-brand-anthrazit">Kostenlose Immobilienberatung Frankfurt.</span><br />
             <span className="text-brand-green">Ehrlich, persönlich, unverbindlich.</span>
           </h1>
@@ -148,36 +148,36 @@ export default function BeratungPage() {
                 icon: '🏡',
                 title: 'Hausverkauf',
                 items: [
-                  'Wann ist der richtige Zeitpunkt zum Verkauf?',
-                  'Wie ermittle ich den realistischen Marktwert?',
-                  'Was kostet mich ein Verkauf wirklich?',
-                  'Makler oder Privatverkauf — was ist besser?',
-                  'Wie läuft ein Notartermin ab?',
-                  'Was muss ich steuerlich beachten?',
+                  { text: 'Wann ist der richtige Zeitpunkt zum Verkauf?', href: '/blog/zeitpunkt-immobilie-verkaufen' },
+                  { text: 'Wie ermittle ich den realistischen Marktwert?', href: '/blog/realistischen-marktwert-ermitteln' },
+                  { text: 'Was kostet mich ein Verkauf wirklich?', href: '/blog/was-kostet-hausverkauf-wirklich' },
+                  { text: 'Makler oder Privatverkauf — was ist besser?', href: '/blog/makler-oder-privat-verkaufen' },
+                  { text: 'Wie läuft ein Notartermin ab?', href: '/blog/notartermin-immobilien-ablauf' },
+                  { text: 'Was muss ich steuerlich beachten?', href: '/blog/steuerliche-aspekte-hausverkauf' },
                 ],
               },
               {
                 icon: '🔍',
                 title: 'Immobilienkauf',
                 items: [
-                  'Wie erkenne ich einen fairen Preis?',
-                  'Welche Unterlagen muss ich prüfen?',
-                  'Was sind versteckte Kosten beim Kauf?',
-                  'Wie schütze ich mich als Käufer?',
-                  'Wann sollte ich ein Gutachten beauftragen?',
-                  'Wie verhandelt man den Kaufpreis?',
+                  { text: 'Wie erkenne ich einen fairen Preis?', href: '/blog/fairer-immobilienpreis-erkennen' },
+                  { text: 'Welche Unterlagen muss ich prüfen?', href: '/blog/unterlagen-immobilienkauf-pruefen' },
+                  { text: 'Was sind versteckte Kosten beim Kauf?', href: '/blog/nebenkosten-immobilienkauf-2026' },
+                  { text: 'Wie schütze ich mich als Käufer?', href: '/blog/kaeufer-schutz-immobilienkauf' },
+                  { text: 'Wann sollte ich ein Gutachten beauftragen?', href: '/blog/gutachten-immobilienkauf' },
+                  { text: 'Wie verhandelt man den Kaufpreis?', href: '/blog/kaufpreis-verhandeln-immobilien' },
                 ],
               },
               {
                 icon: '💰',
                 title: 'Finanzierung',
                 items: [
-                  'Wie viel kann ich mir realistisch leisten?',
-                  'Welche Finanzierungsform passt zu mir?',
-                  'Wie vergleiche ich Bankangebote richtig?',
-                  'Was ist bei der Anschlussfinanzierung zu beachten?',
-                  'Welche Förderungen stehen mir zu?',
-                  'Wie viel Eigenkapital brauche ich wirklich?',
+                  { text: 'Wie viel kann ich mir realistisch leisten?', href: '/blog/immobilienfinanzierung-budget' },
+                  { text: 'Welche Finanzierungsform passt zu mir?', href: '/blog/finanzierungsformen-immobilien' },
+                  { text: 'Wie vergleiche ich Bankangebote richtig?', href: '/blog/bankangebote-immobilienkredit-vergleichen' },
+                  { text: 'Was ist bei der Anschlussfinanzierung zu beachten?', href: '/blog/anschlussfinanzierung-tipps' },
+                  { text: 'Welche Förderungen stehen mir zu?', href: '/blog/foerderungen-immobilienkauf-kfw' },
+                  { text: 'Wie viel Eigenkapital brauche ich wirklich?', href: '/blog/eigenkapital-immobilienkauf' },
                 ],
               },
             ].map((item, index) => (
@@ -187,9 +187,11 @@ export default function BeratungPage() {
                 <h3 className="font-bold text-brand-anthrazit text-lg mb-4">{item.title}</h3>
                 <ul className="space-y-2.5">
                   {item.items.map(q => (
-                    <li key={q} className="flex items-start gap-2 text-sm text-brand-gray-warm">
-                      <span className="text-brand-green font-bold shrink-0 mt-0.5">→</span>
-                      {q}
+                    <li key={q.text}>
+                      <Link href={q.href} className="flex items-start gap-2 text-sm text-brand-gray-warm hover:text-brand-green transition-colors group/item">
+                        <span className="text-brand-green font-bold shrink-0 mt-0.5">→</span>
+                        <span className="group-hover/item:underline">{q.text}</span>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -208,7 +210,7 @@ export default function BeratungPage() {
             <h2 className="text-2xl font-bold text-white mb-2">Wie viel ist deine Immobilie wert?</h2>
             <p className="text-white/70 text-sm">Kostenlose Wertermittlung — unverbindlich, schnell und ohne Verpflichtung.</p>
           </div>
-          <Link href="/verkaufen" className="inline-flex items-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-gray-50 transition-colors whitespace-nowrap shrink-0">
+          <Link href="/verkaufen" className="inline-flex items-center justify-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-2.5 hover:bg-gray-50 transition-colors w-full text-sm">
             Immobilienbewertung starten →
           </Link>
         </div>
@@ -285,8 +287,8 @@ export default function BeratungPage() {
               </a>
             ))}
           </div>
-          <div className="mt-10 text-left md:text-center">
-            <CTAButton href="/verkaufen" variant="primary" size="md">
+          <div className="mt-10">
+            <CTAButton href="/verkaufen" variant="primary" size="md" fullWidth>
               Immobilienbewertung starten →
             </CTAButton>
           </div>

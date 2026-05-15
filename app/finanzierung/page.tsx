@@ -61,7 +61,7 @@ export default function FinanzierungPage() {
           <div className="inline-flex items-center gap-2 bg-white border border-brand-gray-border rounded-full px-4 py-2 text-sm font-semibold text-brand-anthrazit shadow-soft mb-6">
             💰 Finanzierung
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
             <span className="text-brand-anthrazit">Immobilienfinanzierung Frankfurt.</span><br />
             <span className="text-brand-green">Die richtige Lösung für Sie.</span>
           </h1>
@@ -117,7 +117,7 @@ export default function FinanzierungPage() {
                   { icon: '🤝', title: 'Starkes Netzwerk', desc: 'Direkte Bankkontakte & unabhängige Berater' },
                   { icon: '⚡', title: 'Schnell vermittelt', desc: 'Kein langes Warten auf Rückruf' },
                   { icon: '🎯', title: 'Maßgeschneidert', desc: 'Passend zu deiner Lebenssituation' },
-                  { icon: '✅', title: 'Kostenlos', desc: 'Keine Bearbeitungsgebühren für dich' },
+                  { icon: '✅', title: 'Kostenlos', desc: 'Wir vermitteln kostenfrei für dich' },
                 ].map(item => (
                   <div key={item.title} className="bg-brand-cream rounded-2xl p-4 border border-brand-gray-border">
                     <div className="text-xl mb-1">{item.icon}</div>
@@ -188,12 +188,12 @@ export default function FinanzierungPage() {
 
       {/* CTA Banner */}
       <section className="px-4 md:px-8 py-14" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h2 className="text-2xl font-bold text-white mb-2">Weißt du, was deine Immobilie wert ist?</h2>
             <p className="text-white/70 text-sm">Kostenlose Wertermittlung — unverbindlich und innerhalb von 24 Stunden.</p>
           </div>
-          <Link href="/verkaufen" className="inline-flex items-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-gray-50 transition-colors whitespace-nowrap shrink-0">
+          <Link href="/verkaufen" className="inline-flex items-center justify-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-2.5 hover:bg-gray-50 transition-colors w-full text-sm">
             Immobilienbewertung starten →
           </Link>
         </div>
@@ -226,7 +226,7 @@ export default function FinanzierungPage() {
                 desc: 'Wer eine Immobilie als Investition kauft, kann Zinsen steuerlich absetzen. Hier lohnt es sich, Finanzierung und Steueroptimierung gemeinsam zu denken.',
               },
             ].map(item => (
-              <div key={item.title} className="bg-brand-cream rounded-2xl p-6 border border-brand-gray-border text-center">
+              <div key={item.title} className="bg-brand-cream rounded-2xl p-6 border border-brand-gray-border text-left">
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="font-bold text-brand-anthrazit text-lg mb-2">{item.title}</h3>
                 <p className="text-brand-gray-warm text-sm leading-relaxed">{item.desc}</p>
@@ -259,8 +259,8 @@ export default function FinanzierungPage() {
               </div>
             ))}
           </div>
-          <div className="mt-8 text-left md:text-center">
-            <CTAButton href="/verkaufen" variant="primary" size="md">
+          <div className="mt-8">
+            <CTAButton href="/verkaufen" variant="primary" size="md" fullWidth>
               Immobilienbewertung starten →
             </CTAButton>
           </div>

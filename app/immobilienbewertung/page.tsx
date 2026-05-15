@@ -138,12 +138,11 @@ export default function ImmobilienbewertungPage() {
         <div className="max-w-5xl mx-auto relative">
           <AnimateIn direction="up">
             <div className="text-left md:text-center mb-10">
-              <div className="inline-flex items-center gap-3 bg-white border border-brand-gray-border rounded-2xl px-5 py-3 shadow-soft mb-5">
-                <span style={{ color: '#ffa61c' }} className="text-xl tracking-wider shrink-0">★★★★★</span>
-                <div className="text-left">
-                  <div className="text-sm font-bold text-brand-anthrazit leading-tight">4,9 von 5</div>
-                  <div className="text-xs text-brand-gray-warm font-normal leading-tight">100+ Bewertungen · kostenlos</div>
-                </div>
+              <div className="inline-flex items-center gap-2 bg-white border border-gray-100 rounded-full px-3 py-1.5 shadow-sm mb-5">
+                <span style={{ color: '#ffa61c' }} className="text-xs tracking-wide shrink-0">★★★★★</span>
+                <div className="h-3 w-px bg-gray-200 shrink-0" />
+                <span className="text-xs font-bold text-brand-anthrazit">4,9 / 5</span>
+                <span className="text-xs text-brand-gray-warm">· 100+ Bewertungen</span>
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-anthrazit leading-tight mb-4">
                 Was ist deine Immobilie <span className="text-brand-green">wert?</span>
@@ -217,8 +216,8 @@ export default function ImmobilienbewertungPage() {
               { icon: '🌿', label: 'Grundstücke' },
             ].map(item => (
               <AnimateIn key={item.label} direction="up">
-                <div className="bg-white rounded-2xl p-3 sm:p-5 border border-gray-100 shadow-soft flex items-center gap-2 sm:gap-3">
-                  <span className="text-xl sm:text-2xl shrink-0">{item.icon}</span>
+                <div className="bg-white rounded-2xl p-3 sm:p-5 border border-gray-100 shadow-soft flex flex-col items-center gap-2 text-center h-full">
+                  <span className="text-2xl">{item.icon}</span>
                   <span className="font-semibold text-brand-anthrazit text-xs sm:text-sm leading-tight">{item.label}</span>
                 </div>
               </AnimateIn>
@@ -236,15 +235,16 @@ export default function ImmobilienbewertungPage() {
           </AnimateIn>
           <div className="grid md:grid-cols-2 gap-5">
             {[
-              { title: 'Lage & Mikrolage', text: 'Stadtteil, Straße, Lärmbelastung, Schulen, ÖPNV-Anbindung — Lage ist der wichtigste Einzelfaktor und macht oft 30–40 % des Wertes aus.' },
-              { title: 'Zustand & Baujahr', text: 'Renovierungsstand, Dach, Heizung, Fenster, Leitungen — ein saniertes Haus aus 1970 erzielt deutlich mehr als ein unsaniertes aus 2000.' },
-              { title: 'Energieeffizienz', text: 'Seit 2024 kalkulieren Käufer Sanierungskosten konsequent ein. Energieklasse A–C erzielt Premiumpreise, Klasse F–H führt zu Abschlägen.' },
-              { title: 'Größe & Grundriss', text: 'Wohnfläche, Raumaufteilung, Homeoffice-Möglichkeit, Balkon — gut geschnittene Grundrisse sind messbar mehr wert.' },
-              { title: 'Ausstattung', text: 'Tiefgaragenstellplatz, Aufzug, hochwertige Küche, Fußbodenheizung — Ausstattungsmerkmale können den Wert um 5–15 % verändern.' },
-              { title: 'Marktlage zum Zeitpunkt', text: 'Angebot und Nachfrage zum Bewertungszeitpunkt sind entscheidend. Was vor zwei Jahren galt, stimmt heute möglicherweise nicht mehr.' },
+              { icon: '📍', title: 'Lage & Mikrolage', text: 'Stadtteil, Straße, Lärmbelastung, Schulen, ÖPNV-Anbindung — Lage ist der wichtigste Einzelfaktor und macht oft 30–40 % des Wertes aus.' },
+              { icon: '🔧', title: 'Zustand & Baujahr', text: 'Renovierungsstand, Dach, Heizung, Fenster, Leitungen — ein saniertes Haus aus 1970 erzielt deutlich mehr als ein unsaniertes aus 2000.' },
+              { icon: '⚡', title: 'Energieeffizienz', text: 'Seit 2024 kalkulieren Käufer Sanierungskosten konsequent ein. Energieklasse A–C erzielt Premiumpreise, Klasse F–H führt zu Abschlägen.' },
+              { icon: '📐', title: 'Größe & Grundriss', text: 'Wohnfläche, Raumaufteilung, Homeoffice-Möglichkeit, Balkon — gut geschnittene Grundrisse sind messbar mehr wert.' },
+              { icon: '✨', title: 'Ausstattung', text: 'Tiefgaragenstellplatz, Aufzug, hochwertige Küche, Fußbodenheizung — Ausstattungsmerkmale können den Wert um 5–15 % verändern.' },
+              { icon: '📈', title: 'Marktlage zum Zeitpunkt', text: 'Angebot und Nachfrage zum Bewertungszeitpunkt sind entscheidend. Was vor zwei Jahren galt, stimmt heute möglicherweise nicht mehr.' },
             ].map(item => (
               <AnimateIn key={item.title} direction="up">
                 <div className="border border-gray-100 rounded-2xl p-6 bg-[#f8f9ff]">
+                  <div className="text-2xl mb-3">{item.icon}</div>
                   <h3 className="font-bold text-brand-anthrazit mb-2 text-base">{item.title}</h3>
                   <p className="text-brand-gray-warm text-sm leading-relaxed">{item.text}</p>
                 </div>
