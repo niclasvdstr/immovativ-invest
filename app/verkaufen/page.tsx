@@ -193,7 +193,7 @@ export default function VerkaufenPage() {
             <AnimateIn direction="up">
               <div className="rounded-3xl overflow-hidden h-[460px] shadow-large">
                 <Image
-                  src="/mazlum-hochhaus.png"
+                  src="/mazlum.png"
                   alt="Mazlum Selcuk, Immobilienexperte Rhein-Main-Region – immovativInvest Frankfurt"
                   className="w-full h-full object-cover"
                   width={800}
