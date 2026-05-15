@@ -280,13 +280,13 @@ export default function ImmobilienbewertungPage() {
       {/* CTA */}
       <section className="py-16 px-4 md:px-8" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%)' }}>
         <div className="max-w-3xl mx-auto text-left md:text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Jetzt kostenlose Bewertung anfragen</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 whitespace-nowrap">Kostenlose Bewertung anfragen</h2>
           <p className="text-white/70 text-sm mb-8 leading-relaxed max-w-xl mx-auto">
             Erfahren Sie den genauen Marktwert Ihrer Immobilie — persönlich vor Ort, ohne Verpflichtung und ohne versteckte Kosten.
           </p>
           <Link
             href="#bewertung"
-            className="inline-flex items-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-3.5 hover:bg-gray-50 transition-colors whitespace-nowrap shrink-0"
+            className="inline-flex items-center justify-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-2.5 hover:bg-gray-50 transition-colors w-full text-sm"
           >
             Bewertung starten →
           </Link>

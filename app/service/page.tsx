@@ -194,10 +194,10 @@ export default function ServicePage() {
                 Kein Problem. Meld dich einfach — wir finden gemeinsam heraus, wie wir dir am besten helfen können.
               </p>
             </div>
-            <div className="shrink-0">
+            <div className="w-full">
               <Link
                 href="/beratung"
-                className="inline-flex items-center gap-2 btn-gradient text-white font-semibold rounded-xl px-5 py-3 sm:px-7 sm:py-3.5 transition-colors"
+                className="inline-flex items-center justify-center gap-2 btn-gradient text-white font-semibold rounded-xl px-5 py-3 sm:px-7 sm:py-3.5 transition-colors w-full"
               >
                 Kostenlose Erstberatung →
               </Link>
