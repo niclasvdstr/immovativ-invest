@@ -8,7 +8,7 @@ import FAQ from '@/components/FAQ'
 import Wertrechner from '@/components/Wertrechner'
 
 export const metadata: Metadata = {
-  title: 'Immobilienbewertung Frankfurt – Kostenlose Wertermittlung | immovativInvest',
+  title: 'Immobilienbewertung Frankfurt – Kostenlose Wertermittlung',
   description: 'Immobilienbewertung Frankfurt & Rhein-Main: Erfahren Sie den genauen Marktwert Ihrer Immobilie – kostenlos, persönlich vor Ort und ohne Verpflichtung. Jetzt Termin anfragen.',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienbewertung' },
   openGraph: {
@@ -295,6 +295,16 @@ export default function ImmobilienbewertungPage() {
 
       {/* FAQ */}
       <FAQ items={faqItems} title="Häufige Fragen zur Immobilienbewertung." />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(item => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: { '@type': 'Answer', text: item.answer },
+        })),
+      }) }} />
 
       <Footer />
     </main>

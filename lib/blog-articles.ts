@@ -11,6 +11,7 @@ export interface Article {
   authorImg: string
   authorRole: string
   date: string
+  updatedAt?: string
   readTime: string
   img: string
   quickAnswer?: string

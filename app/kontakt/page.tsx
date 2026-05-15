@@ -10,7 +10,7 @@ import KontaktFormClient from '@/components/KontaktFormClient'
 import TippgeberKontaktForm from '@/components/TippgeberKontaktForm'
 
 export const metadata: Metadata = {
-  title: 'Kontakt – immovativInvest',
+  title: 'Kontakt – Immobilienmakler Frankfurt kostenlos anfragen',
   description: 'Kontaktieren Sie immovativInvest direkt – per Telefon, WhatsApp oder E-Mail. Wir melden uns innerhalb von 24 Stunden bei Ihnen.',
   alternates: { canonical: 'https://www.immovativ-invest.de/kontakt' },
   openGraph: {
@@ -38,10 +38,34 @@ export default function KontaktPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Start', item: 'https://www.immovativ-invest.de' },
-              { '@type': 'ListItem', position: 2, name: 'Kontakt', item: 'https://www.immovativ-invest.de/kontakt' },
+            '@graph': [
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'Start', item: 'https://www.immovativ-invest.de' },
+                  { '@type': 'ListItem', position: 2, name: 'Kontakt', item: 'https://www.immovativ-invest.de/kontakt' },
+                ],
+              },
+              {
+                '@type': 'LocalBusiness',
+                '@id': 'https://www.immovativ-invest.de/#organization',
+                name: 'immovativInvest',
+                contactPoint: [
+                  {
+                    '@type': 'ContactPoint',
+                    telephone: '+4915129686979',
+                    contactType: 'customer service',
+                    availableLanguage: ['German'],
+                    hoursAvailable: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '08:00', closes: '20:00' },
+                  },
+                  {
+                    '@type': 'ContactPoint',
+                    email: 'info@immovativ-invest.de',
+                    contactType: 'customer service',
+                    availableLanguage: ['German'],
+                  },
+                ],
+              },
             ],
           }),
         }}

@@ -9,7 +9,7 @@ import AnimateIn from '@/components/AnimateIn'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Immobilienmakler Kosten Frankfurt 2025 – Was kostet ein Makler wirklich? | immovativInvest',
+  title: 'Immobilienmakler Kosten Frankfurt 2025 – Alle Fakten',
   description: 'Was kostet ein Immobilienmakler in Frankfurt? Provision, Halbteilung, versteckte Kosten – alle Fakten zur Maklerprovision in Hessen erklärt.',
   keywords: ['Immobilienmakler Kosten Frankfurt', 'Maklerprovision Frankfurt', 'Makler Provision Hessen', 'Maklergebühren Frankfurt', 'Provision Immobilienmakler'],
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-kosten-frankfurt' },

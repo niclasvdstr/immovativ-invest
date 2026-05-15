@@ -9,7 +9,7 @@ import CTAButton from '@/components/CTAButton'
 import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
-  title: 'Zwangsversteigerung Frankfurt – Beratung für Betroffene & Käufer | immovativInvest',
+  title: 'Zwangsversteigerung Frankfurt – Beratung & Begleitung',
   description: 'Zwangsversteigerung in Frankfurt & Rhein-Main – als Betroffener oder Kaufinteressent: Wir begleiten Sie kompetent, diskret und mit echtem Marktüberblick.',
   alternates: { canonical: 'https://www.immovativ-invest.de/zwangsversteigerungen' },
   openGraph: {

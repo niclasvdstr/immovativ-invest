@@ -9,7 +9,7 @@ import AnimateIn from '@/components/AnimateIn'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Seriösen Immobilienmakler erkennen – 12 Merkmale & Warnsignale 2025 | immovativInvest',
+  title: 'Seriösen Immobilienmakler erkennen – 12 Merkmale 2025',
   description: 'Wie erkenne ich einen seriösen Immobilienmakler? 12 konkrete Merkmale, typische Warnsignale und die richtigen Fragen für das Erstgespräch – damit du den Richtigen wählst.',
   keywords: ['seriösen Makler erkennen', 'seriöser Immobilienmakler', 'Makler Warnsignale', 'unseriöser Makler', 'Immobilienmakler prüfen Frankfurt'],
   alternates: { canonical: 'https://www.immovativ-invest.de/serioeser-makler-erkennen' },

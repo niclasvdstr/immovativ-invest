@@ -9,7 +9,7 @@ import AnimateIn from '@/components/AnimateIn'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Bester Immobilienmakler Frankfurt 2025 – So erkennst du ihn | immovativInvest',
+  title: 'Bester Immobilienmakler Frankfurt 2025 – Kriterien & Tipps',
   description: 'Welcher Immobilienmakler ist der beste in Frankfurt? Wir zeigen dir, worauf es wirklich ankommt – mit konkreten Kriterien, Fragen und ehrlichen Antworten.',
   keywords: ['bester Immobilienmakler Frankfurt', 'top Makler Frankfurt', 'Immobilienmakler Frankfurt Bewertung', 'Makler Empfehlung Frankfurt', 'Immobilienmakler Frankfurt Erfahrungen'],
   alternates: { canonical: 'https://www.immovativ-invest.de/bester-immobilienmakler-frankfurt' },

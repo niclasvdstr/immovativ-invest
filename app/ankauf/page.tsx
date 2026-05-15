@@ -14,7 +14,7 @@ import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import StickyMobileCTA from '@/components/StickyMobileCTA'
 
 export const metadata: Metadata = {
-  title: 'Immobilie direkt verkaufen – Schnell & Sicher | immovativInvest Ankauf',
+  title: 'Direktankauf – Immobilie schnell & fair verkaufen',
   description: 'Immobilie direkt verkaufen ohne Makler. immovativInvest kauft Ihre Immobilie schnell, fair und diskret. Angebot in Ø 21 Tagen. Jetzt kostenlos anfragen!',
   alternates: { canonical: 'https://www.immovativ-invest.de/ankauf' },
   openGraph: {

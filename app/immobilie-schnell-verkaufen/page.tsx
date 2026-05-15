@@ -9,7 +9,7 @@ import AnimateIn from '@/components/AnimateIn'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Immobilie schnell verkaufen Frankfurt 2025 – In 4–6 Wochen | immovativInvest',
+  title: 'Immobilie schnell verkaufen Frankfurt – In 4–6 Wochen',
   description: 'Immobilie schnell verkaufen in Frankfurt? So geht es in 4–6 Wochen: die richtigen Schritte, welche Faktoren Geschwindigkeit bestimmen und wann ein Direktankauf sinnvoll ist.',
   keywords: ['Immobilie schnell verkaufen Frankfurt', 'Haus schnell verkaufen', 'schnell verkaufen Makler', 'Wohnung schnell verkaufen Frankfurt', 'Direktankauf Frankfurt'],
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilie-schnell-verkaufen' },

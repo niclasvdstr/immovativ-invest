@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.immovativ-invest.de/referenzen' },
   openGraph: {
     title: 'Referenzen – Erfolgreiche Immobilienverkäufe | immovativInvest',
-    description: 'Echte Verkaufsergebnisse aus dem Rhein-Main-Gebiet.',
+    description: 'Über 125 erfolgreich vermittelte Immobilien im Rhein-Main-Gebiet. Echte Zahlen, echte Kunden – überzeugen Sie sich von unserer Leistung.',
     url: 'https://www.immovativ-invest.de/referenzen',
     siteName: 'immovativInvest',
     locale: 'de_DE',
@@ -240,6 +240,22 @@ export default function ReferenzenPage() {
               reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
               author: { '@type': 'Person', name: c.author },
               reviewBody: c.quote.replace(/[„""]/g, ''),
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Erfolgreich verkaufte Immobilien – immovativInvest Referenzen',
+            itemListElement: cases.map((c, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: c.headline,
+              description: `${c.badge} in ${c.city} – Ziel: ${c.goal}, Ergebnis: ${c.result} (${c.deltaPercent})`,
             })),
           }),
         }}

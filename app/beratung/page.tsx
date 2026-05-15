@@ -9,7 +9,7 @@ import CTAButton from '@/components/CTAButton'
 import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
-  title: 'Kostenlose Immobilienberatung Frankfurt & Rhein-Main | immovativInvest',
+  title: 'Kostenlose Immobilienberatung Frankfurt & Rhein-Main',
   description: 'Wir beraten Sie kostenlos – egal ob Hausverkauf, Ankauf oder Finanzierung. Persönlich, diskret und ohne Verpflichtung.',
   alternates: { canonical: 'https://www.immovativ-invest.de/beratung' },
   openGraph: {

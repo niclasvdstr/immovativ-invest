@@ -11,11 +11,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.immovativ-invest.de'),
   title: {
-    default: 'immovativInvest – Immobilie verkaufen: Direktankauf & Makler',
+    default: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
     template: '%s | immovativInvest',
   },
-  description: 'Verkaufen Sie Ihre Immobilie schnell, sicher und diskret. immovativInvest bietet Ihnen zwei Wege: Direktankauf oder professionelle Maklervermarktung – kostenlos & unverbindlich.',
+  description: 'Immobilie verkaufen im Rhein-Main-Gebiet – marktgerechte Bewertung, professionelle Vermarktung & persönliche Betreuung. Kostenlos & unverbindlich.',
   keywords: ['Immobilie verkaufen', 'Direktankauf', 'Immobilienmakler', 'Immobilienbewertung', 'Haus verkaufen', 'Wohnung verkaufen'],
   icons: {
     icon: [

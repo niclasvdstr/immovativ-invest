@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description: 'Ihre Immobilie in Hofheim professionell vermarkten. Kostenlose Bewertung, nur 6 Wochen Vertragslaufzeit, 4,9★ Bewertung.',
     type: 'website',
     url: 'https://www.immovativ-invest.de/immobilienmakler-hofheim',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'immovativInvest – Immobilienmakler Frankfurt & Rhein-Main' }],
   },
 }
 

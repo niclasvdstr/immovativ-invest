@@ -16,8 +16,8 @@ import { seoStaedte } from '@/lib/seo-staedte'
 import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
-  title: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',
-  description: 'Mit dem Immobilienmakler-Service von immovativInvest erzielen Sie den bestmöglichen Preis für Ihre Immobilie. Marktgerechte Bewertung, professionelle Vermarktung, persönliche Betreuung.',
+  title: { absolute: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest' },
+  description: 'Immobilienmakler im Rhein-Main-Gebiet – marktgerechte Bewertung, professionelle Vermarktung & persönliche Betreuung. 125+ verkaufte Immobilien. Kostenlos & unverbindlich.',
   alternates: { canonical: 'https://www.immovativ-invest.de' },
   openGraph: {
     title: 'Immobilienmakler Frankfurt & Rhein-Main | immovativInvest',

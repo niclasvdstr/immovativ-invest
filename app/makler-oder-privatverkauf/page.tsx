@@ -9,7 +9,7 @@ import AnimateIn from '@/components/AnimateIn'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Makler oder Privatverkauf? Der ehrliche Vergleich 2025 | immovativInvest Frankfurt',
+  title: 'Makler oder Privatverkauf? Ehrlicher Vergleich 2025',
   description: 'Makler beauftragen oder selbst verkaufen? Wir vergleichen Aufwand, Preis, Risiken und Zeitersparnis – ehrlich und ohne Eigenwerbung.',
   keywords: ['Makler oder Privatverkauf', 'Immobilie selbst verkaufen', 'ohne Makler verkaufen Frankfurt', 'Privatverkauf Immobilie', 'Makler vs Privatverkauf'],
   alternates: { canonical: 'https://www.immovativ-invest.de/makler-oder-privatverkauf' },

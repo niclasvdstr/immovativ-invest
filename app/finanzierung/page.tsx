@@ -9,7 +9,7 @@ import CTAButton from '@/components/CTAButton'
 import AnimateIn from '@/components/AnimateIn'
 
 export const metadata: Metadata = {
-  title: 'Immobilienfinanzierung Frankfurt – Beratung & Vermittlung | immovativInvest',
+  title: 'Immobilienfinanzierung Frankfurt – Beratung & Vermittlung',
   description: 'Immobilienfinanzierung in Frankfurt & Rhein-Main – mit unserem Netzwerk aus Banken und Beratern zur besten Finanzierung. Kostenlos, persönlich & unverbindlich.',
   alternates: { canonical: 'https://www.immovativ-invest.de/finanzierung' },
   openGraph: {

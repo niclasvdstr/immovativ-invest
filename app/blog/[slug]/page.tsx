@@ -17,15 +17,16 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const article = getArticleBySlug(params.slug)
   if (!article) return {}
+  const metaDesc = article.excerpt.length > 160 ? article.excerpt.slice(0, 157) + '…' : article.excerpt
   return {
-    title: `${article.title} | immovativInvest Blog`,
-    description: article.excerpt,
+    title: article.title,
+    description: metaDesc,
     alternates: {
       canonical: `https://www.immovativ-invest.de/blog/${article.slug}`,
     },
     openGraph: {
       title: article.title,
-      description: article.excerpt,
+      description: metaDesc,
       url: `https://www.immovativ-invest.de/blog/${article.slug}`,
       type: 'article',
       locale: 'de_DE',
@@ -263,10 +264,10 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     description: article.excerpt,
     url: `https://www.immovativ-invest.de/blog/${article.slug}`,
     datePublished: article.date,
-    dateModified: article.date,
+    dateModified: article.updatedAt ?? article.date,
     author: {
       '@type': 'Person',
-      name: 'Niclas van der Straeten',
+      name: article.author,
       url: 'https://www.immovativ-invest.de/ueber-uns',
     },
     publisher: {
@@ -290,7 +291,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     description: article.excerpt,
     image: article.img.startsWith('http') ? article.img : `https://www.immovativ-invest.de${article.img}`,
     datePublished: article.date,
-    dateModified: article.date,
+    dateModified: article.updatedAt ?? article.date,
     author: {
       '@type': 'Person',
       name: article.author,

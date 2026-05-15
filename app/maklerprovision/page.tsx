@@ -9,7 +9,7 @@ import AnimateIn from '@/components/AnimateIn'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Maklerprovision 2025 – Was kostet was, was ist inklusive? | immovativInvest Frankfurt',
+  title: 'Maklerprovision Frankfurt 2025 – Kosten & Leistungen',
   description: 'Maklerprovision Frankfurt: Höhe, Aufteilung, was inklusive ist und wann die Provision fällig wird. Alle Fakten transparent, mit konkreten Zahlenbeispielen.',
   keywords: ['Maklerprovision', 'Maklerprovision Frankfurt', 'Maklergebühren', 'Provision Immobilienmakler', 'was kostet Makler', 'Maklerprovision Hessen'],
   alternates: { canonical: 'https://www.immovativ-invest.de/maklerprovision' },
