@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Neu-Isenburg – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Neu-Isenburg. Professioneller Verkauf von Immobilien direkt südlich von Frankfurt – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Neu-Isenburg – direkt an Frankfurt, S-Bahn S3. Hohe Nachfrage, gute Preise, Ø 4–5 Wochen bis Verkauf. Kostenlose Erstberatung.',
   keywords: 'Immobilienmakler Neu-Isenburg, Immobilien Neu-Isenburg, Haus verkaufen Neu-Isenburg, Wohnung verkaufen Neu-Isenburg, Immobilienbewertung Neu-Isenburg, Makler Landkreis Offenbach',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-neu-isenburg' },
   openGraph: {

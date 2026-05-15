@@ -303,6 +303,37 @@ export default function ImmobilienmaklerKarbenPage() {
         </div>
       </section>
 
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Karben – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Karben: Beliebteste Familienstadt im Wetteraukreis mit S6-Direktanbindung
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Karben ist eine der beliebtesten Familienstädte im Wetteraukreis – mit hervorragender S-Bahn-Anbindung über die S6 nach Frankfurt, die rund 30 bis 35 Minuten bis ins Stadtzentrum benötigt. Die sechs Stadtteile Karben, Kloppenheim, Okarben, Groß-Karben, Klein-Karben und Rendel bieten unterschiedliche Wohncharaktere: Kloppenheim mit seinen neueren Wohngebieten boomt besonders stark, während Rendel und Klein-Karben für ihre ruhigen, gewachsenen Einfamilienhauslagen bekannt sind. Die Nachfrage aus Frankfurt und Bad Vilbel ist konstant hoch – Karben gilt in Maklerkreisen als ein Markt, auf dem gut bewertete Objekte selten länger als drei bis fünf Wochen angeboten werden.</p>
+              <p>Die Kaufpreise für Einfamilienhäuser liegen typischerweise zwischen 380.000 und 650.000 Euro – günstig im Vergleich zu Bad Vilbel oder Frankfurt-Ost, aber mit annähernd gleicher Pendelzeit in die Innenstadt. Die Schul- und Kitainfrastruktur in Karben ist sehr gut ausgebaut und gilt als einer der Hauptgründe, warum Familien aus Frankfurt nach Karben ziehen. Grundschulen, weiterführende Schulen und eine ausreichende Kitaversorgung machen die Stadt für Eltern mit Kindern besonders attraktiv – ein Verkaufsargument, das erfahrene Makler gezielt kommunizieren.</p>
+              <p>Ein weiterer strategischer Vorteil: Die Nähe zur A45 (Sauerlandlinie) und zur Bundesstraße B3 macht Karben ideal für Menschen, die neben Frankfurt auch Richtung Gießen oder Nürnberg pendeln. Für Verkäufer bedeutet das eine breite und kaufkräftige Zielgruppe aus mehreren Richtungen. Der Markt ist bodenständig und stabil – keine Hype-Preise, aber auch kein Überangebot. Wer in Karben verkauft, findet zuverlässig ernsthafte Käufer, die langfristig planen und selten nur verhandeln wollen.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S6 direkt nach Frankfurt' },
+                { icon: '👨‍👩‍👧', label: 'Top Familienlage Wetteraukreis' },
+                { icon: '📊', label: 'Starke Nachfrage & kurze Vermarktungszeit' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">

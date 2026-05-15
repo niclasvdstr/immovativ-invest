@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Mörfelden-Walldorf | immovativInvest',
-  description: 'Ihr Immobilienmakler in Mörfelden-Walldorf. Professioneller Verkauf, fundierte Bewertung und persönliche Beratung in der gut angebundenen Stadt im Herzen der Rhein-Main-Region. Kostenlose Erstberatung.',
+  description: 'Immobilienmakler Mörfelden-Walldorf – Lage nahe Flughafen Frankfurt. Starke Nachfrage, gute Verkehrsanbindung & 4,9★. Kostenlos Bewertung anfragen.',
   keywords: 'Immobilienmakler Mörfelden-Walldorf, Immobilien Mörfelden-Walldorf, Haus verkaufen Mörfelden, Wohnung verkaufen Walldorf, Immobilienbewertung Mörfelden-Walldorf, Makler Kreis Groß-Gerau',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-moerfelden-walldorf' },
   openGraph: {

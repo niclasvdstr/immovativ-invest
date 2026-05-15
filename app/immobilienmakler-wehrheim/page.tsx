@@ -258,6 +258,37 @@ export default function ImmobilienmaklerWehrheimPage() {
         </div>
       </section>
 
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Wehrheim – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Wehrheim: Ruhe, Platz und Taunusnatur – mit historischer Saalburg in der Nähe
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Wehrheim liegt im südlichen Hochtaunuskreis, rund 15 Kilometer von Bad Homburg entfernt, und gilt als ruhige Gemeinde mit überschaubarer Einwohnerzahl von etwa 6.000 Personen. Die Ortsteile Wehrheim, Obernhain, Pfaffenwiesbach und Saalburg-Arnsburg prägen die Gemeinde. Besondere Bekanntheit genießt das nahe gelegene Römerkastell Saalburg, das als UNESCO-Welterbe Tagesausflügler aus ganz Hessen anzieht und dem Standort eine kulturhistorische Tiefe verleiht, die sich nur wenige Orte in der Region rühmen können.</p>
+              <p>Käufer suchen in Wehrheim vor allem eines: Ruhe, Platz und Grün. Oft handelt es sich um Menschen, die aus Bad Homburg oder Frankfurt wegziehen möchten, dort aber noch arbeiten. Die Verkehrsanbindung erleichtert dies: Die B456 führt direkt nach Bad Homburg in rund 20 Minuten, von dort ist die A661 nach Frankfurt gut erreichbar. Über Usingen ist zudem ein S-Bahn-Anschluss möglich. Der Ortsteil Pfaffenwiesbach verfügt über einen eigenen Bahnhaltepunkt auf der Taunusbahn – ein Alleinstellungsmerkmal, das den Immobilienwert in diesem Bereich stabilisiert.</p>
+              <p>Der Immobilienmarkt in Wehrheim wird von freistehenden Einfamilienhäusern dominiert. Die Preise liegen deutlich unter dem Niveau der direkten Bad-Homburg-Nachbarschaft, bieten aber erheblich mehr Fläche und Grundstück für das investierte Kapital. Wer ein gepflegtes Einfamilienhaus mit großem Garten sucht und sich tägliches Frankfurt-Pendelstress ersparen möchte, findet in Wehrheim ein Angebot, das in dieser Kombination andernorts kaum replizierbar ist. Verkäufer profitieren von einer soliden Kernklientel, die selten verhandelt, wenn das Objekt ihren Vorstellungen entspricht.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏛️', label: 'UNESCO-Saalburg in der Nähe' },
+                { icon: '🚂', label: 'Taunusbahn-Haltestelle' },
+                { icon: '🌿', label: 'Ruhige Wohnlage Hochtaunus' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">
           <AnimateIn direction="up">

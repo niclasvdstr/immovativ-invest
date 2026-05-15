@@ -320,6 +320,37 @@ export default function ImmobilienmaklerBadCambergPage() {
         </div>
       </section>
 
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Bad Camberg – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Bad Camberg: Staatlich anerkanntes Heilbad mit günstigstem Preisniveau im Taunus-Vorland
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Bad Camberg ist ein staatlich anerkanntes Heilbad im Landkreis Limburg-Weilburg und liegt in einer der ruhigsten und naturschönsten Lagen des westlichen Taunus. Die Stadt ist bekannt für ihre Kneipp-Heilbad-Tradition, das Thermalbad und die parkähnliche Kuranlage – ein Alleinstellungsmerkmal, das kaum eine andere Stadt in der Region bieten kann. Wer in Bad Camberg lebt, lebt in einer Umgebung, die bewusst auf Entschleunigung ausgelegt ist: breite Fußwege durch parkähnliche Anlagen, reine Waldluft und kurze Wege zu Erholungsangeboten, die in Großstädten hohe Mitgliedsbeiträge kosten.</p>
+              <p>Die Verkehrsanbindung ist dabei besser als der ländliche Charakter vermuten lässt: Bad Camberg liegt direkt an der A3, der Verbindungsachse Frankfurt–Köln, Abfahrt Bad Camberg. Bis Frankfurt sind es rund 45 Kilometer – bei freier Fahrt 35 bis 40 Minuten, im Berufsverkehr länger. Über Limburg ist zudem ein S-Bahn-Anschluss möglich. Das macht Bad Camberg besonders für jene attraktiv, die den Pendleralltag auf wenige Tage pro Woche reduziert haben und am Rest des Arbeitstages im Homeoffice oder in Ruhe arbeiten.</p>
+              <p>Das Käuferprofil ist klar: Ruhesuchende, Paare 50+, Senioren, die bewusst aus dem Großstadtlärm aussteigen wollen, sowie Menschen, die Bad Camberg als Zweit- oder Altersruhesitz nutzen möchten. Das Preisniveau liegt deutlich unter dem taunusnaher Lagen wie Königstein oder Bad Homburg. Wer 600 Quadratmeter Grundstück und ein freistehend Haus sucht, bekommt es hier zu Preisen, die in Frankfurt ein kleines Apartment kosten würden. Für Verkäufer bedeutet das: die Zielgruppe ist definiert, zahlungskräftig und kauft aus echten Lebensgründen – nicht aus Spekulationsmotiven.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '💧', label: 'Heilbad-Tradition & Thermalbad' },
+                { icon: '🛣️', label: 'Direkt an A3 (Frankfurt 45 min)' },
+                { icon: '💶', label: 'Günstigstes Preisniveau' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">

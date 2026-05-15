@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Darmstadt – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Darmstadt. Professioneller Verkauf von Immobilien in der Wissenschaftsstadt südlich von Frankfurt – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Darmstadt – Wissenschaftsstadt mit stabilem Markt. Fundierte Bewertung für ETW, EFH & MFH. 125+ Verkäufe, 4,9★. Kostenlos & unverbindlich.',
   keywords: 'Immobilienmakler Darmstadt, Immobilien Darmstadt, Haus verkaufen Darmstadt, Wohnung verkaufen Darmstadt, Immobilienbewertung Darmstadt, Makler Darmstadt Bessungen, Makler Darmstadt Eberstadt',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-darmstadt' },
   openGraph: {

@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Bad Vilbel | immovativInvest',
-  description: 'Ihr Immobilienmakler in Bad Vilbel. Professioneller Verkauf, fundierte Bewertung und persönliche Beratung in der begehrten Kurstadt direkt an Frankfurt. Kostenlose Erstberatung.',
+  description: 'Immobilienmakler Bad Vilbel – gefragte Lage nördlich Frankfurt. S-Bahn-Anschluss & starke Nachfrage. Ø 6 Wochen Vertragslaufzeit. Kostenlose Bewertung.',
   keywords: 'Immobilienmakler Bad Vilbel, Immobilien Bad Vilbel, Haus verkaufen Bad Vilbel, Wohnung verkaufen Bad Vilbel, Immobilienbewertung Bad Vilbel, Makler Bad Vilbel, Wetteraukreis Immobilien',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-bad-vilbel' },
   openGraph: {

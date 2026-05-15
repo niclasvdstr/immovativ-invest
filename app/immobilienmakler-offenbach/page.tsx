@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Offenbach am Main | immovativInvest',
-  description: 'Ihr Immobilienmakler in Offenbach am Main. Professioneller Verkauf, fundierte Bewertung und persönliche Beratung in der aufstrebenden Mainstadt direkt neben Frankfurt. Kostenlose Erstberatung.',
+  description: 'Immobilienmakler Offenbach am Main – direkt an Frankfurt, bestes Preis-Leistungs-Verhältnis der Region. Marktgerechte Bewertung & 4,9★. Kostenlos.',
   keywords: 'Immobilienmakler Offenbach, Immobilien Offenbach am Main, Haus verkaufen Offenbach, Wohnung verkaufen Offenbach, Immobilienbewertung Offenbach, Makler Offenbach Kaiserlei, Makler Offenbach Bieber',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-offenbach' },
   openGraph: {

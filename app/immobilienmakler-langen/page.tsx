@@ -332,6 +332,37 @@ export default function ImmobilienmaklerLangenPage() {
         </div>
       </section>
 
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-brand-gray-light">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Langen – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Langen: Mittelzentrum zwischen Frankfurt und Darmstadt – mit doppelter Zielgruppe
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Langen liegt im Landkreis Offenbach, mittig zwischen Frankfurt in rund 25 Kilometern und Darmstadt in rund 15 Kilometern Entfernung – und hat mit der S-Bahn S3 eine direkte Verbindung in beide Richtungen. Diese Doppelanbindung ist das entscheidende Alleinstellungsmerkmal: Wer in Langen eine Immobilie verkauft, spricht zwei vollständig verschiedene Käufergruppen an. Frankfurt-Pendler schätzen die kurze Fahrzeit von rund 25 Minuten in die Bankenmetropole, während Darmstadt-Beschäftigte in 15 Minuten an der Wissenschaftsstadt sind. Das Ergebnis ist eine konstant breite Nachfrage, die Leerstand und lange Vermarktungszeiten faktisch verhindert.</p>
+              <p>Langen ist eine wachsende Mittelstadt mit über 40.000 Einwohnern, eigenem Einkaufszentrum, gut ausgebautem Schulnetz und einem aktiven Vereinsleben. Der Immobilienmarkt bietet eine solide Mischung aus klassischen Einfamilienhäusern der 1960er bis 1980er Jahre, Reihenhäusern, Doppelhaushälften und Eigentumswohnungen. Das Preisniveau liegt unter dem von Dreieich oder Neu-Isenburg, bietet aber eine vergleichbare Anbindungsqualität – ein attraktiver Kompromiss für Käufer mit definiertem Budget und hohem Pendleranspruch.</p>
+              <p>Durch die stetig steigenden Frankfurter Immobilienpreise zieht immer mehr Nachfrage in Städte wie Langen – die Preise sind in den letzten fünf Jahren um rund 25 Prozent gestiegen. Für Eigentümer, die jetzt verkaufen möchten, ist das ein günstiger Moment: Der Markt ist aufnahmefähig, die Käufer finanzierungsstark und die Vermarktungszeiten kurz. Wer einen erfahrenen Makler beauftragt, der beide Zielgruppen gezielt anspricht, hat gute Chancen auf einen Abschluss deutlich über dem Ausgangspreis.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S3 nach Frankfurt & Darmstadt' },
+                { icon: '🏙️', label: 'Mittelzentrum mit eigenem Einkaufszentrum' },
+                { icon: '👥', label: '40.000+ Einwohner' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-white">
         <div className="container-max">

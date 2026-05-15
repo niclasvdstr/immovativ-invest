@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Oberursel – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Oberursel (Taunus) im Hochtaunuskreis. Professioneller Immobilienverkauf mit marktgerechter Bewertung, persönlicher Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Oberursel – U-Bahn-Anbindung nach Frankfurt, begehrte Taunuslage. Marktgerechte Bewertung, 4,9★ Kundenbewertung. Kostenlos anfragen.',
   keywords: 'Immobilienmakler Oberursel, Immobilien Oberursel, Haus verkaufen Oberursel, Wohnung verkaufen Oberursel, Hochtaunuskreis Immobilien, Immobilienbewertung Oberursel, Taunus U-Bahn Frankfurt',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-oberursel' },
   openGraph: {

@@ -335,6 +335,37 @@ export default function ImmobilienmaklerFriedbergPage() {
         </div>
       </section>
 
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-brand-gray-light">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Friedberg – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Friedberg: Historische Kreisstadt mit ICE-Bahnhof und Wachstumsdynamik
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Friedberg (Hessen) ist die Kreisstadt des Wetteraukreises mit rund 30.000 Einwohnern – eine echte Mittelstadt mit eigenem Stadtcharakter, Einkaufsmöglichkeiten und gewachsener sozialer Infrastruktur. Die mittelalterliche Altstadt mit Stadtschloss, dem imposanten Burgring und den Judenbädern – einer der besterhaltenen mittelalterlichen Badeanlagen Europas – verleihen Friedberg eine historische Tiefe, die in der Region ihresgleichen sucht. Dieser Charakter ist kein Selbstzweck: Er macht Friedberg für Käufer attraktiv, die nicht nur Wohnraum, sondern auch Identität und Ortscharakter suchen.</p>
+              <p>Die Verkehrsanbindung ist ausgesprochen stark: Friedberg verfügt über einen ICE-Bahnhof auf der Schnellfahrstrecke Frankfurt–Kassel – ein Standortvorteil, der auch für international mobile Fachkräfte relevant ist. Die S-Bahn S6 fährt direkt nach Frankfurt und benötigt rund 35 Minuten. Die A5 ist in zehn Minuten erreichbar. Damit ist Friedberg einer der am besten angebundenen Standorte im gesamten Wetteraukreis – und das zu Preisen, die noch deutlich unter dem Niveau der direkten Frankfurt-Nachbargemeinden liegen.</p>
+              <p>Der Markt wächst: Viele Neubaugebiete sind in den letzten zehn Jahren entstanden, während gut erhaltene Altbausubstanz in der Innenstadt schnelle Käufer findet. Das Käuferprofil reicht von jungen Familien über Ruheständler bis zu Frankfurter Pendlern und Kapitalanlegern, die in Friedberg stabile Mietrenditen schätzen. Als Frankfurt immer teurer wird, rückt der Wetteraukreis stärker in den Fokus – und Friedberg profitiert als Kreisstadt überproportional von diesem Trend.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚄', label: 'ICE-Bahnhof' },
+                { icon: '🚆', label: 'S6 nach Frankfurt (35 min)' },
+                { icon: '🏰', label: 'Historische Altstadt mit Charakter' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-white">
         <div className="container-max">

@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Hanau | immovativInvest',
-  description: 'Ihr Immobilienmakler in Hanau. Professioneller Verkauf, fundierte Bewertung und persönliche Beratung in der wachsenden Brüder-Grimm-Stadt im Main-Kinzig-Kreis. Kostenlose Erstberatung.',
+  description: 'Immobilienmakler Hanau – Brüder-Grimm-Stadt mit wachsendem Immobilienmarkt. Professioneller Verkauf, marktgerechte Preise & 4,9★. Kostenlos anfragen.',
   keywords: 'Immobilienmakler Hanau, Immobilien Hanau, Haus verkaufen Hanau, Wohnung verkaufen Hanau, Immobilienbewertung Hanau, Makler Hanau Main-Kinzig-Kreis, Makler Hanau Steinheim',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-hanau' },
   openGraph: {

@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Bad Nauheim – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Bad Nauheim & Wetteraukreis. Professioneller Immobilienverkauf mit marktgerechter Bewertung, persönlicher Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Bad Nauheim – Kurstadt mit wachsendem Markt. Fundierte Bewertung, professionelle Vermarktung & 4,9★ Kundenbewertung. Kostenlose Erstberatung.',
   keywords: 'Immobilienmakler Bad Nauheim, Immobilien Bad Nauheim, Haus verkaufen Bad Nauheim, Wohnung verkaufen Bad Nauheim, Wetteraukreis Immobilien, Immobilienbewertung Bad Nauheim, Kurstadt Immobilien',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-bad-nauheim' },
   openGraph: {

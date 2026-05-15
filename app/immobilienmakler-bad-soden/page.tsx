@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Bad Soden am Taunus – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Bad Soden am Taunus. Professioneller Verkauf exklusiver Immobilien in der Kurstadt mit Villenlage – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Bad Soden am Taunus – begehrte Taunuslage. Villa, EFH, ETW: marktgerechte Wertermittlung & exklusive Käufernetzwerk. Jetzt kostenlos anfragen.',
   keywords: 'Immobilienmakler Bad Soden, Immobilien Bad Soden am Taunus, Haus verkaufen Bad Soden, Wohnung verkaufen Bad Soden, Main-Taunus-Kreis Immobilien, Immobilienbewertung Bad Soden, Neuenhain Altenhain Immobilien',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-bad-soden' },
   openGraph: {

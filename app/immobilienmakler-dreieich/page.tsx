@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Dreieich – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Dreieich. Professioneller Verkauf von Immobilien im Landkreis Offenbach südlich von Frankfurt – marktgerechte Bewertung & persönliche Betreuung. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Dreieich – gefragte Lage zwischen Frankfurt & Darmstadt. S-Bahn-Anschluss, hohe Nachfrage & schnelle Verkäufe. Jetzt Bewertung anfragen.',
   keywords: 'Immobilienmakler Dreieich, Immobilien Dreieich, Haus verkaufen Dreieich, Wohnung verkaufen Dreieich, Immobilienbewertung Dreieich, Makler Dreieichenhain, Makler Sprendlingen',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-dreieich' },
   openGraph: {

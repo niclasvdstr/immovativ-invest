@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Eltville am Rhein – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Eltville am Rhein im Rheingau-Taunus-Kreis. Professioneller Verkauf exklusiver Immobilien in der Weinstadt am Rhein – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Eltville am Rhein – Weinmetropole mit Premium-Lagen. Diskrete Vermarktung, marktgerechte Wertermittlung, 4,9★. Kostenlose Erstberatung.',
   keywords: 'Immobilienmakler Eltville, Immobilien Eltville am Rhein, Haus verkaufen Eltville, Wohnung verkaufen Eltville, Rheingau-Taunus-Kreis Immobilien, Immobilienbewertung Eltville, Rheingau Weinort Immobilien',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-eltville' },
   openGraph: {

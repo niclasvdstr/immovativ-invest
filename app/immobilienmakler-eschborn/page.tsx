@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Eschborn – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Eschborn im Main-Taunus-Kreis. Professioneller Verkauf von Immobilien im bedeutenden Unternehmensstandort – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Eschborn – Bürostadt mit gefragtem Wohnmarkt. Nähe Frankfurt, starke Nachfrage nach ETW & EFH. Kostenlose Bewertung bei immovativInvest.',
   keywords: 'Immobilienmakler Eschborn, Immobilien Eschborn, Haus verkaufen Eschborn, Wohnung verkaufen Eschborn, Main-Taunus-Kreis Immobilien, Immobilienbewertung Eschborn, Niederhöchstadt Immobilien',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-eschborn' },
   openGraph: {

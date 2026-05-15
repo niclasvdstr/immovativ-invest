@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Bad Homburg – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Bad Homburg vor der Höhe. Professioneller Verkauf exklusiver Immobilien in der Kurstadt – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Bad Homburg – Premiumlage Taunus. Marktgerechte Wertermittlung, diskrete Vermarktung, Ø 6 Wochen bis Verkauf. Kostenlose Bewertung anfragen.',
   keywords: 'Immobilienmakler Bad Homburg, Immobilien Bad Homburg, Haus verkaufen Bad Homburg, Wohnung verkaufen Bad Homburg, Hochtaunuskreis Immobilien, Immobilienbewertung Bad Homburg, Kurstadt Immobilien',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-bad-homburg' },
   openGraph: {

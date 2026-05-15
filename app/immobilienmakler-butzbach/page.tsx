@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Butzbach – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Butzbach & Wetteraukreis. Professioneller Immobilienverkauf mit marktgerechter Bewertung, persönlicher Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Butzbach – Wetteraukreis mit A5-Anbindung. Professioneller Hausverkauf, marktgerechte Preise, 4,9★ bewertet. Jetzt kostenlose Beratung.',
   keywords: 'Immobilienmakler Butzbach, Immobilien Butzbach, Haus verkaufen Butzbach, Wohnung verkaufen Butzbach, Wetteraukreis Immobilien, Immobilienbewertung Butzbach, Wetterau Immobilien',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-butzbach' },
   openGraph: {

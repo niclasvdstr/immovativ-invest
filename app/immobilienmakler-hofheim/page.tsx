@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Hofheim am Taunus – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Hofheim am Taunus. Professioneller Verkauf von Immobilien in der Kreisstadt am Taunusrand – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Hofheim am Taunus – Main-Taunus-Kreis Zentrum. Starke Nachfrage, schnelle Verkäufe, Ø 6 Wochen. Kostenlose Immobilienbewertung.',
   keywords: 'Immobilienmakler Hofheim, Immobilien Hofheim am Taunus, Haus verkaufen Hofheim, Wohnung verkaufen Hofheim, Immobilienbewertung Hofheim, Makler Main-Taunus-Kreis, Makler Hofheim Diedenbergen',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-hofheim' },
   openGraph: {

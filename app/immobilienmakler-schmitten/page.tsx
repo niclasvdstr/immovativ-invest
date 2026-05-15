@@ -258,6 +258,37 @@ export default function ImmobilienmaklerSchmittenPage() {
         </div>
       </section>
 
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Schmitten – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Schmitten: Günstigstes Preisniveau im Hochtaunuskreis – mit echtem Panorama
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Schmitten liegt im Hochtaunuskreis auf einer Höhe von 400 bis 800 Metern über dem Meeresspiegel – eingebettet in die bewaldeten Ausläufer des Großen Feldbergs. Die Gemeinde gliedert sich in acht eigenständige Ortsteile: Schmitten, Arnoldshain, Brombach, Dorfweil, Niederreifenberg, Oberreifenberg, Seelenberg und Treisberg. Jeder Ortsteil hat seinen eigenen Charakter, seine eigene Infrastruktur und seine eigene Atmosphäre. Wer in Schmitten eine Immobilie kauft oder verkauft, kauft oder verkauft nicht einfach ein Haus – er tritt einem Lebensmodell bei, das Natur, Ruhe und Frankfurter Nähe auf einmalige Weise verbindet.</p>
+              <p>Das Käuferprofil in Schmitten ist klar definiert: Überwiegend Familien mit Homeoffice-Anteil, Paare kurz vor der Rente sowie Naturliebhaber, die Frankfurt als Metropole in 38 Kilometern Reichweite wissen. Schmitten bietet das günstigste Preisniveau im gesamten Hochtaunuskreis. Wer kein Bad-Homburg-Niveau bezahlen will, aber trotzdem im Taunus wohnen möchte, landet in Schmitten. Die Infrastruktur ist für eine ländliche Gemeinde bemerkenswert gut: Grundschule, Kita, Bäcker und Arzt sind vorhanden. Die Bundesstraße B8 verbindet Schmitten mit Usingen in rund zehn Minuten und mit Bad Homburg in etwa 25 Minuten.</p>
+              <p>Der Immobilienmarkt wird von Einfamilienhäusern aus den 1960er bis 1990er Jahren dominiert – solide gebaut, oft mit großzügigen Grundstücken und Gärten. Neuere Reihenhäuser kommen vereinzelt hinzu, Eigentumswohnungen sind selten und entsprechend gefragt, wenn sie auf den Markt kommen. Die Wertsteigerung der letzten zehn Jahre liegt im Schnitt bei rund 18 Prozent – ein stabiles Zeichen für eine Lage, die zwar kein Hype-Markt ist, aber verlässlich nachgefragt bleibt. Verkäufer profitieren davon, dass Käufer in Schmitten oft sehr gezielt suchen und selten lange verhandeln, wenn der Preis stimmt.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🏔️', label: 'Hochtaunus-Panorama' },
+                { icon: '🚂', label: 'S-Bahn erreichbar via Usingen' },
+                { icon: '📍', label: '38 km bis Frankfurt' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">
           <AnimateIn direction="up">

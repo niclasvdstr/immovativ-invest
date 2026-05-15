@@ -260,6 +260,37 @@ export default function ImmobilienmaklerNeuAnspachPage() {
         </div>
       </section>
 
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Neu-Anspach – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Neu-Anspach: Wachsende Taunusstadt mit direkter S5-Anbindung nach Frankfurt
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Neu-Anspach ist eine wachsende Gemeinde im Hochtaunuskreis mit rund 15.000 Einwohnern und gilt als aufstrebende Wohnlocation im Taunus. Die Ortsteile Anspach als Hauptort sowie Weil und Hausen-Arnsbach bilden das Gemeindegebiet. Der Freiherr-vom-Stein-Markt und der nahegelegene Hessenpark, ein europaweit bekanntes Freilichtmuseum mit historischen Fachwerkgebäuden aus ganz Hessen, sind markante Ausflugsziele, die Neu-Anspach überregionale Bekanntheit verleihen und gleichzeitig die Lebensqualität der Einwohner bereichern.</p>
+              <p>Die entscheidende Besonderheit im Vergleich zu anderen Taunusgemeinden: Neu-Anspach verfügt über eine eigene S-Bahn-Anbindung. Die S5 fährt direkt nach Frankfurt und benötigt dafür etwa 45 bis 50 Minuten – ein Argument, das Berufspendler mit Homeoffice-Tagen besonders schätzen. Das Käuferprofil setzt sich vor allem aus jungen Familien zusammen, die kein Frankenforster oder Oberurseler Preisniveau bezahlen wollen, aber dennoch moderne Infrastruktur und verlässlichen ÖPNV-Anschluss erwarten. Neubaugebiete haben Neu-Anspach in den letzten zehn Jahren stark verändert – viele Reihenhäuser und Doppelhaushälften sind entstanden und begehrt.</p>
+              <p>Das Preisniveau ist mittleres Taunus-Niveau: günstiger als Königstein oder Kronberg, vergleichbar mit Wehrheim und Schmitten, aber mit deutlich besserem ÖPNV-Anschluss. Für Verkäufer bedeutet das eine klar definierbare Zielgruppe und kurze Vermarktungszeiten bei korrekter Preisfindung. Wer eine Immobilie in Neu-Anspach veräußert, spricht Menschen an, die bewusst in der zweiten Reihe suchen – und dafür bereit sind, einen fairen Preis zu zahlen, wenn Lage, Zustand und Anbindung stimmen.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S5 nach Frankfurt' },
+                { icon: '🏘️', label: 'Hessenpark Freilichtmuseum' },
+                { icon: '📈', label: 'Wachstum & Neubau' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">
           <AnimateIn direction="up">

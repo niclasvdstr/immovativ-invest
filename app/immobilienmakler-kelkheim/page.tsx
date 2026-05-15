@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Kelkheim (Taunus) – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Kelkheim im Taunus. Professioneller Verkauf von Immobilien in der ruhigen Taunusgemeinde mit gehobener Wohnlage – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Kelkheim – Taunus-Wohnlage nahe Frankfurt. Marktgerechte Bewertung für EFH, DHH & ETW. Nur 6 Wochen Laufzeit & 4,9★. Jetzt anfragen.',
   keywords: 'Immobilienmakler Kelkheim, Immobilien Kelkheim Taunus, Haus verkaufen Kelkheim, Wohnung verkaufen Kelkheim, Main-Taunus-Kreis Immobilien, Immobilienbewertung Kelkheim, Münster Hornau Fischbach Immobilien',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-kelkheim' },
   openGraph: {

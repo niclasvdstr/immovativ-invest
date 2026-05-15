@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Königstein im Taunus – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Königstein im Taunus. Professioneller Verkauf exklusiver Luxusimmobilien – marktgerechte Bewertung, diskrete Vermarktung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Königstein im Taunus – Premiumstadt mit Burgruine. Exklusiver Käuferstamm, diskrete Off-Market-Vermarktung, 4,9★. Kostenlos anfragen.',
   keywords: 'Immobilienmakler Königstein, Immobilien Königstein im Taunus, Haus verkaufen Königstein, Villa verkaufen Königstein, Hochtaunuskreis Luxusimmobilien, Immobilienbewertung Königstein, exklusive Immobilien Taunus',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-koenigstein' },
   openGraph: {

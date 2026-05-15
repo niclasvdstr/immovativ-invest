@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Mainz – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Mainz. Professioneller Verkauf von Immobilien in der Landeshauptstadt Rheinland-Pfalz direkt am Rhein – marktgerechte Bewertung, persönliche Betreuung & nur 6 Wochen Vertragslaufzeit.',
+  description: 'Immobilienmakler Mainz – Landeshauptstadt Rheinland-Pfalz mit starkem Markt. Johannes-Gutenberg-Universität, hohe Nachfrage. Kostenlose Bewertung.',
   keywords: 'Immobilienmakler Mainz, Immobilien Mainz, Haus verkaufen Mainz, Wohnung verkaufen Mainz, Immobilienbewertung Mainz, Makler Mainz Gonsenheim, Makler Mainz Altstadt',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-mainz' },
   openGraph: {

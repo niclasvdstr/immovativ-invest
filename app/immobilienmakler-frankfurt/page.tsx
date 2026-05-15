@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Frankfurt am Main – Immobilie verkaufen | immovativInvest',
-  description: 'Ihr Immobilienmakler in Frankfurt am Main. Professioneller Verkauf, fundierte Bewertung und persönliche Beratung in Deutschlands Finanzmetropole. Kostenlose Erstberatung.',
+  description: 'Immobilienmakler Frankfurt am Main – alle Stadtteile. Marktgerechte Wertermittlung, professionelle Vermarktung, Ø 6 Wochen bis Abschluss. 4,9★ bewertet.',
   keywords: 'Immobilienmakler Frankfurt, Immobilien Frankfurt am Main, Haus verkaufen Frankfurt, Wohnung verkaufen Frankfurt, Immobilienbewertung Frankfurt, Makler Frankfurt Sachsenhausen, Makler Frankfurt Westend',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-frankfurt' },
   openGraph: {

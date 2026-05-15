@@ -18,7 +18,7 @@ import TippgeberSection from '@/components/TippgeberSection'
 
 export const metadata: Metadata = {
   title: 'Immobilienmakler Limburg an der Lahn – Immobilie verkaufen | immovativInvest',
-  description: 'Immobilienmakler in Limburg an der Lahn & Landkreis Limburg-Weilburg. Professioneller Immobilienverkauf mit marktgerechter Bewertung, persönlicher Betreuung & nur 6 Wochen Vertragslaufzeit. Kostenlose Erstberatung!',
+  description: 'Immobilienmakler Limburg an der Lahn – ICE-Bahnhof, A3-Anbindung, Dom mit Weltbekanntheit. Marktgerechte Bewertung & professioneller Verkauf.',
   keywords: 'Immobilienmakler Limburg, Immobilienmakler Limburg an der Lahn, Immobilien Limburg, Haus verkaufen Limburg, Wohnung verkaufen Limburg, Landkreis Limburg-Weilburg Immobilien, Immobilienbewertung Limburg',
   alternates: { canonical: 'https://www.immovativ-invest.de/immobilienmakler-limburg' },
   openGraph: {

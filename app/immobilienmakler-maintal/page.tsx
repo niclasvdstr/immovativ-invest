@@ -303,6 +303,37 @@ export default function ImmobilienmaklerMaintaPage() {
         </div>
       </section>
 
+      {/* Stadtprofil */}
+      <section id="stadtprofil" className="section-padding bg-white">
+        <div className="container-max">
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-brand-green-50 border border-brand-green-100 text-brand-green rounded-full px-4 py-2 text-sm font-semibold mb-6">
+              Immobilienmarkt Maintal – Wissenswertes
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-anthrazit mb-6 leading-tight">
+              Maintal: Gefragteste Pendlerstadt östlich von Frankfurt – S8/S9 in 15 Minuten
+            </h2>
+            <div className="prose prose-lg max-w-none text-brand-gray-warm space-y-5">
+              <p>Maintal liegt direkt östlich von Frankfurt und ist dank der S-Bahn-Linien S8 und S9 eine der gefragtesten Pendlerstädte der Region. Die Fahrtzeit bis zum Frankfurter Hauptbahnhof beträgt nur 15 bis 20 Minuten – ein Wert, den viele rein städtische Lagen in Frankfurt selbst nicht erreichen. Die vier Stadtteile Bischofsheim, Dörnigheim, Hochstadt und Wachenbuchen bieten unterschiedliche Wohncharaktere: Bischofsheim und Dörnigheim sind die urbansten Stadtteile mit der besten S-Bahn-Nähe und erzielen entsprechend die höchsten Preise. Hochstadt und Wachenbuchen hingegen sind ruhiger, grüner und eignen sich besonders für Familien, die Natur und Abstand vom Stadtlärm suchen.</p>
+              <p>Maintal ist merklich teurer als Hanau oder Langenselbold, aber noch günstiger als Frankfurt-Ost oder Offenbach. Für Käufer mit Frankfurt-Gehalt ist Maintal der solide Kompromiss: mehr Platz, mehr Garten, mehr Ruhe – bei akzeptabler Pendelzeit. Das erklärt das konstante Bevölkerungswachstum der letzten Jahre. Bauland ist in Maintal begrenzt, was die Preise stabil hält und Leerstand faktisch verhindert. Viele Eigentümer kauften ihre Immobilien in den 1980er bis 2000er Jahren und können heute mit erheblichen Wertsteigerungen in den Markt gehen.</p>
+              <p>Das Käuferprofil setzt sich überwiegend aus Frankfurt-Berufstätigen sowie Familien aus Frankfurt-Ost zusammen, die mehr Wohnfläche und einen eigenen Garten suchen. Die Kombination aus begrenztem Angebot, stabiler Nachfrage und exzellenter S-Bahn-Anbindung macht Maintal zu einem der verlässlichsten Märkte im Main-Kinzig-Kreis. Für Verkäufer bedeutet das: wer eine Immobilie hier zu einem marktgerechten Preis anbietet, muss in der Regel nicht lange warten – die richtigen Käufer kommen.</p>
+            </div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { icon: '🚆', label: 'S8/S9 nach Frankfurt (15 min)' },
+                { icon: '📈', label: 'Starke Wertsteigerung' },
+                { icon: '🏗️', label: 'Begrenzte Baufläche = stabile Preise' },
+              ].map(item => (
+                <div key={item.label} className="bg-brand-gray-light rounded-xl p-4 border border-brand-gray-border flex items-center gap-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm font-semibold text-brand-anthrazit">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section id="vorteile" className="section-padding bg-brand-gray-light">
         <div className="container-max">
