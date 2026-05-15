@@ -31,14 +31,6 @@ export const metadata: Metadata = {
   },
 }
 
-const navItems = [
-  { label: 'Immobilienmakler', href: '/' },
-  { label: 'Verkaufen', href: '/verkaufen' },
-  { label: 'Über uns', href: '/ueber-uns' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Referenzen', href: '/referenzen' },
-]
-
 const benefits = [
   {
     title: 'Lokale Marktkenntnis Mörfelden-Walldorf',
@@ -93,21 +85,22 @@ const faqItems = sharedFaqItems
 
 export default function ImmobilienmaklerMoerfeldenWalldorf() {
   return (
-    <>
+    <main className="min-h-screen bg-white">
       <CityJsonLd cityName="Mörfelden-Walldorf" slug="moerfelden-walldorf" />
+      <Header ctaLabel="Kostenlose Beratung" ctaHref="#kontakt" />
 
       {/* Breadcrumb */}
-      <div className="bg-gray-50 border-b border-gray-200">
+      <nav aria-label="Breadcrumb" className="bg-white border-b border-brand-gray-border">
         <div className="max-w-6xl mx-auto px-4 md:px-8 py-3">
-          <nav className="text-sm text-gray-500">
-            <a href="/" className="hover:text-brand-green">Start</a>
-            <span className="mx-2">/</span>
-            <a href="/" className="hover:text-brand-green">Immobilienmakler</a>
-            <span className="mx-2">/</span>
-            <span className="text-gray-800 font-medium">Mörfelden-Walldorf</span>
-          </nav>
+          <ol className="flex items-center gap-2 text-sm text-brand-gray-warm">
+            <li><a href="/" className="hover:text-brand-green transition-colors">Start</a></li>
+            <li><span className="text-gray-300">›</span></li>
+            <li><a href="/" className="hover:text-brand-green transition-colors">Immobilienmakler</a></li>
+            <li><span className="text-gray-300">›</span></li>
+            <li className="text-brand-anthrazit font-medium">Mörfelden-Walldorf</li>
+          </ol>
         </div>
-      </div>
+      </nav>
 
       {/* Hero Section */}
       <section className="bg-white pt-12 pb-10 px-4 md:px-8">
@@ -313,15 +306,12 @@ export default function ImmobilienmaklerMoerfeldenWalldorf() {
         subtitle="Unverbindlich, diskret und schnell. Wir melden uns innerhalb von 24 Stunden."
       />
 
-      {/* Sticky CTA */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg py-3 px-4 flex justify-center md:hidden">
-        <CTAButton href="/verkaufen" variant="white" size="md">
-          Immobilienbewertung starten →
-        </CTAButton>
+      <div className="sticky-cta md:hidden">
+        <CTAButton href="#kontakt" fullWidth size="lg">Kostenlose Erstberatung →</CTAButton>
       </div>
 
       <NearbyStaedte currentSlug="moerfelden-walldorf" />
       <Footer variant="makler" />
-    </>
+    </main>
   )
 }

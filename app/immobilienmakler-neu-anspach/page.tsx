@@ -91,18 +91,11 @@ const processSteps = [
 
 const faqItems = sharedFaqItems
 
-const navItems = [
-  { label: 'Immobilienmakler', href: '/' },
-  { label: 'Verkaufen', href: '/verkaufen' },
-  { label: 'Über uns', href: '/ueber-uns' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Referenzen', href: '/referenzen' },
-]
-
 export default function ImmobilienmaklerNeuAnspachPage() {
   return (
     <main className="min-h-screen bg-white">
       <CityJsonLd cityName="Neu-Anspach" slug="neu-anspach" />
+      <Header ctaLabel="Kostenlose Beratung" ctaHref="#kontakt" />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-green-50 to-brand-cream pt-16 pb-20 md:pt-24 md:pb-32 px-4 md:px-8">
