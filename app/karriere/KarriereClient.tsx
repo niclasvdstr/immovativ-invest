@@ -256,7 +256,7 @@ export default function KarriereClient() {
 
                 <button
                   type="submit"
-                  className="w-full bg-brand-green text-white font-semibold rounded-xl px-6 py-3.5 text-sm hover:bg-brand-green-dark transition-colors"
+                  className="block mx-auto bg-brand-green text-white font-semibold rounded-xl px-10 py-3.5 text-sm hover:bg-brand-green-dark transition-colors"
                 >
                   Bewerbung absenden →
                 </button>

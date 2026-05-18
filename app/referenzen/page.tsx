@@ -514,7 +514,7 @@ export default function ReferenzenPage() {
             <p className="text-brand-gray-warm mb-8 leading-relaxed">
               Ich möchte herausfinden, was in deiner Situation möglich ist. Ruf mich an oder schreibe mir – das Erstgespräch ist kostenlos und unverbindlich.
             </p>
-            <CTAButton href="/verkaufen" variant="white" size="lg">
+            <CTAButton href="/verkaufen" variant="primary" size="lg">
               Immobilienbewertung starten →
             </CTAButton>
           </div>
@@ -530,7 +530,7 @@ export default function ReferenzenPage() {
           <p className="text-green-100 mb-8 leading-relaxed">
             Kostenlose Ersteinschätzung – ich melde mich innerhalb von 24 Stunden persönlich bei dir.
           </p>
-          <CTAButton href="/verkaufen" variant="secondary" size="lg">
+          <CTAButton href="/verkaufen" variant="primary" size="lg">
             Immobilienbewertung starten →
           </CTAButton>
         </div>

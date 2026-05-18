@@ -210,7 +210,7 @@ export default function BeratungPage() {
             <h2 className="text-2xl font-bold text-white mb-2">Wie viel ist deine Immobilie wert?</h2>
             <p className="text-white/70 text-sm">Kostenlose Wertermittlung — unverbindlich, schnell und ohne Verpflichtung.</p>
           </div>
-          <Link href="/verkaufen" className="inline-flex items-center justify-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-2.5 hover:bg-gray-50 transition-colors w-full text-sm">
+          <Link href="/verkaufen" className="inline-flex items-center justify-center gap-2 bg-white text-brand-anthrazit font-semibold rounded-xl px-7 py-2.5 hover:bg-gray-50 transition-colors w-full md:w-auto shrink-0 text-sm whitespace-nowrap">
             Immobilienbewertung starten →
           </Link>
         </div>
@@ -287,8 +287,8 @@ export default function BeratungPage() {
               </a>
             ))}
           </div>
-          <div className="mt-10">
-            <CTAButton href="/verkaufen" variant="primary" size="md" fullWidth>
+          <div className="mt-10 flex justify-center">
+            <CTAButton href="/verkaufen" variant="primary" size="md">
               Immobilienbewertung starten →
             </CTAButton>
           </div>
